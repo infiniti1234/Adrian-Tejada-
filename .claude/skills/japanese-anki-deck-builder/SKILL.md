@@ -16,6 +16,10 @@ The user can give you either:
 
 Do not ask permission to begin. When you receive a list or topic, confirm in one short line that you're building, then build.
 
+## Known-words check
+
+If `references/known_words.txt` exists, it's a deduped list of words/morphs already present in the user's own Anki collection (extracted from their exported `.colpkg`). When generating a word list for a **topic** request, skip words already in that file and pick the next-best alternative instead, so decks don't re-teach words the user already has. Don't apply this filter to explicit user-provided word lists — if the user typed or pasted a word, make the card regardless of whether it's already known.
+
 ## Card format
 
 ### Front
