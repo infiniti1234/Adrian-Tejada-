@@ -18,7 +18,7 @@ Do not ask permission to begin. When you receive a list or topic, confirm in one
 
 ## Known-words check
 
-If `references/known_words.txt` exists, it's a deduped list of words/morphs already present in the user's own Anki collection (extracted from their exported `.colpkg`). When generating a word list for a **topic** request, skip words already in that file and pick the next-best alternative instead, so decks don't re-teach words the user already has. Don't apply this filter to explicit user-provided word lists — if the user typed or pasted a word, make the card regardless of whether it's already known.
+If `references/known_words.txt` exists, it's a deduped list of words the user already knows, extracted from the **Kaishi 1.5k** deck in their exported `.colpkg` (their other decks are batch-mining source material, not studied vocab, so they're excluded). When generating a word list for a **topic** request, skip words already in that file and pick the next-best alternative instead, so decks don't re-teach words the user already has. Don't apply this filter to explicit user-provided word lists — if the user typed or pasted a word, make the card regardless of whether it's already known.
 
 ## Card format
 
