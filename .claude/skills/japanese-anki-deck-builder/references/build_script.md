@@ -2,13 +2,75 @@
 
 Use this script verbatim. Only change: the `CARDS` list, `MODEL_ID`/`DECK_ID` (fresh random large integers per build), the deck name, and the output filename. Do not touch `CARD_CSS`, `QFMT`, or `AFMT`.
 
+Audio is generated automatically via ElevenLabs if `ELEVENLABS_API_KEY` is set in the environment (e.g. `source` a local `.env` before running). If it's not set, the build still succeeds — the audio fields are just left empty and cards have no sound. Never hardcode a key into the script; always read it from the environment.
+
 ```python
 # -*- coding: utf-8 -*-
 import genanki
+import hashlib
+import os
+import re
+import time
+import requests
 
 # Fresh random large integers per build — never reuse across different decks.
 MODEL_ID = 1734890051030  # REPLACE with a new random large int
 DECK_ID = 1734890051031   # REPLACE with a new random large int
+
+# ─── ElevenLabs audio (optional) ───────────────────────────────────
+# Reads the key from the environment only — never hardcode it here.
+ELEVENLABS_API_KEY = os.environ.get('ELEVENLABS_API_KEY')
+# Default voice is a documented ElevenLabs premade voice ("Rachel") that
+# works with the multilingual model. Override with your own voice_id via
+# ELEVENLABS_VOICE_ID if you have one you prefer for Japanese.
+ELEVENLABS_VOICE_ID = os.environ.get('ELEVENLABS_VOICE_ID', '21m00Tcm4TlvDq8ikWAM')
+ELEVENLABS_MODEL_ID = 'eleven_multilingual_v2'
+MEDIA_DIR = 'jadb_audio'
+os.makedirs(MEDIA_DIR, exist_ok=True)
+
+_tts_cache = {}
+
+def strip_furigana(text):
+    """Drop 漢字[かんじ] bracket readings before sending text to TTS, keep the kanji."""
+    return re.sub(r'\[[^\]]*\]', '', text)
+
+def strip_word_reading(word_header):
+    """'格納（かくのう）' -> '格納' — speak the word itself, not the parenthetical reading."""
+    return re.sub(r'[（(].*?[）)]', '', word_header).strip()
+
+def tts_mp3(text):
+    """Generate an mp3 via ElevenLabs for `text`, return its filename, or None if unavailable/failed."""
+    if not ELEVENLABS_API_KEY or not text:
+        return None
+    if text in _tts_cache:
+        return _tts_cache[text]
+    filename = f"jadb_{hashlib.md5(text.encode('utf-8')).hexdigest()[:12]}.mp3"
+    path = os.path.join(MEDIA_DIR, filename)
+    if not os.path.exists(path):
+        try:
+            resp = requests.post(
+                f"https://api.elevenlabs.io/v1/text-to-speech/{ELEVENLABS_VOICE_ID}",
+                headers={
+                    "xi-api-key": ELEVENLABS_API_KEY,
+                    "Content-Type": "application/json",
+                    "Accept": "audio/mpeg",
+                },
+                json={
+                    "text": text,
+                    "model_id": ELEVENLABS_MODEL_ID,
+                    "voice_settings": {"stability": 0.5, "similarity_boost": 0.75},
+                },
+                timeout=30,
+            )
+            resp.raise_for_status()
+            with open(path, 'wb') as f:
+                f.write(resp.content)
+            time.sleep(0.3)  # be gentle on rate limits
+        except requests.RequestException as e:
+            print(f"  [audio skipped] {text!r}: {e}")
+            return None
+    _tts_cache[text] = filename
+    return filename
 
 CARD_CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Outfit:wght@200;300;400;500;600&family=Inter:wght@300;400;500;600&display=swap');
@@ -151,6 +213,13 @@ margin-right: auto;
 word-break: keep-all;
 overflow-wrap: break-word;
 }
+.audio-row {
+margin: -8px 0 20px;
+text-align: center;
+}
+.audio-row:empty {
+margin: 0;
+}
 ul.bullets, ul.bullets ul {
 list-style: none;
 padding-left: 0;
@@ -218,6 +287,7 @@ QFMT = """<div class="screen">
 <div class="screen-inner">
 <div class="brand">Japanese Immersion Lab</div>
 <div class="sentence-front">{{kanji:Sentence}}</div>
+<div class="audio-row">{{SentenceAudio}}</div>
 </div>
 </div>"""
 
@@ -229,6 +299,7 @@ AFMT = """<div class="screen">
 <div class="section-label">Target word</div>
 <div class="block">
 <div class="word-header">{{WordHeader}}</div>
+<div class="audio-row">{{WordAudio}}</div>
 <ul class="bullets">
 <li><span class="label">Meaning</span><ul>{{WordMeaning}}</ul></li>
 <li><span class="label">Kanji breakdown</span><ul>{{WordBreakdown}}</ul></li>
@@ -239,6 +310,7 @@ AFMT = """<div class="screen">
 <div class="section-label">Sentence breakdown</div>
 <div class="block">
 <div class="sentence-bracketed">{{Sentence}}</div>
+<div class="audio-row">{{SentenceAudio}}</div>
 <ul class="bullets">
 <li><span class="label">Meaning</span><ul>{{SentenceMeaning}}</ul></li>
 <li><span class="label">Chunk breakdown</span><ul>{{SentenceBreakdown}}</ul></li>
@@ -260,6 +332,8 @@ model = genanki.Model(
         {'name': 'SentenceMeaning'},
         {'name': 'SentenceBreakdown'},
         {'name': 'SentenceEnglish'},
+        {'name': 'WordAudio'},
+        {'name': 'SentenceAudio'},
     ],
     templates=[{'name': 'Card 1', 'qfmt': QFMT, 'afmt': AFMT}],
     css=CARD_CSS,
@@ -271,7 +345,8 @@ def lis(items):
 # ─── Fill this list with one dict per card ────────────────────────
 # `sentence` requires 漢字[かんじ] furigana brackets on every kanji word.
 # All other fields are plain English text (chunk breakdowns lead with
-# the Japanese chunk followed by an English explanation).
+# the Japanese chunk followed by an English explanation). Audio fields
+# are generated automatically below — don't add them to CARDS.
 CARDS = [
     {
         'sentence': 'データを格納[かくのう]するためのフォルダを作成[さくせい]した。',
@@ -307,8 +382,19 @@ CARDS = [
 ]
 
 deck = genanki.Deck(DECK_ID, 'Japanese Sentence + English Breakdown')  # rename per topic
+media_files = set()
+
+if not ELEVENLABS_API_KEY:
+    print("ELEVENLABS_API_KEY not set — building without audio.")
 
 for c in CARDS:
+    word_audio_file = tts_mp3(strip_word_reading(c['word_header']))
+    sentence_audio_file = tts_mp3(strip_furigana(c['sentence']))
+    if word_audio_file:
+        media_files.add(os.path.join(MEDIA_DIR, word_audio_file))
+    if sentence_audio_file:
+        media_files.add(os.path.join(MEDIA_DIR, sentence_audio_file))
+
     note = genanki.Note(
         model=model,
         fields=[
@@ -320,11 +406,13 @@ for c in CARDS:
             lis(c['sentence_meaning']),
             lis(c['sentence_breakdown']),
             lis(c['sentence_english']),
+            f'[sound:{word_audio_file}]' if word_audio_file else '',
+            f'[sound:{sentence_audio_file}]' if sentence_audio_file else '',
         ],
     )
     deck.add_note(note)
 
 output_path = '/mnt/user-data/outputs/japanese_vocab_deck.apkg'  # rename per topic
-genanki.Package(deck).write_to_file(output_path)
-print(f"Wrote {len(CARDS)} cards to {output_path}")
+genanki.Package(deck, media_files=list(media_files)).write_to_file(output_path)
+print(f"Wrote {len(CARDS)} cards to {output_path}" + ("" if ELEVENLABS_API_KEY else " (no audio)"))
 ```

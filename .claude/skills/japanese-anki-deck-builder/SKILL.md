@@ -64,9 +64,14 @@ Every word that actually gets built into a card (whether user-supplied or topic-
 2. Read `references/build_script.md` and use the script template there **verbatim** — only fill in the `CARDS` list, the deck name, and the IDs.
 3. **Generate fresh random IDs per build**: replace `MODEL_ID` and `DECK_ID` with new large random integers (e.g. `random.randrange(1 << 30, 1 << 31)` run once, then hardcoded). Never reuse IDs across different decks — colliding model IDs with different templates corrupt existing decks in the user's Anki collection.
 4. Name the deck and output file after the topic, e.g. `Restaurant Japanese — Sentence Cards` → `/mnt/user-data/outputs/restaurant_japanese_deck.apkg`.
-5. If genanki isn't installed: `pip install genanki --break-system-packages --quiet`.
-6. Run the script, then present the `.apkg` with the file presentation tool.
-7. Append this build's target words to `references/known_words.txt` (dedupe against existing entries, keep sorted, one word per line).
+5. If genanki isn't installed: `pip install genanki --break-system-packages --quiet`. Same for `requests` if missing (needed for audio).
+6. If `ELEVENLABS_API_KEY` isn't already in the environment but a local `.env` exists, `source` it before running the script — never paste or hardcode the key into the script itself. If no key is available anywhere, tell the user up front that this build will ship without audio.
+7. Run the script, then present the `.apkg` with the file presentation tool.
+8. Append this build's target words to `references/known_words.txt` (dedupe against existing entries, keep sorted, one word per line).
+
+## Audio
+
+Cards include a `WordAudio` and `SentenceAudio` field (ElevenLabs TTS, `eleven_multilingual_v2`), generated automatically inside the build script — never call the ElevenLabs API from anywhere else or hand-write field values for these. Requires `ELEVENLABS_API_KEY` in the environment; the script degrades gracefully (empty audio fields, still valid deck) if it's missing or a request fails, so a blocked/rate-limited API never blocks the deck itself. Mention in the wrap-up whether audio was included.
 
 ## What to tell the user at the end
 
