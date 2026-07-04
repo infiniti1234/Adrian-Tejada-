@@ -18,7 +18,9 @@ Do not ask permission to begin. When you receive a list or topic, confirm in one
 
 ## Known-words check
 
-If `references/known_words.txt` exists, it's a deduped list of words the user already knows, extracted from the **Kaishi 1.5k** deck in their exported `.colpkg` (their other decks are batch-mining source material, not studied vocab, so they're excluded). When generating a word list for a **topic** request, skip words already in that file and pick the next-best alternative instead, so decks don't re-teach words the user already has. Don't apply this filter to explicit user-provided word lists — if the user typed or pasted a word, make the card regardless of whether it's already known.
+`references/known_words.txt` is a deduped, one-per-line list of words the user already knows, originally extracted from the **Kaishi 1.5k** deck in their exported `.colpkg` (their other decks are batch-mining source material, not studied vocab, so they're excluded). When generating a word list for a **topic** request, skip words already in that file and pick the next-best alternative instead, so decks don't re-teach words the user already has. Don't apply this filter to explicit user-provided word lists — if the user typed or pasted a word, make the card regardless of whether it's already known.
+
+Every word that actually gets built into a card (whether user-supplied or topic-generated) must be appended to `references/known_words.txt` afterward, deduped and sorted, so it's treated as known in future builds — the deck being built now is the next thing the user will have studied.
 
 ## Card format
 
@@ -64,6 +66,7 @@ If `references/known_words.txt` exists, it's a deduped list of words the user al
 4. Name the deck and output file after the topic, e.g. `Restaurant Japanese — Sentence Cards` → `/mnt/user-data/outputs/restaurant_japanese_deck.apkg`.
 5. If genanki isn't installed: `pip install genanki --break-system-packages --quiet`.
 6. Run the script, then present the `.apkg` with the file presentation tool.
+7. Append this build's target words to `references/known_words.txt` (dedupe against existing entries, keep sorted, one word per line).
 
 ## What to tell the user at the end
 
