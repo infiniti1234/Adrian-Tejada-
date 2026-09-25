@@ -1,0 +1,39 @@
+GenAI Attribution - COP3337 Homework Assignment 1
+
+Tool name:
+Claude (Anthropic), through Claude Code
+
+Prompt(s) I entered:
+1. I pasted the Part 1 CalendarDate requirements from the assignment and the
+   CalendarEvent.java starter code, and asked Claude to complete the setters,
+   leap years, days/month, date validation, day of week, and MM/DD/YYYY output.
+2. "okay restart i didn't give you everything at first so heres the
+   instructions and the code already written:" and attached the assignment PDF
+   and the four starter files (CalendarApp.java, CalendarDate.java,
+   CalendarEvent.java, MonthView.java).
+
+What part of the response I used:
+Claude filled in the TODO methods in all four starter files: CalendarDate
+(setters, leap years, days in month, date validation, Zeller's Congruence for
+the day of week, MM/DD/YYYY toString), CalendarEvent (setters, start-time
+validation, occursOn, isOwnedBy), MonthView (buildMonth, printMonth,
+monthName), and CalendarApp (parseEvent, parseDate, parseMonthYear,
+processCommand, and the three print methods, plus a parsePositiveInt helper).
+The given code, class names, method headers, and required arrays were kept.
+
+How I tested, verified, or modified the suggestion:
+- Compiled all four files with javac and ran CalendarApp from the command line.
+- Entered valid events and checked the exact output format of print, on,
+  owned by, month, and help.
+- Checked that each of these prints "Invalid input. Please re-enter the
+  event.": 02/29/2026 (not a leap year), 13/01/2026, 9:30 am, 13:00 pm,
+  10:75 am, duration 0 / -5 / abc, a blank title or location, lowercase
+  "event", and a line with only 6 fields. 02/29/2024 was accepted.
+- Checked that "owned by alex" matches both "Alex" and "ALEX", that two events
+  on 03/01/2026 are both printed, and that searches with no match print
+  "No events found."
+- Compared month views against a real calendar: March 2026 starts on Sunday,
+  August 2026 starts on Saturday, February 2026 has 28 days.
+- Checked that "month 13/2026", "on 02/30/2026", "owned by" with no name,
+  "printx", and "hello" all print the unknown-command message.
+- [Add anything you changed or tested yourself here.]

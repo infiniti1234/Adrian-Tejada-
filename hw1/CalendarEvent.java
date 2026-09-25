@@ -51,14 +51,14 @@ public class CalendarEvent {
 
     /** Update only for nonblank input; otherwise leave unchanged. */
     public void setTitle(String title) {
-        if (!isBlank(title)) {
+        if (!CalendarApp.isBlank(title)) {
             this.title = title;
         }
     }
 
     /** Update only for a non-null, valid date; otherwise leave unchanged. */
     public void setDate(CalendarDate date) {
-        if (date != null && date.isValid()) {
+        if (date != null && date.isValidDate()) {
             this.date = date;
         }
     }
@@ -82,21 +82,16 @@ public class CalendarEvent {
 
     /** Update only for nonblank input; otherwise leave unchanged. */
     public void setOwner(String owner) {
-        if (!isBlank(owner)) {
+        if (!CalendarApp.isBlank(owner)) {
             this.owner = owner;
         }
     }
 
     /** Update only for nonblank input; otherwise leave unchanged. */
     public void setLocation(String location) {
-        if (!isBlank(location)) {
+        if (!CalendarApp.isBlank(location)) {
             this.location = location;
         }
-    }
-
-    /** Returns true for null, empty, or whitespace-only strings. */
-    private static boolean isBlank(String s) {
-        return s == null || s.trim().isEmpty();
     }
 
     /**
@@ -119,28 +114,26 @@ public class CalendarEvent {
      * 13:00 pm -> invalid
      */
     public static boolean isValidStartTime(String startTime) {
-        // Expected layout: h h : m m ' ' a/p m  -> exactly 8 characters
+        // "hh:mm am" is always exactly 8 characters long.
         if (startTime == null || startTime.length() != 8) {
             return false;
         }
 
         char h1 = startTime.charAt(0);
         char h2 = startTime.charAt(1);
-        char colon = startTime.charAt(2);
         char m1 = startTime.charAt(3);
         char m2 = startTime.charAt(4);
-        char space = startTime.charAt(5);
-        char ap = Character.toLowerCase(startTime.charAt(6));
-        char m = Character.toLowerCase(startTime.charAt(7));
 
         if (!Character.isDigit(h1) || !Character.isDigit(h2)
                 || !Character.isDigit(m1) || !Character.isDigit(m2)) {
             return false;
         }
-        if (colon != ':' || space != ' ') {
+        if (startTime.charAt(2) != ':' || startTime.charAt(5) != ' ') {
             return false;
         }
-        if ((ap != 'a' && ap != 'p') || m != 'm') {
+
+        String amPm = startTime.substring(6).toLowerCase();
+        if (!amPm.equals("am") && !amPm.equals("pm")) {
             return false;
         }
 
@@ -161,15 +154,16 @@ public class CalendarEvent {
 
     /** Case-insensitive owner comparison. */
     public boolean isOwnedBy(String ownerName) {
-        return owner != null && ownerName != null
-                && owner.equalsIgnoreCase(ownerName);
+        if (owner == null || ownerName == null) {
+            return false;
+        }
+        return owner.equalsIgnoreCase(ownerName.trim());
     }
 
     /**
      * Required output format:
      * EVENT, title, date, startTime, durationMinutes, owner, location
      */
-    @Override
     public String toString() {
         return "EVENT, " + title + ", " + date + ", " + startTime + ", "
                 + durationMinutes + ", " + owner + ", " + location;
