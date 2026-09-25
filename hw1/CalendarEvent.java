@@ -114,7 +114,6 @@ public class CalendarEvent {
      * 13:00 pm -> invalid
      */
     public static boolean isValidStartTime(String startTime) {
-        // "hh:mm am" is always exactly 8 characters long.
         if (startTime == null || startTime.length() != 8) {
             return false;
         }

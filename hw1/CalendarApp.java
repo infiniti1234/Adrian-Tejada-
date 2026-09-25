@@ -79,8 +79,6 @@ public class CalendarApp {
             return null;
         }
 
-        // The -1 limit keeps trailing empty fields, so "EVENT, a, ..., " still
-        // counts as 7 fields and is then rejected as a blank location.
         String[] fields = line.split(",", -1);
         if (fields.length != 7) {
             return null;
@@ -175,11 +173,6 @@ public class CalendarApp {
         return result;
     }
 
-    /**
-     * Converts text made only of digits (0-9) into an int.
-     * Returns -1 if the text is blank, contains any other character
-     * (such as a sign, decimal point, or space), or is too long to fit.
-     */
     public static int parsePositiveInt(String text) {
         if (isBlank(text)) {
             return -1;

@@ -158,8 +158,6 @@ public class CalendarDate {
      * Do not use Java date/calendar libraries.
      */
     public static int dayOfWeek(int month, int day, int year) {
-        // Zeller's Congruence treats January and February as months 13 and 14
-        // of the previous year.
         int m = month;
         int y = year;
         if (m < 3) {
@@ -167,13 +165,11 @@ public class CalendarDate {
             y = y - 1;
         }
 
-        int k = y % 100;   // year of the century
-        int j = y / 100;   // zero-based century
+        int k = y % 100;
+        int j = y / 100;
 
-        // h: 0 = Saturday, 1 = Sunday, 2 = Monday, ..., 6 = Friday
         int h = (day + (13 * (m + 1)) / 5 + k + k / 4 + j / 4 + 5 * j) % 7;
 
-        // Shift so that 0 = Sunday, ..., 6 = Saturday.
         return (h + 6) % 7;
     }
 
@@ -184,7 +180,6 @@ public class CalendarDate {
         return pad(month, 2) + "/" + pad(day, 2) + "/" + pad(year, 4);
     }
 
-    /** Adds leading zeros to value until it has at least width digits. */
     private static String pad(int value, int width) {
         String text = "" + value;
         while (text.length() < width) {

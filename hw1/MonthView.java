@@ -50,7 +50,6 @@ public class MonthView {
         int startCol = CalendarDate.dayOfWeek(month, 1, year);
         int numberOfDays = CalendarDate.daysInMonth(month, year);
 
-        // Cell index counts across rows: cell = row * 7 + col.
         for (int dayNumber = 1; dayNumber <= numberOfDays; dayNumber++) {
             int cell = startCol + dayNumber - 1;
             days[cell / 7][cell % 7] = dayNumber;
