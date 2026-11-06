@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pipeline · Kikitori</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<main class="narrow">
+  <h1>Immersion pipeline</h1>
+  <p class="sub">Paste a video link (or a file path on this computer). It downloads, transcribes, finds the words you don't know yet, and cuts a real audio clip for every line.</p>
+
+  <div class="panel">
+    <form id="f" class="row">
+      <input type="text" id="url" class="grow" placeholder="https://www.youtube.com/watch?v=…  or  /path/to/video.mp4" autocomplete="off" required>
+      <button class="btn primary" id="go">Process video</button>
+    </form>
+    <div class="row" style="margin-top:10px">
+      <input type="text" id="channel" placeholder="Channel / folder (optional)" style="width:240px" list="channels">
+      <datalist id="channels"></datalist>
+      <span class="small muted">Which shelf this lands on in your Library. Leave blank to use the YouTube channel name.</span>
+    </div>
+    <div id="status" hidden>
+      <div class="statline"><strong id="state"></strong><span class="timer" id="timer">00:00</span></div>
+      <div class="stages" id="stages"></div>
+      <div class="small muted" id="progress"></div>
+      <div class="log" id="log"></div>
+    </div>
+    <div class="small muted" id="setup" style="margin-top:12px"></div>
+  </div>
+
+  <div id="result"></div>
+
+  <div class="panel">
+    <details id="recent">
+      <summary><strong>Recent jobs</strong> <span class="small muted">(open, commit, or delete any past run)</span></summary>
+      <table class="jobs" id="jobs"></table>
+    </details>
+  </div>
+</main>
+<script type="module">
+import { $, api, esc, nav, fmtTime } from "/common.js";
+nav("Pipeline");
+
+const STAGE_LABELS = { download: "Download", extract: "Extract", transcribe: "Transcribe", tokenize: "Tokenize", match: "Match vocab", clips: "Cut clips" };
+let info, poll, t0;
+
+async function init() {
+  info = await api("/api/info");
+  const decks = Object.entries(info.decks).map(([k, v]) => `${k} (${v})`).join(", ") || "none";
+  $("#setup").innerHTML = `Decks: ${esc(decks)} · My vocab: ${info.myVocab} · Dictionary: ${info.dictionary ? "✓" : "not installed (<code>npm run setup-dict</code>)"} · English translations: ${info.translation ? "✓ Claude" : "off (set ANTHROPIC_API_KEY)"}`;
+  const videos = await api("/api/videos");
+  $("#channels").innerHTML = [...new Set(videos.map((v) => v.channel))].map((c) => `<option value="${esc(c)}">`).join("");
+  loadJobs();
+  const resume = new URLSearchParams(location.search).get("job");
+  if (resume) watch(resume);
+}
+
+$("#f").onsubmit = async (e) => {
+  e.preventDefault();
+  $("#go").disabled = true;
+  try {
+    const job = await api("/api/jobs", { url: $("#url").value, channel: $("#channel").value });
+    history.replaceState(null, "", `/?job=${job.id}`);
+    watch(job.id);
+  } catch (err) {
+    alert(err.message);
+    $("#go").disabled = false;
+  }
+};
+
+function watch(id) {
+  clearInterval(poll);
+  $("#status").hidden = false;
+  $("#result").innerHTML = "";
+  const tick = async () => {
+    const job = await api(`/api/jobs/${id}`);
+    t0 ??= Date.parse(job.created);
+    $("#stages").innerHTML = Object.entries(job.stages).map(([k, v]) => `<div class="stage ${v}">${STAGE_LABELS[k]}</div>`).join("");
+    $("#log").textContent = job.log.join("\n");
+    $("#log").scrollTop = 1e9;
+    $("#progress").textContent = job.state === "running" ? job.progress || "" : "";
+    const secs = job.state === "running" ? (Date.now() - Date.parse(job.created)) / 1000 : job.seconds || 0;
+    $("#timer").textContent = fmtTime(secs);
+    if (job.state === "running") {
+      $("#state").textContent = `Working: ${STAGE_LABELS[job.stage] || ""}…`;
+      return;
+    }
+    clearInterval(poll);
+    $("#go").disabled = false;
+    $("#state").textContent = job.state === "done" ? `● Done in ${fmtTime(job.seconds)}` : "● Failed";
+    $("#state").style.color = job.state === "done" ? "var(--known)" : "#c0392b";
+    if (job.state === "done") showResult(job);
+    loadJobs();
+  };
+  tick();
+  poll = setInterval(tick, 1000);
+}
+
+async function showResult(job) {
+  const r = await api(`/api/videos/${job.id}`);
+  const words = Object.entries(r.words);
+  const fresh = words.filter(([, w]) => !w.deck).sort((a, b) => b[1].count - a[1].count);
+  const have = words.filter(([, w]) => w.deck).sort((a, b) => b[1].count - a[1].count);
+  const chip = ([k, w]) => `<span class="chip">${esc(k)}<small>${esc(w.reading || "")} · ${esc(w.pos)} ×${w.count}</small></span>`;
+  $("#result").innerHTML = `
+    <div class="panel">
+      <h2 class="jp">${esc(r.title)}</h2>
+      <p class="small muted">${r.stats.lines} lines · ${r.stats.unique} different words · ${have.length} already in your decks · <strong style="color:var(--accent)">${fresh.length} new</strong></p>
+      <video src="/media/${job.id}/video" controls preload="metadata"></video>
+    </div>
+    <div class="panel"><h2>New-word candidates (${fresh.length})</h2><div class="chips">${fresh.map(chip).join("")}</div></div>
+    <div class="panel"><h2>Words from your decks in this video (${have.length})</h2><div class="chips">${have.map(chip).join("")}</div></div>
+    <div class="panel">
+      <h2>Send to your library</h2>
+      <p class="small muted">Adds the video and transcript under <strong>${esc(job.channel)}</strong> in the Library.${info.translation ? " English translations are added in a follow-up pass; lines show “translation pending” until then." : ""}</p>
+      <div class="row">
+        <button class="btn primary" id="commit" ${job.committed ? "disabled" : ""}>${job.committed ? "Already in library" : "Commit to library"}</button>
+        <a href="/watch/${job.id}" class="btn">Open it now</a>
+      </div>
+    </div>`;
+  $("#commit").onclick = async () => {
+    await api(`/api/jobs/${job.id}/commit`, { channel: $("#channel").value || job.channel });
+    location.href = `/watch/${job.id}`;
+  };
+}
+
+async function loadJobs() {
+  const jobs = await api("/api/jobs");
+  $("#jobs").innerHTML = jobs.length ? jobs.map((j) => `<tr>
+    <td>${j.state === "done" ? "✓" : j.state === "error" ? "✗" : "…"}</td>
+    <td class="jp">${esc(j.title || j.url)}<div class="small muted">${esc(j.channel)} · ${new Date(j.created).toLocaleString()}</div></td>
+    <td>${j.committed ? `<a href="/watch/${j.id}">open</a>` : `<a href="/?job=${j.id}">review</a>`}</td>
+    <td><button class="btn sm ghost" data-del="${j.id}" aria-label="Delete">✕</button></td></tr>`).join("")
+    : `<tr><td class="muted">No jobs yet.</td></tr>`;
+  $("#jobs").onclick = async (e) => {
+    const id = e.target.dataset.del;
+    if (id && confirm("Delete this video and its clips?")) { await api(`/api/jobs/${id}`, null, "DELETE"); loadJobs(); }
+  };
+  if (!jobs.length) $("#recent").open = false;
+}
+
+init();
+</script>
+</body>
+</html>

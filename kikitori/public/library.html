@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Library · Kikitori</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<main>
+  <h1>Library</h1>
+  <p class="sub">Every video you've committed, grouped by channel. The bar shows how many of its words you know.</p>
+  <div id="list"></div>
+</main>
+<script type="module">
+import { $, api, esc, nav } from "/common.js";
+nav("Library");
+const videos = await api("/api/videos");
+if (!videos.length) {
+  $("#list").innerHTML = `<div class="panel empty">Nothing here yet. <a href="/">Process a video</a> and commit it.</div>`;
+} else {
+  const byChannel = {};
+  for (const v of videos) (byChannel[v.channel] ??= []).push(v);
+  $("#list").innerHTML = Object.entries(byChannel).map(([ch, vs]) => `
+    <section class="channel"><h2>${esc(ch)} <span class="small muted">${vs.length}</span></h2>
+    <div class="cards">${vs.map((v) => `
+      <a class="vcard" href="/watch/${v.id}">
+        <div class="t">${esc(v.title)}</div>
+        <div class="small muted">${v.stats?.lines ?? "?"} lines · ${v.stats?.unique ?? "?"} words · ${v.stats?.newWords ?? "?"} new</div>
+        <div class="bar" title="${v.known}% known"><i style="width:${v.known}%"></i></div>
+        <div class="small muted">${v.known}% known</div>
+      </a>`).join("")}</div></section>`).join("");
+}
+</script>
+</body>
+</html>

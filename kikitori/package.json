@@ -1,0 +1,17 @@
+{
+  "name": "kikitori",
+  "version": "1.0.0",
+  "description": "Japanese immersion pipeline: video -> transcript -> vocab -> clips -> drills",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "setup-dict": "node scripts/setup-dict.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^1.6.0",
+    "express": "^4.22.3",
+    "kuromoji": "^0.1.2"
+  },
+  "type": "module"
+}

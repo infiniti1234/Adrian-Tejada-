@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Watch · Kikitori</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<main>
+  <div class="watch">
+    <div class="left">
+      <video id="v" controls preload="metadata" playsinline></video>
+      <div class="panel line-panel" id="lp">
+        <div class="line-nav">
+          <button class="btn sm" id="prev">◀ back</button>
+          <button class="btn sm" id="next">next ▶</button>
+          <button class="btn sm" id="replay">↻ replay line</button>
+          <span class="small muted" id="lineno"></span>
+          <span class="small muted" style="margin-left:auto" id="known"></span>
+        </div>
+        <div class="sentence" id="sentence"></div>
+        <div class="english" id="english"></div>
+        <div class="toggles">
+          <label><input type="checkbox" id="t-en"> Show English</label>
+          <label><input type="checkbox" id="t-hk"> Hide known words</label>
+          <label><input type="checkbox" id="t-hm"> Hide meanings</label>
+          <label><input type="checkbox" id="t-ap"> Pause after each line</label>
+        </div>
+        <div class="wgrid" id="cards"></div>
+      </div>
+    </div>
+    <aside class="side">
+      <header><strong>Transcript</strong><span class="small muted" id="tcount"></span></header>
+      <div class="tscroll" id="tscroll"></div>
+    </aside>
+  </div>
+
+  <section class="wordlists panel">
+    <div class="row" style="justify-content:space-between">
+      <h2 class="jp" id="title" style="margin:0"></h2>
+      <div class="row"><button class="btn" id="translate" hidden>Add English</button>
+      <button class="btn primary" id="drill">Drill flashcards</button></div>
+    </div>
+    <div class="tabs" id="tabs" style="margin-top:12px"></div>
+    <div class="row" style="margin-bottom:12px">
+      <label class="small"><input type="checkbox" id="selall"> Select all</label>
+      <input type="text" id="source" placeholder="Source name (e.g. Lesson 4)" style="width:220px">
+      <button class="btn sm" id="addvocab">Add to my vocab</button>
+      <button class="btn sm" id="export">Export for Anki (.tsv)</button>
+      <span class="small muted" id="selcount"></span>
+    </div>
+    <div class="wlist" id="wlist"></div>
+  </section>
+</main>
+<script type="module">
+import { $, $$, api, esc, nav, fmtTime, playClip, speak, loadStatus, setStatus, statusOf, STATUS, highlight, openDrill, toast } from "/common.js";
+nav("Library");
+
+const id = location.pathname.split("/").pop();
+const video = $("#v");
+let r, cur = -1, pausedFor = -1, tab = "new";
+const selected = new Set();
+
+const prefs = (() => { try { return JSON.parse(localStorage.getItem("kk-watch") || "{}"); } catch { return {}; } })();
+const savePrefs = () => { try { localStorage.setItem("kk-watch", JSON.stringify(prefs)); } catch {} };
+for (const [el, k] of [["#t-en", "en"], ["#t-hk", "hideKnown"], ["#t-hm", "hideMeanings"], ["#t-ap", "autoPause"]]) {
+  $(el).checked = !!prefs[k];
+  $(el).onchange = () => { prefs[k] = $(el).checked; savePrefs(); renderLine(); };
+}
+
+async function load() {
+  [r] = await Promise.all([api(`/api/videos/${id}`), loadStatus()]);
+  document.title = `${r.title} · Kikitori`;
+  $("#title").textContent = r.title;
+  video.src = `/media/${id}/video`;
+  $("#tcount").textContent = `${r.lines.length} lines`;
+  renderTranscript();
+  setLine(0);
+  renderLists();
+  $("#translate").hidden = r.translated || r.translating;
+  if (r.translating) setTimeout(refreshTranslations, 5000);
+}
+
+$("#translate").onclick = async () => {
+  try {
+    await api(`/api/videos/${id}/translate`, {});
+    r.translating = true;
+    $("#translate").hidden = true;
+    toast("Translating with Claude… lines fill in as it goes");
+    setTimeout(refreshTranslations, 5000);
+  } catch (e) { toast(e.message); }
+};
+
+async function refreshTranslations() {
+  const fresh = await api(`/api/videos/${id}`);
+  r.lines.forEach((l, i) => (l.en = fresh.lines[i].en));
+  for (const [k, w] of Object.entries(fresh.words)) if (r.words[k]) r.words[k].gloss = fresh.words[k].gloss;
+  r.translating = fresh.translating;
+  renderTranscript(); renderLine(); renderLists();
+  if (fresh.translating) setTimeout(refreshTranslations, 5000);
+}
+
+// ---- current line ----------------------------------------------------------
+function setLine(i, seek) {
+  i = Math.max(0, Math.min(r.lines.length - 1, i));
+  if (seek) { video.currentTime = r.lines[i].start; pausedFor = -1; video.play().catch(() => {}); }
+  if (i === cur) return;
+  cur = i;
+  renderLine();
+  $$(".tl").forEach((el) => el.classList.toggle("on", Number(el.dataset.i) === i));
+  const el = $(`.tl[data-i="${i}"]`);
+  const box = $("#tscroll");
+  if (el && (el.offsetTop < box.scrollTop + 40 || el.offsetTop > box.scrollTop + box.clientHeight - 80))
+    box.scrollTop = el.offsetTop - box.clientHeight / 3;
+}
+
+function lineWords(line) {
+  const seen = new Set(), out = [];
+  for (const t of line.tokens) if (t.content && !seen.has(t.base)) { seen.add(t.base); out.push(t.base); }
+  return out;
+}
+
+function renderLine() {
+  if (!r || cur < 0) return;
+  const line = r.lines[cur];
+  $("#lineno").textContent = `line ${cur + 1} of ${r.lines.length} · ${fmtTime(line.start)}`;
+  $("#sentence").innerHTML = line.tokens.map((t) => {
+    if (!t.content) return esc(t.s);
+    const st = statusOf(t.base, r.words[t.base]);
+    return `<span class="w ${st === "known" ? "" : st === "shaky" ? "shaky" : "new"}" data-w="${esc(t.base)}">${esc(t.s)}</span>`;
+  }).join("");
+  $("#english").textContent = !prefs.en ? "" : line.en || (r.translating ? "translation pending…" : "No English yet. Use “Add English” below (needs ANTHROPIC_API_KEY).");
+  const words = lineWords(line);
+  const knownN = words.filter((k) => statusOf(k, r.words[k]) === "known").length;
+  $("#known").textContent = `${knownN} of ${words.length} known · video ${knownPct()}% known`;
+  const shown = prefs.hideKnown ? words.filter((k) => statusOf(k, r.words[k]) !== "known") : words;
+  $("#cards").className = "wgrid" + (prefs.hideMeanings ? " hide-meanings" : "");
+  $("#cards").innerHTML = shown.map((k) => wordCard(k, r.words[k])).join("") ||
+    `<div class="small muted">${words.length ? "All words in this line are known." : "No content words in this line."}</div>`;
+}
+
+function wordCard(k, w) {
+  const st = statusOf(k, w);
+  return `<div class="wcard ${st}" data-card="${esc(k)}">
+    <div class="h"><button class="play" data-say="${esc(k)}" aria-label="Say ${esc(k)}">▶</button><span class="word">${esc(k)}</span>
+      ${w.deck ? `<span class="tag deck" title="In your deck: ${esc(w.deck)}">deck</span>` : ""}</div>
+    <div class="rd">${esc(w.reading || "")} · ${esc(w.pos)}</div>
+    <div class="gl">${esc(w.gloss || "")}</div>
+    <div class="seg">${["known", "shaky", "unknown"].map((s) =>
+      `<button data-s="${s}" data-word="${esc(k)}" class="${STATUS[k] === s || (!STATUS[k] && s === "known" && w.deck) ? "on" : ""}">${s[0].toUpperCase() + s.slice(1)}</button>`).join("")}</div>
+  </div>`;
+}
+
+function knownPct() {
+  const keys = Object.keys(r.words);
+  return keys.length ? Math.round((keys.filter((k) => statusOf(k, r.words[k]) === "known").length / keys.length) * 100) : 0;
+}
+
+// Clicks anywhere: play word, set status, jump to card from sentence.
+document.addEventListener("click", async (e) => {
+  const say = e.target.closest("[data-say]");
+  if (say) return speak(say.dataset.say);
+  const clip = e.target.closest("[data-clip]");
+  if (clip) return playClip(id, Number(clip.dataset.clip));
+  const seg = e.target.closest(".seg button");
+  if (seg) {
+    await setStatus(seg.dataset.word, seg.dataset.s);
+    renderLine(); renderLists();
+    return;
+  }
+  const w = e.target.closest(".sentence .w");
+  if (w) {
+    const card = $(`[data-card="${CSS.escape(w.dataset.w)}"]`);
+    if (card) { card.classList.add("flash"); card.scrollIntoView({ block: "nearest" }); setTimeout(() => card.classList.remove("flash"), 900); }
+    else speak(w.dataset.w);
+  }
+});
+
+$("#prev").onclick = () => setLine(cur - 1, true);
+$("#next").onclick = () => setLine(cur + 1, true);
+$("#replay").onclick = () => setLine(cur, true);
+
+video.addEventListener("timeupdate", () => {
+  const t = video.currentTime;
+  const line = r.lines[cur];
+  if (prefs.autoPause && line && pausedFor !== cur && t >= line.end && t < line.end + 1.5 && !video.paused) {
+    pausedFor = cur;
+    video.pause();
+    return;
+  }
+  let i = r.lines.findIndex((l, k) => t >= l.start && t < (r.lines[k + 1]?.start ?? l.end + 2));
+  if (i >= 0 && i !== cur) setLine(i);
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.target.matches("input,select,textarea") || $(".modal")) return;
+  if (e.key === "ArrowLeft" && e.shiftKey) { e.preventDefault(); setLine(cur - 1, true); }
+  else if (e.key === "ArrowRight" && e.shiftKey) { e.preventDefault(); setLine(cur + 1, true); }
+  else if (e.key.toLowerCase() === "r") setLine(cur, true);
+  else if (e.key === " ") { e.preventDefault(); video.paused ? video.play() : video.pause(); }
+});
+
+// ---- transcript ------------------------------------------------------------
+function renderTranscript() {
+  $("#tscroll").innerHTML = r.lines.map((l, i) => `<div class="tl ${i === cur ? "on" : ""}" data-i="${i}">
+    <span class="ts">${fmtTime(l.start)}</span>
+    <div><div class="tx">${esc(l.text)}</div>${l.en ? `<div class="en">${esc(l.en)}</div>` : ""}</div></div>`).join("");
+  $("#tscroll").onclick = (e) => {
+    const el = e.target.closest(".tl");
+    if (el) setLine(Number(el.dataset.i), true);
+  };
+}
+
+// ---- word lists --------------------------------------------------------------
+function groups() {
+  const all = Object.entries(r.words).sort((a, b) => b[1].count - a[1].count);
+  return {
+    new: all.filter(([k, w]) => statusOf(k, w) === "unknown"),
+    shaky: all.filter(([k, w]) => statusOf(k, w) === "shaky"),
+    known: all.filter(([k, w]) => statusOf(k, w) === "known"),
+  };
+}
+
+function renderLists() {
+  const g = groups();
+  const names = { new: "New words", shaky: "Shaky", known: "Known / in your decks" };
+  $("#tabs").innerHTML = Object.keys(names).map((k) => `<button data-tab="${k}" class="${tab === k ? "on" : ""}">${names[k]} (${g[k].length})</button>`).join("");
+  $("#tabs").onclick = (e) => { if (e.target.dataset.tab) { tab = e.target.dataset.tab; selected.clear(); renderLists(); } };
+  const list = g[tab];
+  $("#wlist").innerHTML = list.map(([k, w]) => {
+    const li = w.lines[0], line = r.lines[li];
+    return `<div class="witem">
+      <input type="checkbox" data-sel="${esc(k)}" ${selected.has(k) ? "checked" : ""} aria-label="Select ${esc(k)}">
+      <div><div class="row" style="gap:6px"><span class="word">${esc(k)}</span><button class="play" data-say="${esc(k)}" aria-label="Say it">▶</button>
+        <span class="tag">${esc(w.pos)}</span>${w.deck ? `<span class="tag deck">${esc(w.deck)}</span>` : ""}<span class="small muted">×${w.count}</span></div>
+        <div class="small muted jp">${esc(w.reading || "")}</div>
+        <div class="small">${esc(w.gloss || "")}</div></div>
+      <div class="ex"><button class="play" data-clip="${li}" aria-label="Play the line">▶</button>
+        <span><span>${highlight(line.text, k)}</span>${line.en ? `<br><i>${esc(line.en)}</i>` : ""}</span></div>
+    </div>`;
+  }).join("") || `<div class="muted small">None.</div>`;
+  $("#selall").checked = list.length > 0 && list.every(([k]) => selected.has(k));
+  $("#selcount").textContent = selected.size ? `${selected.size} selected` : "";
+}
+
+$("#wlist").addEventListener("change", (e) => {
+  const k = e.target.dataset.sel;
+  if (!k) return;
+  e.target.checked ? selected.add(k) : selected.delete(k);
+  $("#selcount").textContent = selected.size ? `${selected.size} selected` : "";
+});
+$("#selall").onchange = (e) => {
+  for (const [k] of groups()[tab]) e.target.checked ? selected.add(k) : selected.delete(k);
+  renderLists();
+};
+
+function entry(k) {
+  const w = r.words[k], li = w.lines[0], line = r.lines[li];
+  return { word: k, reading: w.reading, gloss: w.gloss, pos: w.pos, videoId: id, line: li, sentence: line.text, en: line.en, isNew: statusOf(k, w) !== "known" };
+}
+
+$("#addvocab").onclick = async () => {
+  if (!selected.size) return toast("Select some words first");
+  await api("/api/vocab", { entries: [...selected].map(entry), source: $("#source").value || r.title });
+  for (const k of selected) r.words[k].deck = "my-vocab";
+  toast(`Added ${selected.size} words to your vocab`);
+  selected.clear();
+  renderLists(); renderLine();
+};
+
+$("#export").onclick = async () => {
+  const keys = selected.size ? [...selected] : groups()[tab].map(([k]) => k);
+  const res = await fetch("/api/export", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ rows: keys.map(entry) }) });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(await res.blob());
+  a.download = `${r.title.slice(0, 40)}.tsv`;
+  a.click();
+};
+
+$("#drill").onclick = () => {
+  const keys = Object.keys(r.words).sort((a, b) => r.words[b].count - r.words[a].count);
+  openDrill(r.title, keys.map(entry));
+};
+
+load();
+</script>
+</body>
+</html>

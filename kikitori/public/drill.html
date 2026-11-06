@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drill · Kikitori</title>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<main class="narrow">
+  <h1>Drill</h1>
+  <p class="sub">Flashcards from every video in your library. Each card plays the real line the word came from.</p>
+  <div class="panel">
+    <div class="row">
+      <label class="small">Videos
+        <select id="scope"><option value="all">All videos</option></select>
+      </label>
+      <button class="btn primary" id="go">Start drilling</button>
+    </div>
+    <p class="small muted" id="summary"></p>
+  </div>
+  <div class="panel">
+    <h2>My vocab</h2>
+    <div class="chips" id="vocab"></div>
+  </div>
+</main>
+<script type="module">
+import { $, api, esc, nav, openDrill, loadStatus, statusOf } from "/common.js";
+nav("Drill");
+
+const [videos, vocab, srs] = await Promise.all([api("/api/videos"), api("/api/vocab"), api("/api/srs"), loadStatus()]);
+$("#scope").innerHTML += videos.map((v) => `<option value="${v.id}">${esc(v.title.slice(0, 60))}</option>`).join("");
+const cards = Object.values(srs.cards);
+const due = cards.filter((c) => !c.mastered && c.due && Date.parse(c.due) <= Date.now()).length;
+$("#summary").textContent = `${cards.length} cards studied · ${due} due now · ${cards.filter((c) => c.mastered).length} mastered · today ${srs.newToday} new / ${srs.reviewsToday} reviews`;
+const vv = Object.entries(vocab);
+$("#vocab").innerHTML = vv.length
+  ? vv.map(([k, w]) => `<span class="chip">${esc(k)}<small>${esc(w.reading || "")}${w.source ? " · " + esc(w.source) : ""}</small></span>`).join("")
+  : `<span class="small muted">Use “Add to my vocab” on a video page to collect words here.</span>`;
+
+$("#go").onclick = async () => {
+  const scope = $("#scope").value;
+  const ids = scope === "all" ? videos.map((v) => v.id) : [scope];
+  const entries = [];
+  for (const id of ids) {
+    const r = await api(`/api/videos/${id}`);
+    for (const [k, w] of Object.entries(r.words)) {
+      const li = w.lines[0], line = r.lines[li];
+      entries.push({ word: k, reading: w.reading, gloss: w.gloss, pos: w.pos, videoId: id, line: li, sentence: line.text, en: line.en, isNew: statusOf(k, w) !== "known", count: w.count });
+    }
+  }
+  // Words from your vocab list first, then most frequent.
+  entries.sort((a, b) => (vocab[b.word] ? 1 : 0) - (vocab[a.word] ? 1 : 0) || b.count - a.count);
+  openDrill(scope === "all" ? "All videos" : $("#scope").selectedOptions[0].text, entries);
+};
+</script>
+</body>
+</html>
