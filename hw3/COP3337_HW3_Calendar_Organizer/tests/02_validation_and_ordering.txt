@@ -1,0 +1,42 @@
+EVENT, Noon Lunch, 11/20/2026, 12:00 pm, 30, Sam, Cafe
+EVENT, Midnight Snack, 11/20/2026, 12:00 am, 30, Sam, Kitchen
+EVENT, Day Before, 11/19/2026, 11:00 pm, 30, Sam, Home
+EVENT, Short Talk, 11/21/2026, 09:00 am, 30, Sam, Hall
+EVENT, Long Talk, 11/21/2026, 09:00 am, 90, Sam, Hall
+EVENT, Banana Talk, 11/22/2026, 09:00 am, 60, Sam, Hall
+EVENT, apple Talk, 11/22/2026, 09:00 am, 60, Sam, Hall
+EVENT, Duplicate, 11/23/2026, 09:00 am, 60, Sam, Hall
+EVENT, Duplicate, 11/23/2026, 09:00 am, 60, Sam, Hall
+EVENT, Bad Date, 13/45/2026, 09:00 am, 30, Sam, Lab
+EVENT, Not Leap, 02/29/2025, 09:00 am, 30, Sam, Lab
+EVENT, Bad Time, 11/01/2026, 9:30 am, 30, Sam, Lab
+EVENT, Bad Time2, 11/01/2026, 13:00 pm, 30, Sam, Lab
+EVENT, Missing Field, 11/01/2026, 09:00 am, 30, Sam
+EVENT, Extra Field, 11/01/2026, 09:00 am, 30, Sam, Lab, extra
+EVENT, Overflow, 11/01/2026, 09:00 am, 99999999999, Sam, Lab
+EVENT, Not Number, 11/01/2026, 09:00 am, abc, Sam, Lab
+EVENT, Zero, 11/01/2026, 09:00 am, 0, Sam, Lab
+EVENT, Negative, 11/01/2026, 09:00 am, -15, Sam, Lab
+MEETING, Neg Invitees, 11/01/2026, 09:00 am, 30, Sam, Lab, -1, Agenda
+MEETING, Huge Invitees, 11/01/2026, 09:00 am, 30, Sam, Lab, 3000000000, Agenda
+TASK, Priority Zero, 11/01/2026, 09:00 am, 30, Sam, Lab, 0, false
+TASK, Bad Boolean, 11/01/2026, 09:00 am, 30, Sam, Lab, 3, yes
+ONLINE, Blank Link, 11/01/2026, 09:00 am, 30, Sam, Lab, 2, Agenda, Zoom,   
+APPOINTMENT, , 11/01/2026, 09:00 am, 30, Sam, Lab, Dr. Lee
+PARTY, Fun, 11/01/2026, 09:00 am, 30, Sam, Lab
+
+EVENT, Has	Tab, 11/01/2026, 09:00 am, 30, Sam, Lab
+TASK, Valid After Bad, 11/01/2026, 09:00 am, 30, Sam, Lab, 2, TRUE
+Done
+print
+month
+month 13/2026
+on
+on 02/30/2026
+owned by
+type is
+type is PARTY
+import
+export   
+printx
+quit

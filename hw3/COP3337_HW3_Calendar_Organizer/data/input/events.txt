@@ -1,0 +1,8 @@
+TASK	Submit Draft	11/02/2026	08:00 am	60	Alex	Home	5	false
+MEETING	Team Sync	11/03/2026	10:00 am	30	Maria	Room 204	6	Sprint planning
+EVENT	Bad Date	02/29/2026	09:00 am	30	Sam	Lab
+ONLINE	Study Group	11/03/2026	07:30 pm	90	Jordan	Home	4	Chapter 9 review	Zoom	https://zoom.us/j/12345
+TASK	Bad Priority	11/05/2026	09:00 am	30	Sam	Lab	9	false
+APPOINTMENT	Dentist	11/04/2026	02:15 pm	45	Alex	Main St Clinic	Dr. Lee
+MEETING	Too Few Fields	11/06/2026	09:00 am	30	Sam	Lab	3
+EVENT	Project Kickoff	11/01/2026	12:00 pm	120	Maria	GC 120

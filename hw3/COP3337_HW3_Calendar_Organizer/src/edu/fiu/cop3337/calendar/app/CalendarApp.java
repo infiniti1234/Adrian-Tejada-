@@ -1,38 +1,46 @@
 package edu.fiu.cop3337.calendar.app;
 
 import edu.fiu.cop3337.calendar.model.Appointment;
+import edu.fiu.cop3337.calendar.model.BasicEvent;
 import edu.fiu.cop3337.calendar.model.CalendarDate;
 import edu.fiu.cop3337.calendar.model.CalendarEvent;
+import edu.fiu.cop3337.calendar.model.InvalidCalendarItemException;
 import edu.fiu.cop3337.calendar.model.Meeting;
 import edu.fiu.cop3337.calendar.model.OnlineMeeting;
 import edu.fiu.cop3337.calendar.model.Task;
 import edu.fiu.cop3337.calendar.view.MonthView;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 /**
- * CalendarApp is the main class for Homework Assignment 2 (Calendar Organizer
- * Phase 2). It keeps the HW1 program flow, but stores every kind of calendar
- * item in one ArrayList<CalendarEvent> and relies on dynamic binding for
- * printing.
+ * CalendarApp is the main class for Homework Assignment 3 (Calendar Organizer
+ * Phase 3). It keeps the HW2 console program, stores every kind of calendar
+ * item in one ArrayList<CalendarEvent>, and adds tab-separated import/export
+ * plus Swing dialogs for errors, summaries, and overwrite confirmation.
  */
 public class CalendarApp {
+    public static final String APP_TITLE = "COP 3337 Calendar Organizer";
     public static final String UNKNOWN_COMMAND =
             "Unknown command. Type 'help' to see valid commands.";
     public static final String NO_EVENTS = "No events found.";
 
     public static void main(String[] args) {
-        // Swing is used only for these two simple dialogs.
         JOptionPane.showMessageDialog(null,
-                "Welcome to Calendar Organizer - Phase 2!",
-                "COP 3337 Calendar Organizer",
+                "Welcome to Calendar Organizer - Phase 3!",
+                APP_TITLE,
                 JOptionPane.INFORMATION_MESSAGE);
 
         Scanner keyboard = new Scanner(System.in);
 
-        // One list holds CalendarEvent, Meeting, OnlineMeeting, Appointment,
+        // One list holds BasicEvent, Meeting, OnlineMeeting, Appointment,
         // and Task objects, because each of them IS-A CalendarEvent.
         ArrayList<CalendarEvent> events = new ArrayList<>();
 
@@ -51,12 +59,10 @@ public class CalendarApp {
         String line = keyboard.nextLine();
 
         while (!line.trim().equalsIgnoreCase("Done")) {
-            CalendarEvent event = parseItem(line);
-
-            if (event == null) {
-                System.out.println("Invalid input. Please re-enter the item.");
-            } else {
-                events.add(event);
+            try {
+                events.add(parseItem(line, ","));
+            } catch (InvalidCalendarItemException e) {
+                showError(e.getMessage() + " Please re-enter the item.");
             }
 
             line = keyboard.nextLine();
@@ -78,152 +84,218 @@ public class CalendarApp {
 
         JOptionPane.showMessageDialog(null,
                 "Goodbye from Calendar Organizer!",
-                "COP 3337 Calendar Organizer",
+                APP_TITLE,
                 JOptionPane.INFORMATION_MESSAGE);
+        System.exit(0);
     }
 
+    // =====================================================================
+    // Parsing
+    // =====================================================================
+
     /**
-     * Parses one input line. The first token decides which class to build.
+     * Shared parser for keyboard records (delimiter ",") and file records
+     * (delimiter "\t").
      *
-     * The first 7 fields are the same for every type, so they are validated
-     * once; then the subclass-specific fields are validated. An object is only
-     * constructed after every check passes. Invalid input returns null.
+     * The first token decides which class to build. The first 7 fields are the
+     * same for every type, so they are validated once; then the type-specific
+     * fields are validated. An object is only constructed after every check
+     * passes. Any problem throws InvalidCalendarItemException with a message
+     * that says which field is wrong.
      */
-    public static CalendarEvent parseItem(String line) {
-        if (line == null) {
-            return null;
+    public static CalendarEvent parseItem(String line, String delimiter)
+            throws InvalidCalendarItemException {
+        if (isBlank(line)) {
+            throw new InvalidCalendarItemException("the record is blank.");
         }
 
-        // The -1 limit keeps empty trailing fields so a blank last value is
+        // The -1 limit keeps empty trailing fields so a missing last value is
         // still counted (and then rejected by the blank checks).
-        String[] fields = line.split(",", -1);
-        for (int i = 0; i < fields.length; i++) {
-            fields[i] = fields[i].trim();
+        String[] parts = line.split(delimiter, -1);
+        for (int i = 0; i < parts.length; i++) {
+            parts[i] = parts[i].trim();
         }
 
-        String type = fields[0];
-        int expectedFields;
-        if (type.equals("EVENT")) {
-            expectedFields = 7;
-        } else if (type.equals("MEETING")) {
-            expectedFields = 9;
-        } else if (type.equals("ONLINE")) {
-            expectedFields = 11;
-        } else if (type.equals("APPOINTMENT")) {
-            expectedFields = 8;
-        } else if (type.equals("TASK")) {
-            expectedFields = 9;
-        } else {
-            return null;   // unknown item type
+        String type = parts[0];
+        int expectedFields = expectedFieldCount(type);
+        if (expectedFields < 0) {
+            throw new InvalidCalendarItemException("unknown item type \"" + type
+                    + "\". Use EVENT, MEETING, ONLINE, APPOINTMENT, or TASK.");
+        }
+        if (parts.length != expectedFields) {
+            throw new InvalidCalendarItemException(type + " records need "
+                    + expectedFields + " fields, but this one has " + parts.length + ".");
         }
 
-        if (fields.length != expectedFields) {
-            return null;
+        for (int i = 0; i < parts.length; i++) {
+            if (hasCommaTabOrLineBreak(parts[i])) {
+                throw new InvalidCalendarItemException("field " + (i + 1)
+                        + " contains a comma, tab, or line break.");
+            }
         }
 
-        // ---- Common fields (HW1 rules) ----
-        String title = fields[1];
-        String startTime = fields[3];
-        String owner = fields[5];
-        String location = fields[6];
+        // ---- Common fields ----
+        String title = requireText(parts[1], "title");
+        CalendarDate date = parseDate(parts[2]);
 
-        if (isBlank(title) || isBlank(owner) || isBlank(location)) {
-            return null;
-        }
-
-        CalendarDate date = parseDate(fields[2]);
-        if (date == null) {
-            return null;
-        }
-
+        String startTime = parts[3];
         if (!CalendarEvent.isValidStartTime(startTime)) {
-            return null;
+            throw new InvalidCalendarItemException("start time \"" + startTime
+                    + "\" must use hh:mm am/pm, for example 09:30 am.");
         }
 
-        int duration = parseNonNegativeInt(fields[4]);
+        int duration = parseIntField(parts[4], "durationMinutes");
         if (duration <= 0) {
-            return null;
+            throw new InvalidCalendarItemException(
+                    "durationMinutes must be greater than 0, but was " + duration + ".");
         }
+
+        String owner = requireText(parts[5], "owner");
+        String location = requireText(parts[6], "location");
 
         // ---- Type-specific fields ----
-        if (type.equals("EVENT")) {
-            return new CalendarEvent(title, date, startTime, duration, owner, location);
-        }
+        int invitees = 0;
+        String agenda = "";
+        String platform = "";
+        String meetingLink = "";
+        String withWhom = "";
+        int priority = 0;
+        boolean completed = false;
 
         if (type.equals("MEETING") || type.equals("ONLINE")) {
-            int invitees = parseNonNegativeInt(fields[7]);   // -1 means invalid
-            String agenda = fields[8];
-            if (invitees < 0 || isBlank(agenda)) {
-                return null;
+            invitees = parseIntField(parts[7], "invitees");
+            if (invitees < 0) {
+                throw new InvalidCalendarItemException(
+                        "invitees must be 0 or more, but was " + invitees + ".");
             }
+            agenda = requireText(parts[8], "agenda");
+        }
+        if (type.equals("ONLINE")) {
+            platform = requireText(parts[9], "platform");
+            meetingLink = requireText(parts[10], "meetingLink");
+        }
+        if (type.equals("APPOINTMENT")) {
+            withWhom = requireText(parts[7], "withWhom");
+        }
+        if (type.equals("TASK")) {
+            priority = parseIntField(parts[7], "priority");
+            if (priority < 1 || priority > 5) {
+                throw new InvalidCalendarItemException(
+                        "priority must be 1 through 5, but was " + priority + ".");
+            }
+            completed = parseBooleanField(parts[8], "completed");
+        }
 
-            if (type.equals("MEETING")) {
+        // The constructors also protect their objects. If one of them still
+        // rejects a value, wrap its exception at this parser boundary.
+        try {
+            if (type.equals("EVENT")) {
+                return new BasicEvent(title, date, startTime, duration, owner, location);
+            } else if (type.equals("MEETING")) {
                 return new Meeting(title, date, startTime, duration, owner, location,
                                    invitees, agenda);
+            } else if (type.equals("ONLINE")) {
+                return new OnlineMeeting(title, date, startTime, duration, owner, location,
+                                         invitees, agenda, platform, meetingLink);
+            } else if (type.equals("APPOINTMENT")) {
+                return new Appointment(title, date, startTime, duration, owner, location,
+                                       withWhom);
+            } else {
+                return new Task(title, date, startTime, duration, owner, location,
+                                priority, completed);
             }
-
-            String platform = fields[9];
-            String meetingLink = fields[10];
-            if (isBlank(platform) || isBlank(meetingLink)) {
-                return null;
-            }
-            return new OnlineMeeting(title, date, startTime, duration, owner, location,
-                                     invitees, agenda, platform, meetingLink);
+        } catch (IllegalArgumentException e) {
+            throw new InvalidCalendarItemException("could not create the " + type
+                    + " item: " + e.getMessage() + ".", e);
         }
+    }
 
-        if (type.equals("APPOINTMENT")) {
-            String withWhom = fields[7];
-            if (isBlank(withWhom)) {
-                return null;
-            }
-            return new Appointment(title, date, startTime, duration, owner, location,
-                                   withWhom);
-        }
-
-        // Only TASK is left at this point.
-        int priority = parseNonNegativeInt(fields[7]);
-        if (priority < 1 || priority > 5) {
-            return null;
-        }
-
-        String completedText = fields[8];
-        boolean completed;
-        if (completedText.equalsIgnoreCase("true")) {
-            completed = true;
-        } else if (completedText.equalsIgnoreCase("false")) {
-            completed = false;
+    /** Number of fields a record of this type must have, or -1 for an unknown type. */
+    public static int expectedFieldCount(String type) {
+        if (type.equals("EVENT")) {
+            return 7;
+        } else if (type.equals("MEETING")) {
+            return 9;
+        } else if (type.equals("ONLINE")) {
+            return 11;
+        } else if (type.equals("APPOINTMENT")) {
+            return 8;
+        } else if (type.equals("TASK")) {
+            return 9;
         } else {
-            return null;
+            return -1;
         }
+    }
 
-        return new Task(title, date, startTime, duration, owner, location,
-                        priority, completed);
+    /** True if text contains a comma, tab, or line break. */
+    public static boolean hasCommaTabOrLineBreak(String text) {
+        return text.indexOf(',') >= 0 || text.indexOf('\t') >= 0
+                || text.indexOf('\n') >= 0 || text.indexOf('\r') >= 0;
+    }
+
+    /** Returns text if it is nonblank; otherwise throws with the field name. */
+    public static String requireText(String text, String fieldName)
+            throws InvalidCalendarItemException {
+        if (isBlank(text)) {
+            throw new InvalidCalendarItemException(fieldName + " must not be blank.");
+        }
+        return text;
     }
 
     /**
-     * Parses MM/DD/YYYY. Returns null if there are not exactly 3
-     * slash-separated integer parts or the date is not valid.
+     * Parses a whole number that must fit in an int. Only parsing happens here;
+     * callers check the allowed range separately. A NumberFormatException is
+     * wrapped, with the field name in the message and the original as the cause.
+     */
+    public static int parseIntField(String text, String fieldName)
+            throws InvalidCalendarItemException {
+        try {
+            return Integer.parseInt(text.trim());
+        } catch (NumberFormatException e) {
+            throw new InvalidCalendarItemException(fieldName
+                    + " must be a whole number that fits in an int, but was \""
+                    + text + "\".", e);
+        }
+    }
+
+    /** Accepts only "true" or "false" (ignoring case and surrounding spaces). */
+    public static boolean parseBooleanField(String text, String fieldName)
+            throws InvalidCalendarItemException {
+        String value = text.trim();
+        if (value.equalsIgnoreCase("true")) {
+            return true;
+        } else if (value.equalsIgnoreCase("false")) {
+            return false;
+        } else {
+            throw new InvalidCalendarItemException(fieldName
+                    + " must be true or false, but was \"" + text + "\".");
+        }
+    }
+
+    /**
+     * Parses MM/DD/YYYY. Throws if there are not exactly 3 slash-separated
+     * integer parts or the date does not exist (including leap-year checks).
      * Only constructs CalendarDate after validation passes.
      */
-    public static CalendarDate parseDate(String dateText) {
-        if (dateText == null) {
-            return null;
+    public static CalendarDate parseDate(String dateText)
+            throws InvalidCalendarItemException {
+        if (isBlank(dateText)) {
+            throw new InvalidCalendarItemException("date must not be blank; use MM/DD/YYYY.");
         }
 
         String[] parts = dateText.trim().split("/", -1);
         if (parts.length != 3) {
-            return null;
+            throw new InvalidCalendarItemException("date \"" + dateText.trim()
+                    + "\" must use MM/DD/YYYY.");
         }
 
-        int month = parseNonNegativeInt(parts[0]);
-        int day = parseNonNegativeInt(parts[1]);
-        int year = parseNonNegativeInt(parts[2]);
-        if (month < 0 || day < 0 || year < 0) {
-            return null;
-        }
+        int month = parseIntField(parts[0], "date month");
+        int day = parseIntField(parts[1], "date day");
+        int year = parseIntField(parts[2], "date year");
 
         if (!CalendarDate.isValidDate(month, day, year)) {
-            return null;
+            throw new InvalidCalendarItemException("date \"" + dateText.trim()
+                    + "\" is not a real date (check the month, day, year, and leap year).");
         }
 
         return new CalendarDate(month, day, year);
@@ -231,65 +303,48 @@ public class CalendarApp {
 
     /**
      * Parses MM/YYYY and returns {month, year}.
-     * Valid month: 1-12. Valid year: > 0. Returns null for invalid input.
+     * Valid month: 1-12. Valid year: > 0.
+     * Throws IllegalArgumentException with a helpful message for invalid input.
      */
     public static int[] parseMonthYear(String monthText) {
-        if (monthText == null) {
-            return null;
-        }
-
         String[] parts = monthText.trim().split("/", -1);
         if (parts.length != 2) {
-            return null;
+            throw new IllegalArgumentException("month \"" + monthText.trim()
+                    + "\" must use MM/YYYY, for example 03/2026.");
         }
 
-        int month = parseNonNegativeInt(parts[0]);
-        int year = parseNonNegativeInt(parts[1]);
+        int month;
+        int year;
+        try {
+            month = Integer.parseInt(parts[0].trim());
+            year = Integer.parseInt(parts[1].trim());
+        } catch (NumberFormatException e) {
+            throw new IllegalArgumentException("month \"" + monthText.trim()
+                    + "\" must contain whole numbers in MM/YYYY.", e);
+        }
+
         if (month < 1 || month > 12 || year <= 0) {
-            return null;
+            throw new IllegalArgumentException("month \"" + monthText.trim()
+                    + "\" needs a month from 01 to 12 and a year greater than 0.");
         }
 
         int[] result = {month, year};
         return result;
     }
 
-    /**
-     * Helper: converts a string made only of digits (1-9 characters) into an int.
-     * Returns -1 if the text is blank, contains a non-digit (including a minus
-     * sign), or is too long. "0" returns 0, so callers check the range they need.
-     */
-    public static int parseNonNegativeInt(String text) {
-        if (isBlank(text)) {
-            return -1;
-        }
-
-        text = text.trim();
-        if (text.length() > 9) {
-            return -1;
-        }
-
-        int value = 0;
-        for (int i = 0; i < text.length(); i++) {
-            char c = text.charAt(i);
-            if (!Character.isDigit(c)) {
-                return -1;
-            }
-            value = value * 10 + (c - '0');
-        }
-        return value;
-    }
+    // =====================================================================
+    // Commands
+    // =====================================================================
 
     /**
-     * Processes one command. A malformed command or argument prints the
-     * unknown-command message.
+     * Processes one command. A malformed command or missing argument prints a
+     * helpful error and shows an error dialog, then returns to the command loop.
      */
     public static void processCommand(String command, ArrayList<CalendarEvent> events) {
-        if (command == null) {
-            System.out.println(UNKNOWN_COMMAND);
-            return;
+        String text = "";
+        if (command != null) {
+            text = command.trim();
         }
-
-        String text = command.trim();
 
         if (text.equals("print")) {
             printEvents(events);
@@ -299,37 +354,72 @@ public class CalendarApp {
             printTypes(events);
         } else if (text.equals("online")) {
             printOnlineMeetings(events);
-        } else if (text.startsWith("month ")) {
-            int[] monthYear = parseMonthYear(text.substring(6));
-            if (monthYear == null) {
-                System.out.println(UNKNOWN_COMMAND);
-            } else {
-                MonthView view = new MonthView(monthYear[0], monthYear[1]);
-                view.printMonth();
-            }
-        } else if (text.startsWith("on ")) {
-            CalendarDate date = parseDate(text.substring(3));
-            if (date == null) {
-                System.out.println(UNKNOWN_COMMAND);
-            } else {
-                printEventsOnDate(events, date);
-            }
-        } else if (text.startsWith("owned by ")) {
-            String owner = text.substring(9).trim();
+        } else if (isCommand(text, "month")) {
+            monthCommand(argumentOf(text, "month"));
+        } else if (isCommand(text, "on")) {
+            onCommand(argumentOf(text, "on"), events);
+        } else if (isCommand(text, "owned by")) {
+            String owner = argumentOf(text, "owned by");
             if (isBlank(owner)) {
-                System.out.println(UNKNOWN_COMMAND);
+                showError("Missing owner name. Usage: owned by ownerName");
             } else {
                 printEventsOwnedBy(events, owner);
             }
-        } else if (text.startsWith("type is ")) {
-            String requestedType = text.substring(8).trim();
-            if (!isValidTypeName(requestedType)) {
-                System.out.println(UNKNOWN_COMMAND);
+        } else if (isCommand(text, "type is")) {
+            String requestedType = argumentOf(text, "type is");
+            if (isBlank(requestedType)) {
+                showError("Missing type. Usage: type is TYPE");
+            } else if (!isValidTypeName(requestedType)) {
+                showError("Unknown type \"" + requestedType
+                        + "\". Use EVENT, MEETING, ONLINE, APPOINTMENT, or TASK.");
             } else {
                 printEventsOfType(events, requestedType);
             }
+        } else if (isCommand(text, "import")) {
+            importCommand(argumentOf(text, "import"), events);
+        } else if (isCommand(text, "export")) {
+            exportCommand(argumentOf(text, "export"), events);
         } else {
-            System.out.println(UNKNOWN_COMMAND);
+            showError(UNKNOWN_COMMAND);
+        }
+    }
+
+    /** True when text is exactly the keyword or the keyword followed by a space. */
+    public static boolean isCommand(String text, String keyword) {
+        return text.equals(keyword) || text.startsWith(keyword + " ");
+    }
+
+    /** The trimmed text after the keyword (empty if there is none). */
+    public static String argumentOf(String text, String keyword) {
+        return text.substring(keyword.length()).trim();
+    }
+
+    /** month MM/YYYY: builds and prints the 6 x 7 month view. */
+    public static void monthCommand(String argument) {
+        if (isBlank(argument)) {
+            showError("Missing month. Usage: month MM/YYYY");
+            return;
+        }
+        try {
+            int[] monthYear = parseMonthYear(argument);
+            MonthView view = new MonthView(monthYear[0], monthYear[1]);
+            view.printMonth();
+        } catch (IllegalArgumentException e) {
+            showError("Invalid month: " + e.getMessage());
+        }
+    }
+
+    /** on MM/DD/YYYY: prints the items on that date. */
+    public static void onCommand(String argument, ArrayList<CalendarEvent> events) {
+        if (isBlank(argument)) {
+            showError("Missing date. Usage: on MM/DD/YYYY");
+            return;
+        }
+        try {
+            CalendarDate date = parseDate(argument);
+            printEventsOnDate(events, date);
+        } catch (InvalidCalendarItemException e) {
+            showError(e.getMessage());
         }
     }
 
@@ -341,24 +431,35 @@ public class CalendarApp {
     }
 
     /**
-     * Prints every item. println(event) calls toString(), and dynamic binding
-     * picks the right subclass version, so no if/else chain is needed.
+     * Returns a sorted copy of events, so the stored list keeps its entry order
+     * and every record (including duplicates) is kept.
+     */
+    public static ArrayList<CalendarEvent> sortedCopy(ArrayList<CalendarEvent> events) {
+        ArrayList<CalendarEvent> sorted = new ArrayList<>(events);
+        Collections.sort(sorted);
+        return sorted;
+    }
+
+    /**
+     * Prints every item in sorted order. println(event) calls toString(), and
+     * dynamic binding picks the right subclass toCSV(), so no if/else chain is
+     * needed.
      */
     public static void printEvents(ArrayList<CalendarEvent> events) {
         if (events.isEmpty()) {
             System.out.println(NO_EVENTS);
             return;
         }
-        for (CalendarEvent event : events) {
+        for (CalendarEvent event : sortedCopy(events)) {
             System.out.println(event);
         }
     }
 
-    /** Prints items on the given date, or "No events found." */
+    /** Prints items on the given date in sorted order, or "No events found." */
     public static void printEventsOnDate(ArrayList<CalendarEvent> events, CalendarDate date) {
         boolean found = false;
-        for (CalendarEvent event : events) {
-            if (event.occursOn(date)) {      // inherited by every subclass
+        for (CalendarEvent event : sortedCopy(events)) {
+            if (event.occursOn(date)) {
                 System.out.println(event);
                 found = true;
             }
@@ -368,11 +469,11 @@ public class CalendarApp {
         }
     }
 
-    /** Prints items owned by owner (case-insensitive), or "No events found." */
+    /** Prints items owned by owner (case-insensitive) in sorted order, or "No events found." */
     public static void printEventsOwnedBy(ArrayList<CalendarEvent> events, String owner) {
         boolean found = false;
-        for (CalendarEvent event : events) {
-            if (event.isOwnedBy(owner)) {    // inherited by every subclass
+        for (CalendarEvent event : sortedCopy(events)) {
+            if (event.isOwnedBy(owner)) {
                 System.out.println(event);
                 found = true;
             }
@@ -388,7 +489,7 @@ public class CalendarApp {
      */
     public static void printEventsOfType(ArrayList<CalendarEvent> events, String requestedType) {
         boolean found = false;
-        for (CalendarEvent event : events) {
+        for (CalendarEvent event : sortedCopy(events)) {
             if (event.getType().equalsIgnoreCase(requestedType)) {
                 System.out.println(event);
                 found = true;
@@ -401,14 +502,15 @@ public class CalendarApp {
 
     /**
      * types: shows the static type (the loop variable is always CalendarEvent)
-     * next to the dynamic type (the class of the actual object).
+     * next to the dynamic type (the class of the actual object). An EVENT
+     * record now reports dynamic=BasicEvent.
      */
     public static void printTypes(ArrayList<CalendarEvent> events) {
         if (events.isEmpty()) {
             System.out.println(NO_EVENTS);
             return;
         }
-        for (CalendarEvent event : events) {
+        for (CalendarEvent event : sortedCopy(events)) {
             System.out.println("static=CalendarEvent, dynamic="
                     + event.getClass().getSimpleName()
                     + ", type=" + event.getType());
@@ -421,7 +523,7 @@ public class CalendarApp {
      */
     public static void printOnlineMeetings(ArrayList<CalendarEvent> events) {
         boolean found = false;
-        for (CalendarEvent event : events) {
+        for (CalendarEvent event : sortedCopy(events)) {
             if (event instanceof OnlineMeeting) {
                 OnlineMeeting online = (OnlineMeeting) event;
                 System.out.println(online.getTitle() + ", " + online.getPlatform()
@@ -444,8 +546,167 @@ public class CalendarApp {
         System.out.println("type is TYPE");
         System.out.println("types");
         System.out.println("online");
+        System.out.println("import filename");
+        System.out.println("export filename");
         System.out.println("help");
         System.out.println("quit");
+    }
+
+    // =====================================================================
+    // File import / export
+    // =====================================================================
+
+    /**
+     * Returns the trimmed file name, or throws IllegalArgumentException when it
+     * is missing. Called before any stream is opened.
+     */
+    public static String requireFileName(String fileName, String commandName) {
+        if (isBlank(fileName)) {
+            throw new IllegalArgumentException("Missing file name. Usage: "
+                    + commandName + " filename");
+        }
+        return fileName.trim();
+    }
+
+    /** import filename: reads tab-separated records and reports the counts. */
+    public static void importCommand(String fileName, ArrayList<CalendarEvent> events) {
+        try {
+            File file = new File(requireFileName(fileName, "import"));
+            int[] counts = importEvents(file, events);
+            showSummary("Import complete from " + file.getPath() + ": "
+                    + counts[0] + " imported, " + counts[1] + " skipped.");
+        } catch (IllegalArgumentException e) {
+            showError(e.getMessage());
+        } catch (IOException e) {
+            showError("Import failed: " + e.getMessage());
+        } catch (SecurityException e) {
+            showError("Import failed: permission denied (" + e.getMessage() + ").");
+        }
+    }
+
+    /**
+     * Reads file one line at a time with Scanner (UTF-8) and adds every valid
+     * record to events. An invalid row is reported with its line number and
+     * skipped, and reading continues. Returns {imported, skipped}.
+     *
+     * If reading stops because of an I/O error, the records already added stay
+     * in the list and an IOException with the partial counts is thrown.
+     */
+    public static int[] importEvents(File file, ArrayList<CalendarEvent> events)
+            throws IOException {
+        int imported = 0;
+        int skipped = 0;
+        int lineNumber = 0;
+
+        try (Scanner in = new Scanner(file, StandardCharsets.UTF_8)) {
+            while (in.hasNextLine()) {
+                String line = in.nextLine();
+                lineNumber++;
+                try {
+                    events.add(parseItem(line, "\t"));
+                    imported++;
+                } catch (InvalidCalendarItemException e) {
+                    skipped++;
+                    System.out.println("Skipped line " + lineNumber + ": " + e.getMessage());
+                }
+            }
+
+            // Scanner hides read errors; ioException() reports the last one.
+            IOException readError = in.ioException();
+            if (readError != null) {
+                throw new IOException("reading " + file.getPath() + " stopped after line "
+                        + lineNumber + " (" + imported + " imported, " + skipped
+                        + " skipped before the error; the imported items were kept): "
+                        + readError, readError);
+            }
+        }
+
+        int[] counts = {imported, skipped};
+        return counts;
+    }
+
+    /**
+     * export filename: asks before replacing an existing file, writes the
+     * sorted records, and reports how many were written.
+     */
+    public static void exportCommand(String fileName, ArrayList<CalendarEvent> events) {
+        try {
+            File target = new File(requireFileName(fileName, "export"));
+            if (target.isDirectory()) {
+                throw new IOException(target.getPath() + " is a folder, not a file.");
+            }
+            if (target.exists() && !confirmOverwrite(target)) {
+                System.out.println("Export canceled.");
+                return;
+            }
+
+            int written = exportEvents(target, events);
+            showSummary("Export complete: " + written + " items written to "
+                    + target.getPath() + ".");
+        } catch (IllegalArgumentException e) {
+            showError(e.getMessage());
+        } catch (IOException e) {
+            showError("Export failed: " + e.getMessage());
+        } catch (SecurityException e) {
+            showError("Export failed: permission denied (" + e.getMessage() + ").");
+        }
+    }
+
+    /**
+     * Writes a sorted copy of events to target, one toTSV() record per line,
+     * with no header. false in FileOutputStream means replace (not append);
+     * false in PrintWriter turns autoFlush off. Returns the number written,
+     * only after the writer has been closed with no errors.
+     */
+    public static int exportEvents(File target, ArrayList<CalendarEvent> events)
+            throws IOException {
+        ArrayList<CalendarEvent> sorted = sortedCopy(events);
+
+        PrintWriter out = new PrintWriter(
+                new FileOutputStream(target, false), false, StandardCharsets.UTF_8);
+        try (out) {
+            for (CalendarEvent event : sorted) {
+                out.println(event.toTSV());
+            }
+        }
+
+        // PrintWriter never throws IOException; checkError() reports any
+        // write, flush, or close failure.
+        if (out.checkError()) {
+            throw new IOException("Write or close failed.");
+        }
+        return sorted.size();
+    }
+
+    // =====================================================================
+    // Swing dialogs
+    // =====================================================================
+
+    /** Prints message and shows it in an error dialog. */
+    public static void showError(String message) {
+        System.out.println(message);
+        JOptionPane.showMessageDialog(null, message, APP_TITLE,
+                JOptionPane.ERROR_MESSAGE);
+    }
+
+    /** Prints message and shows it in an information dialog. */
+    public static void showSummary(String message) {
+        System.out.println(message);
+        JOptionPane.showMessageDialog(null, message, APP_TITLE,
+                JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    /**
+     * Asks before replacing an existing file. Only YES authorizes the export;
+     * NO or closing the dialog cancels it.
+     */
+    public static boolean confirmOverwrite(File target) {
+        int choice = JOptionPane.showConfirmDialog(null,
+                target.getPath() + " already exists. Replace it?",
+                APP_TITLE,
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.WARNING_MESSAGE);
+        return choice == JOptionPane.YES_OPTION;
     }
 
     /** True for null or empty-after-trimming strings. */

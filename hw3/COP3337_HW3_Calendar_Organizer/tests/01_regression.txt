@@ -1,0 +1,11 @@
+Done
+import data/input/events.txt
+print
+month 11/2026
+on 11/03/2026
+owned by ALEX
+type is task
+types
+online
+help
+quit

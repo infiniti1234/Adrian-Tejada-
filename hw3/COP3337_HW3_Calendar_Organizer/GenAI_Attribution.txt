@@ -1,0 +1,44 @@
+GenAI Attribution - COP 3337 Homework 3 (Calendar Organizer - Phase 3)
+
+Student: Adrian Tejada
+
+Tool: Claude (Anthropic), through Claude Code
+
+What I asked:
+1. I pasted the full HW3 assignment instructions and uploaded my completed
+   HW2 project (src folder as a zip).
+2. When Claude asked whether I wanted to be tutored or have it write the
+   code, I chose "You write it": update my HW2 project to meet the Phase 3
+   requirements and test it against section 7.
+
+What I used:
+Claude wrote the Phase 3 code on top of my HW2 project:
+- New classes: CalendarRecord (interface), BasicEvent, and
+  InvalidCalendarItemException.
+- CalendarEvent made abstract, implementing CalendarRecord and
+  Comparable<CalendarEvent> (compareTo: date, start time, longer duration,
+  title ignoring case), plus toCSV()/toTSV() in every concrete class.
+- Constructor validation that throws IllegalArgumentException, wrapped by
+  the parser.
+- CalendarApp: the shared parseItem(line, delimiter) that throws the
+  checked exception, field-specific NumberFormatException wrapping, the
+  import (Scanner) and export (PrintWriter) commands, sorting with
+  Collections.sort, and the Swing error/summary/overwrite dialogs.
+- The test data in data/input, the test input files in tests/, and the
+  test table in TESTING.md.
+My HW2 code (CalendarDate, MonthView, the subclasses' fields, getters,
+setters, and constructor overloads, and the HW2 commands) was kept.
+
+How it was tested and verified:
+- Claude compiled the project and ran 22 tests covering every group in
+  section 7, using a test-only driver that clicked the real Swing dialogs.
+  The results are in TESTING.md, the keyboard inputs are in tests/, and
+  the dialog screenshots are in tests/screenshots/.
+- Results included: the mixed file imported 5 and skipped 3; canceling an
+  overwrite (No or closing the dialog) left the file unchanged; an
+  export -> restart -> import round trip kept every type and field; and
+  Scanner.ioException() and PrintWriter.checkError() caught a read error
+  and a write error.
+- [Add what you checked or changed yourself here, for example: compiled
+  and ran it in IntelliJ, repeated specific tests, took your own dialog
+  screenshots.]

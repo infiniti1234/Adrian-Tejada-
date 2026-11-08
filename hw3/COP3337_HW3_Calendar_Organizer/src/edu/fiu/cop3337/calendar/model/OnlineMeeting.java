@@ -11,6 +11,7 @@ public class OnlineMeeting extends Meeting {
     /**
      * Calls the Meeting constructor with super(...), which in turn calls the
      * CalendarEvent constructor. Then sets the online-specific fields.
+     * Throws IllegalArgumentException if platform or meetingLink is blank.
      */
     public OnlineMeeting(String title, CalendarDate date, String startTime,
                          int durationMinutes, String owner, String location,
@@ -18,6 +19,12 @@ public class OnlineMeeting extends Meeting {
                          String platform, String meetingLink) {
         super(title, date, startTime, durationMinutes, owner, location,
               invitees, agenda);
+        if (isBlank(platform)) {
+            throw new IllegalArgumentException("platform must not be blank");
+        }
+        if (isBlank(meetingLink)) {
+            throw new IllegalArgumentException("meetingLink must not be blank");
+        }
         this.platform = platform;
         this.meetingLink = meetingLink;
     }
@@ -49,11 +56,19 @@ public class OnlineMeeting extends Meeting {
         return "ONLINE";
     }
 
-    /**
-     * Meeting's output (common data + invitees + agenda) plus platform and link.
-     */
     @Override
-    public String toString() {
-        return super.toString() + ", " + getPlatform() + ", " + getMeetingLink();
+    public String toCSV() {
+        return onlineFields(", ");
+    }
+
+    @Override
+    public String toTSV() {
+        return onlineFields("\t");
+    }
+
+    /** Meeting's fields (common data + invitees + agenda) plus platform and link. */
+    private String onlineFields(String delimiter) {
+        return meetingFields(delimiter) + delimiter + getPlatform()
+                + delimiter + getMeetingLink();
     }
 }

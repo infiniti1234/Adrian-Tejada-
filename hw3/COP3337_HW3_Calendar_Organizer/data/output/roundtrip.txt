@@ -1,0 +1,10 @@
+EVENT	Project Kickoff	11/01/2026	12:00 pm	120	Maria	GC 120
+TASK	Submit Draft	11/02/2026	08:00 am	60	Alex	Home	5	false
+MEETING	Team Sync	11/03/2026	10:00 am	30	Maria	Room 204	6	Sprint planning
+ONLINE	Study Group	11/03/2026	07:30 pm	90	Jordan	Home	4	Chapter 9 review	Zoom	https://zoom.us/j/12345
+APPOINTMENT	Dentist	11/04/2026	02:15 pm	45	Alex	Main St Clinic	Dr. Lee
+EVENT	Office Hours	11/12/2026	01:00 pm	90	Dr. Smith	Zoom Room A
+MEETING	Capstone Review	11/12/2026	01:00 pm	60	Maria	GC 120	0	Final demo walkthrough
+ONLINE	Remote Standup	11/13/2026	08:15 am	15	Jordan	Home Office	8	Daily blockers	Microsoft Teams	https://teams.example.com/meet/42
+APPOINTMENT	Car Service	11/14/2026	10:45 am	120	Alex	Downtown Auto	Service Desk
+TASK	Finish Lab 7	11/15/2026	11:59 pm	180	alex	Library 3rd Floor	1	true

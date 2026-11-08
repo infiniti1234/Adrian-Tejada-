@@ -1,0 +1,10 @@
+Done
+export data/output/empty_export.txt
+import data/input/empty.txt
+import data/input/blank_line.txt
+import   data/input/my events/fall schedule.txt  
+print
+import data/input/missing.txt
+export data/no_such_folder/out.txt
+export data/output
+quit

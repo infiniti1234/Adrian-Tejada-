@@ -10,12 +10,19 @@ public class Meeting extends CalendarEvent {
 
     /**
      * Builds the CalendarEvent part with super(...) first, then the
-     * Meeting-specific fields. CalendarApp validates input before calling this.
+     * Meeting-specific fields. Throws IllegalArgumentException if invitees is
+     * negative or agenda is blank.
      */
     public Meeting(String title, CalendarDate date, String startTime,
                    int durationMinutes, String owner, String location,
                    int invitees, String agenda) {
         super(title, date, startTime, durationMinutes, owner, location);
+        if (invitees < 0) {
+            throw new IllegalArgumentException("invitees must be 0 or more");
+        }
+        if (isBlank(agenda)) {
+            throw new IllegalArgumentException("agenda must not be blank");
+        }
         this.invitees = invitees;
         this.agenda = agenda;
     }
@@ -47,13 +54,23 @@ public class Meeting extends CalendarEvent {
         return "MEETING";
     }
 
-    /**
-     * Common event data (from the superclass) plus invitees and agenda.
-     * super.toString() calls getType(), which is dynamically bound to this
-     * class's version, so the line starts with MEETING.
-     */
     @Override
-    public String toString() {
-        return super.toString() + ", " + getInvitees() + ", " + getAgenda();
+    public String toCSV() {
+        return meetingFields(", ");
+    }
+
+    @Override
+    public String toTSV() {
+        return meetingFields("\t");
+    }
+
+    /**
+     * Common event data plus invitees and agenda. getType() inside
+     * commonFields(...) is dynamically bound, so an OnlineMeeting that reuses
+     * this still starts with ONLINE.
+     */
+    protected String meetingFields(String delimiter) {
+        return commonFields(delimiter) + delimiter + getInvitees()
+                + delimiter + getAgenda();
     }
 }

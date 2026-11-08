@@ -1,0 +1,12 @@
+EVENT, Office Hours, 11/12/2026, 01:00 pm, 90, Dr. Smith, Zoom Room A
+MEETING, Capstone Review, 11/12/2026, 01:00 pm, 60, Maria, GC 120, 0, Final demo walkthrough
+ONLINE, Remote Standup, 11/13/2026, 08:15 am, 15, Jordan, Home Office, 8, Daily blockers, Microsoft Teams, https://teams.example.com/meet/42
+APPOINTMENT, Car Service, 11/14/2026, 10:45 am, 120, Alex, Downtown Auto, Service Desk
+TASK, Finish Lab 7, 11/15/2026, 11:59 pm, 180, alex, Library 3rd Floor, 1, true
+Done
+import data/input/events.txt
+print
+export data/output/roundtrip.txt
+export data/output/keep_me.txt
+export data/output/keep_me.txt
+quit

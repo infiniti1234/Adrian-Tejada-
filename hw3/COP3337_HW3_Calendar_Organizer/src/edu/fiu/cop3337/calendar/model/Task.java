@@ -7,11 +7,17 @@ public class Task extends CalendarEvent {
     private int priority;
     private boolean completed;
 
-    /** Full constructor: builds the CalendarEvent part with super(...). */
+    /**
+     * Full constructor: builds the CalendarEvent part with super(...).
+     * Throws IllegalArgumentException if priority is not 1 through 5.
+     */
     public Task(String title, CalendarDate date, String startTime,
                 int durationMinutes, String owner, String location,
                 int priority, boolean completed) {
         super(title, date, startTime, durationMinutes, owner, location);
+        if (priority < 1 || priority > 5) {
+            throw new IllegalArgumentException("priority must be 1 through 5");
+        }
         this.priority = priority;
         this.completed = completed;
     }
@@ -52,9 +58,19 @@ public class Task extends CalendarEvent {
         return "TASK";
     }
 
-    /** Common event data plus priority and completed. */
     @Override
-    public String toString() {
-        return super.toString() + ", " + getPriority() + ", " + isCompleted();
+    public String toCSV() {
+        return taskFields(", ");
+    }
+
+    @Override
+    public String toTSV() {
+        return taskFields("\t");
+    }
+
+    /** Common event data plus priority and completed. */
+    private String taskFields(String delimiter) {
+        return commonFields(delimiter) + delimiter + getPriority()
+                + delimiter + isCompleted();
     }
 }

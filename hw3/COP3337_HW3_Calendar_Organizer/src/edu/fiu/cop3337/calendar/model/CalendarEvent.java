@@ -1,13 +1,17 @@
 package edu.fiu.cop3337.calendar.model;
 
 /**
- * CalendarEvent represents one basic calendar item.
+ * CalendarEvent is the abstract superclass of every calendar item.
  *
- * In HW2 this is the (concrete) superclass of Meeting, Appointment, and Task.
- * It holds the state that every calendar item shares. Subclasses inherit these
- * fields and methods instead of redeclaring them.
+ * It holds the state that every calendar item shares. Subclasses (BasicEvent,
+ * Meeting, OnlineMeeting, Appointment, Task) inherit these fields and methods
+ * instead of redeclaring them. Because it is abstract, a plain CalendarEvent
+ * can no longer be created; an ordinary EVENT record is a BasicEvent.
+ *
+ * Events are ordered by date, then start time (earliest first), then duration
+ * (longest first), then title (ignoring case).
  */
-public class CalendarEvent {
+public abstract class CalendarEvent implements CalendarRecord, Comparable<CalendarEvent> {
     private String title;
     private CalendarDate date;
     private String startTime;
@@ -18,11 +22,31 @@ public class CalendarEvent {
     /**
      * Full constructor.
      *
-     * CalendarApp validates user input before creating the object, so this
-     * constructor may assume its arguments satisfy the HW rules.
+     * CalendarApp validates user input before creating the object. The
+     * constructor still protects the object: if any argument breaks a rule it
+     * throws IllegalArgumentException, so an invalid event is never built.
      */
     public CalendarEvent(String title, CalendarDate date, String startTime,
                          int durationMinutes, String owner, String location) {
+        if (isBlank(title)) {
+            throw new IllegalArgumentException("title must not be blank");
+        }
+        if (date == null || !date.isValidDate()) {
+            throw new IllegalArgumentException("date must be a valid date");
+        }
+        if (!isValidStartTime(startTime)) {
+            throw new IllegalArgumentException("startTime must use the format hh:mm am/pm");
+        }
+        if (durationMinutes <= 0) {
+            throw new IllegalArgumentException("durationMinutes must be greater than 0");
+        }
+        if (isBlank(owner)) {
+            throw new IllegalArgumentException("owner must not be blank");
+        }
+        if (isBlank(location)) {
+            throw new IllegalArgumentException("location must not be blank");
+        }
+
         this.title = title;
         this.date = date;
         this.startTime = startTime;
@@ -183,23 +207,78 @@ public class CalendarEvent {
     }
 
     /**
-     * Returns this item's type label. Each subclass overrides this, and Java
-     * picks the right version at runtime (dynamic binding).
+     * Converts a valid "hh:mm am/pm" time into minutes after midnight, so times
+     * can be compared as numbers. 12:00 am is 0 and 12:00 pm is 720.
      */
-    public String getType() {
-        return "EVENT";
+    public static int minutesAfterMidnight(String startTime) {
+        int hour = Integer.parseInt(startTime.substring(0, 2));
+        int minute = Integer.parseInt(startTime.substring(3, 5));
+        boolean isPm = startTime.substring(6).equalsIgnoreCase("pm");
+
+        int minutes = (hour % 12) * 60 + minute;
+        if (isPm) {
+            minutes = minutes + 12 * 60;
+        }
+        return minutes;
     }
 
     /**
-     * Output format:
-     * TYPE, title, date, startTime, durationMinutes, owner, location
-     *
-     * getType() is dynamically bound, so a subclass that calls super.toString()
-     * gets its own type label (MEETING, TASK, ...) at the front automatically.
+     * Orders events by date, then start time (earliest first), then duration
+     * (longest first), then title ignoring case. Returns 0 when all of these tie.
+     * Dates and times are compared as numbers, not as formatted strings.
      */
     @Override
+    public int compareTo(CalendarEvent other) {
+        int result = Integer.compare(getDate().getYear(), other.getDate().getYear());
+        if (result == 0) {
+            result = Integer.compare(getDate().getMonth(), other.getDate().getMonth());
+        }
+        if (result == 0) {
+            result = Integer.compare(getDate().getDay(), other.getDate().getDay());
+        }
+        if (result == 0) {
+            result = Integer.compare(minutesAfterMidnight(getStartTime()),
+                                     minutesAfterMidnight(other.getStartTime()));
+        }
+        if (result == 0) {
+            // Arguments are swapped so the longer duration comes first.
+            result = Integer.compare(other.getDurationMinutes(), getDurationMinutes());
+        }
+        if (result == 0) {
+            result = getTitle().compareToIgnoreCase(other.getTitle());
+        }
+        return result;
+    }
+
+    /**
+     * Returns this item's type label (EVENT, MEETING, ONLINE, APPOINTMENT, or
+     * TASK). Each concrete subclass supplies it, and Java picks the right
+     * version at runtime (dynamic binding).
+     */
+    public abstract String getType();
+
+    /** Comma-separated record, for example: TASK, Submit Draft, 11/02/2026, ... */
+    @Override
+    public abstract String toCSV();
+
+    /** Tab-separated record with the same fields as toCSV(), for files. */
+    @Override
+    public abstract String toTSV();
+
+    /**
+     * The seven fields every record starts with, joined by delimiter:
+     * type, title, date, startTime, durationMinutes, owner, location.
+     * Built from getters; it never calls toString().
+     */
+    protected String commonFields(String delimiter) {
+        return getType() + delimiter + getTitle() + delimiter + getDate()
+                + delimiter + getStartTime() + delimiter + getDurationMinutes()
+                + delimiter + getOwner() + delimiter + getLocation();
+    }
+
+    /** Printing an event shows its comma-separated record. */
+    @Override
     public String toString() {
-        return getType() + ", " + title + ", " + date + ", " + startTime + ", "
-                + durationMinutes + ", " + owner + ", " + location;
+        return toCSV();
     }
 }
