@@ -1,0 +1,72 @@
+Welcome to Calendar Organizer - Phase 3!
+Enter items in the console, then use commands such as import and export.
+[dialog INFORMATION] Welcome to Calendar Organizer - Phase 3! Enter items in the console, then use commands such as import and export.
+Enter calendar items, one per line (comma-separated).
+Formats:
+EVENT, title, MM/DD/YYYY, hh:mm am/pm, durationMinutes, owner, location
+MEETING, ...common fields..., invitees, agenda
+ONLINE, ...common fields..., invitees, agenda, platform, meetingLink
+APPOINTMENT, ...common fields..., withWhom
+TASK, ...common fields..., priority(1-5), completed(true/false)
+Type Done when finished.
+Added: EVENT, Team Lunch, 03/02/2026, 12:00 pm, 60, Alex, Cafe Nova
+Added: MEETING, Sprint Planning, 03/02/2026, 09:00 am, 90, Jordan, Room 204, 6, Review backlog
+Added: ONLINE, Client Sync, 03/03/2026, 02:30 pm, 45, Alex, Remote, 4, Q1 status, Zoom, https://zoom.us/j/12345
+Added: APPOINTMENT, Advising, 03/04/2026, 11:00 am, 30, Sam, PG6 Office, Dr. Rivera
+Added: TASK, Submit Draft, 11/02/2026, 08:00 am, 60, Alex, Home, 5, false
+Added: EVENT, Team Lunch, 03/02/2026, 12:00 pm, 60, Alex, Cafe Nova
+Enter a command. Type help to see valid commands.
+Valid commands:
+print
+month MM/YYYY
+on MM/DD/YYYY
+owned by ownerName
+type is TYPE   (EVENT, MEETING, ONLINE, APPOINTMENT, TASK)
+types
+online
+import filename   (tab-delimited, UTF-8)
+export filename   (tab-delimited, UTF-8)
+help
+quit
+MEETING, Sprint Planning, 03/02/2026, 09:00 am, 90, Jordan, Room 204, 6, Review backlog
+EVENT, Team Lunch, 03/02/2026, 12:00 pm, 60, Alex, Cafe Nova
+EVENT, Team Lunch, 03/02/2026, 12:00 pm, 60, Alex, Cafe Nova
+ONLINE, Client Sync, 03/03/2026, 02:30 pm, 45, Alex, Remote, 4, Q1 status, Zoom, https://zoom.us/j/12345
+APPOINTMENT, Advising, 03/04/2026, 11:00 am, 30, Sam, PG6 Office, Dr. Rivera
+TASK, Submit Draft, 11/02/2026, 08:00 am, 60, Alex, Home, 5, false
+March 2026
+Sun Mon Tue Wed Thu Fri Sat
+  1   2   3   4   5   6   7
+  8   9  10  11  12  13  14
+ 15  16  17  18  19  20  21
+ 22  23  24  25  26  27  28
+ 29  30  31                
+                           
+February 2028
+Sun Mon Tue Wed Thu Fri Sat
+          1   2   3   4   5
+  6   7   8   9  10  11  12
+ 13  14  15  16  17  18  19
+ 20  21  22  23  24  25  26
+ 27  28  29                
+                           
+MEETING, Sprint Planning, 03/02/2026, 09:00 am, 90, Jordan, Room 204, 6, Review backlog
+EVENT, Team Lunch, 03/02/2026, 12:00 pm, 60, Alex, Cafe Nova
+EVENT, Team Lunch, 03/02/2026, 12:00 pm, 60, Alex, Cafe Nova
+No events found.
+EVENT, Team Lunch, 03/02/2026, 12:00 pm, 60, Alex, Cafe Nova
+EVENT, Team Lunch, 03/02/2026, 12:00 pm, 60, Alex, Cafe Nova
+ONLINE, Client Sync, 03/03/2026, 02:30 pm, 45, Alex, Remote, 4, Q1 status, Zoom, https://zoom.us/j/12345
+TASK, Submit Draft, 11/02/2026, 08:00 am, 60, Alex, Home, 5, false
+No events found.
+TASK, Submit Draft, 11/02/2026, 08:00 am, 60, Alex, Home, 5, false
+MEETING, Sprint Planning, 03/02/2026, 09:00 am, 90, Jordan, Room 204, 6, Review backlog
+Sprint Planning: static=CalendarEvent, dynamic=Meeting, type=MEETING
+Team Lunch: static=CalendarEvent, dynamic=BasicEvent, type=EVENT
+Team Lunch: static=CalendarEvent, dynamic=BasicEvent, type=EVENT
+Client Sync: static=CalendarEvent, dynamic=OnlineMeeting, type=ONLINE
+Advising: static=CalendarEvent, dynamic=Appointment, type=APPOINTMENT
+Submit Draft: static=CalendarEvent, dynamic=Task, type=TASK
+Client Sync on 03/03/2026 at 02:30 pm | platform: Zoom | link: https://zoom.us/j/12345
+Goodbye from Calendar Organizer - Phase 3!
+[dialog INFORMATION] Goodbye from Calendar Organizer - Phase 3!

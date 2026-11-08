@@ -1,0 +1,6 @@
+EVENT	Typed Event	03/01/2026	08:30 am	45	Riley	Library Room 3
+MEETING	Sprint Planning	03/02/2026	09:00 am	90	Jordan	Room 204	6	Review backlog
+EVENT	Team Lunch	03/02/2026	12:00 pm	60	Alex	Cafe Nova
+ONLINE	Client Sync	03/03/2026	02:30 pm	45	Alex	Remote	4	Q1 status	Zoom	https://zoom.us/j/12345
+APPOINTMENT	Advising	03/04/2026	11:00 am	30	Sam	PG6 Office	Dr. Rivera
+TASK	Submit Draft	11/02/2026	08:00 am	60	Alex	Home	5	false

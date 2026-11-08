@@ -1,0 +1,1 @@
+EVENT	File In Spaced Path	06/01/2026	10:00 am	45	Alex	Study Room B

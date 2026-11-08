@@ -1,0 +1,10 @@
+EVENT	Noon	05/10/2026	12:00 pm	30	Alex	Lab
+EVENT	Midnight	05/10/2026	12:00 am	30	Alex	Lab
+EVENT	Short Same Start	05/10/2026	09:00 am	15	Alex	Lab
+EVENT	Long Same Start	05/10/2026	09:00 am	120	Alex	Lab
+EVENT	beta tie	05/10/2026	03:00 pm	60	Alex	Lab
+EVENT	Alpha tie	05/10/2026	03:00 pm	60	Alex	Lab
+EVENT	ALPHA TIE	05/10/2026	03:00 pm	60	Alex	Lab
+EVENT	Earlier Date Late Time	05/09/2026	11:59 pm	30	Alex	Lab
+EVENT	Next Year	01/01/2027	12:00 am	30	Alex	Lab
+EVENT	Earlier Month	12/31/2025	11:00 pm	30	Alex	Lab

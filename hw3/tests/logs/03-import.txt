@@ -1,0 +1,58 @@
+Enter a command. Type help to see valid commands.
+  Line 3 skipped: Invalid calendar item: date '11/31/2026' does not exist (check the month, the day, and leap years).
+  Line 5 skipped: Invalid calendar item: APPOINTMENT records need 8 fields but this one has 7.
+  Line 7 skipped: Invalid calendar item: priority must be from 1 through 5, but was 9.
+Import complete from data/input/mixed.txt:
+5 imported, 3 skipped.
+[dialog INFORMATION] Import complete from data/input/mixed.txt: 5 imported, 3 skipped.
+MEETING, Sprint Planning, 03/02/2026, 09:00 am, 90, Jordan, Room 204, 6, Review backlog
+EVENT, Team Lunch, 03/02/2026, 12:00 pm, 60, Alex, Cafe Nova
+ONLINE, Client Sync, 03/03/2026, 02:30 pm, 45, Alex, Remote, 4, Q1 status, Zoom, https://zoom.us/j/12345
+APPOINTMENT, Advising, 03/04/2026, 11:00 am, 30, Sam, PG6 Office, Dr. Rivera
+TASK, Submit Draft, 11/02/2026, 08:00 am, 60, Alex, Home, 5, false
+Sprint Planning: static=CalendarEvent, dynamic=Meeting, type=MEETING
+Team Lunch: static=CalendarEvent, dynamic=BasicEvent, type=EVENT
+Client Sync: static=CalendarEvent, dynamic=OnlineMeeting, type=ONLINE
+Advising: static=CalendarEvent, dynamic=Appointment, type=APPOINTMENT
+Submit Draft: static=CalendarEvent, dynamic=Task, type=TASK
+  Line 1 skipped: Invalid calendar item: date '02/29/2026' does not exist (check the month, the day, and leap years).
+  Line 3 skipped: Invalid calendar item: startTime '9:00 am' must use hh:mm am/pm with hh 01-12 and mm 00-59 (for example 09:00 am).
+  Line 4 skipped: Invalid calendar item: startTime '13:00 pm' must use hh:mm am/pm with hh 01-12 and mm 00-59 (for example 09:00 am).
+  Line 5 skipped: Invalid calendar item: EVENT records need 7 fields but this one has 6.
+  Line 6 skipped: Invalid calendar item: EVENT records need 7 fields but this one has 8.
+  Line 7 skipped: Invalid calendar item: durationMinutes must be a whole number that fits in an int, but was 'abc'.
+  Line 8 skipped: Invalid calendar item: durationMinutes must be a whole number that fits in an int, but was '99999999999'.
+  Line 9 skipped: Invalid calendar item: durationMinutes must be a positive integer, but was 0.
+  Line 10 skipped: Invalid calendar item: durationMinutes must be a positive integer, but was -15.
+  Line 11 skipped: Invalid calendar item: invitees must be 0 or more, but was -1.
+  Line 12 skipped: Invalid calendar item: agenda is required but was blank.
+  Line 13 skipped: Invalid calendar item: priority must be from 1 through 5, but was 0.
+  Line 14 skipped: Invalid calendar item: priority must be from 1 through 5, but was 6.
+  Line 15 skipped: Invalid calendar item: completed must be true or false, but was 'yes'.
+  Line 17 skipped: Invalid calendar item: unknown type 'WORKSHOP'. Use EVENT, MEETING, ONLINE, APPOINTMENT, or TASK (uppercase).
+  Line 18 skipped: Invalid calendar item: title must not contain commas, tabs, or line breaks: 'Comma, Inside'.
+  Line 19 skipped: Invalid calendar item: meetingLink is required but was blank.
+  Line 20 skipped: Invalid calendar item: withWhom is required but was blank.
+Import complete from data/input/validation.txt:
+3 imported, 18 skipped.
+[dialog INFORMATION] Import complete from data/input/validation.txt: 3 imported, 18 skipped.
+  Line 2 skipped: Invalid calendar item: the record is blank.
+  Line 3 skipped: Invalid calendar item: the record is blank.
+Import complete from data/input/blank-lines.txt:
+2 imported, 2 skipped.
+[dialog INFORMATION] Import complete from data/input/blank-lines.txt: 2 imported, 2 skipped.
+Import complete from data/input/empty.txt:
+0 imported, 0 skipped.
+[dialog INFORMATION] Import complete from data/input/empty.txt: 0 imported, 0 skipped.
+Import complete from data/input/my folder/spaced events.txt:
+1 imported, 0 skipped.
+[dialog INFORMATION] Import complete from data/input/my folder/spaced events.txt: 1 imported, 0 skipped.
+Error: File operation failed: data/input/does-not-exist.txt (No such file or directory)
+[dialog ERROR] File operation failed: data/input/does-not-exist.txt (No such file or directory)
+Error: File operation failed: data/input (Is a directory)
+[dialog ERROR] File operation failed: data/input (Is a directory)
+Import complete from /home/user/Adrian-Tejada-/hw3/data/input/empty.txt:
+0 imported, 0 skipped.
+[dialog INFORMATION] Import complete from /home/user/Adrian-Tejada-/hw3/data/input/empty.txt: 0 imported, 0 skipped.
+Goodbye from Calendar Organizer - Phase 3!
+[dialog INFORMATION] Goodbye from Calendar Organizer - Phase 3!

@@ -1,0 +1,80 @@
+### Run A: export empty collection, unusable paths
+Enter a command. Type help to see valid commands.
+Export complete: 0 item(s) written to data/output/empty-export.txt.
+[dialog INFORMATION] Export complete: 0 item(s) written to data/output/empty-export.txt.
+Error: Export failed: data/missing-folder/out.txt (No such file or directory)
+[dialog ERROR] Export failed: data/missing-folder/out.txt (No such file or directory)
+Error: Export failed: data/output is a directory, not a file.
+[dialog ERROR] Export failed: data/output is a directory, not a file.
+Goodbye from Calendar Organizer - Phase 3!
+[dialog INFORMATION] Goodbye from Calendar Organizer - Phase 3!
+--- empty-export.txt size: 0 bytes
+### Run B: keyboard items + import, export (new file)
+Added: EVENT, Typed Event, 03/01/2026, 08:30 am, 45, Riley, Library Room 3
+Enter a command. Type help to see valid commands.
+  Line 3 skipped: Invalid calendar item: date '11/31/2026' does not exist (check the month, the day, and leap years).
+  Line 5 skipped: Invalid calendar item: APPOINTMENT records need 8 fields but this one has 7.
+  Line 7 skipped: Invalid calendar item: priority must be from 1 through 5, but was 9.
+Import complete from data/input/mixed.txt:
+5 imported, 3 skipped.
+[dialog INFORMATION] Import complete from data/input/mixed.txt: 5 imported, 3 skipped.
+Error: Export failed: data/output/my exports/round trip.txt (No such file or directory)
+[dialog ERROR] Export failed: data/output/my exports/round trip.txt (No such file or directory)
+Export complete: 6 item(s) written to data/output/round-trip.txt.
+[dialog INFORMATION] Export complete: 6 item(s) written to data/output/round-trip.txt.
+Goodbye from Calendar Organizer - Phase 3!
+[dialog INFORMATION] Goodbye from Calendar Organizer - Phase 3!
+Enter a command. Type help to see valid commands.
+  Line 3 skipped: Invalid calendar item: date '11/31/2026' does not exist (check the month, the day, and leap years).
+  Line 5 skipped: Invalid calendar item: APPOINTMENT records need 8 fields but this one has 7.
+  Line 7 skipped: Invalid calendar item: priority must be from 1 through 5, but was 9.
+Import complete from data/input/mixed.txt:
+5 imported, 3 skipped.
+[dialog INFORMATION] Import complete from data/input/mixed.txt: 5 imported, 3 skipped.
+Export complete: 5 item(s) written to data/output/my exports/round trip.txt.
+[dialog INFORMATION] Export complete: 5 item(s) written to data/output/my exports/round trip.txt.
+Goodbye from Calendar Organizer - Phase 3!
+[dialog INFORMATION] Goodbye from Calendar Organizer - Phase 3!
+--- round-trip.txt (cat -A shows ^I = real tab):
+EVENT^ITyped Event^I03/01/2026^I08:30 am^I45^IRiley^ILibrary Room 3$
+MEETING^ISprint Planning^I03/02/2026^I09:00 am^I90^IJordan^IRoom 204^I6^IReview backlog$
+EVENT^ITeam Lunch^I03/02/2026^I12:00 pm^I60^IAlex^ICafe Nova$
+ONLINE^IClient Sync^I03/03/2026^I02:30 pm^I45^IAlex^IRemote^I4^IQ1 status^IZoom^Ihttps://zoom.us/j/12345$
+APPOINTMENT^IAdvising^I03/04/2026^I11:00 am^I30^ISam^IPG6 Office^IDr. Rivera$
+TASK^ISubmit Draft^I11/02/2026^I08:00 am^I60^IAlex^IHome^I5^Ifalse$
+### Run C: overwrite canceled (answer No)
+Enter a command. Type help to see valid commands.
+Import complete from data/input/ordering.txt:
+10 imported, 0 skipped.
+[dialog INFORMATION] Import complete from data/input/ordering.txt: 10 imported, 0 skipped.
+[dialog WARNING confirm] The file data/output/round-trip.txt already exists. Overwrite it? -> No
+Export canceled.
+Goodbye from Calendar Organizer - Phase 3!
+[dialog INFORMATION] Goodbye from Calendar Organizer - Phase 3!
+--- sha256 before: 0b8d860b5b041c8ad7b26b0081287b5f98656b60300b97e8c8dafee23ac1c039  data/output/round-trip.txt
+--- sha256 after:  0b8d860b5b041c8ad7b26b0081287b5f98656b60300b97e8c8dafee23ac1c039  data/output/round-trip.txt
+--- UNCHANGED after cancel: PASS
+### Run D: restart, import exported file, re-export with confirm Yes, compare
+Enter a command. Type help to see valid commands.
+Import complete from data/output/round-trip.txt:
+6 imported, 0 skipped.
+[dialog INFORMATION] Import complete from data/output/round-trip.txt: 6 imported, 0 skipped.
+EVENT, Typed Event, 03/01/2026, 08:30 am, 45, Riley, Library Room 3
+MEETING, Sprint Planning, 03/02/2026, 09:00 am, 90, Jordan, Room 204, 6, Review backlog
+EVENT, Team Lunch, 03/02/2026, 12:00 pm, 60, Alex, Cafe Nova
+ONLINE, Client Sync, 03/03/2026, 02:30 pm, 45, Alex, Remote, 4, Q1 status, Zoom, https://zoom.us/j/12345
+APPOINTMENT, Advising, 03/04/2026, 11:00 am, 30, Sam, PG6 Office, Dr. Rivera
+TASK, Submit Draft, 11/02/2026, 08:00 am, 60, Alex, Home, 5, false
+Typed Event: static=CalendarEvent, dynamic=BasicEvent, type=EVENT
+Sprint Planning: static=CalendarEvent, dynamic=Meeting, type=MEETING
+Team Lunch: static=CalendarEvent, dynamic=BasicEvent, type=EVENT
+Client Sync: static=CalendarEvent, dynamic=OnlineMeeting, type=ONLINE
+Advising: static=CalendarEvent, dynamic=Appointment, type=APPOINTMENT
+Submit Draft: static=CalendarEvent, dynamic=Task, type=TASK
+Client Sync on 03/03/2026 at 02:30 pm | platform: Zoom | link: https://zoom.us/j/12345
+[dialog WARNING confirm] The file data/output/round-trip.txt already exists. Overwrite it? -> Yes
+Export complete: 6 item(s) written to data/output/round-trip.txt.
+[dialog INFORMATION] Export complete: 6 item(s) written to data/output/round-trip.txt.
+Goodbye from Calendar Organizer - Phase 3!
+[dialog INFORMATION] Goodbye from Calendar Organizer - Phase 3!
+--- re-exported file identical to original export (every type and field preserved): PASS

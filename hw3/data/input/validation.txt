@@ -1,0 +1,21 @@
+EVENT	Bad Leap Day	02/29/2026	09:00 am	30	Alex	Lab
+EVENT	Good Leap Day	02/29/2028	09:00 am	30	Alex	Lab
+EVENT	Bad Time	03/01/2026	9:00 am	30	Alex	Lab
+EVENT	Bad Hour	03/01/2026	13:00 pm	30	Alex	Lab
+EVENT	Missing Field	03/01/2026	09:00 am	30	Alex
+EVENT	Extra Field	03/01/2026	09:00 am	30	Alex	Lab	extra
+EVENT	Not A Number	03/01/2026	09:00 am	abc	Alex	Lab
+EVENT	Overflow	03/01/2026	09:00 am	99999999999	Alex	Lab
+EVENT	Zero Duration	03/01/2026	09:00 am	0	Alex	Lab
+EVENT	Negative Duration	03/01/2026	09:00 am	-15	Alex	Lab
+MEETING	Negative Invitees	03/01/2026	09:00 am	30	Alex	Lab	-1	Plan
+MEETING	Blank Agenda	03/01/2026	09:00 am	30	Alex	Lab	3	   
+TASK	Priority Zero	03/01/2026	09:00 am	30	Alex	Lab	0	false
+TASK	Priority Six	03/01/2026	09:00 am	30	Alex	Lab	6	false
+TASK	Bad Boolean	03/01/2026	09:00 am	30	Alex	Lab	3	yes
+TASK	Mixed Case Boolean	03/01/2026	09:00 am	30	Alex	Lab	3	 TRUE 
+WORKSHOP	Unknown Type	03/01/2026	09:00 am	30	Alex	Lab
+EVENT	Comma, Inside	03/01/2026	09:00 am	30	Alex	Lab
+ONLINE	Blank Link	03/01/2026	09:00 am	30	Alex	Remote	2	Sync	Teams	
+APPOINTMENT	Blank With	03/01/2026	09:00 am	30	Alex	Clinic	
+EVENT	   Spaces Are Fine   	 03/01/2026 	 09:00 am 	 30 	 Alex 	 Main Lab 

@@ -1,0 +1,12 @@
+Enter a command. Type help to see valid commands.
+  Line 3 skipped: Invalid calendar item: date '11/31/2026' does not exist (check the month, the day, and leap years).
+  Line 5 skipped: Invalid calendar item: APPOINTMENT records need 8 fields but this one has 7.
+  Line 7 skipped: Invalid calendar item: priority must be from 1 through 5, but was 9.
+Import complete from data/input/mixed.txt:
+5 imported, 3 skipped.
+[dialog INFORMATION] Import complete from data/input/mixed.txt: 5 imported, 3 skipped.
+[dialog WARNING confirm] The file /dev/full already exists. Overwrite it? -> Yes
+Error: Export failed: Write or close failed for /dev/full.
+[dialog ERROR] Export failed: Write or close failed for /dev/full.
+Goodbye from Calendar Organizer - Phase 3!
+[dialog INFORMATION] Goodbye from Calendar Organizer - Phase 3!

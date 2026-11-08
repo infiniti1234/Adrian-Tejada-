@@ -1,0 +1,110 @@
+Error: Invalid calendar item: the record is blank.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: the record is blank. Please re-enter the item.
+Error: Invalid calendar item: date '02/29/2026' does not exist (check the month, the day, and leap years).
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: date '02/29/2026' does not exist (check the month, the day, and leap years). Please re-enter the item.
+Added: EVENT, Leap, 02/29/2028, 09:00 am, 30, Alex, Lab
+Error: Invalid calendar item: date '13/01/2026' does not exist (check the month, the day, and leap years).
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: date '13/01/2026' does not exist (check the month, the day, and leap years). Please re-enter the item.
+Error: Invalid calendar item: date '03-01-2026' must use MM/DD/YYYY.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: date '03-01-2026' must use MM/DD/YYYY. Please re-enter the item.
+Error: Invalid calendar item: startTime '9:30 am' must use hh:mm am/pm with hh 01-12 and mm 00-59 (for example 09:00 am).
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: startTime '9:30 am' must use hh:mm am/pm with hh 01-12 and mm 00-59 (for example 09:00 am). Please re-enter the item.
+Error: Invalid calendar item: startTime '10:75 am' must use hh:mm am/pm with hh 01-12 and mm 00-59 (for example 09:00 am).
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: startTime '10:75 am' must use hh:mm am/pm with hh 01-12 and mm 00-59 (for example 09:00 am). Please re-enter the item.
+Error: Invalid calendar item: EVENT records need 7 fields but this one has 6.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: EVENT records need 7 fields but this one has 6. Please re-enter the item.
+Error: Invalid calendar item: EVENT records need 7 fields but this one has 8.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: EVENT records need 7 fields but this one has 8. Please re-enter the item.
+Error: Invalid calendar item: durationMinutes must be a whole number that fits in an int, but was 'abc'.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: durationMinutes must be a whole number that fits in an int, but was 'abc'. Please re-enter the item.
+Error: Invalid calendar item: durationMinutes must be a whole number that fits in an int, but was '2147483648'.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: durationMinutes must be a whole number that fits in an int, but was '2147483648'. Please re-enter the item.
+Error: Invalid calendar item: durationMinutes must be a positive integer, but was 0.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: durationMinutes must be a positive integer, but was 0. Please re-enter the item.
+Error: Invalid calendar item: durationMinutes must be a positive integer, but was -5.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: durationMinutes must be a positive integer, but was -5. Please re-enter the item.
+Error: Invalid calendar item: title is required but was blank.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: title is required but was blank. Please re-enter the item.
+Error: Invalid calendar item: unknown type 'event'. Use EVENT, MEETING, ONLINE, APPOINTMENT, or TASK (uppercase).
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: unknown type 'event'. Use EVENT, MEETING, ONLINE, APPOINTMENT, or TASK (uppercase). Please re-enter the item.
+Error: Invalid calendar item: unknown type 'PARTY'. Use EVENT, MEETING, ONLINE, APPOINTMENT, or TASK (uppercase).
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: unknown type 'PARTY'. Use EVENT, MEETING, ONLINE, APPOINTMENT, or TASK (uppercase). Please re-enter the item.
+Error: Invalid calendar item: invitees must be 0 or more, but was -2.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: invitees must be 0 or more, but was -2. Please re-enter the item.
+Error: Invalid calendar item: agenda is required but was blank.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: agenda is required but was blank. Please re-enter the item.
+Error: Invalid calendar item: invitees must be a whole number that fits in an int, but was '99999999999'.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: invitees must be a whole number that fits in an int, but was '99999999999'. Please re-enter the item.
+Error: Invalid calendar item: platform is required but was blank.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: platform is required but was blank. Please re-enter the item.
+Error: Invalid calendar item: withWhom is required but was blank.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: withWhom is required but was blank. Please re-enter the item.
+Error: Invalid calendar item: priority must be from 1 through 5, but was 0.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: priority must be from 1 through 5, but was 0. Please re-enter the item.
+Error: Invalid calendar item: priority must be from 1 through 5, but was 6.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: priority must be from 1 through 5, but was 6. Please re-enter the item.
+Error: Invalid calendar item: completed must be true or false, but was 'yes'.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: completed must be true or false, but was 'yes'. Please re-enter the item.
+Error: Invalid calendar item: completed must be true or false, but was '1'.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: completed must be true or false, but was '1'. Please re-enter the item.
+Error: Invalid calendar item: title must not contain commas, tabs, or line breaks: 'Tab	Inside'.
+Please re-enter the item.
+[dialog ERROR] Invalid calendar item: title must not contain commas, tabs, or line breaks: 'Tab	Inside'. Please re-enter the item.
+Added: TASK, Valid After Bad, 03/01/2026, 09:00 AM, 30, Alex, Home, 3, true
+Enter a command. Type help to see valid commands.
+TASK, Valid After Bad, 03/01/2026, 09:00 AM, 30, Alex, Home, 3, true
+EVENT, Leap, 02/29/2028, 09:00 am, 30, Alex, Lab
+Error: The 'month' command needs MM/YYYY, for example: month 03/2026
+[dialog ERROR] The 'month' command needs MM/YYYY, for example: month 03/2026
+Error: Invalid calendar item: month '13/2026' needs a month 1-12 and a positive year.
+[dialog ERROR] Invalid calendar item: month '13/2026' needs a month 1-12 and a positive year.
+Error: Invalid calendar item: year must be a whole number that fits in an int, but was 'abc'.
+[dialog ERROR] Invalid calendar item: year must be a whole number that fits in an int, but was 'abc'.
+Error: The 'on' command needs MM/DD/YYYY, for example: on 03/01/2026
+[dialog ERROR] The 'on' command needs MM/DD/YYYY, for example: on 03/01/2026
+Error: Invalid calendar item: date '02/30/2026' does not exist (check the month, the day, and leap years).
+[dialog ERROR] Invalid calendar item: date '02/30/2026' does not exist (check the month, the day, and leap years).
+TASK, Valid After Bad, 03/01/2026, 09:00 AM, 30, Alex, Home, 3, true
+Error: The 'owned by' command needs an owner name, for example: owned by Alex
+[dialog ERROR] The 'owned by' command needs an owner name, for example: owned by Alex
+Error: The 'owned by' command needs an owner name, for example: owned by Alex
+[dialog ERROR] The 'owned by' command needs an owner name, for example: owned by Alex
+Error: The 'type is' command needs a TYPE such as MEETING, for example: type is TASK
+[dialog ERROR] The 'type is' command needs a TYPE such as MEETING, for example: type is TASK
+TASK, Valid After Bad, 03/01/2026, 09:00 AM, 30, Alex, Home, 3, true
+Error: Unknown command. Type 'help' to see valid commands.
+[dialog ERROR] Unknown command. Type 'help' to see valid commands.
+Error: Unknown command. Type 'help' to see valid commands.
+[dialog ERROR] Unknown command. Type 'help' to see valid commands.
+Error: The 'import' command needs a filename, for example: import data/input/events.txt
+[dialog ERROR] The 'import' command needs a filename, for example: import data/input/events.txt
+Error: The 'import' command needs a filename, for example: import data/input/events.txt
+[dialog ERROR] The 'import' command needs a filename, for example: import data/input/events.txt
+Error: The 'export' command needs a filename, for example: export data/output/events.txt
+[dialog ERROR] The 'export' command needs a filename, for example: export data/output/events.txt
+Goodbye from Calendar Organizer - Phase 3!
+[dialog INFORMATION] Goodbye from Calendar Organizer - Phase 3!

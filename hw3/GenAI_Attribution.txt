@@ -1,0 +1,30 @@
+GenAI Attribution - COP3337 Homework Assignment 3 (Calendar Organizer Phase 3)
+
+Tool name:
+Claude (Anthropic), through Claude Code
+
+Prompt(s) I entered:
+1. I pasted the full Homework 3 assignment text (Phase 3 requirements:
+   abstract CalendarEvent, BasicEvent, CalendarRecord interface, Comparable
+   ordering, InvalidCalendarItemException, shared parseItem, Scanner import,
+   PrintWriter export, Swing dialogs, and the required testing).
+
+What part of the response I used:
+Claude built the hw3/ project on top of my HW1 code: the package structure
+(app, model, view), the abstract CalendarEvent with compareTo, BasicEvent,
+Meeting, OnlineMeeting, Appointment, Task, the CalendarRecord interface,
+the checked InvalidCalendarItemException, the shared parseItem(line, delimiter)
+parser, the import/export commands, the Dialogs helper class, the test data
+files in data/input, the test logs, the dialog screenshots, and TESTING.md.
+Because my repository did not include my HW#2 code, Claude rebuilt the
+Phase 2 pieces (subclasses, constructor overloads, type is/types/online).
+
+How I tested, verified, or modified the suggestion:
+- Compiled with javac and ran every scenario listed in TESTING.md; the
+  console transcripts are in tests/logs/.
+- Checked that mixed.txt (5 valid + 3 invalid rows) imports 5 and skips 3.
+- Checked that exporting, restarting, and importing again gives an
+  identical file and the same dynamic types.
+- Checked that answering No to the overwrite dialog leaves the file
+  byte-for-byte unchanged.
+- [Add anything you changed or tested yourself here.]
