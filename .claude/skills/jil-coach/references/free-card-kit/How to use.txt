@@ -1,0 +1,27 @@
+MAKE YOUR CARDS IN THE CLAUDE CHAT (FREE PLAN, NO CLAUDE CODE)
+
+This does the same job as the JIL deck-maker, by hand, in the normal Claude chat. No audio: card audio is optional anyway.
+
+ONCE, THE FIRST TIME
+1. In Anki on your computer: File > Import > "JIL card types.apkg". That adds the JIL card designs (dark and light). Then delete the deck it makes, "JIL card types (delete this deck after importing)". The designs stay.
+2. Keep "JIL known words.txt" somewhere safe. It starts with every word in the Hikaru 500. Studied before the course? In Anki on your computer, export your old deck (File > Export > Notes in Plain Text), attach it to a Claude chat, ask for every Japanese word in it in dictionary form, one per line, and add those lines to "JIL known words.txt". Do this once; then your old words count, and the number of lines is your word count.
+
+EVERY VIDEO
+1. Get the subtitles, either way:
+   - Paste the YouTube link into a YouTube subtitle download website, choose Japanese, and download a plain text file (.txt). An .srt file works too, but .txt is smaller and easier for Claude.
+   - Or on YouTube on a computer: open the description, click Show transcript, turn the timestamps off (the three dots), select all the text, copy it and paste it into a text file.
+2. Open a new chat in Claude. Attach the subtitles file and "JIL known words.txt", then paste in everything from "JIL card prompt.txt" and send it.
+3. Tell Claude a short name for the video (like gacha-01) and whether your cards are dark or light.
+4. Claude gives you the cards 15 at a time (each card has its full breakdown, so batches are smaller). Copy each block into one text file (Notepad is fine), one batch after another, and say "next" until it's done. Save the file as a .txt.
+5. In Anki on your computer: File > Import > your .txt file > Import. The cards go into your master deck.
+6. Copy the words from Claude's last block ("Add these to your known-words file") onto the end of "JIL known words.txt", so the next video never re-teaches them.
+7. Studied before the course? Delete any card where you already know every word and understand the whole sentence.
+8. From about 4,000 words: tell Claude "Japanese definitions" when you send the prompt.
+
+YOUR PHONE NOTE OF WORDS
+Every couple of weeks, turn your note of pop-out words into cards the same way: copy the note into a text file (one word per line), attach it instead of the subtitles, paste in the prompt, and add "This is my word list, not subtitles." Claude asks your main creator's name and writes the sentences in their style.
+
+IF SOMETHING LOOKS OFF
+- A card with two or more words you don't know: ask Claude to rewrite it with one new word.
+- Wrong furigana: ask Claude to check that card's readings again.
+- The free plan has a usage limit. If you hit it, carry on later in the same chat.

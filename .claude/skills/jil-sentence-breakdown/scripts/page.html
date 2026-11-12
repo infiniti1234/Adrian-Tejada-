@@ -1,0 +1,98 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f4f2"><title>__TITLE__ · sentence breakdown</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* The JIL Immersion Tracker's 日の丸 design: one flag red on warm washi white, white rounded cards, ink text. Light only. */
+:root{color-scheme:light;--hinomaru:#bc002d;--hinomaru-deep:#8c0021;--tint:#fbeaee;--paper:#f5f4f2;--card:#fff;--ink:#1c1b1f;--ink-2:#6b6970;--line:#eceae6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Noto Sans JP',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;cursor:pointer}
+header{position:sticky;top:0;z-index:5;background:rgb(245 244 242 / .94);backdrop-filter:blur(8px);padding:14px 16px 10px}
+.wrap{max-width:760px;margin:0 auto}
+.eyebrow{font-size:.625rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--hinomaru)}
+h1{font-size:1.0625rem;font-weight:700;margin:4px 0 10px;line-height:1.4}
+.progress{display:flex;align-items:center;gap:10px;font-size:.75rem;color:var(--ink-2);margin-bottom:10px}
+.bar{flex:1;height:.375rem;overflow:hidden;border-radius:9999px;background:var(--line)}
+.bar>i{display:block;height:100%;width:0;border-radius:9999px;background:var(--hinomaru);transition:width .3s}
+.ctl{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+.ctl::-webkit-scrollbar{display:none}
+.pill{display:inline-flex;min-height:2.25rem;align-items:center;justify-content:center;border-radius:9999px;border:1px solid var(--line);background:var(--card);padding:0 .9rem;font-size:.8125rem;font-weight:500;color:var(--ink);white-space:nowrap}
+.pill[aria-pressed="true"]{border-color:var(--hinomaru);background:var(--hinomaru);color:#fff}
+.sep{flex:0 0 1px;background:var(--line);margin:6px 2px}
+.help{font-size:.75rem;color:var(--ink-2);margin-top:8px}
+main{max-width:760px;margin:0 auto;padding:4px 16px 96px;display:flex;flex-direction:column;gap:10px}
+.ln{display:grid;grid-template-columns:44px 1fr 28px;gap:12px;align-items:start;border-radius:1.5rem;background:var(--card);padding:16px;box-shadow:0 6px 20px rgb(28 27 31 / .05);border:1.5px solid transparent}
+.ln.cur{border-color:rgb(188 0 45 / .35)}
+.ln.done .jp{opacity:.5}
+.play{width:44px;height:44px;border-radius:9999px;border:0;background:var(--hinomaru);color:#fff;font-size:15px;padding-left:3px;box-shadow:0 8px 20px rgb(188 0 45 / .28)}
+.play:active{background:var(--hinomaru-deep)}
+body.looping .ln.cur .play{box-shadow:0 0 0 4px var(--tint),0 8px 20px rgb(188 0 45 / .28)}
+.tm{font-size:.6875rem;color:var(--ink-2);margin-top:6px;text-align:center}
+.jp{font-size:24px;line-height:2.1;word-break:keep-all;overflow-wrap:anywhere}
+.jp rt{font-size:.45em;color:var(--ink-2)}
+body.nofuri .jp rt{visibility:hidden}
+.w{cursor:help;border-radius:6px;padding:0 1px}
+.w:hover,.w.tap{background:var(--tint)}
+.w.u{text-decoration:underline dotted var(--hinomaru);text-decoration-thickness:2px;text-underline-offset:7px}
+body.nounder .w.u{text-decoration:none}
+.en{color:var(--ink-2);font-size:.9375rem;margin-top:2px;line-height:1.5}
+body.noen .en{filter:blur(5px)}
+body.noen .en:hover{filter:none}
+.ch{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.ch span{display:inline-flex;flex-wrap:wrap;align-items:baseline;column-gap:6px;border-radius:1rem;background:var(--tint);color:var(--hinomaru);font-size:.8125rem;font-weight:700;padding:4px 12px}
+.ch span b{white-space:nowrap}
+.ch span em{color:var(--ink-2);font-style:normal;font-weight:400}
+.tick{appearance:none;-webkit-appearance:none;width:28px;height:28px;margin:8px 0 0;border-radius:9999px;border:1.5px solid var(--line);background:var(--card);cursor:pointer;display:grid;place-content:center}
+.tick:checked{background:var(--hinomaru);border-color:var(--hinomaru)}
+.tick:checked::after{content:"";width:7px;height:12px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:translateY(-2px) rotate(45deg)}
+#tip{position:fixed;z-index:9;max-width:280px;background:var(--card);border-radius:1rem;padding:10px 14px;font-size:.875rem;line-height:1.5;pointer-events:none;display:none;box-shadow:0 10px 30px rgb(28 27 31 / .14)}
+#tip b{font-size:1.0625rem}#tip i{color:var(--ink-2);font-style:normal}
+:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.play:focus-visible,.pill[aria-pressed="true"]:focus-visible{outline-color:#fff;outline-offset:-4px}
+@media(max-width:600px){header{padding:10px 12px 8px}h1{font-size:.9375rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:8px}.help{display:none}
+ main{padding:4px 10px 96px}.ln{grid-template-columns:40px 1fr 26px;gap:10px;padding:14px 12px}.play{width:40px;height:40px}.jp{font-size:21px}.pill{min-height:2rem;padding:0 .75rem;font-size:.75rem}}
+@media(prefers-reduced-motion:reduce){*{transition-duration:.01ms!important}}
+</style></head><body>
+<header><div class="wrap"><div class="eyebrow">Japanese Immersion Lab · Sentence breakdown</div><h1>__TITLE__</h1>
+<div class="progress"><div class="bar"><i id="pbar"></i></div><span id="prog"></span></div>
+<div class="ctl" role="toolbar" aria-label="Playback and display">
+<button class="pill" id="bLoop" aria-pressed="false">Loop line</button><span class="sep"></span>
+<button class="pill rate" data-rate="1" aria-pressed="true">1×</button><button class="pill rate" data-rate="0.85" aria-pressed="false">0.85×</button><button class="pill rate" data-rate="0.7" aria-pressed="false">0.7×</button><span class="sep"></span>
+<button class="pill" id="bFuri" aria-pressed="true">Furigana</button><button class="pill" id="bEn" aria-pressed="true">English</button><button class="pill" id="bU" aria-pressed="true">Unknown words</button></div>
+<div class="help">Tap ▶ to play a line. Keys: Space replays · ↓ / ↑ next / previous line · L loops. Hover or tap any word for its meaning.</div></div></header>
+<main id="m"></main><div id="tip" role="tooltip"></div>
+<audio id="a" src="__AUDIO__" preload="auto"></audio>
+<script>
+const L=__DATA__, KEY="__KEY__", a=document.getElementById('a'), m=document.getElementById('m'), tip=document.getElementById('tip');
+let cur=0, loop=false, stopAt=null, rate=1, done={};
+try{done=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt=s=>{s=Math.floor(s);return Math.floor(s/60)+':'+String(s%60).padStart(2,'0')};
+m.innerHTML=L.map((l,i)=>`<div class="ln${done[l.id]?' done':''}" id="l${i}"><div><button class="play" data-i="${i}" aria-label="Play line ${i+1}">▶</button><div class="tm">${fmt(l.s)}</div></div>
+<div><div class="jp">${l.w.map((w,j)=>esc(w.gap)+`<span class="w${w.u?' u':''}" data-i="${i}" data-j="${j}">${w.h}</span>`).join('')}${esc(l.tail||'')}</div>
+<div class="en">${esc(l.t||'')}</div>${l.c&&l.c.length?`<div class="ch">${l.c.map(c=>`<span><b>${esc(c.text)}</b><em>${esc(c.meaning||'')}</em></span>`).join('')}</div>`:''}</div>
+<input type="checkbox" class="tick" aria-label="Got this line" title="Got this line" data-id="${l.id}" ${done[l.id]?'checked':''}></div>`).join('');
+function prog(){const n=Object.values(done).filter(Boolean).length;document.getElementById('prog').textContent=`${n} / ${L.length} lines`;document.getElementById('pbar').style.width=(L.length?n/L.length*100:0)+'%'}
+prog();
+function setCur(i,scroll){document.querySelectorAll('.ln.cur').forEach(e=>e.classList.remove('cur'));cur=Math.max(0,Math.min(L.length-1,i));
+ const el=document.getElementById('l'+cur);el.classList.add('cur');if(scroll)el.scrollIntoView({block:'center',behavior:'smooth'})}
+function play(i){setCur(i,false);const l=L[i];a.playbackRate=rate;a.currentTime=Math.max(0,l.s-0.1);stopAt=l.e+0.15;a.play()}
+a.addEventListener('timeupdate',()=>{if(stopAt!==null&&a.currentTime>=stopAt){if(loop){a.currentTime=Math.max(0,L[cur].s-0.1)}else{a.pause();stopAt=null}}});
+document.addEventListener('click',e=>{const b=e.target.closest('.play');if(b){play(+b.dataset.i);return}
+ const r=e.target.closest('.rate');if(r){rate=+r.dataset.rate;a.playbackRate=rate;document.querySelectorAll('.rate').forEach(x=>x.setAttribute('aria-pressed',x===r));return}
+ const t=e.target.closest('.tick');if(t){done[t.dataset.id]=t.checked;try{localStorage.setItem(KEY,JSON.stringify(done))}catch(_){};t.closest('.ln').classList.toggle('done',t.checked);prog();return}
+ const w=e.target.closest('.w');document.querySelectorAll('.w.tap').forEach(x=>x!==w&&x.classList.remove('tap'));if(w){w.classList.toggle('tap');show(w,e)}else tip.style.display='none'});
+function show(w,e){const d=L[+w.dataset.i].w[+w.dataset.j];if(!d.g){tip.style.display='none';return}
+ tip.innerHTML=`<b>${esc(d.b||'')}</b>${d.r&&d.r!==d.b?` <i>${esc(d.r)}</i>`:''}<br>${esc(d.g||'')}`;tip.style.display='block';
+ const r=w.getBoundingClientRect();tip.style.left=Math.min(innerWidth-290,Math.max(8,r.left))+'px';tip.style.top=(r.bottom+8+tip.offsetHeight>innerHeight?r.top-tip.offsetHeight-8:r.bottom+8)+'px'}
+document.addEventListener('mouseover',e=>{const w=e.target.closest('.w');if(w)show(w,e)});
+document.addEventListener('mouseout',e=>{if(e.target.closest('.w')&&!document.querySelector('.w.tap'))tip.style.display='none'});
+const tog=(id,cls)=>{const b=document.getElementById(id);b.onclick=()=>{const on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);document.body.classList.toggle(cls,!on)}};
+tog('bFuri','nofuri');tog('bEn','noen');tog('bU','nounder');
+const bl=document.getElementById('bLoop');bl.onclick=()=>{loop=!loop;bl.setAttribute('aria-pressed',loop);document.body.classList.toggle('looping',loop)};
+document.addEventListener('keydown',e=>{if(e.target.tagName==='INPUT'&&e.code==='Space')return;
+ if(e.code==='Space'){e.preventDefault();play(cur)}else if(e.key==='ArrowDown'){e.preventDefault();setCur(cur+1,true);play(cur)}
+ else if(e.key==='ArrowUp'){e.preventDefault();setCur(cur-1,true);play(cur)}else if(e.key==='l'||e.key==='L'){bl.click()}});
+setCur(0,false);
+</script></body></html>
