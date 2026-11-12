@@ -22,8 +22,9 @@ SEED = os.path.join(os.path.dirname(os.path.abspath(__file__)), "hikaru500_words
 
 def load():
     k = json.load(open(KFILE, encoding="utf-8")) if os.path.exists(KFILE) else {"lemmas": {}, "chunks": {}}
-    for l in json.load(open(SEED, encoding="utf-8"))["lemmas"]:
-        k["lemmas"].setdefault(l, "hikaru500")
+    if jp.config().get("hikaru500", True):  # set "hikaru500": false in config.json if you never did the Hikaru 500
+        for l in json.load(open(SEED, encoding="utf-8"))["lemmas"]:
+            k["lemmas"].setdefault(l, "hikaru500")
     return k
 
 

@@ -1,0 +1,9 @@
+{
+ "master_deck": "Japanese",
+ "card_theme": "dark",
+ "definitions": "english",
+ "audio": "back",
+ "voice_id": "Mv8AjrYZCBkdsmDHNwcB",
+ "tts_model": "eleven_v3",
+ "hikaru500": false
+}

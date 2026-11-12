@@ -14,7 +14,7 @@ tagger = fugashi.Tagger()
 # so updating the skill never touches it. Override with the JIL_DECKS_DIR environment variable.
 DATA = os.environ.get("JIL_DECKS_DIR") or os.path.join(os.path.expanduser("~"), "JIL-decks")
 os.makedirs(DATA, exist_ok=True)
-DEFAULT_CONFIG = {"master_deck": "Japanese", "card_theme": "dark", "definitions": "english", "audio": "back", "voice_id": "Mv8AjrYZCBkdsmDHNwcB", "tts_model": "eleven_v3"}
+DEFAULT_CONFIG = {"master_deck": "Japanese", "card_theme": "dark", "definitions": "english", "audio": "back", "voice_id": "Mv8AjrYZCBkdsmDHNwcB", "tts_model": "eleven_v3", "hikaru500": True}
 
 
 def config():

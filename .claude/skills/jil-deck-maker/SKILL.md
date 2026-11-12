@@ -22,6 +22,7 @@ This is step 2 of Harry's one-video method: **learn every word in the video befo
    - `card_theme`: `"dark"` (black and gold, the default) or `"light"` (like the JIL Immersion Tracker: washi white, white card, flag red). It should match the Hikaru 500 look they chose.
    - `audio`: `"back"` (default), `"front"` or `"off"`.
    - `voice_id` / `tts_model`: for audio.
+   - `hikaru500`: `true` (default) seeds the known-words list with every Hikaru 500 word. Set `false` for a learner who never did the Hikaru 500, so those words only count if their own Anki has them.
 
    - `definitions`: `"english"` (the default) or `"japanese"`. Switch to Japanese definitions at about 4,000 words (Harry's switch point); the rules are in `references/card-rules.md` section 4b.
    The first time, ask the user two things and set them: their master deck's name (the deck for their own cards; the Hikaru 500 stays its own deck), and whether they want their cards dark or light (the same look as their Hikaru 500). To switch later, change `card_theme`; cards already in Anki can be switched with Anki's Change Note Type.
