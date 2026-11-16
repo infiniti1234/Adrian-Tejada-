@@ -3,3 +3,4 @@ __pycache__/
 JIL-decks/decks/*/clips/
 JIL-decks/decks/*/audio/
 JIL-decks/decks/*/media/
+JIL-decks/decks/*/*.apkg
