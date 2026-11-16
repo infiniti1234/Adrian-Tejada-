@@ -9,7 +9,8 @@ import html
 
 FIELDS = ["Number", "Sentence", "SentenceFurigana", "Word", "Reading", "Pitch", "PitchPattern",
           "WordMeaning", "WordBreakdown", "WordEnglish", "SentenceMeaning", "SentenceBreakdown", "SentenceEnglish",
-          "Note", "AudioFront", "Audio", "JP", "Source", "Kind", "SentencePlain"]
+          "Note", "AudioFront", "Audio", "JP", "Source", "Kind", "SentencePlain",
+          "VideoAudio", "VideoLine"]  # optional: the creator saying the word, cut from the video
 
 FONT = "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500&display=swap');"
 
@@ -24,6 +25,10 @@ html, body, .card, .card.nightMode, .nightMode .card { margin:0; background:#0a0
 .back rt { font-size:0.45em; color:#bbb; }
 .tw { color:inherit; }
 .audio { margin-top:8px; }
+.vclip { margin-top:14px; text-align:center; max-width:92%; }
+.vlabel { font-size:10px; letter-spacing:.12em; text-transform:uppercase; opacity:.6; }
+.vline { font-size:14px; line-height:1.6; margin-top:4px; opacity:.85; }
+.vline b { font-weight:700; opacity:1; }
 .divider { width:240px; max-width:70%; position:relative; display:flex; justify-content:center; margin:26px 0 14px; }
 .divider::before { content:''; position:absolute; top:50%; left:0; right:0; height:1px; background:linear-gradient(90deg,transparent,#2a2a2a,transparent); }
 .diamond { position:relative; color:#c4a44a; font-size:7px; background:#0a0a0a; padding:0 14px; }
@@ -58,6 +63,10 @@ html, body, .card, .card.nightMode, .nightMode .card { margin:0; background:#f5f
 .back rt { font-size:0.45em; color:#6b6970; }
 .tw { color:inherit; }
 .audio { margin-top:8px; }
+.vclip { margin-top:14px; text-align:center; max-width:92%; }
+.vlabel { font-size:10px; letter-spacing:.12em; text-transform:uppercase; opacity:.6; }
+.vline { font-size:14px; line-height:1.6; margin-top:4px; opacity:.85; }
+.vline b { font-weight:700; opacity:1; }
 .divider { display:flex; justify-content:center; margin:20px 0 10px; }
 .diamond { display:block; width:10px; height:10px; border-radius:9999px; background:#bc002d; font-size:0; }
 .section-label { font-size:10px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#6b6970; margin:2px 0 12px; }
@@ -102,6 +111,8 @@ def templates(brand):
     afmt = ('<div class="screen"><div class="inner"><div class="brand">' + brand + '</div>'
             '<div class="back">{{SentenceFurigana}}</div>'
             '<div class="audio">{{Audio}}</div>'
+            '{{#VideoAudio}}<div class="vclip"><div class="vlabel">From the video</div>'
+            '<div class="vline">{{VideoLine}}</div><div class="audio">{{VideoAudio}}</div></div>{{/VideoAudio}}'
             '<div class="divider"><span class="diamond">&#9670;</span></div>'
             '<div class="section-label">Target word</div>'
             '<div class="block"><div class="word-header">{{Word}}</div>'

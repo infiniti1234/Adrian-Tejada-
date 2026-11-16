@@ -1,2 +1,5 @@
 __pycache__/
 *.pyc
+JIL-decks/decks/*/clips/
+JIL-decks/decks/*/audio/
+JIL-decks/decks/*/media/

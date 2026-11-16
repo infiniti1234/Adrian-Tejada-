@@ -52,6 +52,13 @@ def main():
         if os.path.exists(a) and cfg.get("audio", "back") in ("front", "back"):
             fn = f"jil_{hashlib.md5((name + c['sentence']).encode()).hexdigest()[:12]}.mp3"
             shutil.copyfile(a, os.path.join(stage, fn)); media.append(os.path.join(stage, fn)); audio_tag = f"[sound:{fn}]"
+        vaudio, v = "", os.path.join(d, "clips", f"{i:03d}.mp3")
+        if os.path.exists(v) and os.path.getsize(v) > 0 and c.get("video_line"):
+            fn = f"jilv_{hashlib.md5((name + str(i) + c['sentence']).encode()).hexdigest()[:12]}.mp3"
+            shutil.copyfile(v, os.path.join(stage, fn)); media.append(os.path.join(stage, fn)); vaudio = f"[sound:{fn}]"
+        vline = html.escape(c.get("video_line", ""))
+        if vaudio and c.get("video_word"):
+            w = html.escape(c["video_word"]); vline = vline.replace(w, f"<b>{w}</b>", 1)
         src = html.escape(meta.get("title", name)) + (f" · {c['t'] // 60}:{c['t'] % 60:02d}" if isinstance(c.get("t"), int) else "")
         kind = c.get("kind", "word")
         word = jp.ruby(c["target"], reading) if reading and reading != c["target"] else html.escape(c["target"])
@@ -62,7 +69,8 @@ def main():
                     Note=html.escape(c.get("note", "")),
                     AudioFront=audio_tag if cfg.get("audio") == "front" else "",
                     Audio=audio_tag if cfg.get("audio", "back") == "back" else "",
-                    JP="1" if jj else "", Source=src, Kind=c.get("kind", "word"), SentencePlain=html.escape(c["sentence"]))
+                    JP="1" if jj else "", Source=src, Kind=c.get("kind", "word"), SentencePlain=html.escape(c["sentence"]),
+                    VideoAudio=vaudio, VideoLine=vline if vaudio else "")
         fields = [vals[f] for f in FIELDS]
         tags = ["jil", "jil-deck-maker", name.replace(" ", "_")] + (["chunk"] if kind == "chunk" else [])
         deck.add_note(genanki.Note(model=model(cfg.get("card_theme", "dark")), fields=fields, tags=tags, guid=genanki.guid_for("jil-dm", c["target"], c["sentence"])))

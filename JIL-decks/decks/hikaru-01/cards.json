@@ -35,7 +35,13 @@
    "You really mean that?"
   ],
   "dialect": true,
-  "t": 92
+  "t": 92,
+  "video_line": "もうほんまにそっちのが絶対うまくいくんや。",
+  "video_clip": [
+   117.79,
+   121.4,
+   false
+  ]
  },
  {
   "target": "めっちゃ",
@@ -72,7 +78,13 @@
    "Oh, this is so good!"
   ],
   "dialect": true,
-  "t": 92
+  "t": 92,
+  "video_line": "じゃあ別にその話に私じゃあめっちゃ反対したかって言ったらそっちの方が幸せになれるんじゃ",
+  "video_clip": [
+   110.71,
+   117.2,
+   false
+  ]
  },
  {
   "target": "動画",
@@ -110,7 +122,13 @@
    "Have you seen today's video yet?",
    "Did you watch today's upload?"
   ],
-  "t": 62
+  "t": 62,
+  "video_line": "か、そっから僕のためにノアが好感度下げる最近上がってる動画ホスト行ってるみたいなやつも犠牲になってもらったていうか、僕",
+  "video_clip": [
+   69.34,
+   76.94,
+   false
+  ]
  },
  {
   "target": "離婚",
@@ -148,7 +166,13 @@
    "Apparently they got divorced.",
    "I heard those two split up."
   ],
-  "t": 2
+  "t": 2,
+  "video_line": "え、まず結論から言いますと、離婚しました。",
+  "video_clip": [
+   10.09,
+   13.74,
+   false
+  ]
  },
  {
   "target": "いろんな",
@@ -184,7 +208,13 @@
    "I asked a bunch of different people.",
    "I went and asked all sorts of people."
   ],
-  "t": 39
+  "t": 39,
+  "video_line": "ま、こう自分がその時結婚したかったからなのかとかいろんな感情はあったんですけど結果0日しようっ",
+  "video_clip": [
+   37.67,
+   43.76,
+   true
+  ]
  },
  {
   "target": "結論",
@@ -222,7 +252,13 @@
    "We haven't reached a conclusion yet.",
    "Nothing's been decided yet."
   ],
-  "t": 2
+  "t": 2,
+  "video_line": "え、まず結論から言いますと、離婚しました。",
+  "video_clip": [
+   10.09,
+   13.74,
+   false
+  ]
  },
  {
   "target": "結論から言うと",
@@ -261,7 +297,13 @@
    "Bottom line: I'm not going.",
    "Long story short, I won't go."
   ],
-  "t": 2
+  "t": 2,
+  "video_line": "え、まず結論から言いますと、離婚しました。",
+  "video_clip": [
+   10.09,
+   13.74,
+   false
+  ]
  },
  {
   "target": "やばい",
@@ -298,7 +340,13 @@
    "This is crazy, right?",
    "Isn't this nuts?"
   ],
-  "t": 408
+  "t": 408,
+  "video_line": "ては多分ノアは本当に僕みたいなやばいやつとまともに本当に結婚生活送ろうとしてくれ",
+  "video_clip": [
+   407.43,
+   413.36,
+   true
+  ]
  },
  {
   "target": "マジ",
@@ -334,7 +382,13 @@
    "What, for real?",
    "Wait, seriously?"
   ],
-  "t": 536
+  "t": 536,
+  "video_line": "[笑い]まあまあマジ赤ちゃんかなぐらいやばい。",
+  "video_clip": [
+   534.24,
+   539.13,
+   false
+  ]
  },
  {
   "target": "毎回",
@@ -373,7 +427,13 @@
    "He's late every single time.",
    "That guy always shows up late."
   ],
-  "t": 61
+  "t": 61,
+  "video_line": "ヶ月後の気持ちはもうなんか全然別物で毎回でそのためにここう、ま、それノアだったりとか、",
+  "video_clip": [
+   58.95,
+   65.03,
+   true
+  ]
  },
  {
   "target": "めちゃくちゃ",
@@ -409,7 +469,13 @@
    "Today wore me out.",
    "I'm completely exhausted today."
   ],
-  "t": 198
+  "t": 198,
+  "video_line": "ど最初は結婚しましたってなって0日コでもなぜかこうめちゃくちゃ祝福されたというか、すごいモテ生やされていい旦",
+  "video_clip": [
+   194.71,
+   201.96,
+   true
+  ]
  },
  {
   "target": "はず",
@@ -445,7 +511,13 @@
    "He's supposed to be here already...",
    "They should've arrived by now."
   ],
-  "t": 342
+  "t": 342,
+  "video_line": "しまうようになっていったというか1番味方してくれてるはずなのにその1番の味方がどうし",
+  "video_clip": [
+   339.83,
+   345.55,
+   true
+  ]
  },
  {
   "target": "に関しては",
@@ -484,6 +556,12 @@
    "When it comes to money, I'll pay for everything.",
    "As for money, I'll cover it all.",
    "Don't worry about money, I'll pay."
+  ],
+  "video_line": "すぎるっていうのが1番の原因なんですけど、もうこれに関しては多分ノアは本当に僕みたいなやばいやつと",
+  "video_clip": [
+   404.87,
+   411.4,
+   true
   ]
  },
  {
@@ -522,6 +600,12 @@
    "Don't talk like that to your parents.",
    "Don't speak to your parents like that.",
    "You can't talk to your parents that way."
+  ],
+  "video_line": "一生懸命頑張ってきてる仕事とか思ってる思いに対して横におる存在がすごく変な意味で邪魔になる、邪魔",
+  "video_clip": [
+   274.31,
+   282.27,
+   false
   ]
  },
  {
@@ -559,7 +643,13 @@
    "I haven't had a real meal lately.",
    "I've not been eating properly recently."
   ],
-  "t": 408
+  "t": 408,
+  "video_line": "に僕みたいなやばいやつとまともに本当に結婚生活送ろうとしてくれてたんですよ。",
+  "video_clip": [
+   408.55,
+   414.32,
+   true
+  ]
  },
  {
   "target": "勧める",
@@ -598,7 +688,13 @@
    "I watched this movie on a friend's recommendation.",
    "My friend told me to watch this one."
   ],
-  "t": 518
+  "t": 518,
+  "video_line": "ほんまにあと0日かもお勧めせへんし、経験者としてあの、言わせてもらったら次ヒ",
+  "video_clip": [
+   516.75,
+   523.48,
+   false
+  ]
  },
  {
   "target": "コメント",
@@ -634,7 +730,13 @@
    "I read every comment on my videos.",
    "I go through all the comments."
   ],
-  "t": 552
+  "t": 552,
+  "video_line": "ね、すごい最近ね、それに近いようなことコメントが俺の元、なんかなんかの動画でヒカルは女関係以外は完璧にいいやつで女関係だけは本当終わってるからなっていうコメントが届いてて、それにグッドボタン[",
+  "video_clip": [
+   551.91,
+   558.67,
+   false
+  ]
  },
  {
   "target": "コメント欄",
@@ -672,7 +774,13 @@
    "I read everything in the comments.",
    "I went through the whole comment section."
   ],
-  "t": 552
+  "t": 552,
+  "video_line": "いですけどではまあもう重い話とか暗い話はこの動画で最後にしてコメント欄でも誰が悪いとかみたいなそう炎上させるみたいなやめて欲しいです。",
+  "video_clip": [
+   651.65,
+   659.55,
+   false
+  ]
  },
  {
   "target": "メンバー",
@@ -708,7 +816,13 @@
    "Let's go for drinks with the usual gang.",
    "Let's grab a drink with the regular crew."
   ],
-  "t": 429
+  "t": 429,
+  "video_line": "、ノアの前ではこうノアの前での顔、いつもいるメンバーの前で、いつもいるメンバーの前での顔みたいな本当になんか",
+  "video_clip": [
+   426.67,
+   432.64,
+   true
+  ]
  },
  {
   "target": "しんどい",
@@ -745,7 +859,13 @@
    "Doing this daily is draining.",
    "It's tough doing this every day."
   ],
-  "t": 346
+  "t": 346,
+  "video_line": "なんて言うんですかね言ってたもんな味方されればされるほどしんどいってうんこうなんて言うんですかね方じゃないよ",
+  "video_clip": [
+   345.46,
+   353.49,
+   false
+  ]
  },
  {
   "target": "振り回す",
@@ -784,7 +904,13 @@
    "I'm always being dragged around by my girlfriend.",
    "She keeps messing me around."
   ],
-  "t": 491
+  "t": 491,
+  "video_line": "ロみたいな[笑い]ま本当にでもそんななんかずっとこう振り回してきたのは事実なんでこの数う笑えるけん。",
+  "video_clip": [
+   490.24,
+   497.96,
+   false
+  ]
  },
  {
   "target": "くじ",
@@ -820,7 +946,13 @@
    "Let's draw lots together.",
    "Let's all pick a ticket."
   ],
-  "t": 790
+  "t": 790,
+  "video_line": "ほんま大外れくじ大外れくじ引いたっていう。",
+  "video_clip": [
+   788.63,
+   792.75,
+   false
+  ]
  },
  {
   "target": "当たり",
@@ -858,7 +990,13 @@
    "Yes, I won!",
    "Yes! It's a hit!"
   ],
-  "t": 800
+  "t": 800,
+  "video_line": "ま、俺当たりのない祭りくじやった。",
+  "video_clip": [
+   796.43,
+   799.68,
+   false
+  ]
  },
  {
   "target": "大外れ",
@@ -896,7 +1034,13 @@
    "This shop was a complete dud.",
    "That place was a huge letdown."
   ],
-  "t": 790
+  "t": 790,
+  "video_line": "ほんま大外れくじ大外れくじ引いたっていう。",
+  "video_clip": [
+   788.63,
+   792.75,
+   false
+  ]
  },
  {
   "target": "祭り",
@@ -934,7 +1078,13 @@
    "I went to a summer festival.",
    "I've been to the summer fair."
   ],
-  "t": 796
+  "t": 796,
+  "video_line": "ま、俺当たりのない祭りくじやった。",
+  "video_clip": [
+   796.43,
+   799.68,
+   false
+  ]
  },
  {
   "target": "わがまま",
@@ -971,7 +1121,13 @@
    "I guess I'm kind of selfish.",
    "I'm a little selfish, aren't I."
   ],
-  "t": 404
+  "t": 404,
+  "video_line": "結果的には僕がもう本当にあるまもわがまますぎるっていうのが1番の原因なんですけど、もうこれに関して",
+  "video_clip": [
+   402.87,
+   408.36,
+   true
+  ]
  },
  {
   "target": "両方",
@@ -1009,7 +1165,13 @@
    "I want both of them.",
    "Can I have both?"
   ],
-  "t": 424
+  "t": 424,
+  "video_line": "を見せたいし、矛盾した動きをしてたというか、両方にいい顔をしてたじゃないけど、ノアの前ではこうノアの前での",
+  "video_clip": [
+   423.11,
+   429.08,
+   true
+  ]
  },
  {
   "target": "傷つける",
@@ -1049,7 +1211,13 @@
    "Don't say hurtful things.",
    "Don't say anything that'll hurt people."
   ],
-  "t": 441
+  "t": 441,
+  "video_line": "いろんな人を嫌な思いさせたりとか傷つけたりとか思いさしっていうのはありますね。",
+  "video_clip": [
+   439.55,
+   445.76,
+   true
+  ]
  },
  {
   "target": "リアル",
@@ -1085,7 +1253,13 @@
    "This is what my life is really like.",
    "Here's my real daily life."
   ],
-  "t": 23
+  "t": 23,
+  "video_line": "か言い圧ブろうとかじゃなくて本当にリアルに僕が自分勝手に生きった結果こうなっ",
+  "video_clip": [
+   22.35,
+   28.36,
+   true
+  ]
  },
  {
   "target": "まあまあ",
@@ -1121,7 +1295,13 @@
    "It tastes okay, I suppose.",
    "The flavour's not bad."
   ],
-  "t": 536
+  "t": 536,
+  "video_line": "[笑い]まあまあマジ赤ちゃんかなぐらいやばい。",
+  "video_clip": [
+   534.24,
+   539.13,
+   false
+  ]
  },
  {
   "target": "おかしな",
@@ -1157,7 +1337,13 @@
    "That's a weird thing, right?",
    "It's an odd situation, huh."
   ],
-  "t": 599
+  "t": 599,
+  "video_line": "おかしな話だけど。",
+  "video_clip": [
+   598.21,
+   600.71,
+   false
+  ]
  },
  {
   "target": "指輪",
@@ -1196,7 +1382,13 @@
    "Where'd I leave my wedding ring?",
    "Where did my wedding ring go?"
   ],
-  "t": 600
+  "t": 600,
+  "video_line": "[笑い]本当にあの離婚するんで指輪は一応つけてきたんですけど外して最後",
+  "video_clip": [
+   599.74,
+   607.58,
+   false
+  ]
  },
  {
   "target": "自体",
@@ -1234,7 +1426,13 @@
    "Just meeting up is rare now.",
    "Even seeing each other is a first in ages."
   ],
-  "t": 838
+  "t": 838,
+  "video_line": "いや、ほんまになんで会うの自体がけど謎に離婚決まってからの方がな、また電話",
+  "video_clip": [
+   837.59,
+   843.47,
+   false
+  ]
  },
  {
   "target": "異性",
@@ -1272,7 +1470,13 @@
    "Any friends of the opposite sex?",
    "Do you have friends who are girls (or guys)?"
   ],
-  "t": 717
+  "t": 717,
+  "video_line": "異性で俺と異生の友とか本当に1人もおもらへんから。",
+  "video_clip": [
+   717.39,
+   721.16,
+   false
+  ]
  },
  {
   "target": "気合い",
@@ -1310,7 +1514,13 @@
    "You've really made an effort today.",
    "You're so pumped today."
   ],
-  "t": 904
+  "t": 904,
+  "video_line": "さんなんでそんな気合いてきてるんですか?1人だけ。",
+  "video_clip": [
+   904.55,
+   908.44,
+   false
+  ]
  },
  {
   "target": "うちら",
@@ -1349,7 +1559,13 @@
    "We're already friends.",
    "We're friends now, aren't we?"
   ],
-  "t": 820
+  "t": 820,
+  "video_line": "うちらうん。",
+  "video_clip": [
+   819.95,
+   822.45,
+   false
+  ]
  },
  {
   "target": "スピード",
@@ -1385,7 +1601,13 @@
    "They married really fast, huh.",
    "That was a speed marriage."
   ],
-  "t": 856
+  "t": 856,
+  "video_line": "4ヶ月ぐらいスピード結婚からのスピード離婚。",
+  "video_clip": [
+   853.39,
+   857.28,
+   false
+  ]
  },
  {
   "target": "オープン",
@@ -1421,7 +1643,13 @@
    "A new store just opened.",
    "There's a new shop now."
   ],
-  "t": 859
+  "t": 859,
+  "video_line": "0日もオープンマリッジも全くお勧めしないんで。",
+  "video_clip": [
+   858.67,
+   862.32,
+   false
+  ]
  },
  {
   "target": "クローズ",
@@ -1458,7 +1686,13 @@
    "I heard this place is closing soon.",
    "This shop is shutting down soon."
   ],
-  "t": 856
+  "t": 856,
+  "video_line": "やっとクローズマリッジ。",
+  "video_clip": [
+   856.43,
+   858.93,
+   false
+  ]
  },
  {
   "target": "お疲れ様",
@@ -1497,7 +1731,13 @@
    "Good work today too.",
    "Thanks for today, everyone."
   ],
-  "t": 804
+  "t": 804,
+  "video_line": "コメント欄は本当にま、もう祝福って言ったらおかしいですけどお疲れ様でしたぐらいでいいてもらってありがたいですね。",
+  "video_clip": [
+   803.75,
+   810.02,
+   false
+  ]
  },
  {
   "target": "ひっくり返す",
@@ -1535,7 +1775,13 @@
    "I turned the desk upside down.",
    "I flipped my desk."
   ],
-  "t": 2
+  "t": 2,
+  "video_line": "まで僕がこうずっと書き乱み乱出し続けて茶ブ台をひっくり返し続けた結果こうはなりました。",
+  "video_clip": [
+   15.03,
+   21.64,
+   false
+  ]
  },
  {
   "target": "ちゃぶ台をひっくり返す",
@@ -1574,7 +1820,13 @@
    "Don't ruin it all at the last minute.",
    "Don't go flipping the table at the end."
   ],
-  "t": 2
+  "t": 2,
+  "video_line": "初か最後まで僕がこうずっと書き乱み乱出し続けて茶ブ台をひっくり返し続けた結果こうはなりました。",
+  "video_clip": [
+   14.5,
+   21.64,
+   false
+  ]
  },
  {
   "target": "弁解",
@@ -1612,7 +1864,13 @@
    "I'm not going to make excuses.",
    "No excuses from me."
   ],
-  "t": 28
+  "t": 28,
+  "video_line": "た結果こうなってるんで、そこにその弁解の位置は全くないんですけど、ま、順ってじゃああの",
+  "video_clip": [
+   26.43,
+   32.24,
+   true
+  ]
  },
  {
   "target": "ぶれる",
@@ -1648,7 +1906,13 @@
    "He never changes his mind.",
    "His views are rock solid."
   ],
-  "t": 53
+  "t": 53,
+  "video_line": "が僕の中でずっとこう結局ぶれていってその当時その0日した時の気持ち",
+  "video_clip": [
+   52.55,
+   58.28,
+   true
+  ]
  },
  {
   "target": "別物",
@@ -1686,7 +1950,13 @@
    "It's nothing like the old place.",
    "It's a whole different thing from before."
   ],
-  "t": 59
+  "t": 59,
+  "video_line": "後の気持ちと2ヶ月後の気持ちはもうなんか全然別物で毎回でそのためにここう、ま、それノア",
+  "video_clip": [
+   58.19,
+   64.23,
+   true
+  ]
  },
  {
   "target": "祝福",
@@ -1725,7 +1995,13 @@
    "I was glad everyone celebrated with us.",
    "It made me happy that everyone congratulated us."
   ],
-  "t": 198
+  "t": 198,
+  "video_line": "婚しましたってなって0日コでもなぜかこうめちゃくちゃ祝福されたというか、すごいモテ生やされていい旦那さんみたいなちょっ",
+  "video_clip": [
+   195.35,
+   203.1,
+   false
+  ]
  },
  {
   "target": "旦那",
@@ -1764,7 +2040,13 @@
    "My husband cooks really well.",
    "My hubby's a great cook."
   ],
-  "t": 198
+  "t": 198,
+  "video_line": "祝福されたというか、すごいモテ生やされていい旦那さんみたいなちょっと優しくするだけでなんかこういい人みたいな感",
+  "video_clip": [
+   198.51,
+   205.59,
+   false
+  ]
  },
  {
   "target": "だんだん",
@@ -1800,7 +2082,13 @@
    "It's slowly getting colder.",
    "It's getting colder bit by bit."
   ],
-  "t": 244
+  "t": 244,
+  "video_line": "動画でもそう、悪役がなんかだんだん派みたいに私と結婚したせいでそういう",
+  "video_clip": [
+   242.8,
+   250.63,
+   false
+  ]
  },
  {
   "target": "最終的",
@@ -1840,7 +2128,13 @@
    "Ultimately, it was my call.",
    "In the end, I made the decision."
   ],
-  "t": 62
+  "t": 62,
+  "video_line": "、その、あだったりとか、イレさんだったりとか巻き込んで最終的にはオープマリチに至ったりとか、そっから僕のためにノアが好感",
+  "video_clip": [
+   64.3,
+   72.02,
+   false
+  ]
  },
  {
   "target": "好感度",
@@ -1880,7 +2174,13 @@
    "This video hurt my image.",
    "People like me less after this video."
   ],
-  "t": 62
+  "t": 62,
+  "video_line": "はオープマリチに至ったりとか、そっから僕のためにノアが好感度下げる最近上がってる動画ホスト行ってるみたいなやつも犠牲にな",
+  "video_clip": [
+   67.85,
+   75.57,
+   false
+  ]
  },
  {
   "target": "恋愛",
@@ -1918,7 +2218,13 @@
    "Love talk isn't my thing.",
    "I'm awkward talking about relationships."
   ],
-  "t": 92
+  "t": 92,
+  "video_line": "ういうとこないとまくいかへんなやと思って今までの恋愛がそううまくいかへんかったからやっぱ一時になったあか",
+  "video_clip": [
+   100.76,
+   108.42,
+   false
+  ]
  },
  {
   "target": "世間",
@@ -1956,7 +2262,13 @@
    "That's not how people see it.",
    "The world doesn't think so."
   ],
-  "t": 198
+  "t": 198,
+  "video_line": "なちょっと優しくするだけでなんかこういい人みたいな感じで世間からめっちゃ思われてでも実際の僕はそんな人士でもないし別にその",
+  "video_clip": [
+   201.79,
+   209.55,
+   false
+  ]
  },
  {
   "target": "もてはやす",
@@ -1992,6 +2304,12 @@
    "At first everyone made a big fuss over me.",
    "Everyone hyped me up at the start.",
    "In the beginning, people praised me a lot."
+  ],
+  "video_line": "日コでもなぜかこうめちゃくちゃ祝福されたというか、すごいモテ生やされていい旦那さんみたいなちょっと優しくするだけでなんかこういい人",
+  "video_clip": [
+   196.83,
+   205.02,
+   false
   ]
  },
  {
@@ -2031,7 +2349,13 @@
    "I always end up as the villain.",
    "It's always me who's the bad guy."
   ],
-  "t": 244
+  "t": 244,
+  "video_line": "動画でもそう、悪役がなんかだんだん派みたいに私と結婚し",
+  "video_clip": [
+   242.8,
+   249.07,
+   false
+  ]
  },
  {
   "target": "せいで",
@@ -2069,7 +2393,13 @@
    "I made everyone late.",
    "It's my fault everyone was late."
   ],
-  "t": 244
+  "t": 244,
+  "video_line": "かだんだん派みたいに私と結婚したせいでそういう風に見られたというなんか撮りたい",
+  "video_clip": [
+   245.29,
+   253.31,
+   false
+  ]
  },
  {
   "target": "始まり",
@@ -2107,7 +2437,13 @@
    "That's how it all began.",
    "That was where it all started."
   ],
-  "t": 253
+  "t": 253,
+  "video_line": "風に見られたというなんか撮りたい動画も始まりは5対5やったや。",
+  "video_clip": [
+   249.78,
+   255.51,
+   false
+  ]
  },
  {
   "target": "悩み",
@@ -2146,7 +2482,13 @@
    "Tell me if something's bothering you.",
    "If you've got a problem, let me know."
   ],
-  "t": 273
+  "t": 273,
+  "video_line": "その悩み聞いてたらさ、私もその気持ち分かる",
+  "video_clip": [
+   270.03,
+   274.36,
+   true
+  ]
  },
  {
   "target": "優先",
@@ -2185,7 +2527,13 @@
    "Work comes first for me now.",
    "I want to prioritise my job right now."
   ],
-  "t": 331
+  "t": 331,
+  "video_line": "んですけどでもやっぱどうしてもYouTubeを優先中の1番上に持ってきてしまうみたいなとこ",
+  "video_clip": [
+   327.61,
+   333.27,
+   true
+  ]
  },
  {
   "target": "モヤモヤ",
@@ -2221,7 +2569,13 @@
    "Something's been bugging me.",
    "I can't shake this feeling."
   ],
-  "t": 445
+  "t": 445,
+  "video_line": "しまってるというかどっちかの答になってるからなんかずっとモヤモヤするたなんか言ってもすっきりしないなみたいな結婚は向いてな",
+  "video_clip": [
+   449.38,
+   457.38,
+   false
+  ]
  },
  {
   "target": "すっきり",
@@ -2257,7 +2611,13 @@
    "Talking it out cleared my head.",
    "I feel so much lighter after talking."
   ],
-  "t": 445
+  "t": 445,
+  "video_line": "答になってるからなんかずっとモヤモヤするたなんか言ってもすっきりしないなみたいな結婚は向いてない多分なんかうちら親",
+  "video_clip": [
+   450.96,
+   458.89,
+   false
+  ]
  },
  {
   "target": "コロコロ",
@@ -2293,7 +2653,13 @@
    "You keep changing your story.",
    "Your words change every five minutes."
   ],
-  "t": 483
+  "t": 483,
+  "video_line": "て思うしとかまいろんなことは学びになったし1日でコロコロこんな考え変わる人も初めて見たけど",
+  "video_clip": [
+   480.35,
+   488.68,
+   false
+  ]
  },
  {
   "target": "尊敬",
@@ -2332,7 +2698,13 @@
    "I look up to him so much.",
    "I really admire that guy."
   ],
-  "t": 500
+  "t": 500,
+  "video_line": "として仕事としてはめっちゃすごいし、誰よりも尊敬してるけど、ほんまに旦那はマジであの向",
+  "video_clip": [
+   499.79,
+   507.64,
+   false
+  ]
  },
  {
   "target": "赤ちゃん",
@@ -2370,7 +2742,13 @@
    "Stop crying like a baby.",
    "Don't be a crybaby."
   ],
-  "t": 536
+  "t": 536,
+  "video_line": "[笑い]まあまあマジ赤ちゃんかなぐらいやばい。",
+  "video_clip": [
+   534.24,
+   539.13,
+   false
+  ]
  },
  {
   "target": "反論",
@@ -2409,7 +2787,13 @@
    "If you've got an argument, let's hear it.",
    "Go on, argue back if you disagree."
   ],
-  "t": 545
+  "t": 545,
+  "video_line": "い]ま、そう本当にそれに関してはマジでその反論の余地がないというか。",
+  "video_clip": [
+   541.26,
+   546.2,
+   false
+  ]
  },
  {
   "target": "反論の余地がない",
@@ -2449,7 +2833,13 @@
    "I can't argue with that.",
    "You've got me there."
   ],
-  "t": 545
+  "t": 545,
+  "video_line": "い]ま、そう本当にそれに関してはマジでその反論の余地がないというか。",
+  "video_clip": [
+   541.26,
+   546.2,
+   false
+  ]
  },
  {
   "target": "後輩",
@@ -2487,7 +2877,13 @@
    "I shouted my junior a meal.",
    "I paid for my junior's dinner."
   ],
-  "t": 546
+  "t": 546,
+  "video_line": "仕事と友達とかほんまに後輩とかやったらめっちゃいいと思う。",
+  "video_clip": [
+   546.35,
+   551.84,
+   false
+  ]
  },
  {
   "target": "特定",
@@ -2526,7 +2922,13 @@
    "Let's not just talk to a select few.",
    "Let's stop sticking to certain people."
   ],
-  "t": 566
+  "t": 566,
+  "video_line": "女関係っていうより女の子っていうか、その特定の彼女とかに対して真逆になんだよ、多分。",
+  "video_clip": [
+   566.06,
+   573.48,
+   false
+  ]
  },
  {
   "target": "真逆",
@@ -2565,7 +2967,13 @@
    "We're polar opposites.",
    "Our personalities couldn't be more different."
   ],
-  "t": 566
+  "t": 566,
+  "video_line": "子っていうか、その特定の彼女とかに対して真逆になんだよ、多分。",
+  "video_clip": [
+   567.78,
+   573.48,
+   false
+  ]
  },
  {
   "target": "一途",
@@ -2603,7 +3011,13 @@
    "He's faithful to one person.",
    "He's really loyal."
   ],
-  "t": 587
+  "t": 587,
+  "video_line": "一途で折れる人。",
+  "video_clip": [
+   590.97,
+   593.76,
+   false
+  ]
  },
  {
   "target": "折れる",
@@ -2642,7 +3056,13 @@
    "I backed down in the end.",
    "Eventually I let them win."
   ],
-  "t": 587
+  "t": 587,
+  "video_line": "一途で折れる人。",
+  "video_clip": [
+   590.97,
+   593.76,
+   false
+  ]
  },
  {
   "target": "世の中",
@@ -2681,7 +3101,13 @@
    "Life isn't that easy.",
    "The real world's tougher than that."
   ],
-  "t": 610
+  "t": 610,
+  "video_line": "ま、正直互いこうちょっと前電話したんですけど結婚指はつけるのが重すぎてその、ま、俺も俺でこの動画撮るまで、ま、これを世の中に公開するまでは指輪をつけてなかったおかしい場面がいっぱいあるんで、それも重いなと思いながらてきたし、多分ノアノアでこと多分俺のことめっちゃ聞かれると思うし、それが多分もう離婚が決まってから窮屈すぎて[",
+  "video_clip": [
+   610.65,
+   620.53,
+   false
+  ]
  },
  {
   "target": "公開",
@@ -2720,7 +3146,13 @@
    "A new video goes up tomorrow.",
    "I'll post a new video tomorrow."
   ],
-  "t": 610
+  "t": 610,
+  "video_line": "ま、正直互いこうちょっと前電話したんですけど結婚指はつけるのが重すぎてその、ま、俺も俺でこの動画撮るまで、ま、これを世の中に公開するまでは指輪をつけてなかったおかしい場面がいっぱいあるんで、それも重いなと思いながらてきたし、多分ノアノアでこと多分俺のことめっちゃ聞かれると思うし、それが多分もう離婚が決まってから窮屈すぎて[",
+  "video_clip": [
+   610.65,
+   620.53,
+   false
+  ]
  },
  {
   "target": "場面",
@@ -2758,7 +3190,13 @@
    "That sort of thing happens all the time.",
    "You see that kind of moment a lot."
   ],
-  "t": 610
+  "t": 610,
+  "video_line": "ま、正直互いこうちょっと前電話したんですけど結婚指はつけるのが重すぎてその、ま、俺も俺でこの動画撮るまで、ま、これを世の中に公開するまでは指輪をつけてなかったおかしい場面がいっぱいあるんで、それも重いなと思いながらてきたし、多分ノアノアでこと多分俺のことめっちゃ聞かれると思うし、それが多分もう離婚が決まってから窮屈すぎて[",
+  "video_clip": [
+   610.65,
+   620.53,
+   false
+  ]
  },
  {
   "target": "窮屈",
@@ -2796,7 +3234,13 @@
    "This room's a little tight.",
    "It's kind of cramped in here."
   ],
-  "t": 610
+  "t": 610,
+  "video_line": "公開するまでは指輪をつけてなかったおかしい場面がいっぱいあるんで、それも重いなと思いながらてきたし、多分ノアノアでこと多分俺のことめっちゃ聞かれると思うし、それが多分もう離婚が決まってから窮屈すぎて[",
+  "video_clip": [
+   612.75,
+   620.53,
+   false
+  ]
  },
  {
   "target": "嫁",
@@ -2832,7 +3276,13 @@
    "The wife told me off.",
    "I got scolded by my wife."
   ],
-  "t": 638
+  "t": 638,
+  "video_line": "とりあえずこれからは元嫁元旦那もしかしたらYouTubeを取る日が来るかもしれ",
+  "video_clip": [
+   643.8,
+   650.92,
+   false
+  ]
  },
  {
   "target": "その辺",
@@ -2869,6 +3319,12 @@
    "I don't know about that sort of thing yet.",
    "That part's still up in the air.",
    "I'm not sure about all that yet."
+  ],
+  "video_line": "またその辺は全くわかんないですけどではまあもう重い話とか暗い話はこの動画で最",
+  "video_clip": [
+   650.38,
+   655.23,
+   false
   ]
  },
  {
@@ -2908,7 +3364,13 @@
    "That video's in a firestorm again.",
    "People are attacking that video again."
   ],
-  "t": 649
+  "t": 649,
+  "video_line": "はこの動画で最後にしてコメント欄でも誰が悪いとかみたいなそう炎上させるみたいなやめて欲しいです。",
+  "video_clip": [
+   653.64,
+   659.55,
+   false
+  ]
  },
  {
   "target": "天才",
@@ -2946,7 +3408,13 @@
    "Man, I'm brilliant!",
    "I'm a total genius!"
   ],
-  "t": 699
+  "t": 699,
+  "video_line": "]天才やな。",
+  "video_clip": [
+   695.74,
+   698.84,
+   true
+  ]
  },
  {
   "target": "ある種",
@@ -2984,7 +3452,13 @@
    "That's a talent of sorts.",
    "In a way, that's a talent too."
   ],
-  "t": 709
+  "t": 709,
+  "video_line": "ま、でもまあ分から本当でももうここまで来たらある種1番信用できる人かもしれん。",
+  "video_clip": [
+   712.21,
+   718.24,
+   false
+  ]
  },
  {
   "target": "父親",
@@ -3022,7 +3496,13 @@
    "Becoming a dad is hard work.",
    "Being a father isn't easy."
   ],
-  "t": 739
+  "t": 739,
+  "video_line": "父親2人がうん。",
+  "video_clip": [
+   738.15,
+   740.68,
+   true
+  ]
  },
  {
   "target": "十分",
@@ -3060,7 +3540,13 @@
    "You've done more than enough.",
    "You've tried hard enough."
   ],
-  "t": 804
+  "t": 804,
+  "video_line": "十分叩かれたんで、まず言っても正直離婚し会で叩かれるのもおかしな話だと思うん",
+  "video_clip": [
+   812.07,
+   816.6,
+   false
+  ]
  },
  {
   "target": "悪化",
@@ -3098,7 +3584,13 @@
    "Things went downhill between us.",
    "The relationship deteriorated."
   ],
-  "t": 832
+  "t": 832,
+  "video_line": "[笑い]関係が悪化というか、すごい難しい関係なったんで、だから会うのもだいぶ久しぶりじゃな",
+  "video_clip": [
+   831.61,
+   837.04,
+   false
+  ]
  },
  {
   "target": "しかも",
@@ -3135,7 +3627,13 @@
    "He was late, and he brought nothing.",
    "Not only was he late, he came empty-handed."
   ],
-  "t": 917
+  "t": 917,
+  "video_line": "しかもたまたまパってきたらな。",
+  "video_clip": [
+   916.91,
+   919.41,
+   false
+  ]
  },
  {
   "target": "たまたま",
@@ -3171,7 +3669,13 @@
    "I bumped into them at a shop.",
    "We just happened to meet at a store."
   ],
-  "t": 917
+  "t": 917,
+  "video_line": "しかもたまたまパってきたらな。",
+  "video_clip": [
+   916.91,
+   919.41,
+   false
+  ]
  },
  {
   "target": "金持ち",
@@ -3209,7 +3713,13 @@
    "One day I want to be loaded.",
    "I'd love to be rich someday."
   ],
-  "t": 934
+  "t": 934,
+  "video_line": "楽]さ、俺たち金持ち",
+  "video_clip": [
+   933.49,
+   936.12,
+   true
+  ]
  },
  {
   "target": "よろしく",
@@ -3245,7 +3755,13 @@
    "Here's to the future.",
    "Let's keep it going from here."
   ],
-  "t": 722
+  "t": 722,
+  "video_line": "じゃあこれからよろしく。",
+  "video_clip": [
+   726.54,
+   729.04,
+   false
+  ]
  },
  {
   "target": "ボタン",
@@ -3281,7 +3797,13 @@
    "Push this button, please.",
    "Could you press this button?"
   ],
-  "t": 552
+  "t": 552,
+  "video_line": "うなことコメントが俺の元、なんかなんかの動画でヒカルは女関係以外は完璧にいいやつで女関係だけは本当終わってるからなっていうコメントが届いてて、それにグッドボタン[笑",
+  "video_clip": [
+   552.53,
+   560.65,
+   false
+  ]
  },
  {
   "target": "グッド",
@@ -3318,7 +3840,13 @@
    "Smash that like button if you enjoyed it.",
    "Hit like if you thought it was good."
   ],
-  "t": 552
+  "t": 552,
+  "video_line": "近いようなことコメントが俺の元、なんかなんかの動画でヒカルは女関係以外は完璧にいいやつで女関係だけは本当終わってるからなっていうコメントが届いてて、それにグッドボタン[笑",
+  "video_clip": [
+   552.41,
+   560.65,
+   false
+  ]
  },
  {
   "target": "ホスト",
@@ -3355,7 +3883,13 @@
    "I heard he was a host before.",
    "He used to work at a host club, apparently."
   ],
-  "t": 62
+  "t": 62,
+  "video_line": "そっから僕のためにノアが好感度下げる最近上がってる動画ホスト行ってるみたいなやつも犠牲になってもらったていうか、僕が落ち",
+  "video_clip": [
+   69.57,
+   77.29,
+   false
+  ]
  },
  {
   "target": "プロ",
@@ -3391,7 +3925,13 @@
    "That's a pro for you.",
    "Just what you'd expect from a pro."
   ],
-  "t": 703
+  "t": 703,
+  "video_line": "だからプロたんとレイナさんみたいのあるかもな。",
+  "video_clip": [
+   703.78,
+   707.03,
+   false
+  ]
  },
  {
   "target": "バースデー",
@@ -3428,7 +3968,13 @@
    "It's my girlfriend's birthday today.",
    "Today's my girl's birthday."
   ],
-  "t": 837
+  "t": 837,
+  "video_line": "姫めのバースデー以来。",
+  "video_clip": [
+   836.39,
+   838.89,
+   false
+  ]
  },
  {
   "target": "ばっかり",
@@ -3463,6 +4009,12 @@
    "You're doing nothing but complaining.",
    "All you do is complain.",
    "You're always whining."
+  ],
+  "video_line": "ま、そう、ずっとね、報告をしてばっかりなんですけど、ま、あの、これが最後になるんで聞いてく",
+  "video_clip": [
+   3.54,
+   10.4,
+   false
   ]
  },
  {
@@ -3502,7 +4054,13 @@
    "It's hopeless now.",
    "Nothing can be done at this point."
   ],
-  "t": 346
+  "t": 346,
+  "video_line": "というか1番味方してくれてるはずなのにその1番の味方がどうしようもなくこうなんて言うんですかね言ってたもんな味方されればされるほど",
+  "video_clip": [
+   341.29,
+   349.49,
+   false
+  ]
  },
  {
   "target": "言葉を選ばずに言うと",
@@ -3540,6 +4098,12 @@
    "To put it bluntly, it wasn't interesting.",
    "Honestly, it was boring.",
    "Not to sugar-coat it, it wasn't fun."
+  ],
+  "video_line": "言葉を選ばずに言うと、最初か最後まで僕がこうずっと書き乱み乱出し続けて茶",
+  "video_clip": [
+   12.89,
+   18.56,
+   false
   ]
  },
  {
@@ -3578,6 +4142,12 @@
    "Exactly!",
    "I know, right?"
   ],
-  "t": 92
+  "t": 92,
+  "video_line": "ほんまそれな。",
+  "video_clip": [
+   598.95,
+   601.45,
+   true
+  ]
  }
 ]
