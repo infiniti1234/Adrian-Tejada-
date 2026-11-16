@@ -16,6 +16,8 @@ def api_key():
         for line in open(p, encoding="utf-8"):
             if line.strip().startswith("ELEVENLABS_API_KEY=") and line.split("=", 1)[1].strip():
                 return line.split("=", 1)[1].strip().strip('"')
+    if os.environ.get("ELEVENLABS_API_KEY", "").strip():  # e.g. saved on a cloud environment; never printed
+        return os.environ["ELEVENLABS_API_KEY"].strip()
     sys.exit(f"No ElevenLabs key found. Create the file {p} with one line: ELEVENLABS_API_KEY=your_key_here "
              "(never paste the key into a chat).")
 
@@ -24,7 +26,8 @@ def tts(text, voice, model, out, key):
     body = json.dumps({"text": text, "model_id": model, "voice_settings": {"stability": 0.5, "similarity_boost": 0.75}}).encode()
     req = urllib.request.Request(f"https://api.elevenlabs.io/v1/text-to-speech/{voice}?output_format=mp3_44100_128", data=body,
                                  headers={"xi-api-key": key, "Content-Type": "application/json"})
-    open(out, "wb").write(urllib.request.urlopen(req, timeout=120).read())
+    data = urllib.request.urlopen(req, timeout=120).read()  # fetch first, so a failed request never leaves an empty file
+    open(out, "wb").write(data)
 
 
 def nums(flag):
