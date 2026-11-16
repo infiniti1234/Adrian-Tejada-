@@ -1,0 +1,3583 @@
+[
+ {
+  "target": "ほんま",
+  "kind": "word",
+  "sentence": "それ、ほんまに言ってるの？",
+  "reading": "",
+  "meaning": "really, truly (Kansai)",
+  "translation": "Are you really saying that?",
+  "note": "Kansai for 本当 (really). ほんまに = 本当に.",
+  "wm": [
+   "really, truly",
+   "Kansai for 本当. Hikaru says it constantly: ほんまに, ほんま?"
+  ],
+  "wb": [
+   "ほんま：Kansai form of 本当 (ほんとう)"
+  ],
+  "we": [
+   "really",
+   "for real",
+   "seriously"
+  ],
+  "sm": [
+   "They can't believe what the other person just said.",
+   "A surprised reaction to a friend."
+  ],
+  "sb": [
+   "それ、：that",
+   "ほんまに：really (Kansai)",
+   "言ってるの？：are you saying? (casual question)",
+   "Whole: are you really saying that?"
+  ],
+  "se": [
+   "Are you really saying that?",
+   "Are you seriously saying that?",
+   "You really mean that?"
+  ],
+  "dialect": true,
+  "t": 92
+ },
+ {
+  "target": "めっちゃ",
+  "kind": "word",
+  "sentence": "これ、めっちゃいいやん。",
+  "reading": "",
+  "meaning": "really, super (casual)",
+  "translation": "This is really good!",
+  "note": "Kansai-born slang, now used all over Japan.",
+  "wm": [
+   "very, super, really",
+   "Casual and very common, especially in Kansai. Stronger and looser than とても."
+  ],
+  "wb": [
+   "めっちゃ：casual form of めちゃくちゃ (extremely)"
+  ],
+  "we": [
+   "super",
+   "really",
+   "so"
+  ],
+  "sm": [
+   "They think this thing is great.",
+   "A happy reaction to something they're shown."
+  ],
+  "sb": [
+   "これ、：this",
+   "めっちゃいいやん。：is really good (やん = isn't it, Kansai)",
+   "Whole: this is really good!"
+  ],
+  "se": [
+   "This is really good!",
+   "This is super good!",
+   "Oh, this is so good!"
+  ],
+  "dialect": true,
+  "t": 92
+ },
+ {
+  "target": "動画",
+  "kind": "word",
+  "sentence": "今日の動画、もう見た？",
+  "reading": "どうが",
+  "meaning": "video",
+  "translation": "Did you already watch today's video?",
+  "note": "",
+  "wm": [
+   "a video, especially an online one",
+   "What YouTubers call their uploads. More common than ビデオ for YouTube."
+  ],
+  "wb": [
+   "動：move",
+   "画：picture",
+   "Whole: moving picture, a video."
+  ],
+  "we": [
+   "video",
+   "clip",
+   "upload"
+  ],
+  "sm": [
+   "They're asking if the other person has seen the new video yet.",
+   "Talking about a YouTuber's upload."
+  ],
+  "sb": [
+   "今日の動画、：today's video",
+   "もう見た？：did you already watch? (もう = already)",
+   "Whole: did you already watch today's video?"
+  ],
+  "se": [
+   "Did you already watch today's video?",
+   "Have you seen today's video yet?",
+   "Did you watch today's upload?"
+  ],
+  "t": 62
+ },
+ {
+  "target": "離婚",
+  "kind": "word",
+  "sentence": "あいつら、離婚したらしいよ。",
+  "reading": "りこん",
+  "meaning": "divorce",
+  "translation": "I heard those two got divorced.",
+  "note": "らしい = I heard, apparently.",
+  "wm": [
+   "divorce",
+   "離婚する = to get divorced. The opposite of 結婚."
+  ],
+  "wb": [
+   "離：separate, leave",
+   "婚：marriage",
+   "Whole: separating from a marriage."
+  ],
+  "we": [
+   "divorce",
+   "split up",
+   "break up (married couple)"
+  ],
+  "sm": [
+   "Apparently that couple got divorced.",
+   "Passing on gossip about a couple."
+  ],
+  "sb": [
+   "あいつら、：those guys (casual)",
+   "離婚したらしいよ。：apparently divorced",
+   "Whole: I hear those two got divorced."
+  ],
+  "se": [
+   "I heard those two got divorced.",
+   "Apparently they got divorced.",
+   "I heard those two split up."
+  ],
+  "t": 2
+ },
+ {
+  "target": "いろんな",
+  "kind": "word",
+  "sentence": "いろんな人に話を聞いてみた。",
+  "reading": "",
+  "meaning": "all kinds of, various",
+  "translation": "I tried asking all kinds of people.",
+  "note": "",
+  "wm": [
+   "all kinds of, various",
+   "The everyday spoken form of 色々な. Always goes before a noun."
+  ],
+  "wb": [
+   "いろんな：spoken form of 色々な (いろいろな)"
+  ],
+  "we": [
+   "all kinds of",
+   "various",
+   "lots of different"
+  ],
+  "sm": [
+   "They asked lots of different people about it.",
+   "Explaining how they did their research."
+  ],
+  "sb": [
+   "いろんな人に：to all kinds of people",
+   "話を聞いてみた。：tried listening to what they had to say (てみる = try)",
+   "Whole: I tried asking all kinds of people."
+  ],
+  "se": [
+   "I tried asking all kinds of people.",
+   "I asked a bunch of different people.",
+   "I went and asked all sorts of people."
+  ],
+  "t": 39
+ },
+ {
+  "target": "結論",
+  "kind": "word",
+  "sentence": "結論は、まだ出てない。",
+  "reading": "けつろん",
+  "meaning": "conclusion",
+  "translation": "There's no conclusion yet.",
+  "note": "出てない = 出ていない.",
+  "wm": [
+   "a conclusion, a final answer",
+   "Used when a decision or answer is reached. 結論が出る = a conclusion is reached."
+  ],
+  "wb": [
+   "結：tie up, end",
+   "論：argument, discussion",
+   "Whole: where the discussion ends up."
+  ],
+  "we": [
+   "conclusion",
+   "verdict",
+   "final answer"
+  ],
+  "sm": [
+   "They haven't decided anything yet.",
+   "Talking about a decision still being made."
+  ],
+  "sb": [
+   "結論は、：the conclusion",
+   "まだ出てない。：hasn't come out yet",
+   "Whole: there's no conclusion yet."
+  ],
+  "se": [
+   "There's no conclusion yet.",
+   "We haven't reached a conclusion yet.",
+   "Nothing's been decided yet."
+  ],
+  "t": 2
+ },
+ {
+  "target": "結論から言うと",
+  "kind": "chunk",
+  "sentence": "結論から言うと、俺は行かない。",
+  "reading": "",
+  "meaning": "to cut to the chase, the bottom line is",
+  "translation": "To cut to the chase, I'm not going.",
+  "note": "Hikaru opens the video with まず結論から言いますと (the polite form).",
+  "wm": [
+   "to start with the conclusion, the bottom line is",
+   "Said before giving the answer first, then the explanation. Polite: 結論から言いますと."
+  ],
+  "wb": [
+   "結論：conclusion",
+   "から：from",
+   "言うと：if I say it",
+   "Whole: saying it from the conclusion."
+  ],
+  "we": [
+   "bottom line",
+   "to cut to the chase",
+   "long story short"
+  ],
+  "sm": [
+   "They give their answer first: they won't go.",
+   "Answering an invitation directly."
+  ],
+  "sb": [
+   "結論から言うと、：to cut to the chase",
+   "俺は行かない。：I'm not going",
+   "Whole: bottom line, I'm not going."
+  ],
+  "se": [
+   "To cut to the chase, I'm not going.",
+   "Bottom line: I'm not going.",
+   "Long story short, I won't go."
+  ],
+  "t": 2
+ },
+ {
+  "target": "やばい",
+  "kind": "word",
+  "sentence": "これ、やばくない？",
+  "reading": "",
+  "meaning": "crazy, insane (good or bad)",
+  "translation": "Isn't this insane?",
+  "note": "やばくない？ = isn't it crazy?",
+  "wm": [
+   "crazy, insane, terrible, amazing",
+   "Very casual. Can be bad (dangerous, awful) or good (amazing). Tone tells you which."
+  ],
+  "wb": [
+   "やばい：slang adjective, crazy or dangerous"
+  ],
+  "we": [
+   "crazy",
+   "insane",
+   "awful",
+   "amazing"
+  ],
+  "sm": [
+   "They think something is shocking.",
+   "Reacting to something surprising."
+  ],
+  "sb": [
+   "これ、：this",
+   "やばくない？：isn't it crazy?",
+   "Whole: isn't this insane?"
+  ],
+  "se": [
+   "Isn't this insane?",
+   "This is crazy, right?",
+   "Isn't this nuts?"
+  ],
+  "t": 408
+ },
+ {
+  "target": "マジ",
+  "kind": "word",
+  "sentence": "え、マジで？",
+  "reading": "",
+  "meaning": "seriously, for real (slang)",
+  "translation": "Huh, seriously?",
+  "note": "マジで = seriously.",
+  "wm": [
+   "serious, for real",
+   "Casual slang. マジで? = seriously? マジ is also used like very: マジやばい."
+  ],
+  "wb": [
+   "マジ：slang from 真面目 (まじめ, serious)"
+  ],
+  "we": [
+   "seriously",
+   "for real",
+   "no way"
+  ],
+  "sm": [
+   "They're surprised by what they just heard.",
+   "A quick reaction in conversation."
+  ],
+  "sb": [
+   "え、：huh",
+   "マジで？：seriously?",
+   "Whole: huh, seriously?"
+  ],
+  "se": [
+   "Huh, seriously?",
+   "What, for real?",
+   "Wait, seriously?"
+  ],
+  "t": 536
+ },
+ {
+  "target": "毎回",
+  "kind": "word",
+  "sentence": "あいつ、毎回遅れて来るよな。",
+  "reading": "まいかい",
+  "meaning": "every time",
+  "translation": "That guy comes late every time.",
+  "note": "",
+  "wm": [
+   "every time",
+   "Used for something that happens again and again. Often a little annoyed."
+  ],
+  "wb": [
+   "毎：every",
+   "回：time, round",
+   "Whole: every round, every time."
+  ],
+  "we": [
+   "every time",
+   "always",
+   "each time"
+  ],
+  "sm": [
+   "Their friend is late every time.",
+   "Complaining about a friend."
+  ],
+  "sb": [
+   "あいつ、：that guy",
+   "毎回：every time",
+   "遅れて来るよな。：comes late, right?",
+   "Whole: that guy comes late every time."
+  ],
+  "se": [
+   "That guy comes late every time.",
+   "He's late every single time.",
+   "That guy always shows up late."
+  ],
+  "t": 61
+ },
+ {
+  "target": "めちゃくちゃ",
+  "kind": "word",
+  "sentence": "今日はめちゃくちゃ疲れた。",
+  "reading": "",
+  "meaning": "extremely, crazily; a mess",
+  "translation": "I was super tired today.",
+  "note": "",
+  "wm": [
+   "extremely, really (also: a total mess)",
+   "Casual. めちゃくちゃ疲れた = super tired. On its own, めちゃくちゃ can mean a mess."
+  ],
+  "wb": [
+   "めちゃくちゃ：casual word for extremely, or a mess"
+  ],
+  "we": [
+   "extremely",
+   "crazily",
+   "super"
+  ],
+  "sm": [
+   "They're exhausted after today.",
+   "Talking about their day."
+  ],
+  "sb": [
+   "今日は：today",
+   "めちゃくちゃ疲れた。：was extremely tired",
+   "Whole: I was super tired today."
+  ],
+  "se": [
+   "I was super tired today.",
+   "Today wore me out.",
+   "I'm completely exhausted today."
+  ],
+  "t": 198
+ },
+ {
+  "target": "はず",
+  "kind": "word",
+  "sentence": "もう着いてるはずなんだけど。",
+  "reading": "",
+  "meaning": "should (be), is supposed to",
+  "translation": "He should already be there, but...",
+  "note": "はずなんだけど = should be, but (I'm not sure).",
+  "wm": [
+   "should, is supposed to, is expected to",
+   "Says what you expect to be true. はずなのに = even though it should be."
+  ],
+  "wb": [
+   "はず：noun for expectation, written 筈"
+  ],
+  "we": [
+   "should",
+   "supposed to",
+   "must be"
+  ],
+  "sm": [
+   "They expected their friend to have arrived by now.",
+   "Waiting for someone."
+  ],
+  "sb": [
+   "もう：already",
+   "着いてるはずなんだけど。：should have arrived, but",
+   "Whole: he should already be there, but..."
+  ],
+  "se": [
+   "He should already be there, but...",
+   "He's supposed to be here already...",
+   "They should've arrived by now."
+  ],
+  "t": 342
+ },
+ {
+  "target": "に関しては",
+  "kind": "chunk",
+  "sentence": "お金に関しては、俺が全部払う。",
+  "reading": "",
+  "meaning": "as for, when it comes to",
+  "translation": "When it comes to money, I'll pay for everything.",
+  "note": "Hikaru: これに関しては (as for this).",
+  "wm": [
+   "as for, regarding, when it comes to",
+   "Picks a topic to say something about it. Sounds a bit more serious than は."
+  ],
+  "wb": [
+   "に：about",
+   "関して：concerning (て-form of 関する)",
+   "は：as for",
+   "Whole: as for things concerning..."
+  ],
+  "we": [
+   "as for",
+   "regarding",
+   "when it comes to"
+  ],
+  "sm": [
+   "They'll cover all the money side.",
+   "Offering to pay."
+  ],
+  "sb": [
+   "お金に関しては、：when it comes to money",
+   "俺が：I",
+   "全部払う。：will pay for everything",
+   "Whole: as for money, I'll pay it all."
+  ],
+  "se": [
+   "When it comes to money, I'll pay for everything.",
+   "As for money, I'll cover it all.",
+   "Don't worry about money, I'll pay."
+  ]
+ },
+ {
+  "target": "に対して",
+  "kind": "chunk",
+  "sentence": "親に対して、そんな言い方するなよ。",
+  "reading": "",
+  "meaning": "towards, to (a person)",
+  "translation": "Don't talk like that to your parents.",
+  "note": "",
+  "wm": [
+   "towards, to, against",
+   "Shows who an action or feeling is aimed at. 親に対して = towards your parents."
+  ],
+  "wb": [
+   "に：to",
+   "対して：facing (て-form of 対する)",
+   "Whole: facing towards."
+  ],
+  "we": [
+   "towards",
+   "to",
+   "against"
+  ],
+  "sm": [
+   "They're telling someone off for being rude to their parents.",
+   "Scolding a friend."
+  ],
+  "sb": [
+   "親に対して、：towards your parents",
+   "そんな言い方：that way of talking",
+   "するなよ。：don't do",
+   "Whole: don't talk like that to your parents."
+  ],
+  "se": [
+   "Don't talk like that to your parents.",
+   "Don't speak to your parents like that.",
+   "You can't talk to your parents that way."
+  ]
+ },
+ {
+  "target": "まとも",
+  "kind": "word",
+  "sentence": "最近、まともにご飯食べてない。",
+  "reading": "",
+  "meaning": "proper, normal, decent",
+  "translation": "Lately I haven't been eating proper meals.",
+  "note": "まともに = properly.",
+  "wm": [
+   "proper, decent, normal",
+   "まともに = properly. まともな人 = a normal, sensible person."
+  ],
+  "wb": [
+   "まとも：word for proper or decent"
+  ],
+  "we": [
+   "proper",
+   "normal",
+   "decent"
+  ],
+  "sm": [
+   "They've been too busy to eat real meals.",
+   "Talking about a busy week."
+  ],
+  "sb": [
+   "最近、：lately",
+   "まともに：properly",
+   "ご飯食べてない。：haven't been eating meals",
+   "Whole: lately I haven't eaten properly."
+  ],
+  "se": [
+   "Lately I haven't been eating proper meals.",
+   "I haven't had a real meal lately.",
+   "I've not been eating properly recently."
+  ],
+  "t": 408
+ },
+ {
+  "target": "勧める",
+  "kind": "word",
+  "sentence": "この映画、友達に勧められて見た。",
+  "reading": "すすめる",
+  "meaning": "to recommend",
+  "translation": "A friend recommended this movie, so I watched it.",
+  "note": "勧められて = was recommended (passive). お勧め = a recommendation.",
+  "wm": [
+   "to recommend, to suggest",
+   "お勧め = recommendation. お勧めしない = I don't recommend it (Hikaru, about 0-day marriage)."
+  ],
+  "wb": [
+   "勧：encourage, recommend",
+   "める：part of the word (okurigana)",
+   "Whole: to recommend."
+  ],
+  "we": [
+   "recommend",
+   "suggest",
+   "advise"
+  ],
+  "sm": [
+   "They watched a movie because a friend suggested it.",
+   "Talking about a film."
+  ],
+  "sb": [
+   "この映画、：this movie",
+   "友達に：by a friend",
+   "勧められて見た。：was recommended and watched",
+   "Whole: a friend recommended this movie, so I watched it."
+  ],
+  "se": [
+   "A friend recommended this movie, so I watched it.",
+   "I watched this movie on a friend's recommendation.",
+   "My friend told me to watch this one."
+  ],
+  "t": 518
+ },
+ {
+  "target": "コメント",
+  "kind": "word",
+  "sentence": "動画のコメント、全部読んでるよ。",
+  "reading": "",
+  "meaning": "comment",
+  "translation": "I read all the comments on my videos.",
+  "note": "",
+  "wm": [
+   "a comment",
+   "On YouTube and social media. コメントする = to comment."
+  ],
+  "wb": [
+   "コメント：from English \"comment\""
+  ],
+  "we": [
+   "comment",
+   "reply",
+   "remark"
+  ],
+  "sm": [
+   "A YouTuber says they read every comment.",
+   "Talking to viewers."
+  ],
+  "sb": [
+   "動画のコメント、：the videos' comments",
+   "全部読んでるよ。：I read all of them",
+   "Whole: I read all the comments on my videos."
+  ],
+  "se": [
+   "I read all the comments on my videos.",
+   "I read every comment on my videos.",
+   "I go through all the comments."
+  ],
+  "t": 552
+ },
+ {
+  "target": "コメント欄",
+  "kind": "word",
+  "sentence": "コメント欄、全部読んだよ。",
+  "reading": "コメントらん",
+  "meaning": "comment section",
+  "translation": "I read the whole comment section.",
+  "note": "",
+  "wm": [
+   "the comment section",
+   "Where viewers write under a video. 欄 = a box or section on a page."
+  ],
+  "wb": [
+   "コメント：comment",
+   "欄：column, section",
+   "Whole: the comment section."
+  ],
+  "we": [
+   "comment section",
+   "comments",
+   "replies"
+  ],
+  "sm": [
+   "They went through all the comments.",
+   "A YouTuber checking reactions."
+  ],
+  "sb": [
+   "コメント欄、：the comment section",
+   "全部読んだよ。：read all of it",
+   "Whole: I read the whole comment section."
+  ],
+  "se": [
+   "I read the whole comment section.",
+   "I read everything in the comments.",
+   "I went through the whole comment section."
+  ],
+  "t": 552
+ },
+ {
+  "target": "メンバー",
+  "kind": "word",
+  "sentence": "いつものメンバーで飲みに行こう。",
+  "reading": "",
+  "meaning": "member, the crew",
+  "translation": "Let's go drinking with the usual crew.",
+  "note": "飲みに行こう = let's go drinking.",
+  "wm": [
+   "a member, the people in a group",
+   "いつものメンバー = the usual crew, the regular group."
+  ],
+  "wb": [
+   "メンバー：from English \"member\""
+  ],
+  "we": [
+   "member",
+   "the crew",
+   "the gang"
+  ],
+  "sm": [
+   "They want to go out with their regular friends.",
+   "Making plans."
+  ],
+  "sb": [
+   "いつものメンバーで：with the usual crew",
+   "飲みに行こう。：let's go drinking",
+   "Whole: let's go drinking with the usual crew."
+  ],
+  "se": [
+   "Let's go drinking with the usual crew.",
+   "Let's go for drinks with the usual gang.",
+   "Let's grab a drink with the regular crew."
+  ],
+  "t": 429
+ },
+ {
+  "target": "しんどい",
+  "kind": "word",
+  "sentence": "毎日これやるの、しんどいわ。",
+  "reading": "",
+  "meaning": "exhausting, tough",
+  "translation": "Doing this every day is exhausting.",
+  "note": "わ at the end softens it.",
+  "wm": [
+   "tiring, tough, hard to bear",
+   "Originally Kansai, now common everywhere. Physical or emotional. Hikaru: 味方されればされるほどしんどい."
+  ],
+  "wb": [
+   "しんどい：adjective for exhausting or tough"
+  ],
+  "we": [
+   "exhausting",
+   "tough",
+   "draining"
+  ],
+  "sm": [
+   "Doing the same thing every day is wearing them out.",
+   "Complaining about a routine."
+  ],
+  "sb": [
+   "毎日：every day",
+   "これやるの、：doing this",
+   "しんどいわ。：is exhausting",
+   "Whole: doing this every day is exhausting."
+  ],
+  "se": [
+   "Doing this every day is exhausting.",
+   "Doing this daily is draining.",
+   "It's tough doing this every day."
+  ],
+  "t": 346
+ },
+ {
+  "target": "振り回す",
+  "kind": "word",
+  "sentence": "彼女にずっと振り回されてる。",
+  "reading": "ふりまわす",
+  "meaning": "to jerk around, to drag around",
+  "translation": "My girlfriend keeps jerking me around.",
+  "note": "振り回されてる = being jerked around (passive).",
+  "wm": [
+   "to swing around; to jerk someone around",
+   "With people: to make them follow your changing moods. Hikaru: 俺に振り回されて."
+  ],
+  "wb": [
+   "振り：swing",
+   "回す：turn around",
+   "Whole: to swing around."
+  ],
+  "we": [
+   "jerk around",
+   "drag around",
+   "mess around with"
+  ],
+  "sm": [
+   "Their girlfriend keeps changing her mind and they have to go along with it.",
+   "Complaining about a relationship."
+  ],
+  "sb": [
+   "彼女に：by my girlfriend",
+   "ずっと：all the time",
+   "振り回されてる。：am being jerked around",
+   "Whole: my girlfriend keeps jerking me around."
+  ],
+  "se": [
+   "My girlfriend keeps jerking me around.",
+   "I'm always being dragged around by my girlfriend.",
+   "She keeps messing me around."
+  ],
+  "t": 491
+ },
+ {
+  "target": "くじ",
+  "kind": "word",
+  "sentence": "みんなでくじを引こう。",
+  "reading": "",
+  "meaning": "lottery, lucky draw",
+  "translation": "Let's all draw lots.",
+  "note": "くじを引く = to draw a lot.",
+  "wm": [
+   "a lottery ticket, a lucky draw, lots",
+   "くじを引く = to draw one. Hikaru: 大外れくじ = a total dud of a ticket."
+  ],
+  "wb": [
+   "くじ：word for a lottery or lot (籤)"
+  ],
+  "we": [
+   "lottery",
+   "lucky draw",
+   "drawing lots"
+  ],
+  "sm": [
+   "They want to decide something by drawing lots.",
+   "Choosing who does something."
+  ],
+  "sb": [
+   "みんなで：all together",
+   "くじを引こう。：let's draw lots",
+   "Whole: let's all draw lots."
+  ],
+  "se": [
+   "Let's all draw lots.",
+   "Let's draw lots together.",
+   "Let's all pick a ticket."
+  ],
+  "t": 790
+ },
+ {
+  "target": "当たり",
+  "kind": "word",
+  "sentence": "やった、当たりだ！",
+  "reading": "あたり",
+  "meaning": "a win, a hit",
+  "translation": "Yes, a winner!",
+  "note": "",
+  "wm": [
+   "a win, a hit, a winning ticket",
+   "From 当たる (to hit). Also means a good pick: この店は当たり = this shop was a good find."
+  ],
+  "wb": [
+   "当：hit",
+   "たり：part of the word (okurigana)",
+   "Whole: a hit."
+  ],
+  "we": [
+   "winner",
+   "hit",
+   "jackpot"
+  ],
+  "sm": [
+   "They just won.",
+   "A reaction to a lottery or draw."
+  ],
+  "sb": [
+   "やった、：yes!",
+   "当たりだ！：it's a winner",
+   "Whole: yes, a winner!"
+  ],
+  "se": [
+   "Yes, a winner!",
+   "Yes, I won!",
+   "Yes! It's a hit!"
+  ],
+  "t": 800
+ },
+ {
+  "target": "大外れ",
+  "kind": "word",
+  "sentence": "この店は大外れだったな。",
+  "reading": "おおはずれ",
+  "meaning": "a total miss, a complete dud",
+  "translation": "This place was a total miss.",
+  "note": "",
+  "wm": [
+   "a total miss, a big disappointment",
+   "The opposite of 大当たり. Hikaru calls himself 大外れくじ, a total dud ticket."
+  ],
+  "wb": [
+   "大：big",
+   "外れ：a miss",
+   "Whole: a big miss."
+  ],
+  "we": [
+   "total miss",
+   "complete dud",
+   "big letdown"
+  ],
+  "sm": [
+   "The shop was really bad.",
+   "A review after eating somewhere."
+  ],
+  "sb": [
+   "この店は：this shop",
+   "大外れだったな。：was a total miss",
+   "Whole: this place was a total miss."
+  ],
+  "se": [
+   "This place was a total miss.",
+   "This shop was a complete dud.",
+   "That place was a huge letdown."
+  ],
+  "t": 790
+ },
+ {
+  "target": "祭り",
+  "kind": "word",
+  "sentence": "夏祭りに行ってきた。",
+  "reading": "まつり",
+  "meaning": "festival",
+  "translation": "I went to a summer festival.",
+  "note": "夏祭り = summer festival.",
+  "wm": [
+   "a festival",
+   "Japanese summer festivals have food stalls and lottery games (祭りくじ)."
+  ],
+  "wb": [
+   "祭：festival",
+   "り：part of the word (okurigana)",
+   "Whole: a festival."
+  ],
+  "we": [
+   "festival",
+   "fair",
+   "celebration"
+  ],
+  "sm": [
+   "They went to a summer festival.",
+   "Talking about their weekend."
+  ],
+  "sb": [
+   "夏祭りに：to a summer festival",
+   "行ってきた。：went (and came back)",
+   "Whole: I went to a summer festival."
+  ],
+  "se": [
+   "I went to a summer festival.",
+   "I went to a summer festival.",
+   "I've been to the summer fair."
+  ],
+  "t": 796
+ },
+ {
+  "target": "わがまま",
+  "kind": "word",
+  "sentence": "俺、ちょっとわがままやな。",
+  "reading": "",
+  "meaning": "selfish",
+  "translation": "I'm a bit selfish, huh.",
+  "note": "やな = だな (Kansai).",
+  "wm": [
+   "selfish, self-centred, spoilt",
+   "Doing what you want without thinking of others. Hikaru: 僕がわがまますぎる."
+  ],
+  "wb": [
+   "わがまま：word for selfish (我が儘)"
+  ],
+  "we": [
+   "selfish",
+   "self-centred",
+   "spoilt"
+  ],
+  "sm": [
+   "They admit they're being selfish.",
+   "Talking about themselves honestly."
+  ],
+  "sb": [
+   "俺、：I",
+   "ちょっと：a bit",
+   "わがままやな。：am selfish, huh",
+   "Whole: I'm a bit selfish, huh."
+  ],
+  "se": [
+   "I'm a bit selfish, huh.",
+   "I guess I'm kind of selfish.",
+   "I'm a little selfish, aren't I."
+  ],
+  "t": 404
+ },
+ {
+  "target": "両方",
+  "kind": "word",
+  "sentence": "両方ほしいんだけど。",
+  "reading": "りょうほう",
+  "meaning": "both",
+  "translation": "I want both, though.",
+  "note": "",
+  "wm": [
+   "both",
+   "Both of two things or sides. Hikaru: 両方にいい顔をする = to be nice to both sides."
+  ],
+  "wb": [
+   "両：both",
+   "方：side",
+   "Whole: both sides."
+  ],
+  "we": [
+   "both",
+   "both of them",
+   "either way"
+  ],
+  "sm": [
+   "They can't choose between two things.",
+   "Choosing between options."
+  ],
+  "sb": [
+   "両方：both",
+   "ほしいんだけど。：want, though",
+   "Whole: I want both, though."
+  ],
+  "se": [
+   "I want both, though.",
+   "I want both of them.",
+   "Can I have both?"
+  ],
+  "t": 424
+ },
+ {
+  "target": "傷つける",
+  "kind": "word",
+  "sentence": "人を傷つけるようなことは言うな。",
+  "reading": "きずつける",
+  "meaning": "to hurt (someone)",
+  "translation": "Don't say things that hurt people.",
+  "note": "",
+  "wm": [
+   "to hurt, to wound",
+   "Often feelings. 傷つく = to get hurt."
+  ],
+  "wb": [
+   "傷：wound",
+   "つける：to put on",
+   "Whole: to put a wound on."
+  ],
+  "we": [
+   "hurt",
+   "wound",
+   "upset"
+  ],
+  "sm": [
+   "They're telling someone to be careful with their words.",
+   "Advice to a friend."
+  ],
+  "sb": [
+   "人を：people",
+   "傷つけるような：that would hurt",
+   "ことは：things",
+   "言うな。：don't say",
+   "Whole: don't say things that hurt people."
+  ],
+  "se": [
+   "Don't say things that hurt people.",
+   "Don't say hurtful things.",
+   "Don't say anything that'll hurt people."
+  ],
+  "t": 441
+ },
+ {
+  "target": "リアル",
+  "kind": "word",
+  "sentence": "これがリアルな生活です。",
+  "reading": "",
+  "meaning": "real",
+  "translation": "This is my real life.",
+  "note": "",
+  "wm": [
+   "real, realistic",
+   "Used a lot on YouTube: リアルな生活 = real life, as it really is."
+  ],
+  "wb": [
+   "リアル：from English \"real\""
+  ],
+  "we": [
+   "real",
+   "actual",
+   "honest"
+  ],
+  "sm": [
+   "A YouTuber is showing their everyday life as it is.",
+   "The intro to a vlog."
+  ],
+  "sb": [
+   "これが：this is",
+   "リアルな生活です。：real life",
+   "Whole: this is my real life."
+  ],
+  "se": [
+   "This is my real life.",
+   "This is what my life is really like.",
+   "Here's my real daily life."
+  ],
+  "t": 23
+ },
+ {
+  "target": "まあまあ",
+  "kind": "word",
+  "sentence": "味はまあまあかな。",
+  "reading": "",
+  "meaning": "so-so, not bad",
+  "translation": "The taste is so-so, I guess.",
+  "note": "",
+  "wm": [
+   "so-so, okay, not bad",
+   "Somewhere between good and bad. Also まあまあ (said twice) to calm someone down."
+  ],
+  "wb": [
+   "まあまあ：word for so-so"
+  ],
+  "we": [
+   "so-so",
+   "not bad",
+   "okay"
+  ],
+  "sm": [
+   "The food is just okay.",
+   "Giving an honest review."
+  ],
+  "sb": [
+   "味は：the taste",
+   "まあまあかな。：is so-so, I guess",
+   "Whole: the taste is so-so, I guess."
+  ],
+  "se": [
+   "The taste is so-so, I guess.",
+   "It tastes okay, I suppose.",
+   "The flavour's not bad."
+  ],
+  "t": 536
+ },
+ {
+  "target": "おかしな",
+  "kind": "word",
+  "sentence": "おかしな話だよね。",
+  "reading": "",
+  "meaning": "strange, odd",
+  "translation": "It's a strange story, isn't it.",
+  "note": "",
+  "wm": [
+   "strange, odd, funny",
+   "Always before a noun. おかしな話 = an odd thing to say, which Hikaru uses."
+  ],
+  "wb": [
+   "おかしな：before-noun form of おかしい"
+  ],
+  "we": [
+   "strange",
+   "odd",
+   "weird"
+  ],
+  "sm": [
+   "They think the situation doesn't make sense.",
+   "Commenting on news."
+  ],
+  "sb": [
+   "おかしな話：a strange story",
+   "だよね。：isn't it",
+   "Whole: it's a strange story, isn't it."
+  ],
+  "se": [
+   "It's a strange story, isn't it.",
+   "That's a weird thing, right?",
+   "It's an odd situation, huh."
+  ],
+  "t": 599
+ },
+ {
+  "target": "指輪",
+  "kind": "word",
+  "sentence": "結婚指輪、どこに置いたっけ？",
+  "reading": "ゆびわ",
+  "meaning": "ring",
+  "translation": "Where did I put my wedding ring?",
+  "note": "っけ = I wonder (trying to remember).",
+  "wm": [
+   "a ring (worn on a finger)",
+   "結婚指輪 = wedding ring. Hikaru takes his off at the end of the video."
+  ],
+  "wb": [
+   "指：finger",
+   "輪：ring, loop",
+   "Whole: a finger ring."
+  ],
+  "we": [
+   "ring",
+   "wedding ring",
+   "band"
+  ],
+  "sm": [
+   "They can't find their wedding ring.",
+   "Looking for something at home."
+  ],
+  "sb": [
+   "結婚指輪、：wedding ring",
+   "どこに：where",
+   "置いたっけ？：did I put it?",
+   "Whole: where did I put my wedding ring?"
+  ],
+  "se": [
+   "Where did I put my wedding ring?",
+   "Where'd I leave my wedding ring?",
+   "Where did my wedding ring go?"
+  ],
+  "t": 600
+ },
+ {
+  "target": "自体",
+  "kind": "word",
+  "sentence": "会うこと自体、久しぶりやな。",
+  "reading": "じたい",
+  "meaning": "itself",
+  "translation": "Even just meeting up is a first in ages.",
+  "note": "",
+  "wm": [
+   "itself, in itself",
+   "Picks out the thing itself. 会うこと自体 = meeting up itself."
+  ],
+  "wb": [
+   "自：self",
+   "体：body",
+   "Whole: the thing itself."
+  ],
+  "we": [
+   "itself",
+   "in itself",
+   "the very"
+  ],
+  "sm": [
+   "They haven't even met up in a long time.",
+   "Two people meeting after a long break."
+  ],
+  "sb": [
+   "会うこと自体、：meeting up itself",
+   "久しぶりやな。：it's been a while (Kansai やな)",
+   "Whole: even meeting up has been a long time."
+  ],
+  "se": [
+   "Even just meeting up is a first in ages.",
+   "Just meeting up is rare now.",
+   "Even seeing each other is a first in ages."
+  ],
+  "t": 838
+ },
+ {
+  "target": "異性",
+  "kind": "word",
+  "sentence": "異性の友達って、いる？",
+  "reading": "いせい",
+  "meaning": "the opposite sex",
+  "translation": "Do you have friends of the opposite sex?",
+  "note": "",
+  "wm": [
+   "the opposite sex",
+   "異性の友達 = a friend of the opposite sex."
+  ],
+  "wb": [
+   "異：different",
+   "性：sex, nature",
+   "Whole: different sex."
+  ],
+  "we": [
+   "opposite sex",
+   "other gender",
+   "guys or girls"
+  ],
+  "sm": [
+   "They're asking about friends who aren't the same gender.",
+   "Chatting about relationships."
+  ],
+  "sb": [
+   "異性の友達って、：friends of the opposite sex",
+   "いる？：do you have?",
+   "Whole: do you have friends of the opposite sex?"
+  ],
+  "se": [
+   "Do you have friends of the opposite sex?",
+   "Any friends of the opposite sex?",
+   "Do you have friends who are girls (or guys)?"
+  ],
+  "t": 717
+ },
+ {
+  "target": "気合い",
+  "kind": "word",
+  "sentence": "今日は気合い入ってるね。",
+  "reading": "きあい",
+  "meaning": "fighting spirit, energy",
+  "translation": "You're really fired up today.",
+  "note": "気合い入ってる = fired up.",
+  "wm": [
+   "fighting spirit, determination",
+   "気合いが入る = to be fired up, to make an effort (also with clothes or looks)."
+  ],
+  "wb": [
+   "気：spirit",
+   "合い：together, match",
+   "Whole: spirits joined, fighting spirit."
+  ],
+  "we": [
+   "determination",
+   "energy",
+   "effort"
+  ],
+  "sm": [
+   "Someone has clearly made a big effort today.",
+   "Teasing a friend."
+  ],
+  "sb": [
+   "今日は：today",
+   "気合い入ってるね。：you're fired up",
+   "Whole: you're really fired up today."
+  ],
+  "se": [
+   "You're really fired up today.",
+   "You've really made an effort today.",
+   "You're so pumped today."
+  ],
+  "t": 904
+ },
+ {
+  "target": "うちら",
+  "kind": "word",
+  "sentence": "うちら、もう友達やん。",
+  "reading": "",
+  "meaning": "we, us (casual)",
+  "translation": "We're friends now, right?",
+  "note": "やん = じゃない (Kansai).",
+  "wm": [
+   "we, us",
+   "Casual, used a lot by women and in Kansai. Hikaru's ex-wife says うちら."
+  ],
+  "wb": [
+   "うち：me, us (casual)",
+   "ら：plural ending",
+   "Whole: us."
+  ],
+  "we": [
+   "we",
+   "us",
+   "the two of us"
+  ],
+  "sm": [
+   "They're saying they're friends.",
+   "Two people making up."
+  ],
+  "sb": [
+   "うちら、：we",
+   "もう：already",
+   "友達やん。：are friends, right (Kansai)",
+   "Whole: we're friends now, right?"
+  ],
+  "se": [
+   "We're friends now, right?",
+   "We're already friends.",
+   "We're friends now, aren't we?"
+  ],
+  "t": 820
+ },
+ {
+  "target": "スピード",
+  "kind": "word",
+  "sentence": "スピード結婚だったね。",
+  "reading": "",
+  "meaning": "speed",
+  "translation": "That was a whirlwind marriage, huh.",
+  "note": "スピード結婚 = a whirlwind marriage.",
+  "wm": [
+   "speed",
+   "スピード結婚 / スピード離婚 = getting married or divorced very fast."
+  ],
+  "wb": [
+   "スピード：from English \"speed\""
+  ],
+  "we": [
+   "speed",
+   "fast",
+   "whirlwind"
+  ],
+  "sm": [
+   "The couple got married very fast.",
+   "Talking about a couple."
+  ],
+  "sb": [
+   "スピード結婚：whirlwind marriage",
+   "だったね。：it was, huh",
+   "Whole: that was a whirlwind marriage, huh."
+  ],
+  "se": [
+   "That was a whirlwind marriage, huh.",
+   "They married really fast, huh.",
+   "That was a speed marriage."
+  ],
+  "t": 856
+ },
+ {
+  "target": "オープン",
+  "kind": "word",
+  "sentence": "新しい店がオープンした。",
+  "reading": "",
+  "meaning": "open",
+  "translation": "A new shop opened.",
+  "note": "",
+  "wm": [
+   "open; opening (of a shop)",
+   "オープンする = to open. Also open as in honest: オープンな人."
+  ],
+  "wb": [
+   "オープン：from English \"open\""
+  ],
+  "we": [
+   "open",
+   "opening",
+   "launch"
+  ],
+  "sm": [
+   "A new shop has just opened.",
+   "News about the neighbourhood."
+  ],
+  "sb": [
+   "新しい店が：a new shop",
+   "オープンした。：opened",
+   "Whole: a new shop opened."
+  ],
+  "se": [
+   "A new shop opened.",
+   "A new store just opened.",
+   "There's a new shop now."
+  ],
+  "t": 859
+ },
+ {
+  "target": "クローズ",
+  "kind": "word",
+  "sentence": "この店、もうすぐクローズするらしい。",
+  "reading": "",
+  "meaning": "close",
+  "translation": "Apparently this shop is closing soon.",
+  "note": "",
+  "wm": [
+   "close, closing",
+   "クローズする = to close. Hikaru jokes: クローズマリッジ (a closed marriage)."
+  ],
+  "wb": [
+   "クローズ：from English \"close\""
+  ],
+  "we": [
+   "close",
+   "shut down",
+   "closing"
+  ],
+  "sm": [
+   "They heard the shop will close soon.",
+   "Passing on news."
+  ],
+  "sb": [
+   "この店、：this shop",
+   "もうすぐ：soon",
+   "クローズするらしい。：is apparently closing",
+   "Whole: apparently this shop is closing soon."
+  ],
+  "se": [
+   "Apparently this shop is closing soon.",
+   "I heard this place is closing soon.",
+   "This shop is shutting down soon."
+  ],
+  "t": 856
+ },
+ {
+  "target": "お疲れ様",
+  "kind": "chunk",
+  "sentence": "今日もお疲れ様でした。",
+  "reading": "おつかれさま",
+  "meaning": "thanks for your hard work",
+  "translation": "Thanks for your hard work today too.",
+  "note": "",
+  "wm": [
+   "thanks for your work, good job",
+   "Said at the end of work or a video. お疲れ様でした (polite), お疲れ (casual)."
+  ],
+  "wb": [
+   "お：polite prefix",
+   "疲れ：tiredness",
+   "様：polite ending",
+   "Whole: (you must be) tired, thank you."
+  ],
+  "we": [
+   "good work",
+   "thanks for today",
+   "well done"
+  ],
+  "sm": [
+   "They thank everyone at the end of the day.",
+   "Finishing work or a shoot."
+  ],
+  "sb": [
+   "今日も：today too",
+   "お疲れ様でした。：thanks for your hard work",
+   "Whole: thanks for your hard work today too."
+  ],
+  "se": [
+   "Thanks for your hard work today too.",
+   "Good work today too.",
+   "Thanks for today, everyone."
+  ],
+  "t": 804
+ },
+ {
+  "target": "ひっくり返す",
+  "kind": "word",
+  "sentence": "机をひっくり返した。",
+  "reading": "ひっくりかえす",
+  "meaning": "to flip over, to overturn",
+  "translation": "I flipped the desk over.",
+  "note": "",
+  "wm": [
+   "to flip over, to turn upside down",
+   "Also: to overturn a decision or situation."
+  ],
+  "wb": [
+   "ひっくり：flip (sound word)",
+   "返す：turn over",
+   "Whole: to flip over."
+  ],
+  "we": [
+   "flip over",
+   "overturn",
+   "turn upside down"
+  ],
+  "sm": [
+   "Someone got angry and flipped their desk.",
+   "A dramatic moment."
+  ],
+  "sb": [
+   "机を：the desk",
+   "ひっくり返した。：flipped over",
+   "Whole: I flipped the desk over."
+  ],
+  "se": [
+   "I flipped the desk over.",
+   "I turned the desk upside down.",
+   "I flipped my desk."
+  ],
+  "t": 2
+ },
+ {
+  "target": "ちゃぶ台をひっくり返す",
+  "kind": "chunk",
+  "sentence": "最後にちゃぶ台をひっくり返すなよ。",
+  "reading": "ちゃぶだいをひっくりかえす",
+  "meaning": "to wreck everything at the last minute",
+  "translation": "Don't go wrecking everything at the end.",
+  "note": "Hikaru says he kept doing this throughout the marriage.",
+  "wm": [
+   "to overturn everything, to ruin a plan at the last second",
+   "From an old image of an angry father flipping the low dining table (ちゃぶ台)."
+  ],
+  "wb": [
+   "ちゃぶ台：low dining table",
+   "を：object marker",
+   "ひっくり返す：to flip over",
+   "Whole: to flip the dining table."
+  ],
+  "we": [
+   "wreck everything",
+   "upend it all",
+   "throw it all away"
+  ],
+  "sm": [
+   "They're asking someone not to ruin everything at the last moment.",
+   "Warning a friend before a decision."
+  ],
+  "sb": [
+   "最後に：at the end",
+   "ちゃぶ台をひっくり返すなよ。：don't flip the table",
+   "Whole: don't go wrecking everything at the end."
+  ],
+  "se": [
+   "Don't go wrecking everything at the end.",
+   "Don't ruin it all at the last minute.",
+   "Don't go flipping the table at the end."
+  ],
+  "t": 2
+ },
+ {
+  "target": "弁解",
+  "kind": "word",
+  "sentence": "弁解はしません。",
+  "reading": "べんかい",
+  "meaning": "excuse, justification",
+  "translation": "I won't make excuses.",
+  "note": "",
+  "wm": [
+   "an excuse, a justification",
+   "Formal-ish. 弁解しない = to make no excuses. Hikaru: 弁解の余地はない."
+  ],
+  "wb": [
+   "弁：speech",
+   "解：explain",
+   "Whole: explaining yourself."
+  ],
+  "we": [
+   "excuse",
+   "justification",
+   "defence"
+  ],
+  "sm": [
+   "They accept the blame.",
+   "A serious apology."
+  ],
+  "sb": [
+   "弁解は：excuses",
+   "しません。：I won't make",
+   "Whole: I won't make excuses."
+  ],
+  "se": [
+   "I won't make excuses.",
+   "I'm not going to make excuses.",
+   "No excuses from me."
+  ],
+  "t": 28
+ },
+ {
+  "target": "ぶれる",
+  "kind": "word",
+  "sentence": "あいつの考えは全然ぶれない。",
+  "reading": "",
+  "meaning": "to waver, to be shaky",
+  "translation": "That guy's thinking never wavers at all.",
+  "note": "",
+  "wm": [
+   "to waver, to shake, to be inconsistent",
+   "With people: to keep changing your mind. ぶれない = steady, consistent."
+  ],
+  "wb": [
+   "ぶれる：verb for shake or waver"
+  ],
+  "we": [
+   "waver",
+   "be shaky",
+   "flip-flop"
+  ],
+  "sm": [
+   "Their friend always sticks to his ideas.",
+   "Praising someone."
+  ],
+  "sb": [
+   "あいつの考えは：his way of thinking",
+   "全然ぶれない。：doesn't waver at all",
+   "Whole: that guy's thinking never wavers."
+  ],
+  "se": [
+   "That guy's thinking never wavers at all.",
+   "He never changes his mind.",
+   "His views are rock solid."
+  ],
+  "t": 53
+ },
+ {
+  "target": "別物",
+  "kind": "word",
+  "sentence": "前の店とは全然別物やな。",
+  "reading": "べつもの",
+  "meaning": "something completely different",
+  "translation": "It's totally different from the old shop.",
+  "note": "",
+  "wm": [
+   "a completely different thing",
+   "Used when two things that look similar really aren't. 全然別物 = totally different."
+  ],
+  "wb": [
+   "別：separate, different",
+   "物：thing",
+   "Whole: a different thing."
+  ],
+  "we": [
+   "something different",
+   "a different thing",
+   "another thing entirely"
+  ],
+  "sm": [
+   "The new shop isn't like the old one at all.",
+   "Comparing two places."
+  ],
+  "sb": [
+   "前の店とは：from the old shop",
+   "全然別物やな。：is totally different (Kansai やな)",
+   "Whole: it's totally different from the old shop."
+  ],
+  "se": [
+   "It's totally different from the old shop.",
+   "It's nothing like the old place.",
+   "It's a whole different thing from before."
+  ],
+  "t": 59
+ },
+ {
+  "target": "祝福",
+  "kind": "word",
+  "sentence": "みんなに祝福されて、うれしかった。",
+  "reading": "しゅくふく",
+  "meaning": "blessing, congratulations",
+  "translation": "Everyone congratulated us, and I was happy.",
+  "note": "祝福されて = being congratulated.",
+  "wm": [
+   "congratulations, blessing",
+   "祝福する = to congratulate, to celebrate someone. Hikaru's marriage was 祝福された at first."
+  ],
+  "wb": [
+   "祝：celebrate",
+   "福：good fortune",
+   "Whole: celebrating good fortune."
+  ],
+  "we": [
+   "congratulations",
+   "blessing",
+   "celebration"
+  ],
+  "sm": [
+   "People congratulated them and they were happy.",
+   "Talking about a wedding or announcement."
+  ],
+  "sb": [
+   "みんなに：by everyone",
+   "祝福されて、：was congratulated",
+   "うれしかった。：was happy",
+   "Whole: everyone congratulated us and I was happy."
+  ],
+  "se": [
+   "Everyone congratulated us, and I was happy.",
+   "I was glad everyone celebrated with us.",
+   "It made me happy that everyone congratulated us."
+  ],
+  "t": 198
+ },
+ {
+  "target": "旦那",
+  "kind": "word",
+  "sentence": "うちの旦那、料理がうまいんです。",
+  "reading": "だんな",
+  "meaning": "husband",
+  "translation": "My husband is good at cooking.",
+  "note": "",
+  "wm": [
+   "husband",
+   "Casual way to say husband. 旦那さん = someone else's husband. Hikaru: 元旦那 = ex-husband."
+  ],
+  "wb": [
+   "旦：dawn",
+   "那：that (used for its sound)",
+   "Whole: husband."
+  ],
+  "we": [
+   "husband",
+   "hubby",
+   "my man"
+  ],
+  "sm": [
+   "A woman is proud of her husband's cooking.",
+   "Talking about family."
+  ],
+  "sb": [
+   "うちの旦那、：my husband",
+   "料理が：cooking",
+   "うまいんです。：is good at",
+   "Whole: my husband is good at cooking."
+  ],
+  "se": [
+   "My husband is good at cooking.",
+   "My husband cooks really well.",
+   "My hubby's a great cook."
+  ],
+  "t": 198
+ },
+ {
+  "target": "だんだん",
+  "kind": "word",
+  "sentence": "だんだん寒くなってきたな。",
+  "reading": "",
+  "meaning": "gradually, little by little",
+  "translation": "It's gradually getting colder.",
+  "note": "",
+  "wm": [
+   "gradually, step by step",
+   "For slow change over time. Hikaru's ex-wife: だんだん苦しくなって."
+  ],
+  "wb": [
+   "だんだん：adverb for gradually (段々)"
+  ],
+  "we": [
+   "gradually",
+   "little by little",
+   "slowly"
+  ],
+  "sm": [
+   "The weather is slowly getting colder.",
+   "Small talk about the season."
+  ],
+  "sb": [
+   "だんだん：gradually",
+   "寒くなってきたな。：it's getting colder",
+   "Whole: it's gradually getting colder."
+  ],
+  "se": [
+   "It's gradually getting colder.",
+   "It's slowly getting colder.",
+   "It's getting colder bit by bit."
+  ],
+  "t": 244
+ },
+ {
+  "target": "最終的",
+  "kind": "word",
+  "sentence": "最終的には、俺が決めた。",
+  "reading": "さいしゅうてき",
+  "meaning": "final, in the end",
+  "translation": "In the end, I was the one who decided.",
+  "note": "最終的には = in the end.",
+  "wm": [
+   "final; 最終的に = in the end, ultimately",
+   "Hikaru: 最終的にはオープンマリッジに至った."
+  ],
+  "wb": [
+   "最：most",
+   "終：end",
+   "的：like, -ish",
+   "Whole: at the very end."
+  ],
+  "we": [
+   "in the end",
+   "ultimately",
+   "finally"
+  ],
+  "sm": [
+   "After everything, they made the decision.",
+   "Explaining how something was decided."
+  ],
+  "sb": [
+   "最終的には、：in the end",
+   "俺が：I",
+   "決めた。：decided",
+   "Whole: in the end, I was the one who decided."
+  ],
+  "se": [
+   "In the end, I was the one who decided.",
+   "Ultimately, it was my call.",
+   "In the end, I made the decision."
+  ],
+  "t": 62
+ },
+ {
+  "target": "好感度",
+  "kind": "word",
+  "sentence": "この動画で好感度が下がった。",
+  "reading": "こうかんど",
+  "meaning": "likeability, public image",
+  "translation": "My likeability dropped because of this video.",
+  "note": "",
+  "wm": [
+   "how much people like you, your public image",
+   "Big in the YouTuber and celebrity world. 好感度が下がる = your image takes a hit."
+  ],
+  "wb": [
+   "好：like",
+   "感：feeling",
+   "度：degree",
+   "Whole: degree of good feeling."
+  ],
+  "we": [
+   "likeability",
+   "popularity",
+   "public image"
+  ],
+  "sm": [
+   "A YouTuber lost fans' goodwill because of one video.",
+   "Talking about a controversy."
+  ],
+  "sb": [
+   "この動画で：with this video",
+   "好感度が：my likeability",
+   "下がった。：went down",
+   "Whole: my likeability dropped because of this video."
+  ],
+  "se": [
+   "My likeability dropped because of this video.",
+   "This video hurt my image.",
+   "People like me less after this video."
+  ],
+  "t": 62
+ },
+ {
+  "target": "恋愛",
+  "kind": "word",
+  "sentence": "恋愛の話は苦手なんだよ。",
+  "reading": "れんあい",
+  "meaning": "romance, love",
+  "translation": "I'm not good at talking about love.",
+  "note": "",
+  "wm": [
+   "romance, love, dating",
+   "恋愛の話 = love talk. Hikaru: 今までの恋愛 = his past relationships."
+  ],
+  "wb": [
+   "恋：romantic love",
+   "愛：love",
+   "Whole: romantic love."
+  ],
+  "we": [
+   "romance",
+   "love",
+   "dating"
+  ],
+  "sm": [
+   "They feel awkward talking about their love life.",
+   "Avoiding a topic."
+  ],
+  "sb": [
+   "恋愛の話は：talk about romance",
+   "苦手なんだよ。：I'm bad at",
+   "Whole: I'm not good at talking about love."
+  ],
+  "se": [
+   "I'm not good at talking about love.",
+   "Love talk isn't my thing.",
+   "I'm awkward talking about relationships."
+  ],
+  "t": 92
+ },
+ {
+  "target": "世間",
+  "kind": "word",
+  "sentence": "世間はそう思ってないよ。",
+  "reading": "せけん",
+  "meaning": "the public, society",
+  "translation": "The public doesn't think that, you know.",
+  "note": "",
+  "wm": [
+   "the public, the world, what people think",
+   "世間から思われる = how the public sees you."
+  ],
+  "wb": [
+   "世：world",
+   "間：between, space",
+   "Whole: the world people live in."
+  ],
+  "we": [
+   "the public",
+   "society",
+   "people"
+  ],
+  "sm": [
+   "They say ordinary people see it differently.",
+   "Arguing about public opinion."
+  ],
+  "sb": [
+   "世間は：the public",
+   "そう思ってないよ。：doesn't think so",
+   "Whole: the public doesn't think that."
+  ],
+  "se": [
+   "The public doesn't think that, you know.",
+   "That's not how people see it.",
+   "The world doesn't think so."
+  ],
+  "t": 198
+ },
+ {
+  "target": "もてはやす",
+  "kind": "word",
+  "sentence": "最初はみんなにもてはやされた。",
+  "reading": "",
+  "meaning": "to praise, to make a big fuss over",
+  "translation": "At first everyone made a big fuss over me.",
+  "note": "もてはやされた = was fussed over (passive).",
+  "wm": [
+   "to praise highly, to make a fuss over",
+   "Hikaru: いい旦那さんみたいにもてはやされて."
+  ],
+  "wb": [
+   "もてはやす：verb for praising loudly (持て囃す)"
+  ],
+  "we": [
+   "make a fuss over",
+   "praise",
+   "hype up"
+  ],
+  "sm": [
+   "Everyone was praising them in the beginning.",
+   "Looking back on being popular."
+  ],
+  "sb": [
+   "最初は：at first",
+   "みんなに：by everyone",
+   "もてはやされた。：was made a fuss over",
+   "Whole: at first everyone made a big fuss over me."
+  ],
+  "se": [
+   "At first everyone made a big fuss over me.",
+   "Everyone hyped me up at the start.",
+   "In the beginning, people praised me a lot."
+  ]
+ },
+ {
+  "target": "悪役",
+  "kind": "word",
+  "sentence": "いつも俺が悪役になる。",
+  "reading": "あくやく",
+  "meaning": "villain, the bad guy",
+  "translation": "I'm always the bad guy.",
+  "note": "",
+  "wm": [
+   "the villain, the bad guy",
+   "In a story or in real life. Hikaru's ex: 悪役みたいに見られた."
+  ],
+  "wb": [
+   "悪：bad",
+   "役：role",
+   "Whole: the bad role."
+  ],
+  "we": [
+   "villain",
+   "bad guy",
+   "the baddie"
+  ],
+  "sm": [
+   "They feel they always get blamed.",
+   "Complaining about how others see them."
+  ],
+  "sb": [
+   "いつも：always",
+   "俺が：I",
+   "悪役になる。：become the bad guy",
+   "Whole: I'm always the bad guy."
+  ],
+  "se": [
+   "I'm always the bad guy.",
+   "I always end up as the villain.",
+   "It's always me who's the bad guy."
+  ],
+  "t": 244
+ },
+ {
+  "target": "せいで",
+  "kind": "chunk",
+  "sentence": "俺のせいで、みんな遅れた。",
+  "reading": "",
+  "meaning": "because of (something bad)",
+  "translation": "Everyone was late because of me.",
+  "note": "",
+  "wm": [
+   "because of, thanks to (a bad thing)",
+   "Blames something for a bad result. 私と結婚したせいで = because he married me."
+  ],
+  "wb": [
+   "せい：fault, cause",
+   "で：because of",
+   "Whole: because of (someone's) fault."
+  ],
+  "we": [
+   "because of",
+   "due to",
+   "thanks to"
+  ],
+  "sm": [
+   "They feel bad for making everyone late.",
+   "Apologising to friends."
+  ],
+  "sb": [
+   "俺のせいで、：because of me",
+   "みんな遅れた。：everyone was late",
+   "Whole: everyone was late because of me."
+  ],
+  "se": [
+   "Everyone was late because of me.",
+   "I made everyone late.",
+   "It's my fault everyone was late."
+  ],
+  "t": 244
+ },
+ {
+  "target": "始まり",
+  "kind": "word",
+  "sentence": "それが全部の始まりだった。",
+  "reading": "はじまり",
+  "meaning": "the beginning, the start",
+  "translation": "That was the start of everything.",
+  "note": "",
+  "wm": [
+   "the beginning, the start",
+   "From 始まる (to begin)."
+  ],
+  "wb": [
+   "始：begin",
+   "まり：part of the word (okurigana)",
+   "Whole: the beginning."
+  ],
+  "we": [
+   "beginning",
+   "start",
+   "origin"
+  ],
+  "sm": [
+   "One event started the whole story.",
+   "Looking back on how something began."
+  ],
+  "sb": [
+   "それが：that",
+   "全部の始まりだった。：was the start of everything",
+   "Whole: that was the start of everything."
+  ],
+  "se": [
+   "That was the start of everything.",
+   "That's how it all began.",
+   "That was where it all started."
+  ],
+  "t": 253
+ },
+ {
+  "target": "悩み",
+  "kind": "word",
+  "sentence": "何か悩みがあるなら言ってよ。",
+  "reading": "なやみ",
+  "meaning": "worry, problem",
+  "translation": "If you've got something on your mind, tell me.",
+  "note": "",
+  "wm": [
+   "a worry, a problem, something on your mind",
+   "From 悩む (to worry). 悩みを聞く = to listen to someone's problems."
+  ],
+  "wb": [
+   "悩：worry",
+   "み：part of the word (okurigana)",
+   "Whole: a worry."
+  ],
+  "we": [
+   "worry",
+   "problem",
+   "trouble"
+  ],
+  "sm": [
+   "They're offering to listen to a friend's problems.",
+   "Being a good friend."
+  ],
+  "sb": [
+   "何か悩みが：some worry",
+   "あるなら：if you have",
+   "言ってよ。：tell me",
+   "Whole: if something's bothering you, tell me."
+  ],
+  "se": [
+   "If you've got something on your mind, tell me.",
+   "Tell me if something's bothering you.",
+   "If you've got a problem, let me know."
+  ],
+  "t": 273
+ },
+ {
+  "target": "優先",
+  "kind": "word",
+  "sentence": "今は仕事を優先したい。",
+  "reading": "ゆうせん",
+  "meaning": "priority",
+  "translation": "Right now I want to put work first.",
+  "note": "優先する = to prioritise.",
+  "wm": [
+   "priority, putting first",
+   "優先する = to prioritise. Hikaru put YouTube first (YouTubeを優先)."
+  ],
+  "wb": [
+   "優：superior",
+   "先：ahead, first",
+   "Whole: going first."
+  ],
+  "we": [
+   "priority",
+   "put first",
+   "prioritise"
+  ],
+  "sm": [
+   "They want to focus on work for now.",
+   "Explaining their choices."
+  ],
+  "sb": [
+   "今は：right now",
+   "仕事を：work",
+   "優先したい。：want to prioritise",
+   "Whole: right now I want to put work first."
+  ],
+  "se": [
+   "Right now I want to put work first.",
+   "Work comes first for me now.",
+   "I want to prioritise my job right now."
+  ],
+  "t": 331
+ },
+ {
+  "target": "モヤモヤ",
+  "kind": "word",
+  "sentence": "ずっとモヤモヤしてる。",
+  "reading": "",
+  "meaning": "uneasy, unsettled feeling",
+  "translation": "I've felt uneasy the whole time.",
+  "note": "",
+  "wm": [
+   "a vague uneasy feeling, unresolved frustration",
+   "When something bothers you but you can't say exactly what. The opposite of すっきり."
+  ],
+  "wb": [
+   "モヤモヤ：sound word for haze, a foggy feeling"
+  ],
+  "we": [
+   "uneasy",
+   "frustrated",
+   "bothered"
+  ],
+  "sm": [
+   "Something has been bothering them for a while.",
+   "Talking about feelings."
+  ],
+  "sb": [
+   "ずっと：the whole time",
+   "モヤモヤしてる。：feel uneasy",
+   "Whole: I've felt uneasy the whole time."
+  ],
+  "se": [
+   "I've felt uneasy the whole time.",
+   "Something's been bugging me.",
+   "I can't shake this feeling."
+  ],
+  "t": 445
+ },
+ {
+  "target": "すっきり",
+  "kind": "word",
+  "sentence": "話したら、すっきりした。",
+  "reading": "",
+  "meaning": "refreshed, clear, relieved",
+  "translation": "After talking, I felt much better.",
+  "note": "",
+  "wm": [
+   "refreshed, clear, relieved",
+   "Feeling clear after something is solved. Hikaru: 言ってもすっきりしない."
+  ],
+  "wb": [
+   "すっきり：sound word for clean and clear"
+  ],
+  "we": [
+   "refreshed",
+   "relieved",
+   "clear-headed"
+  ],
+  "sm": [
+   "Talking about it made them feel better.",
+   "After a heart-to-heart."
+  ],
+  "sb": [
+   "話したら、：when I talked",
+   "すっきりした。：felt refreshed",
+   "Whole: after talking, I felt much better."
+  ],
+  "se": [
+   "After talking, I felt much better.",
+   "Talking it out cleared my head.",
+   "I feel so much lighter after talking."
+  ],
+  "t": 445
+ },
+ {
+  "target": "コロコロ",
+  "kind": "word",
+  "sentence": "言うことがコロコロ変わるな。",
+  "reading": "",
+  "meaning": "(changing) constantly, all the time",
+  "translation": "What you say keeps changing.",
+  "note": "",
+  "wm": [
+   "changing constantly, flip-flopping",
+   "コロコロ変わる = keeps changing. Also the sound of something rolling."
+  ],
+  "wb": [
+   "コロコロ：sound word for rolling"
+  ],
+  "we": [
+   "constantly",
+   "back and forth",
+   "all the time"
+  ],
+  "sm": [
+   "Someone keeps changing their story.",
+   "Calling out a friend."
+  ],
+  "sb": [
+   "言うことが：what you say",
+   "コロコロ変わるな。：keeps changing",
+   "Whole: what you say keeps changing."
+  ],
+  "se": [
+   "What you say keeps changing.",
+   "You keep changing your story.",
+   "Your words change every five minutes."
+  ],
+  "t": 483
+ },
+ {
+  "target": "尊敬",
+  "kind": "word",
+  "sentence": "俺、彼のことめっちゃ尊敬してる。",
+  "reading": "そんけい",
+  "meaning": "respect",
+  "translation": "I really respect him.",
+  "note": "",
+  "wm": [
+   "respect, admiration",
+   "尊敬する = to respect. Hikaru's ex: 誰よりも尊敬してる."
+  ],
+  "wb": [
+   "尊：value, honour",
+   "敬：respect",
+   "Whole: honouring respect."
+  ],
+  "we": [
+   "respect",
+   "admire",
+   "look up to"
+  ],
+  "sm": [
+   "They admire someone a lot.",
+   "Talking about a role model."
+  ],
+  "sb": [
+   "俺、：I",
+   "彼のこと：him",
+   "めっちゃ尊敬してる。：really respect",
+   "Whole: I really respect him."
+  ],
+  "se": [
+   "I really respect him.",
+   "I look up to him so much.",
+   "I really admire that guy."
+  ],
+  "t": 500
+ },
+ {
+  "target": "赤ちゃん",
+  "kind": "word",
+  "sentence": "赤ちゃんみたいに泣くなよ。",
+  "reading": "あかちゃん",
+  "meaning": "baby",
+  "translation": "Don't cry like a baby.",
+  "note": "",
+  "wm": [
+   "a baby",
+   "Also used to tease someone who acts childish."
+  ],
+  "wb": [
+   "赤：red",
+   "ちゃん：cute ending",
+   "Whole: little red one, a baby."
+  ],
+  "we": [
+   "baby",
+   "infant",
+   "little one"
+  ],
+  "sm": [
+   "They're teasing a friend for crying.",
+   "Joking around."
+  ],
+  "sb": [
+   "赤ちゃんみたいに：like a baby",
+   "泣くなよ。：don't cry",
+   "Whole: don't cry like a baby."
+  ],
+  "se": [
+   "Don't cry like a baby.",
+   "Stop crying like a baby.",
+   "Don't be a crybaby."
+  ],
+  "t": 536
+ },
+ {
+  "target": "反論",
+  "kind": "word",
+  "sentence": "反論があるなら言ってみて。",
+  "reading": "はんろん",
+  "meaning": "counter-argument",
+  "translation": "If you disagree, try saying it.",
+  "note": "",
+  "wm": [
+   "a counter-argument, an objection",
+   "反論する = to argue back."
+  ],
+  "wb": [
+   "反：against",
+   "論：argument",
+   "Whole: an argument against."
+  ],
+  "we": [
+   "counter-argument",
+   "objection",
+   "rebuttal"
+  ],
+  "sm": [
+   "They're inviting someone to argue back.",
+   "A debate between friends."
+  ],
+  "sb": [
+   "反論が：a counter-argument",
+   "あるなら：if you have",
+   "言ってみて。：try saying it",
+   "Whole: if you have an objection, go ahead."
+  ],
+  "se": [
+   "If you disagree, try saying it.",
+   "If you've got an argument, let's hear it.",
+   "Go on, argue back if you disagree."
+  ],
+  "t": 545
+ },
+ {
+  "target": "反論の余地がない",
+  "kind": "chunk",
+  "sentence": "それは反論の余地がないな。",
+  "reading": "はんろんのよちがない",
+  "meaning": "there's no arguing with that",
+  "translation": "There's no arguing with that.",
+  "note": "Hikaru: 反論の余地がない (about being a terrible husband).",
+  "wm": [
+   "there's no room to argue, it's undeniable",
+   "余地 = room, space. Said when you have to admit something is true."
+  ],
+  "wb": [
+   "反論：counter-argument",
+   "の：of",
+   "余地：room, space",
+   "がない：there is none",
+   "Whole: there's no room for a counter-argument."
+  ],
+  "we": [
+   "undeniable",
+   "no arguing with that",
+   "fair point"
+  ],
+  "sm": [
+   "They have to admit the other person is right.",
+   "Losing an argument."
+  ],
+  "sb": [
+   "それは：that",
+   "反論の余地がないな。：there's no room to argue",
+   "Whole: there's no arguing with that."
+  ],
+  "se": [
+   "There's no arguing with that.",
+   "I can't argue with that.",
+   "You've got me there."
+  ],
+  "t": 545
+ },
+ {
+  "target": "後輩",
+  "kind": "word",
+  "sentence": "後輩にご飯をおごった。",
+  "reading": "こうはい",
+  "meaning": "junior",
+  "translation": "I treated my junior to dinner.",
+  "note": "おごる = to treat someone.",
+  "wm": [
+   "a junior (at school or work)",
+   "Someone who started after you. The opposite of 先輩."
+  ],
+  "wb": [
+   "後：after",
+   "輩：fellow",
+   "Whole: a fellow who came after."
+  ],
+  "we": [
+   "junior",
+   "younger colleague",
+   "underclassman"
+  ],
+  "sm": [
+   "They paid for a junior's meal.",
+   "Being a good senior."
+  ],
+  "sb": [
+   "後輩に：for my junior",
+   "ご飯をおごった。：treated to a meal",
+   "Whole: I treated my junior to dinner."
+  ],
+  "se": [
+   "I treated my junior to dinner.",
+   "I shouted my junior a meal.",
+   "I paid for my junior's dinner."
+  ],
+  "t": 546
+ },
+ {
+  "target": "特定",
+  "kind": "word",
+  "sentence": "特定の人とだけ話すのはやめよう。",
+  "reading": "とくてい",
+  "meaning": "specific, particular",
+  "translation": "Let's stop only talking to particular people.",
+  "note": "",
+  "wm": [
+   "specific, particular",
+   "特定の人 = a particular person. Hikaru: 特定の彼女."
+  ],
+  "wb": [
+   "特：special",
+   "定：fixed",
+   "Whole: specially fixed."
+  ],
+  "we": [
+   "specific",
+   "particular",
+   "certain"
+  ],
+  "sm": [
+   "They suggest talking to everyone, not just a few.",
+   "Advice for a group."
+  ],
+  "sb": [
+   "特定の人とだけ：only with particular people",
+   "話すのは：talking",
+   "やめよう。：let's stop",
+   "Whole: let's stop only talking to certain people."
+  ],
+  "se": [
+   "Let's stop only talking to particular people.",
+   "Let's not just talk to a select few.",
+   "Let's stop sticking to certain people."
+  ],
+  "t": 566
+ },
+ {
+  "target": "真逆",
+  "kind": "word",
+  "sentence": "俺ら、性格が真逆やな。",
+  "reading": "まぎゃく",
+  "meaning": "the complete opposite",
+  "translation": "Our personalities are complete opposites.",
+  "note": "",
+  "wm": [
+   "the exact opposite",
+   "Casual and strong: stronger than 逆."
+  ],
+  "wb": [
+   "真：true, exact",
+   "逆：opposite",
+   "Whole: the exact opposite."
+  ],
+  "we": [
+   "complete opposite",
+   "polar opposite",
+   "reverse"
+  ],
+  "sm": [
+   "Two friends are nothing alike.",
+   "Comparing personalities."
+  ],
+  "sb": [
+   "俺ら、：us",
+   "性格が：personalities",
+   "真逆やな。：are complete opposites (Kansai やな)",
+   "Whole: our personalities are complete opposites."
+  ],
+  "se": [
+   "Our personalities are complete opposites.",
+   "We're polar opposites.",
+   "Our personalities couldn't be more different."
+  ],
+  "t": 566
+ },
+ {
+  "target": "一途",
+  "kind": "word",
+  "sentence": "彼は一途な人だよ。",
+  "reading": "いちず",
+  "meaning": "devoted, single-minded",
+  "translation": "He's a devoted guy.",
+  "note": "",
+  "wm": [
+   "devoted, faithful to one person",
+   "Used for loyal partners. Hikaru: find someone 一途 instead of him."
+  ],
+  "wb": [
+   "一：one",
+   "途：path",
+   "Whole: one path."
+  ],
+  "we": [
+   "devoted",
+   "faithful",
+   "single-minded"
+  ],
+  "sm": [
+   "Someone is loyal to the person they love.",
+   "Describing a partner."
+  ],
+  "sb": [
+   "彼は：he",
+   "一途な人だよ。：is a devoted person",
+   "Whole: he's a devoted guy."
+  ],
+  "se": [
+   "He's a devoted guy.",
+   "He's faithful to one person.",
+   "He's really loyal."
+  ],
+  "t": 587
+ },
+ {
+  "target": "折れる",
+  "kind": "word",
+  "sentence": "最後は俺が折れた。",
+  "reading": "おれる",
+  "meaning": "to give in; to break",
+  "translation": "In the end, I gave in.",
+  "note": "",
+  "wm": [
+   "to break (a bone, a stick); to give in",
+   "With people: to back down in an argument."
+  ],
+  "wb": [
+   "折：bend, break",
+   "れる：part of the word (okurigana)",
+   "Whole: to be broken."
+  ],
+  "we": [
+   "give in",
+   "back down",
+   "break"
+  ],
+  "sm": [
+   "They stopped arguing and let the other person win.",
+   "After an argument."
+  ],
+  "sb": [
+   "最後は：in the end",
+   "俺が：I",
+   "折れた。：gave in",
+   "Whole: in the end, I gave in."
+  ],
+  "se": [
+   "In the end, I gave in.",
+   "I backed down in the end.",
+   "Eventually I let them win."
+  ],
+  "t": 587
+ },
+ {
+  "target": "世の中",
+  "kind": "word",
+  "sentence": "世の中、そんなに甘くないよ。",
+  "reading": "よのなか",
+  "meaning": "the world, society",
+  "translation": "The world isn't that easy, you know.",
+  "note": "",
+  "wm": [
+   "the world, society, life",
+   "世の中に公開する = to make public to the world."
+  ],
+  "wb": [
+   "世：world",
+   "の：of",
+   "中：inside",
+   "Whole: inside the world."
+  ],
+  "we": [
+   "the world",
+   "society",
+   "life"
+  ],
+  "sm": [
+   "They're warning someone that life is hard.",
+   "Advice to a younger friend."
+  ],
+  "sb": [
+   "世の中、：the world",
+   "そんなに甘くないよ。：isn't that easy",
+   "Whole: the world isn't that easy."
+  ],
+  "se": [
+   "The world isn't that easy, you know.",
+   "Life isn't that easy.",
+   "The real world's tougher than that."
+  ],
+  "t": 610
+ },
+ {
+  "target": "公開",
+  "kind": "word",
+  "sentence": "明日、新しい動画を公開します。",
+  "reading": "こうかい",
+  "meaning": "release, making public",
+  "translation": "I'm releasing a new video tomorrow.",
+  "note": "",
+  "wm": [
+   "release, opening to the public",
+   "公開する = to release, to post publicly (videos, films)."
+  ],
+  "wb": [
+   "公：public",
+   "開：open",
+   "Whole: opening to the public."
+  ],
+  "we": [
+   "release",
+   "publish",
+   "go public"
+  ],
+  "sm": [
+   "A YouTuber announces their next upload.",
+   "Talking to viewers."
+  ],
+  "sb": [
+   "明日、：tomorrow",
+   "新しい動画を：a new video",
+   "公開します。：will release",
+   "Whole: I'm releasing a new video tomorrow."
+  ],
+  "se": [
+   "I'm releasing a new video tomorrow.",
+   "A new video goes up tomorrow.",
+   "I'll post a new video tomorrow."
+  ],
+  "t": 610
+ },
+ {
+  "target": "場面",
+  "kind": "word",
+  "sentence": "そういう場面、よくあるよね。",
+  "reading": "ばめん",
+  "meaning": "scene, situation",
+  "translation": "That kind of situation happens a lot, huh.",
+  "note": "",
+  "wm": [
+   "a scene, a situation, a moment",
+   "In a story or in real life."
+  ],
+  "wb": [
+   "場：place",
+   "面：face, surface",
+   "Whole: the face of a place, a scene."
+  ],
+  "we": [
+   "scene",
+   "situation",
+   "moment"
+  ],
+  "sm": [
+   "They agree it's a common situation.",
+   "Chatting about everyday life."
+  ],
+  "sb": [
+   "そういう場面、：that kind of situation",
+   "よくあるよね。：happens often, right",
+   "Whole: that kind of situation happens a lot."
+  ],
+  "se": [
+   "That kind of situation happens a lot, huh.",
+   "That sort of thing happens all the time.",
+   "You see that kind of moment a lot."
+  ],
+  "t": 610
+ },
+ {
+  "target": "窮屈",
+  "kind": "word",
+  "sentence": "この部屋、ちょっと窮屈やな。",
+  "reading": "きゅうくつ",
+  "meaning": "cramped, constrained",
+  "translation": "This room's a bit cramped.",
+  "note": "",
+  "wm": [
+   "cramped, tight; restricted, stifling",
+   "For space or for feelings. Hikaru: 窮屈すぎて (feeling stifled)."
+  ],
+  "wb": [
+   "窮：stuck, hard up",
+   "屈：bend",
+   "Whole: stuck and bent, cramped."
+  ],
+  "we": [
+   "cramped",
+   "tight",
+   "stifling"
+  ],
+  "sm": [
+   "The room feels too small.",
+   "Looking at a flat."
+  ],
+  "sb": [
+   "この部屋、：this room",
+   "ちょっと窮屈やな。：is a bit cramped (Kansai やな)",
+   "Whole: this room's a bit cramped."
+  ],
+  "se": [
+   "This room's a bit cramped.",
+   "This room's a little tight.",
+   "It's kind of cramped in here."
+  ],
+  "t": 610
+ },
+ {
+  "target": "嫁",
+  "kind": "word",
+  "sentence": "嫁に怒られた。",
+  "reading": "よめ",
+  "meaning": "wife",
+  "translation": "My wife got angry at me.",
+  "note": "",
+  "wm": [
+   "wife (casual)",
+   "Casual way a man says my wife. 元嫁 = ex-wife."
+  ],
+  "wb": [
+   "嫁：wife, bride"
+  ],
+  "we": [
+   "wife",
+   "missus",
+   "the wife"
+  ],
+  "sm": [
+   "A husband got told off.",
+   "Complaining jokingly."
+  ],
+  "sb": [
+   "嫁に：by my wife",
+   "怒られた。：got told off",
+   "Whole: my wife got angry at me."
+  ],
+  "se": [
+   "My wife got angry at me.",
+   "The wife told me off.",
+   "I got scolded by my wife."
+  ],
+  "t": 638
+ },
+ {
+  "target": "その辺",
+  "kind": "chunk",
+  "sentence": "その辺はまだ分からない。",
+  "reading": "そのへん",
+  "meaning": "that sort of thing, around there",
+  "translation": "I don't know about that sort of thing yet.",
+  "note": "Hikaru: その辺は全くわかんない.",
+  "wm": [
+   "that area, that sort of thing",
+   "Points vaguely at a topic or place. その辺は = as for that stuff."
+  ],
+  "wb": [
+   "その：that",
+   "辺：area, around",
+   "Whole: around there."
+  ],
+  "we": [
+   "that sort of thing",
+   "around there",
+   "that stuff"
+  ],
+  "sm": [
+   "They're not sure about those details yet.",
+   "Talking about future plans."
+  ],
+  "sb": [
+   "その辺は：that sort of thing",
+   "まだ分からない。：don't know yet",
+   "Whole: I don't know about that stuff yet."
+  ],
+  "se": [
+   "I don't know about that sort of thing yet.",
+   "That part's still up in the air.",
+   "I'm not sure about all that yet."
+  ]
+ },
+ {
+  "target": "炎上",
+  "kind": "word",
+  "sentence": "あの動画、また炎上してるよ。",
+  "reading": "えんじょう",
+  "meaning": "blowing up online, backlash",
+  "translation": "That video's blowing up with backlash again.",
+  "note": "",
+  "wm": [
+   "blowing up online, an internet backlash",
+   "Literally a fire. 炎上する = to get flamed, to blow up."
+  ],
+  "wb": [
+   "炎：flame",
+   "上：up",
+   "Whole: going up in flames."
+  ],
+  "we": [
+   "backlash",
+   "flame war",
+   "blowing up"
+  ],
+  "sm": [
+   "A video is getting lots of angry comments.",
+   "Talking about online drama."
+  ],
+  "sb": [
+   "あの動画、：that video",
+   "また：again",
+   "炎上してるよ。：is blowing up",
+   "Whole: that video is getting flamed again."
+  ],
+  "se": [
+   "That video's blowing up with backlash again.",
+   "That video's in a firestorm again.",
+   "People are attacking that video again."
+  ],
+  "t": 649
+ },
+ {
+  "target": "天才",
+  "kind": "word",
+  "sentence": "俺って天才やな！",
+  "reading": "てんさい",
+  "meaning": "genius",
+  "translation": "I'm a genius!",
+  "note": "",
+  "wm": [
+   "a genius",
+   "Also said as a joke when someone has a good idea."
+  ],
+  "wb": [
+   "天：heaven",
+   "才：talent",
+   "Whole: heaven-sent talent."
+  ],
+  "we": [
+   "genius",
+   "brilliant",
+   "prodigy"
+  ],
+  "sm": [
+   "They're proud of an idea they had.",
+   "Joking around."
+  ],
+  "sb": [
+   "俺って：me",
+   "天才やな！：am a genius (Kansai やな)",
+   "Whole: I'm a genius!"
+  ],
+  "se": [
+   "I'm a genius!",
+   "Man, I'm brilliant!",
+   "I'm a total genius!"
+  ],
+  "t": 699
+ },
+ {
+  "target": "ある種",
+  "kind": "chunk",
+  "sentence": "それもある種の才能だよ。",
+  "reading": "あるしゅ",
+  "meaning": "a kind of, in a way",
+  "translation": "That's a kind of talent too.",
+  "note": "",
+  "wm": [
+   "a kind of, in a sense",
+   "ある種の = a certain kind of. Hikaru: ここまで来たらある種..."
+  ],
+  "wb": [
+   "ある：a certain",
+   "種：kind, type",
+   "Whole: a certain kind."
+  ],
+  "we": [
+   "a kind of",
+   "in a way",
+   "sort of"
+  ],
+  "sm": [
+   "They say even a strange skill counts as talent.",
+   "Complimenting someone, half joking."
+  ],
+  "sb": [
+   "それも：that too",
+   "ある種の才能だよ。：is a kind of talent",
+   "Whole: that's a kind of talent too."
+  ],
+  "se": [
+   "That's a kind of talent too.",
+   "That's a talent of sorts.",
+   "In a way, that's a talent too."
+  ],
+  "t": 709
+ },
+ {
+  "target": "父親",
+  "kind": "word",
+  "sentence": "父親になるって大変やな。",
+  "reading": "ちちおや",
+  "meaning": "father",
+  "translation": "Being a father is tough, huh.",
+  "note": "",
+  "wm": [
+   "a father",
+   "Neutral word for father. 父 for your own, お父さん when talking to or about him politely."
+  ],
+  "wb": [
+   "父：father",
+   "親：parent",
+   "Whole: the father parent."
+  ],
+  "we": [
+   "father",
+   "dad",
+   "parent"
+  ],
+  "sm": [
+   "They're thinking about how hard parenting is.",
+   "Talking about life."
+  ],
+  "sb": [
+   "父親になるって：becoming a father",
+   "大変やな。：is tough (Kansai やな)",
+   "Whole: being a father is tough, huh."
+  ],
+  "se": [
+   "Being a father is tough, huh.",
+   "Becoming a dad is hard work.",
+   "Being a father isn't easy."
+  ],
+  "t": 739
+ },
+ {
+  "target": "十分",
+  "kind": "word",
+  "sentence": "もう十分頑張ったよ。",
+  "reading": "じゅうぶん",
+  "meaning": "enough",
+  "translation": "You've already worked hard enough.",
+  "note": "",
+  "wm": [
+   "enough, plenty",
+   "もう十分 = that's enough already. Hikaru: 十分叩かれた."
+  ],
+  "wb": [
+   "十：ten",
+   "分：part",
+   "Whole: ten parts out of ten, enough."
+  ],
+  "we": [
+   "enough",
+   "plenty",
+   "sufficient"
+  ],
+  "sm": [
+   "They tell someone to rest.",
+   "Comforting a friend."
+  ],
+  "sb": [
+   "もう：already",
+   "十分頑張ったよ。：worked hard enough",
+   "Whole: you've already worked hard enough."
+  ],
+  "se": [
+   "You've already worked hard enough.",
+   "You've done more than enough.",
+   "You've tried hard enough."
+  ],
+  "t": 804
+ },
+ {
+  "target": "悪化",
+  "kind": "word",
+  "sentence": "関係が悪化した。",
+  "reading": "あっか",
+  "meaning": "getting worse",
+  "translation": "Our relationship got worse.",
+  "note": "",
+  "wm": [
+   "getting worse, worsening",
+   "悪化する = to get worse. Hikaru: 関係が悪化."
+  ],
+  "wb": [
+   "悪：bad",
+   "化：change into",
+   "Whole: changing into bad."
+  ],
+  "we": [
+   "worsen",
+   "get worse",
+   "deteriorate"
+  ],
+  "sm": [
+   "Things between two people went downhill.",
+   "Talking about a relationship."
+  ],
+  "sb": [
+   "関係が：the relationship",
+   "悪化した。：got worse",
+   "Whole: our relationship got worse."
+  ],
+  "se": [
+   "Our relationship got worse.",
+   "Things went downhill between us.",
+   "The relationship deteriorated."
+  ],
+  "t": 832
+ },
+ {
+  "target": "しかも",
+  "kind": "word",
+  "sentence": "遅れて来て、しかも何も持ってこなかった。",
+  "reading": "",
+  "meaning": "and on top of that",
+  "translation": "He came late, and on top of that, didn't bring anything.",
+  "note": "",
+  "wm": [
+   "moreover, on top of that",
+   "Adds something worse (or better). Common in storytelling."
+  ],
+  "wb": [
+   "しかも：conjunction for on top of that"
+  ],
+  "we": [
+   "on top of that",
+   "and also",
+   "what's more"
+  ],
+  "sm": [
+   "A friend was late and empty-handed.",
+   "Complaining about a friend."
+  ],
+  "sb": [
+   "遅れて来て、：came late",
+   "しかも：on top of that",
+   "何も持ってこなかった。：didn't bring anything",
+   "Whole: came late and didn't even bring anything."
+  ],
+  "se": [
+   "He came late, and on top of that, didn't bring anything.",
+   "He was late, and he brought nothing.",
+   "Not only was he late, he came empty-handed."
+  ],
+  "t": 917
+ },
+ {
+  "target": "たまたま",
+  "kind": "word",
+  "sentence": "店でたまたま会った。",
+  "reading": "",
+  "meaning": "by chance",
+  "translation": "I happened to run into them at a shop.",
+  "note": "",
+  "wm": [
+   "by chance, it just happened",
+   "Hikaru: たまたま (by coincidence)."
+  ],
+  "wb": [
+   "たまたま：adverb for by chance (偶々)"
+  ],
+  "we": [
+   "by chance",
+   "happened to",
+   "coincidentally"
+  ],
+  "sm": [
+   "They met someone without planning to.",
+   "Telling a story."
+  ],
+  "sb": [
+   "店で：at a shop",
+   "たまたま会った。：happened to meet",
+   "Whole: I ran into them at a shop by chance."
+  ],
+  "se": [
+   "I happened to run into them at a shop.",
+   "I bumped into them at a shop.",
+   "We just happened to meet at a store."
+  ],
+  "t": 917
+ },
+ {
+  "target": "金持ち",
+  "kind": "word",
+  "sentence": "いつか金持ちになりたい。",
+  "reading": "かねもち",
+  "meaning": "rich person",
+  "translation": "I want to be rich someday.",
+  "note": "",
+  "wm": [
+   "a rich person, rich",
+   "お金持ち is the more polite form."
+  ],
+  "wb": [
+   "金：money",
+   "持ち：having",
+   "Whole: someone who has money."
+  ],
+  "we": [
+   "rich person",
+   "rich",
+   "wealthy"
+  ],
+  "sm": [
+   "They dream of being wealthy.",
+   "Talking about dreams."
+  ],
+  "sb": [
+   "いつか：someday",
+   "金持ちになりたい。：want to become rich",
+   "Whole: I want to be rich someday."
+  ],
+  "se": [
+   "I want to be rich someday.",
+   "One day I want to be loaded.",
+   "I'd love to be rich someday."
+  ],
+  "t": 934
+ },
+ {
+  "target": "よろしく",
+  "kind": "word",
+  "sentence": "これからもよろしく。",
+  "reading": "",
+  "meaning": "please (treat me well), let's get along",
+  "translation": "Looking forward to more from here on too.",
+  "note": "",
+  "wm": [
+   "please look after me; looking forward to it",
+   "A casual greeting at the start of something. Polite: よろしくお願いします."
+  ],
+  "wb": [
+   "よろしく：word for kindly, written 宜しく"
+  ],
+  "we": [
+   "nice to meet you",
+   "looking forward to it",
+   "let's get along"
+  ],
+  "sm": [
+   "They're saying they look forward to the future together.",
+   "Starting a new chapter as friends."
+  ],
+  "sb": [
+   "これからも：from now on too",
+   "よろしく。：let's get along",
+   "Whole: let's keep getting along from here."
+  ],
+  "se": [
+   "Looking forward to more from here on too.",
+   "Here's to the future.",
+   "Let's keep it going from here."
+  ],
+  "t": 722
+ },
+ {
+  "target": "ボタン",
+  "kind": "word",
+  "sentence": "このボタンを押してください。",
+  "reading": "",
+  "meaning": "button",
+  "translation": "Please press this button.",
+  "note": "",
+  "wm": [
+   "a button",
+   "On machines, clothes or screens."
+  ],
+  "wb": [
+   "ボタン：from Portuguese \"botão\" (button)"
+  ],
+  "we": [
+   "button",
+   "switch",
+   "key"
+  ],
+  "sm": [
+   "They're showing someone which button to press.",
+   "Giving instructions."
+  ],
+  "sb": [
+   "このボタンを：this button",
+   "押してください。：please press",
+   "Whole: please press this button."
+  ],
+  "se": [
+   "Please press this button.",
+   "Push this button, please.",
+   "Could you press this button?"
+  ],
+  "t": 552
+ },
+ {
+  "target": "グッド",
+  "kind": "word",
+  "sentence": "いいと思ったら、グッドボタンを押してね。",
+  "reading": "",
+  "meaning": "good, like (button)",
+  "translation": "If you liked it, hit the like button.",
+  "note": "グッドボタン = the YouTube like button.",
+  "wm": [
+   "good; the like button",
+   "YouTubers say グッドボタン for the thumbs-up like button."
+  ],
+  "wb": [
+   "グッド：from English \"good\""
+  ],
+  "we": [
+   "good",
+   "like",
+   "thumbs up"
+  ],
+  "sm": [
+   "A YouTuber asks viewers to like the video.",
+   "The end of a video."
+  ],
+  "sb": [
+   "いいと思ったら、：if you think it's good",
+   "グッドボタンを：the like button",
+   "押してね。：press",
+   "Whole: if you liked it, hit the like button."
+  ],
+  "se": [
+   "If you liked it, hit the like button.",
+   "Smash that like button if you enjoyed it.",
+   "Hit like if you thought it was good."
+  ],
+  "t": 552
+ },
+ {
+  "target": "ホスト",
+  "kind": "word",
+  "sentence": "昔、ホストをやってたらしい。",
+  "reading": "",
+  "meaning": "host (at a host club)",
+  "translation": "Apparently he used to be a host.",
+  "note": "",
+  "wm": [
+   "a host at a host club; a host",
+   "A big topic in Japanese YouTube culture."
+  ],
+  "wb": [
+   "ホスト：from English \"host\""
+  ],
+  "we": [
+   "host",
+   "host club worker",
+   "entertainer"
+  ],
+  "sm": [
+   "They heard someone worked at a host club.",
+   "Gossip about someone's past."
+  ],
+  "sb": [
+   "昔、：in the past",
+   "ホストを：as a host",
+   "やってたらしい。：apparently worked",
+   "Whole: apparently he used to be a host."
+  ],
+  "se": [
+   "Apparently he used to be a host.",
+   "I heard he was a host before.",
+   "He used to work at a host club, apparently."
+  ],
+  "t": 62
+ },
+ {
+  "target": "プロ",
+  "kind": "word",
+  "sentence": "さすがプロだね。",
+  "reading": "",
+  "meaning": "pro, professional",
+  "translation": "As expected of a pro.",
+  "note": "",
+  "wm": [
+   "a pro, a professional",
+   "Short for プロフェッショナル. さすがプロ = just what you'd expect from a pro."
+  ],
+  "wb": [
+   "プロ：short for English \"professional\""
+  ],
+  "we": [
+   "pro",
+   "professional",
+   "expert"
+  ],
+  "sm": [
+   "They're impressed by someone's skill.",
+   "Praising an expert."
+  ],
+  "sb": [
+   "さすが：as expected",
+   "プロだね。：a pro",
+   "Whole: as expected of a pro."
+  ],
+  "se": [
+   "As expected of a pro.",
+   "That's a pro for you.",
+   "Just what you'd expect from a pro."
+  ],
+  "t": 703
+ },
+ {
+  "target": "バースデー",
+  "kind": "word",
+  "sentence": "今日は彼女のバースデーやねん。",
+  "reading": "",
+  "meaning": "birthday",
+  "translation": "Today's my girlfriend's birthday.",
+  "note": "やねん = なんだ (Kansai).",
+  "wm": [
+   "birthday",
+   "Same as 誕生日, used for parties and events."
+  ],
+  "wb": [
+   "バースデー：from English \"birthday\""
+  ],
+  "we": [
+   "birthday",
+   "bday",
+   "birthday party"
+  ],
+  "sm": [
+   "They're celebrating their girlfriend's birthday.",
+   "Explaining their plans."
+  ],
+  "sb": [
+   "今日は：today",
+   "彼女の：my girlfriend's",
+   "バースデーやねん。：is the birthday (Kansai やねん)",
+   "Whole: today's my girlfriend's birthday."
+  ],
+  "se": [
+   "Today's my girlfriend's birthday.",
+   "It's my girlfriend's birthday today.",
+   "Today's my girl's birthday."
+  ],
+  "t": 837
+ },
+ {
+  "target": "ばっかり",
+  "kind": "chunk",
+  "sentence": "文句言ってばっかりやん。",
+  "reading": "",
+  "meaning": "nothing but, all the time",
+  "translation": "You're doing nothing but complaining.",
+  "note": "Hikaru: 報告をしてばっかり (nothing but announcements).",
+  "wm": [
+   "nothing but, only, all the time",
+   "Casual form of ばかり. 〜てばっかり = always doing something (often a complaint)."
+  ],
+  "wb": [
+   "ばっかり：casual form of ばかり (only)"
+  ],
+  "we": [
+   "nothing but",
+   "all the time",
+   "constantly"
+  ],
+  "sm": [
+   "Someone keeps complaining.",
+   "Calling out a friend."
+  ],
+  "sb": [
+   "文句言って：complaining",
+   "ばっかりやん。：that's all you do (Kansai やん)",
+   "Whole: all you do is complain."
+  ],
+  "se": [
+   "You're doing nothing but complaining.",
+   "All you do is complain.",
+   "You're always whining."
+  ]
+ },
+ {
+  "target": "どうしようもない",
+  "kind": "chunk",
+  "sentence": "もうどうしようもないよ。",
+  "reading": "",
+  "meaning": "there's nothing you can do; hopeless",
+  "translation": "There's nothing we can do now.",
+  "note": "Hikaru: どうしようもなく (helplessly).",
+  "wm": [
+   "there's nothing to be done; hopeless, useless",
+   "Said about a bad situation, or a hopeless person."
+  ],
+  "wb": [
+   "どう：how",
+   "しよう：shall I do",
+   "もない：not even",
+   "Whole: no way at all to deal with it."
+  ],
+  "we": [
+   "hopeless",
+   "nothing we can do",
+   "no way out"
+  ],
+  "sm": [
+   "The situation can't be fixed.",
+   "Giving up on something."
+  ],
+  "sb": [
+   "もう：already",
+   "どうしようもないよ。：there's nothing to be done",
+   "Whole: there's nothing we can do now."
+  ],
+  "se": [
+   "There's nothing we can do now.",
+   "It's hopeless now.",
+   "Nothing can be done at this point."
+  ],
+  "t": 346
+ },
+ {
+  "target": "言葉を選ばずに言うと",
+  "kind": "chunk",
+  "sentence": "言葉を選ばずに言うと、面白くなかった。",
+  "reading": "ことばをえらばずにいうと",
+  "meaning": "to put it bluntly",
+  "translation": "To put it bluntly, it wasn't interesting.",
+  "note": "Hikaru uses this at the very start of the video.",
+  "wm": [
+   "to put it bluntly, if I don't sugar-coat it",
+   "Said before saying something harsh. Hikaru uses it about himself."
+  ],
+  "wb": [
+   "言葉を：words",
+   "選ばずに：without choosing",
+   "言うと：if I say",
+   "Whole: if I say it without choosing my words."
+  ],
+  "we": [
+   "to put it bluntly",
+   "frankly",
+   "not to sugar-coat it"
+  ],
+  "sm": [
+   "They give a harsh but honest opinion.",
+   "Reviewing something."
+  ],
+  "sb": [
+   "言葉を選ばずに言うと、：to put it bluntly",
+   "面白くなかった。：it wasn't interesting",
+   "Whole: to put it bluntly, it wasn't interesting."
+  ],
+  "se": [
+   "To put it bluntly, it wasn't interesting.",
+   "Honestly, it was boring.",
+   "Not to sugar-coat it, it wasn't fun."
+  ]
+ },
+ {
+  "target": "ほんまそれな",
+  "kind": "chunk",
+  "sentence": "ほんまそれな！",
+  "reading": "",
+  "meaning": "so true, exactly (Kansai)",
+  "translation": "So true!",
+  "note": "それな = so true (slang).",
+  "wm": [
+   "so true, exactly, I know right",
+   "Kansai ほんま + slang それな. Hikaru's ex says this in the video."
+  ],
+  "wb": [
+   "ほんま：really (Kansai)",
+   "それな：that's it, so true (slang)",
+   "Whole: really, that."
+  ],
+  "we": [
+   "so true",
+   "exactly",
+   "I know right"
+  ],
+  "sm": [
+   "They strongly agree with what was just said.",
+   "A reaction in conversation."
+  ],
+  "sb": [
+   "ほんま：really",
+   "それな！：that's so true",
+   "Whole: so true!"
+  ],
+  "se": [
+   "So true!",
+   "Exactly!",
+   "I know, right?"
+  ],
+  "t": 92
+ }
+]

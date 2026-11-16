@@ -131,6 +131,8 @@ def token_readings(sent):
         if t.surface == "中" and prev in ("今日", "一日", "世界"): kana = "じゅう"
         if t.surface == "一" and ti + 1 < len(toks) and toks[ti + 1].surface in ("回", "個", "階"): kana = "いっ"
         if t.surface == "方" and f.pos1 == "名詞": kana = "ほう"
+        if t.surface.startswith("言") and hira(kana[:1]) == "ゆ": kana = "い" + hira(kana[1:])  # 言う is written いう (ゆう is only its sound)
+        if t.surface == "種" and prev == "ある": kana = "しゅ"  # ある種
         if t.surface == "何":
             nxt = toks[ti + 1].surface if ti + 1 < len(toks) else ""
             nxt_verb = ti + 1 < len(toks) and toks[ti + 1].feature.pos1 == "動詞"
@@ -173,5 +175,4 @@ def kana_text(sent):
 
 
 def word_reading(form):
-    toks = list(tagger(form))
-    return "".join(READ_OVERRIDE.get(t.surface) or hira(t.feature.kana or t.surface) for t in toks)
+    return "".join(k or hira(t.surface) for t, k in token_readings(form))  # same reading fixes as the furigana
