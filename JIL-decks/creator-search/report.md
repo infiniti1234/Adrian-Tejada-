@@ -69,3 +69,20 @@ You found コータ too chill and asked for **upbeat and chatty**: lively and fu
 - ポッキー, もこう, ドグマ風見, HikakinTV: few 10–25 minute videos (15–41 found).
 - SHOTARO, たくも: under 50 videos found.
 - おかじゅん, ゆーぽん: only 60 videos found, not checked further.
+
+---
+
+# Your pick: ヒカル (2026-11-16)
+You chose Hikaru instead of キヨ。. He's also the creator Harry's method names as the fallback, and the Hikaru 500 is built from his videos.
+
+| Channel | Videos (10–25 min) | Speaker | Register | Speed (chars/min) | JP subs | Notes |
+|---|---|---|---|---|---|---|
+| ヒカル（Hikaru） https://www.youtube.com/channel/UCaminwG9MTO4sLYeC3s6udA/videos | 2771+ (967, 441 of them 13–19 min) | Man, uses 僕/俺, standard with Kansai mixed in (ほんま 32 times in one video) | Casual, polite when addressing viewers | 408, 452 (fast) | Yes on 2 of 3 checked (the third hit a bot check, left unchecked) | Main channel: talk, his news, challenges. Recent videos lean towards drama and controversy. |
+| HikaruGames https://www.youtube.com/channel/UCVpGiJmXoTpjrpkVEAfbpHg/videos | 8996+ (5670) | Same voice, plus his staff and friends | Casual, more Kansai (めっちゃ, やん, なんや) | 330 | Yes on 1 of 3 (the other two hit bot checks, left unchecked) | Gaming and office life with his crew, so several voices |
+
+**Flag:** at 408–452 chars/min his main channel is fast for about 1,750 words. Harry's note: Hikaru's speed depends on the video. He's naturally fast, not forced fast. The one-video method handles this: learn every word first, then go line by line.
+
+## Starter videos (Japanese subtitles confirmed)
+1. 炎上している加藤神楽の件について (14 min, main channel, mostly him talking): https://www.youtube.com/watch?v=Di7HTt_N_LQ
+2. 離婚しました (15 min, main channel, strongest Kansai mix): https://www.youtube.com/watch?v=isxRZq06jkQ
+3. 2人の不仲説について (17 min, HikaruGames, gaming and chat, a bit slower at 330): https://www.youtube.com/watch?v=cmBggdBXqeo
