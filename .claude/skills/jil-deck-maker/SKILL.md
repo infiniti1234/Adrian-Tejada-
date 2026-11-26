@@ -22,6 +22,8 @@ This is step 2 of Harry's one-video method: **learn every word in the video befo
    - `card_theme`: `"dark"` (black and gold, the default) or `"light"` (like the JIL Immersion Tracker: washi white, white card, flag red). It should match the Hikaru 500 look they chose.
    - `audio`: `"back"` (default), `"front"` or `"off"`.
    - `voice_id` / `tts_model`: for audio.
+   - `video_front`: `"off"` (default) or `"mix"`. With `"mix"`, every deck uses the creator's own audio, and their real line is the card's front wherever it follows the one-new-word rule (step 6b).
+   - `whisper_model`: the Whisper model for the video timings (`"small"` by default).
    - `hikaru500`: `true` (default) seeds the known-words list with every Hikaru 500 word. Set `false` for a learner who never did the Hikaru 500, so those words only count if their own Anki has them.
 
    - `definitions`: `"english"` (the default) or `"japanese"`. Switch to Japanese definitions at about 4,000 words (Harry's switch point); the rules are in `references/card-rules.md` section 4b.
@@ -52,6 +54,12 @@ This is step 2 of Harry's one-video method: **learn every word in the video befo
 6. **Audio (optional):** see `references/audio.md`. Only if the user wants it and has an ElevenLabs key in `~/JIL-decks/.env`.
    - **Never ask them to paste a key into the chat.** If they paste one anyway, don't use it or repeat it, and tell them to delete it in ElevenLabs and make a new one.
    - Run `python scripts/make_audio.py <name>`, and have them listen to a few clips.
+   - The key can also come from an `ELEVENLABS_API_KEY` environment variable (for example, one saved on a cloud environment). Never print it.
+6b. **The creator's own voice (when `video_front` is `"mix"`):** follow `references/video-audio.md`.
+   - Ask the learner for the video's audio file.
+   - Every card gets a clip of the creator saying its word.
+   - Where the creator's real line follows the one-new-word rule, that line becomes the card's front, and the written sentence moves to the back as an example.
+   - Run `python scripts/video.py words|clips|fronts|verify <name>` as that file says, then run `check_cards.py` again.
 7. **Build:** `python scripts/build_deck.py <name>`.
    - It writes `decks/<name>/<name>.apkg` and adds the deck's words to the known-words list, so the next video won't re-teach them.
    - If the learner studied Japanese before the course, some cards may teach nothing new to them. Tell them what Harry says: in Anki, delete any card where they know every word and understand the whole sentence, the same as they did with the Hikaru 500.
