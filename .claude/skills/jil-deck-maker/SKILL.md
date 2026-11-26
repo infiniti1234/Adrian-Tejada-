@@ -37,6 +37,11 @@ This is step 2 of Harry's one-video method: **learn every word in the video befo
 2. **Find the unknown words:** `python scripts/extract.py <short-name>`.
    - It writes `decks/<name>/unknown.json`: every unknown word, most frequent first, with the lines it's said in.
    - It also prints how much of the video they already know. That figure is saved as `known_before_pct`, and `build_deck.py` repeats it at the end.
+2b. **Ask the learner which words they already know.** Their known-words list only has what's in their Anki, and a learner who studied before (or mines from games, reading and so on) knows plenty that isn't there.
+   - Show them every word in `unknown.json`: the word, its reading and a 1-3 word meaning, most frequent first, in a short numbered list.
+   - Ask which ones they already know.
+   - Add those with `python scripts/known_words.py --add ...`, then run `extract.py` again.
+   - This means no cards for words they know, and more of the creator's real lines can be card fronts (step 6b).
 3. **Decide what gets a card.** Read `unknown.json` and the transcript, then follow `references/card-rules.md`:
    - **Skip:** names, game/product/shop titles, and tokeniser fragments.
    - **Merge:** fragments back into the real word.

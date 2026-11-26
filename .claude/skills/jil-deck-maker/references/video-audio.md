@@ -31,6 +31,10 @@ Harry's rule still decides: the real line is used only when it already passes, a
    - it's garbled
    - another card already uses it (no two cards share a front)
 
+   - **Prefer the creator's line.** This learner likes the front-from-video card best, so make as many as the rules allow.
+   - **Unblock good lines by reordering.** If a good line is held back only by a word another card in this deck teaches, move that card earlier (keeping every written sentence's own one-new-word check passing), and the line can go on the front.
+   - If a line is held back by a word the learner may simply know (common in learners who studied before), ask them rather than dropping it.
+
    Then run `python scripts/video.py fronts <name>`.
 6. **Check by ear:** `python scripts/video.py verify <name>`.
    - It re-transcribes each front clip next to the card text. Homophones are fine (交換度 for 好感度).
