@@ -46,12 +46,15 @@ def cut(audio, a, b, out):
 
 
 def cmd_words(name, src):
-    d, _ = deck(name)
+    d, _ = deck(name); os.makedirs(d, exist_ok=True)
     segs, _ = model().transcribe(pcm(src), language="ja", word_timestamps=True, vad_filter=True)
-    out = []
+    out, srt = [], []
+    def ts(x): return f"{int(x // 3600):02d}:{int(x % 3600 // 60):02d}:{int(x % 60):02d},{int(x * 1000) % 1000:03d}"
     for s in segs:
         out += [[w.word, round(w.start, 2), round(w.end, 2)] for w in s.words]
+        srt.append(f"{len(srt) + 1}\n{ts(s.start)} --> {ts(s.end)}\n{s.text.strip()}\n")
         print(f"{int(s.start) // 60}:{int(s.start) % 60:02d} {s.text[:50]}", flush=True)
+    open(os.path.join(d, "whisper.srt"), "w", encoding="utf-8").write("\n".join(srt))  # a transcript for get_transcript.py when YouTube blocks the subtitles
     json.dump({"audio": os.path.abspath(src), "words": out}, open(os.path.join(d, "words.json"), "w", encoding="utf-8"), ensure_ascii=False)
     print(f"{len(out)} words -> {os.path.join(d, 'words.json')}")
 
