@@ -100,7 +100,7 @@ def cmd_fronts(name):
     for i, c in enumerate(cards, 1):
         if not c.get("video_cut"): continue  # cards without a cut keep whatever front they have
         sa, ea = c["video_cut"]; ref = sum(c.get("video_clip", [c.get("t", 0)] * 2)[:2]) / 2
-        cand = [k for k in range(len(T)) if T.startswith(sa, k) and abs(chars[k][1] - ref) < 15]
+        cand = [k for k in range(len(T)) if T.startswith(sa, k)]  # nearest occurrence to the word's clip (anywhere, if the line is elsewhere)
         if not cand: probs.append(f"#{i}: start '{sa}' not found"); continue
         s0 = min(cand, key=lambda k: abs(chars[k][1] - ref)); e0 = T.find(ea, s0)
         if e0 < 0 or chars[e0][1] - chars[s0][1] > 15: probs.append(f"#{i}: end '{ea}' not found"); continue

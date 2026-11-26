@@ -98,7 +98,8 @@ def main():
                           and x[1] not in known.get("ignore", {}) and not (c.get("kind") == "chunk" and x[0] in c["target"])})
             if len(vex) > 1: probs.append(f"video line on the front has {len(vex)} unknown words besides the target: {', '.join(vex)}")
             elif vex: notes.append(f"video line has one extra new word: {vex[0]}")
-            if not (tl & jp.lemmas_in(vf)) and c["target"] not in vf: probs.append("target isn't in the video line")
+            stem = c["target"][:-1] if len(c["target"]) > 2 and c["target"][-1] in "るすうくぐむぶつい" else c["target"]
+            if not (tl & jp.lemmas_in(vf)) and c["target"] not in vf and stem not in vf: probs.append("target isn't in the video line")
             if vf in seen_sent: probs.append("same video line as an earlier card")
             seen_sent.add(vf)
         if probs:

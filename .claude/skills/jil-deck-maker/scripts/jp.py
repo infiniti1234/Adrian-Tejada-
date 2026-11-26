@@ -33,7 +33,7 @@ FREE_LEMMA = {"仕舞う", "置く", "知れる", "過ぎる", "下さる", "御
 CONTENT_POS = {"名詞", "動詞", "形容詞", "副詞", "代名詞", "連体詞", "接続詞", "形状詞"}
 # readings the tokeniser gets wrong for everyday speech
 UNVOICE = dict(zip("がぎぐげござじずぜぞだぢづでどばびぶべぼぱぴぷぺぽ", "かきくけこさしすせそたちつてとはひふへほはひふへほ"))
-READ_OVERRIDE = {"今日": "きょう", "何時": "なんじ", "明日": "あした", "私": "わたし"}
+READ_OVERRIDE = {"今日": "きょう", "何時": "なんじ", "明日": "あした", "私": "わたし", "日本": "にほん"}
 
 
 def hira(s):
@@ -126,17 +126,18 @@ def token_readings(sent):
         kana = READ_OVERRIDE.get(t.surface) or f.kana or ""
         # undo rendaku only: the first kana is the voiced twin of the dictionary form's (ぶ for ふ), at a phrase start
         if (t.surface not in READ_OVERRIDE and kana and f.kanaBase and UNVOICE.get(hira(kana[:1])) == hira(f.kanaBase[:1])
-                and (ti == 0 or toks[ti - 1].feature.pos1 in ("助詞", "補助記号", "記号"))):
+                and (ti == 0 or toks[ti - 1].feature.pos1 in ("助詞", "補助記号", "記号", "連体詞", "形容詞"))):  # この箱 is はこ, not ばこ
             kana = hira(f.kanaBase[:1]) + hira(kana[1:])
         if t.surface == "中" and prev in ("今日", "一日", "世界"): kana = "じゅう"
         if t.surface == "一" and ti + 1 < len(toks) and toks[ti + 1].surface in ("回", "個", "階"): kana = "いっ"
         if t.surface == "方" and f.pos1 == "名詞": kana = "ほう"
+        if t.surface == "人" and prev in ("日本", "外国", "中国", "韓国", "アメリカ", "イギリス", "フランス", "ドイツ", "イタリア", "スペイン", "ロシア"): kana = "じん"  # 日本人
         if t.surface.startswith("言") and hira(kana[:1]) == "ゆ": kana = "い" + hira(kana[1:])  # 言う is written いう (ゆう is only its sound)
         if t.surface == "種" and prev == "ある": kana = "しゅ"  # ある種
         if t.surface == "何":
             nxt = toks[ti + 1].surface if ti + 1 < len(toks) else ""
             nxt_verb = ti + 1 < len(toks) and toks[ti + 1].feature.pos1 == "動詞"
-            kana = "なに" if nxt_verb or (nxt[:1] in ("を", "が", "も", "か", "し", "に", "、", "？", "！", "") or nxt.startswith("これ")) else "なん"
+            kana = "なに" if nxt_verb or (nxt[:1] in ("を", "が", "も", "か", "し", "に", "よ", "、", "？", "！", "") or nxt.startswith("これ")) else "なん"
         out.append((t, hira(kana))); prev = t.surface
     return out
 
