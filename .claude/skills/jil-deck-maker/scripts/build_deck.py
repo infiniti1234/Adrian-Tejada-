@@ -47,6 +47,11 @@ def main():
     for i, c in enumerate(cards, 1):
         tl = jp.target_lemmas(c["sentence"], c["target"])
         front, furi = jp.sentence_html(c["sentence"], tl, c["target"], multi=c.get("kind") == "chunk")
+        vfront = c.get("front") == "video" and c.get("video_front")
+        example = ""
+        if vfront:  # the creator's own line is the card; the written sentence becomes the example on the back
+            example = furi
+            front, furi = jp.sentence_html(c["video_front"], tl, c["target"], multi=c.get("kind") == "chunk")
         reading = c.get("reading") or ("" if re.fullmatch(r"[぀-ヿー・]+", c["target"]) else jp.word_reading(c["target"]))
         audio_tag, a = "", os.path.join(d, "audio", f"{i:03d}.mp3")
         if os.path.exists(a) and cfg.get("audio", "back") in ("front", "back"):
@@ -56,6 +61,7 @@ def main():
         if os.path.exists(v) and os.path.getsize(v) > 0 and c.get("video_line"):
             fn = f"jilv_{hashlib.md5((name + str(i) + c['sentence']).encode()).hexdigest()[:12]}.mp3"
             shutil.copyfile(v, os.path.join(stage, fn)); media.append(os.path.join(stage, fn)); vaudio = f"[sound:{fn}]"
+        if vfront and vaudio: audio_tag, vaudio = vaudio, ""  # his clip goes with his line
         vline = html.escape(c.get("video_line", ""))
         if vaudio and c.get("video_word"):
             w = html.escape(c["video_word"]); vline = vline.replace(w, f"<b>{w}</b>", 1)
@@ -70,7 +76,8 @@ def main():
                     AudioFront=audio_tag if cfg.get("audio") == "front" else "",
                     Audio=audio_tag if cfg.get("audio", "back") == "back" else "",
                     JP="1" if jj else "", Source=src, Kind=c.get("kind", "word"), SentencePlain=html.escape(c["sentence"]),
-                    VideoAudio=vaudio, VideoLine=vline if vaudio else "")
+                    VideoAudio=vaudio, VideoLine=vline if vaudio else "",
+                    LineEnglish=html.escape(c.get("video_en", "")) if vfront else "", Example=example)
         fields = [vals[f] for f in FIELDS]
         tags = ["jil", "jil-deck-maker", name.replace(" ", "_")] + (["chunk"] if kind == "chunk" else [])
         deck.add_note(genanki.Note(model=model(cfg.get("card_theme", "dark")), fields=fields, tags=tags, guid=genanki.guid_for("jil-dm", c["target"], c["sentence"])))

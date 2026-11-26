@@ -92,11 +92,20 @@ def main():
                                 else "; that's too many, so give this word English explanations instead"))
         if c["sentence"] in seen_sent: probs.append("same sentence as an earlier card")
         seen_sent.add(c["sentence"])
+        if c.get("front") == "video" and c.get("video_front"):  # the creator's own line is the front: same one-new-word rule
+            vf = c["video_front"]
+            vex = sorted({x[0] + ("" if x[0] == x[2] else f"({x[2]})") for x in jp.vocab_tokens(vf) if x[1] not in here
+                          and x[1] not in known.get("ignore", {}) and not (c.get("kind") == "chunk" and x[0] in c["target"])})
+            if len(vex) > 1: probs.append(f"video line on the front has {len(vex)} unknown words besides the target: {', '.join(vex)}")
+            elif vex: notes.append(f"video line has one extra new word: {vex[0]}")
+            if not (tl & jp.lemmas_in(vf)) and c["target"] not in vf: probs.append("target isn't in the video line")
+            if vf in seen_sent: probs.append("same video line as an earlier card")
+            seen_sent.add(vf)
         if probs:
             fails += 1; print(f"FAIL #{i} {c['target']}: {c['sentence']}  -> {'; '.join(probs)}")
         elif notes:
             print(f"note #{i} {c['target']}: {c['sentence']}  ({'; '.join(notes)})")
-        allowed |= tl | jp.lemmas_in(c["sentence"])  # everything on this card is "seen" for the cards after it
+        allowed |= tl | jp.lemmas_in(c["sentence"]) | (jp.lemmas_in(c["video_front"]) if c.get("front") == "video" and c.get("video_front") else set())  # everything on this card is "seen" for the cards after it
     share = extras_cards / len(cards) * 100 if cards else 0
     print(f"\n{len(cards)} cards, {fails} fail, {extras_cards} with one extra new word ({share:.0f}%)")
     if share > 10: print("Aim for no more than about 1 card in 10 with an extra word: rewrite some of those sentences.")

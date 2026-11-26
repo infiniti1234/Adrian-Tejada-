@@ -38,11 +38,18 @@
   "t": 92,
   "video_line": "…幸せになれるんじゃないかなと思うもうほんまにそっちの方が絶対うまくいくんや夫婦や…",
   "video_clip": [
+   118.31,
+   121.01
+  ],
+  "video_word": "ほんま",
+  "video_check": "whisper",
+  "video_clip_yt": [
    116.12,
    121.45
   ],
-  "video_word": "ほんま",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "ほんまにそっちの方が絶対うまくいくんや。",
+  "video_en": "That way would really, definitely work out better."
  },
  {
   "target": "めっちゃ",
@@ -82,11 +89,18 @@
   "t": 92,
   "video_line": "…ったやんじゃあ別にその話に私じゃあめっちゃ反対したかっていったらそっちの方が幸…",
   "video_clip": [
+   112.29,
+   115.79
+  ],
+  "video_word": "めっちゃ",
+  "video_check": "whisper",
+  "video_clip_yt": [
    111.7,
    116.85
   ],
-  "video_word": "めっちゃ",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "別にその話に、私じゃあめっちゃ反対したかって言ったら…",
+  "video_en": "If you ask whether I was really against that idea..."
  },
  {
   "target": "動画",
@@ -131,7 +145,11 @@
    75.51
   ],
   "video_word": "動画",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   70.48,
+   75.51
+  ]
  },
  {
   "target": "離婚",
@@ -170,13 +188,17 @@
    "I heard those two split up."
   ],
   "t": 2,
-  "video_line": "…ださいまず結論から言いますと離婚しました言葉を選ば…",
+  "video_line": "…まず結論から言いますと離婚しました言葉を選ば…",
   "video_clip": [
-   8.74,
+   8.92,
    14.05
   ],
   "video_word": "離婚",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   8.74,
+   14.05
+  ]
  },
  {
   "target": "いろんな",
@@ -215,11 +237,18 @@
   "t": 39,
   "video_line": "…自分がその時結婚したかったからなのかいろんな感情があったんですけど結果0日婚…",
   "video_clip": [
+   37.81,
+   41.67
+  ],
+  "video_word": "いろんな",
+  "video_check": "whisper",
+  "video_clip_yt": [
    37.76,
    42.53
   ],
-  "video_word": "いろんな",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "自分がその時結婚したかったからなのか、いろんな感情があったんですけど。",
+  "video_en": "Maybe it was because I wanted to get married at the time; I had all kinds of feelings."
  },
  {
   "target": "結論",
@@ -264,7 +293,11 @@
    12.21
   ],
   "video_word": "結論",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   7.46,
+   12.21
+  ]
  },
  {
   "target": "結論から言うと",
@@ -306,11 +339,18 @@
   "t": 2,
   "video_line": "…最後になるんだよ聞いてくださいまず結論から言いますと離婚しました言…",
   "video_clip": [
+   8.97,
+   12.21
+  ],
+  "video_word": "結論から言いますと",
+  "video_check": "whisper",
+  "video_clip_yt": [
    7.46,
    12.85
   ],
-  "video_word": "結論から言いますと",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "まず結論から言いますと、離婚しました。",
+  "video_en": "To cut to the chase: we got divorced."
  },
  {
   "target": "やばい",
@@ -350,11 +390,18 @@
   "t": 408,
   "video_line": "…してはたぶんノアは本当に僕みたいなやばいやつとまともに本当に結婚生活…",
   "video_clip": [
+   408.77,
+   410.75
+  ],
+  "video_word": "やばい",
+  "video_check": "whisper",
+  "video_clip_yt": [
    407.34,
    412.35
   ],
-  "video_word": "やばい",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "僕みたいなやばいやつと…",
+  "video_en": "with a crazy guy like me..."
  },
  {
   "target": "マジ",
@@ -397,7 +444,11 @@
    546.37
   ],
   "video_word": "マジ",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   541.7,
+   546.37
+  ]
  },
  {
   "target": "毎回",
@@ -437,13 +488,17 @@
    "That guy always shows up late."
   ],
   "t": 61,
-  "video_line": "…と2ヶ月後の気持ちはもうなんか全然別物で毎回でそのためにノアだっ…",
+  "video_line": "…と2ヶ月後の気持ちはもうなんか全然別物で毎回でそのためにノアだ…",
   "video_clip": [
    58.68,
-   63.96
+   63.87
   ],
   "video_word": "毎回",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   58.68,
+   63.96
+  ]
  },
  {
   "target": "めちゃくちゃ",
@@ -480,13 +535,17 @@
    "I'm completely exhausted today."
   ],
   "t": 198,
-  "video_line": "…婚しましたってなんて0日婚でもなぜかめちゃくちゃ祝福されたというかすごいもてはやされて…",
+  "video_line": "…婚しましたってなって0日婚でもなぜかめちゃくちゃ祝福されたというかすごいもてはやされて…",
   "video_clip": [
    195.42,
    201.09
   ],
   "video_word": "めちゃくちゃ",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   195.42,
+   201.09
+  ]
  },
  {
   "target": "はず",
@@ -525,11 +584,18 @@
   "t": 342,
   "video_line": "…いったというか一番味方してくれてるはずなのにその一番の味方がどうしようも…",
   "video_clip": [
+   341.71,
+   343.85
+  ],
+  "video_word": "はず",
+  "video_check": "whisper",
+  "video_clip_yt": [
    340.64,
    345.63
   ],
-  "video_word": "はず",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "一番味方してくれてるはずなのに。",
+  "video_en": "Even though she's supposed to be the one most on my side."
  },
  {
   "target": "に関しては",
@@ -575,7 +641,11 @@
    410.37
   ],
   "video_word": "に関しては",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   404.84,
+   410.37
+  ]
  },
  {
   "target": "に対して",
@@ -620,7 +690,11 @@
    280.51
   ],
   "video_word": "に対して",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   275.2,
+   280.51
+  ]
  },
  {
   "target": "まとも",
@@ -660,11 +734,18 @@
   "t": 408,
   "video_line": "…んノアは本当に僕みたいなやばいやつとまともに本当に結婚生活送ろうとしてくれてたんですよ…",
   "video_clip": [
-   408.0,
+   408.77,
    413.49
   ],
   "video_word": "まとも",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   408.0,
+   413.49
+  ],
+  "front": "video",
+  "video_front": "僕みたいなやばいやつとまともに、本当に結婚生活送ろうとしてくれてたんですよ。",
+  "video_en": "She was really trying to have a proper married life with a crazy guy like me."
  },
  {
   "target": "勧める",
@@ -710,7 +791,11 @@
    521.51
   ],
   "video_word": "おすすめ",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   516.42,
+   521.51
+  ]
  },
  {
   "target": "コメント",
@@ -747,13 +832,20 @@
    "I go through all the comments."
   ],
   "t": 552,
-  "video_line": "…ごい最近ねそれに近いようなコメントが俺の元に来ていてなんかなんかの…",
+  "video_line": "…最近ねそれに近いようなコメントが俺の元に来ていてなんかなんかの…",
   "video_clip": [
+   553.37,
+   555.37
+  ],
+  "video_word": "コメント",
+  "video_check": "whisper",
+  "video_clip_yt": [
    551.93,
    557.39
   ],
-  "video_word": "コメント",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "それに近いようなことコメントが…",
+  "video_en": "A comment saying something like that..."
  },
  {
   "target": "コメント欄",
@@ -794,11 +886,18 @@
   "t": 552,
   "video_line": "…い話とか暗い話はこの動画で最後にしてコメント欄でも誰が悪いとかみたいな炎上させるみたい…",
   "video_clip": [
+   651.84,
+   656.36
+  ],
+  "video_word": "コメント欄",
+  "video_check": "whisper",
+  "video_clip_yt": [
    652.75,
    658.3
   ],
-  "video_word": "コメント欄",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "重い話とか暗い話はこの動画で最後にして、コメント欄でも…",
+  "video_en": "Let's make this video the last of the heavy, dark talk, and in the comments too..."
  },
  {
   "target": "メンバー",
@@ -837,11 +936,18 @@
   "t": 429,
   "video_line": "…前での顔いつもいるメンバーの前でいつもいるメンバーの前での顔みたいな本当になんか3つとか4…",
   "video_clip": [
+   429.37,
+   431.33
+  ],
+  "video_word": "メンバー",
+  "video_check": "whisper",
+  "video_clip_yt": [
    427.84,
    432.87
   ],
-  "video_word": "メンバー",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "いつもいるメンバーの前での顔みたいな…",
+  "video_en": "Like the face I put on in front of the usual crew..."
  },
  {
   "target": "しんどい",
@@ -881,11 +987,18 @@
   "t": 346,
   "video_line": "…言ってたもんな味方されればされるほどしんどいって何かこう何て言うんですか…",
   "video_clip": [
+   347.17,
+   349.91
+  ],
+  "video_word": "しんどい",
+  "video_check": "whisper",
+  "video_clip_yt": [
    346.4,
    351.51
   ],
-  "video_word": "しんどい",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "味方されればされるほどしんどいって。",
+  "video_en": "The more she took my side, the harder it got."
  },
  {
   "target": "振り回す",
@@ -925,13 +1038,20 @@
    "She keeps messing me around."
   ],
   "t": 491,
-  "video_line": "…ま、本当にでもそんななんかずっとこう振り回してきたのは事実なんでこ…",
+  "video_line": "…ま、本当にでもそんななんかずっとこう振り回してきたのは事実なんで…",
   "video_clip": [
+   492.27,
+   495.49
+  ],
+  "video_word": "振り回して",
+  "video_check": "whisper",
+  "video_clip_yt": [
    491.22,
    495.66
   ],
-  "video_word": "振り回して",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "ずっとこう振り回してきたのは事実なんで。",
+  "video_en": "It's a fact that I've jerked her around the whole time."
  },
  {
   "target": "くじ",
@@ -968,13 +1088,17 @@
    "Let's all pick a ticket."
   ],
   "t": 790,
-  "video_line": "…ほんま大外れくじ、大外れくじ引いたっていう。外れじゃなかった…",
+  "video_line": "…レくじ大外れくじ引いたって言うと外れじゃなかった…",
   "video_clip": [
    790.1,
    792.93
   ],
   "video_word": "くじ",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   790.1,
+   792.93
+  ]
  },
  {
   "target": "当たり",
@@ -1019,7 +1143,11 @@
    798.73
   ],
   "video_word": "当たり",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   794.68,
+   798.73
+  ]
  },
  {
   "target": "大外れ",
@@ -1058,10 +1186,10 @@
    "That place was a huge letdown."
   ],
   "t": 790,
-  "video_line": "…ほんま大外れくじ、大外れくじ引いたっていう。外れじゃなかった…",
+  "video_line": "…レくじ大外れくじ引いたって言うと外れじゃなかった…",
   "video_clip": [
-   790.1,
-   792.93
+   790.27,
+   792.27
   ],
   "video_check": "whisper",
   "video_clip_yt": [
@@ -1069,7 +1197,10 @@
    792.75,
    false
   ],
-  "video_word": "大外れ"
+  "video_word": "大外れ",
+  "front": "video",
+  "video_front": "大外れくじ引いたっていう。",
+  "video_en": "I drew a total dud of a ticket."
  },
  {
   "target": "祭り",
@@ -1108,10 +1239,10 @@
    "I've been to the summer fair."
   ],
   "t": 796,
-  "video_line": "…ろいけどまぁ、俺当たりのない祭りくじやったりは多分俺か…",
+  "video_line": "…ろいけどまぁ、俺当たりのない祭りくじやったりは多分俺…",
   "video_clip": [
    795.16,
-   800.06
+   799.91
   ],
   "video_check": "whisper",
   "video_clip_yt": [
@@ -1159,8 +1290,8 @@
   "t": 404,
   "video_line": "…結果的には僕がもう本当にあまりにもわがまますぎるっていうのは一番の原因なんですけどもうこれに…",
   "video_clip": [
-   402.42,
-   407.77
+   404.53,
+   407.07
   ],
   "video_check": "whisper",
   "video_clip_yt": [
@@ -1168,7 +1299,10 @@
    408.36,
    true
   ],
-  "video_word": "わがまま"
+  "video_word": "わがまま",
+  "front": "video",
+  "video_front": "わがまますぎるっていうのが一番の原因なんですけど。",
+  "video_en": "The main reason is that I'm way too selfish."
  },
  {
   "target": "両方",
@@ -1209,11 +1343,18 @@
   "t": 424,
   "video_line": "…時も見せたいし矛盾した動きをしてたというか両方にいい顔してたじゃないけどノアの前ではノ…",
   "video_clip": [
+   425.07,
+   427.15
+  ],
+  "video_word": "両方",
+  "video_check": "whisper",
+  "video_clip_yt": [
    422.92,
    428.15
   ],
-  "video_word": "両方",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "両方にいい顔してたじゃないけど。",
+  "video_en": "I was sort of playing nice with both sides."
  },
  {
   "target": "傷つける",
@@ -1254,13 +1395,20 @@
    "Don't say anything that'll hurt people."
   ],
   "t": 441,
-  "video_line": "…ろんな人を嫌な思いさせたりとか傷つけたりとか不快な思いさせたっていうのはありま…",
+  "video_line": "…ろんな人を嫌な思いさせたりとか傷つけたりとか不快な思いさせたっていうのは…",
   "video_clip": [
+   439.35,
+   442.85
+  ],
+  "video_word": "傷つけ",
+  "video_check": "whisper",
+  "video_clip_yt": [
    439.62,
    444.69
   ],
-  "video_word": "傷つけ",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "いろんな人を嫌な思いさせたりとか、傷つけたりとか。",
+  "video_en": "Making all kinds of people feel bad, hurting them..."
  },
  {
   "target": "リアル",
@@ -1299,11 +1447,18 @@
   "t": 23,
   "video_line": "…なんか言い訳とかじゃなくて本当にリアルに僕が自分勝手に生きた結果…",
   "video_clip": [
+   23.83,
+   28.43
+  ],
+  "video_word": "リアル",
+  "video_check": "whisper",
+  "video_clip_yt": [
    22.24,
    27.33
   ],
-  "video_word": "リアル",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "本当にリアルに、僕が自分勝手に生きた結果こうなってるんで。",
+  "video_en": "Honestly, this is the real result of me living selfishly."
  },
  {
   "target": "まあまあ",
@@ -1441,8 +1596,8 @@
   "t": 600,
   "video_line": "…本当に離婚するんで指輪をつけてきたんですけどこれを…",
   "video_clip": [
-   600.64,
-   604.97
+   600.69,
+   604.29
   ],
   "video_check": "whisper",
   "video_clip_yt": [
@@ -1450,7 +1605,10 @@
    607.58,
    false
   ],
-  "video_word": "指輪"
+  "video_word": "指輪",
+  "front": "video",
+  "video_front": "本当に離婚するんで、指輪つけてきたんですけど。",
+  "video_en": "Since we're really getting divorced, I wore the ring here, but..."
  },
  {
   "target": "自体",
@@ -1590,11 +1748,15 @@
   "t": 904,
   "video_line": "…なんでそんな気合い入れてきてるんですか？一人だけ…",
   "video_clip": [
-   902.95,
+   903.81,
    907.46
   ],
   "video_word": "気合い",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   902.95,
+   907.46
+  ]
  },
  {
   "target": "うちら",
@@ -1683,11 +1845,18 @@
   "t": 856,
   "video_line": "スピード結婚彼のスピード離婚やっとクロズマリ…",
   "video_clip": [
+   854.25,
+   856.25
+  ],
+  "video_word": "スピード",
+  "video_check": "whisper",
+  "video_clip_yt": [
    854.2,
    858.21
   ],
-  "video_word": "スピード",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "スピード結婚からのスピード離婚。",
+  "video_en": "A whirlwind marriage, then a whirlwind divorce."
  },
  {
   "target": "オープン",
@@ -1730,7 +1899,11 @@
    862.35
   ],
   "video_word": "オープン",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   857.54,
+   862.35
+  ]
  },
  {
   "target": "クローズ",
@@ -1770,8 +1943,8 @@
   "t": 856,
   "video_line": "…ード結婚彼のスピード離婚やっとクローズマリッジ0日婚…",
   "video_clip": [
-   854.56,
-   859.73
+   856.27,
+   858.41
   ],
   "video_check": "whisper",
   "video_clip_yt": [
@@ -1779,7 +1952,10 @@
    858.93,
    false
   ],
-  "video_word": "クローズ"
+  "video_word": "クローズ",
+  "front": "video",
+  "video_front": "やっとクローズマリッジ。",
+  "video_en": "Finally, a closed marriage."
  },
  {
   "target": "お疲れ様",
@@ -1821,11 +1997,18 @@
   "t": 804,
   "video_line": "…は本当にもう祝福って言ったらおかしいですけどお疲れさまでしたくらいでどうせ離婚…",
   "video_clip": [
+   806.37,
+   808.07
+  ],
+  "video_word": "お疲れさま",
+  "video_check": "whisper",
+  "video_clip_yt": [
    804.12,
    809.69
   ],
-  "video_word": "お疲れさま",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "お疲れ様でしたぐらいで。",
+  "video_en": "Something like 'thanks for your hard work' will do."
  },
  {
   "target": "ひっくり返す",
@@ -1870,7 +2053,11 @@
    21.17
   ],
   "video_word": "ひっくり返し",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   16.16,
+   21.17
+  ]
  },
  {
   "target": "ちゃぶ台をひっくり返す",
@@ -1910,13 +2097,20 @@
    "Don't go flipping the table at the end."
   ],
   "t": 2,
-  "video_line": "…っとかき乱し続けてちゃぶ台をひっくり返し続けた結果はなりましたこ…",
+  "video_line": "…っとかき乱し続けてちゃぶ台をひっくり返し続けた結果はなりました…",
   "video_clip": [
+   17.59,
+   21.17
+  ],
+  "video_word": "ちゃぶ台をひっくり返し",
+  "video_check": "whisper",
+  "video_clip_yt": [
    16.16,
    21.33
   ],
-  "video_word": "ちゃぶ台をひっくり返し",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "ちゃぶ台をひっくり返し続けた結果、こうなりました。",
+  "video_en": "I kept flipping the table, and this is how it ended up."
  },
  {
   "target": "弁解",
@@ -1957,8 +2151,8 @@
   "t": 28,
   "video_line": "…行った結果こうなってるんでそこに弁解の余地は全くないんですけど順を追ってじゃあ…",
   "video_clip": [
-   26.16,
-   31.47
+   27.93,
+   30.45
   ],
   "video_check": "whisper",
   "video_clip_yt": [
@@ -1966,7 +2160,10 @@
    32.24,
    true
   ],
-  "video_word": "弁解"
+  "video_word": "弁解",
+  "front": "video",
+  "video_front": "そこに弁解の余地は全くないんですけど。",
+  "video_en": "There's absolutely no excuse for it, though."
  },
  {
   "target": "ぶれる",
@@ -2005,11 +2202,18 @@
   "t": 53,
   "video_line": "…持ちが僕の中でずっと結局ブレていってその当日の0日婚した…",
   "video_clip": [
+   51.69,
+   55.65
+  ],
+  "video_word": "ブレ",
+  "video_check": "whisper",
+  "video_clip_yt": [
    52.36,
    57.31
   ],
-  "video_word": "ブレ",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "やっぱその気持ちが僕の中でずっと、結局ぶれていって。",
+  "video_en": "Those feelings just kept wavering inside me."
  },
  {
   "target": "別物",
@@ -2050,11 +2254,18 @@
   "t": 59,
   "video_line": "…後の気持ちと2ヶ月後の気持ちはもうなんか全然別物で毎回でそのために…",
   "video_clip": [
+   58.79,
+   61.43
+  ],
+  "video_word": "別物",
+  "video_check": "whisper",
+  "video_clip_yt": [
    58.2,
    62.67
   ],
-  "video_word": "別物",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "2ヶ月後の気持ちはもうなんか全然別物で、毎回…",
+  "video_en": "And how I felt two months later was totally different, every time..."
  },
  {
   "target": "祝福",
@@ -2094,10 +2305,10 @@
    "It made me happy that everyone congratulated us."
   ],
   "t": 198,
-  "video_line": "…なんて0日婚でもなぜかめちゃくちゃ祝福されたというかすごいもてはやされていい…",
+  "video_line": "…なって0日婚でもなぜかめちゃくちゃ祝福されたというかすごいもてはやされていい…",
   "video_clip": [
-   196.42,
-   201.47
+   197.23,
+   199.87
   ],
   "video_check": "whisper",
   "video_clip_yt": [
@@ -2105,7 +2316,10 @@
    203.1,
    false
   ],
-  "video_word": "祝福"
+  "video_word": "祝福",
+  "front": "video",
+  "video_front": "なぜかめちゃくちゃ祝福されたというか。",
+  "video_en": "For some reason, we got congratulated like crazy."
  },
  {
   "target": "旦那",
@@ -2147,8 +2361,8 @@
   "t": 198,
   "video_line": "…されたというかすごいもてはやされていい旦那さんみたいなちょっと優しくするだけでなんかこう…",
   "video_clip": [
-   198.84,
-   204.01
+   199.59,
+   202.49
   ],
   "video_check": "whisper",
   "video_clip_yt": [
@@ -2156,7 +2370,10 @@
    205.59,
    false
   ],
-  "video_word": "旦那"
+  "video_word": "旦那",
+  "front": "video",
+  "video_front": "すごいもてはやされて、いい旦那さんみたいな。",
+  "video_en": "People made a big fuss over me, like I was some great husband."
  },
  {
   "target": "だんだん",
@@ -2199,7 +2416,11 @@
    249.21
   ],
   "video_word": "だんだん",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   244.44,
+   249.21
+  ]
  },
  {
   "target": "最終的",
@@ -2242,11 +2463,18 @@
   "t": 62,
   "video_line": "…だったりとかイレさんだったりとか巻き込んで最終的にはオープンマリッジに至ったりとかそっから…",
   "video_clip": [
+   66.65,
+   69.07
+  ],
+  "video_word": "最終的",
+  "video_check": "whisper",
+  "video_clip_yt": [
    64.46,
    69.69
   ],
-  "video_word": "最終的",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "最終的にはオープンマリッジに至ったりとか。",
+  "video_en": "And in the end it even came to an open marriage."
  },
  {
   "target": "好感度",
@@ -2287,13 +2515,20 @@
    "People like me less after this video."
   ],
   "t": 62,
-  "video_line": "…そっから僕のためにノアが好感度を下げる最近上がってる動画ホス…",
+  "video_line": "…そっから僕のためにノアが好感度を下げる最近上がってる動画ホ…",
   "video_clip": [
+   69.19,
+   72.15
+  ],
+  "video_word": "好感度",
+  "video_check": "whisper",
+  "video_clip_yt": [
    68.52,
    73.85
   ],
-  "video_word": "好感度",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "僕のためにノアが好感度を下げる。",
+  "video_en": "Noa lowering her own image for my sake."
  },
  {
   "target": "恋愛",
@@ -2334,11 +2569,18 @@
   "t": 92,
   "video_line": "…うまくいかへんなと思って今はね恋愛がそううまくいかへんかったからやっぱ…",
   "video_clip": [
+   105.47,
+   108.25
+  ],
+  "video_word": "恋愛",
+  "video_check": "whisper",
+  "video_clip_yt": [
    103.86,
    108.89
   ],
-  "video_word": "恋愛",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "今までの恋愛がそううまくいかへんかったから。",
+  "video_en": "Because my past relationships hadn't gone that well."
  },
  {
   "target": "世間",
@@ -2377,13 +2619,20 @@
    "The world doesn't think so."
   ],
   "t": 198,
-  "video_line": "…しくするだけでなんかこういい人みたいな感じで世間からめっちゃ思われてでも実際の僕はそ…",
+  "video_line": "…しくするだけでなんかこういい人みたいな感じで世間からめっちゃ思われてでも実際の僕は…",
   "video_clip": [
+   203.51,
+   206.47
+  ],
+  "video_word": "世間",
+  "video_check": "whisper",
+  "video_clip_yt": [
    202.46,
    207.79
   ],
-  "video_word": "世間",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "いい人みたいな感じで、世間からめっちゃ思われて。",
+  "video_en": "And the public saw me as some kind of nice guy."
  },
  {
   "target": "もてはやす",
@@ -2420,10 +2669,10 @@
    "Everyone hyped me up at the start.",
    "In the beginning, people praised me a lot."
   ],
-  "video_line": "…ちゃくちゃ祝福されたというかすごいもてはやされていい旦那さんみたいなちょっと優し…",
+  "video_line": "…ちゃくちゃ祝福されたというかすごいもてはやされていい旦那さんみたいなちょっと優…",
   "video_clip": [
    198.08,
-   203.1
+   203.01
   ],
   "video_check": "whisper",
   "video_clip_yt": [
@@ -2471,13 +2720,17 @@
    "It's always me who's the bad guy."
   ],
   "t": 244,
-  "video_line": "…じゃないやん動画上でもそうやけど悪役がなんかだんだん…",
+  "video_line": "…じゃないやん動画上でもそうやけど悪役がなんかだんだんネ…",
   "video_clip": [
    241.62,
-   247.39
+   247.29
   ],
   "video_word": "悪役",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   241.62,
+   247.39
+  ]
  },
  {
   "target": "せいで",
@@ -2516,13 +2769,20 @@
    "It's my fault everyone was late."
   ],
   "t": 244,
-  "video_line": "…みたいに私と結婚したせいでちょっとそういう風に見られたっていうなんか…",
+  "video_line": "…ハーキャラみたいに私と結婚したせいでちょっとそういう風に見られたっていうなんか…",
   "video_clip": [
+   248.11,
+   251.79
+  ],
+  "video_word": "せいで",
+  "video_check": "whisper",
+  "video_clip_yt": [
    246.94,
    252.11
   ],
-  "video_word": "せいで",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "私と結婚したせいで、ちょっとそういう風に見られた。",
+  "video_en": "Because he married me, people started to see him that way."
  },
  {
   "target": "始まり",
@@ -2561,13 +2821,20 @@
    "That was where it all started."
   ],
   "t": 253,
-  "video_line": "…ういう風に見られたっていうなんか撮りたい動画も始まりは5対5やったよその動画も私…",
+  "video_line": "…いう風に見られたっていうなんか撮りたい動画も始まりは5対5やったよその動画も私…",
   "video_clip": [
+   251.61,
+   254.67
+  ],
+  "video_word": "始まり",
+  "video_check": "whisper",
+  "video_clip_yt": [
    250.44,
    255.97
   ],
-  "video_word": "始まり",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "撮りたい動画も、始まりは5対5やった。",
+  "video_en": "Even the videos we wanted to make started out 50-50."
  },
  {
   "target": "悩み",
@@ -2609,11 +2876,18 @@
   "t": 273,
   "video_line": "…時もそばにおったやんその悩み聞いてたらさ私もその気…",
   "video_clip": [
+   269.67,
+   274.33
+  ],
+  "video_word": "悩み",
+  "video_check": "whisper",
+  "video_clip_yt": [
    268.02,
    273.25
   ],
-  "video_word": "悩み",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "その悩み聞いてたらさ、私もその気持ち分かるやん。",
+  "video_en": "Listening to his worries, I understood how he felt, you know."
  },
  {
   "target": "優先",
@@ -2653,13 +2927,17 @@
    "I want to prioritise my job right now."
   ],
   "t": 331,
-  "video_line": "…ですけどでもやっぱどうしてもYouTubeを優先中の一番上に持ってきてしまうみたいなところがあっ…",
+  "video_line": "…けどでもやっぱどうしてもYouTubeを優先中の一番上に持ってきてしまうみたいなところがあ…",
   "video_clip": [
-   327.81,
-   333.23
+   327.94,
+   333.11
   ],
   "video_word": "優先",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   327.81,
+   333.23
+  ]
  },
  {
   "target": "モヤモヤ",
@@ -2744,13 +3022,20 @@
    "I feel so much lighter after talking."
   ],
   "t": 445,
-  "video_line": "…ってるからなんかずっとモヤモヤするしなんか言ってもすっきりしないなみたいな結婚は向い…",
+  "video_line": "…ってるからなんかずっとモヤモヤするしなんか言ってもすっきりしないなみたいな結構は向…",
   "video_clip": [
+   453.03,
+   455.05
+  ],
+  "video_word": "すっきり",
+  "video_check": "whisper",
+  "video_clip_yt": [
    451.54,
    456.88
   ],
-  "video_word": "すっきり",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "なんか言ってもすっきりしないな。",
+  "video_en": "Whatever I said, it didn't feel resolved."
  },
  {
   "target": "コロコロ",
@@ -2789,11 +3074,18 @@
   "t": 483,
   "video_line": "…んなことは学びになったし1日でコロコロこんな考え変わる人も初めて見…",
   "video_clip": [
+   482.61,
+   486.97
+  ],
+  "video_word": "コロコロ",
+  "video_check": "whisper",
+  "video_clip_yt": [
    481.32,
    486.75
   ],
-  "video_word": "コロコロ",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "1日でコロコロこんな考え変わる人も初めて見たけど。",
+  "video_en": "I'd never seen anyone flip-flop this much in a single day, though."
  },
  {
   "target": "尊敬",
@@ -2835,11 +3127,18 @@
   "t": 500,
   "video_line": "…してはめっちゃ凄いし誰よりも尊敬してるけどほんまにだんなとしては…",
   "video_clip": [
+   501.99,
+   504.25
+  ],
+  "video_word": "尊敬",
+  "video_check": "whisper",
+  "video_clip_yt": [
    500.8,
    505.85
   ],
-  "video_word": "尊敬",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "誰よりも尊敬してるけど。",
+  "video_en": "I respect him more than anyone, but..."
  },
  {
   "target": "赤ちゃん",
@@ -2884,7 +3183,11 @@
    540.03
   ],
   "video_word": "赤ちゃん",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   535.92,
+   540.03
+  ]
  },
  {
   "target": "反論",
@@ -2976,13 +3279,20 @@
    "You've got me there."
   ],
   "t": 545,
-  "video_line": "…当にそれに関してはマジで反論の余地がないっていうかいや、ほんとにそうです仕事と友…",
+  "video_line": "…にそれに関してはマジで反論の余地がないっていうかいや、ほんとにそうです仕事と友…",
   "video_clip": [
+   542.95,
+   545.79
+  ],
+  "video_word": "反論の余地がない",
+  "video_check": "whisper",
+  "video_clip_yt": [
    542.51,
    547.65
   ],
-  "video_word": "反論の余地がない",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "それに関してはマジで反論の余地がないっていうか。",
+  "video_en": "On that point, there's honestly no arguing with it."
  },
  {
   "target": "後輩",
@@ -3023,11 +3333,18 @@
   "t": 546,
   "video_line": "…事と友達とかほんまに後輩とかやったらめっちゃいいと思うほんま…",
   "video_clip": [
+   546.29,
+   551.13
+  ],
+  "video_word": "後輩",
+  "video_check": "whisper",
+  "video_clip_yt": [
    546.38,
    551.81
   ],
-  "video_word": "後輩",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "仕事と友達とか、ほんまに後輩とかやったらめっちゃいいと思う。",
+  "video_en": "As a coworker, a friend or a junior, he'd honestly be great."
  },
  {
   "target": "特定",
@@ -3069,11 +3386,18 @@
   "t": 566,
   "video_line": "…って言うより女の子って言うからその特定の彼女とかに対して…",
   "video_clip": [
-   566.84,
+   568.81,
    571.83
   ],
   "video_word": "特定",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   566.84,
+   571.83
+  ],
+  "front": "video",
+  "video_front": "その特定の彼女とかに対して…",
+  "video_en": "Towards a particular girlfriend..."
  },
  {
   "target": "真逆",
@@ -3264,11 +3588,18 @@
   "t": 610,
   "video_line": "…も俺でこの動画撮るまでこれを世の中に公開するまでは指輪をつけてなかったおかしい場面が…",
   "video_clip": [
+   619.13,
+   622.23
+  ],
+  "video_word": "世の中",
+  "video_check": "whisper",
+  "video_clip_yt": [
    617.6,
    622.83
   ],
-  "video_word": "世の中",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "これを世の中に公開するまでは、指輪をつけてなかった。",
+  "video_en": "Until I made this public to the world, I wasn't wearing the ring."
  },
  {
   "target": "公開",
@@ -3308,13 +3639,17 @@
    "I'll post a new video tomorrow."
   ],
   "t": 610,
-  "video_line": "…この動画撮るまでこれを世の中に公開するまでは指輪をつけてなかったおかしい場面がいっぱいあ…",
+  "video_line": "…この動画撮るまでこれを世の中に公開するまでは指輪をつけてなかったおかしい場面がいっぱい…",
   "video_clip": [
    618.28,
-   623.11
+   623.05
   ],
   "video_word": "公開",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   618.28,
+   623.11
+  ]
  },
  {
   "target": "場面",
@@ -3353,13 +3688,20 @@
    "You see that kind of moment a lot."
   ],
   "t": 610,
-  "video_line": "…の中に公開するまでは指輪をつけてなかったおかしい場面がいっぱいあるんでそれも重いなと思いながらやってき…",
+  "video_line": "…の中に公開するまでは指輪をつけてなかったおかしい場面がいっぱいあるんでそれも重いなと思いながって…",
   "video_clip": [
+   621.73,
+   623.43
+  ],
+  "video_word": "場面",
+  "video_check": "whisper",
+  "video_clip_yt": [
    619.94,
    624.91
   ],
-  "video_word": "場面",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "おかしい場面がいっぱいあるんで。",
+  "video_en": "There were lots of weird moments, so..."
  },
  {
   "target": "窮屈",
@@ -3400,11 +3742,18 @@
   "t": 610,
   "video_line": "…かれると思うしそれが多分もう離婚が決まってから窮屈すぎてその言いたいけど…",
   "video_clip": [
+   628.29,
+   630.81
+  ],
+  "video_word": "窮屈",
+  "video_check": "whisper",
+  "video_clip_yt": [
    627.16,
    632.07
   ],
-  "video_word": "窮屈",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "離婚が決まってから窮屈すぎて。",
+  "video_en": "Since the divorce was decided, it's felt way too stifling."
  },
  {
   "target": "嫁",
@@ -3441,10 +3790,10 @@
    "I got scolded by my wife."
   ],
   "t": 638,
-  "video_line": "…いとりあえずこれからは元嫁元旦那ということでもしかしたらYouTu…",
+  "video_line": "…とりあえずこれからは元嫁元旦那ということでもしかしたらYouT…",
   "video_clip": [
-   644.41,
-   649.4
+   645.62,
+   648.18
   ],
   "video_check": "whisper",
   "video_clip_yt": [
@@ -3452,7 +3801,10 @@
    650.92,
    false
   ],
-  "video_word": "嫁"
+  "video_word": "嫁",
+  "front": "video",
+  "video_front": "これからは元嫁、元旦那ということで。",
+  "video_en": "From now on, it's ex-wife and ex-husband."
  },
  {
   "target": "その辺",
@@ -3542,8 +3894,8 @@
   "t": 649,
   "video_line": "…してコメント欄でも誰が悪いとかみたいな炎上させるみたいなのやめてほしいです悪いと言ったら僕…",
   "video_clip": [
-   654.83,
-   660.0
+   655.86,
+   659.28
   ],
   "video_check": "whisper",
   "video_clip_yt": [
@@ -3551,7 +3903,10 @@
    659.55,
    false
   ],
-  "video_word": "炎上"
+  "video_word": "炎上",
+  "front": "video",
+  "video_front": "誰が悪いとかみたいな、炎上させるみたいなのやめてほしいです。",
+  "video_en": "Please don't do the 'who's to blame' thing and stir up a backlash."
  },
  {
   "target": "天才",
@@ -3592,11 +3947,18 @@
   "t": 699,
   "video_line": "…友達としてやっていきましょう笑天才やな笑いやいやいやでも…",
   "video_clip": [
+   697.02,
+   698.42
+  ],
+  "video_word": "天才",
+  "video_check": "whisper",
+  "video_clip_yt": [
    694.85,
    700.24
   ],
-  "video_word": "天才",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "天才やな。",
+  "video_en": "You're a genius."
  },
  {
   "target": "ある種",
@@ -3736,8 +4098,8 @@
   "t": 804,
   "video_line": "…離婚すると思ったとかそんな感じくらいでやってください十分叩かれたんで叩く…",
   "video_clip": [
-   808.94,
-   814.39
+   811.09,
+   812.73
   ],
   "video_check": "whisper",
   "video_clip_yt": [
@@ -3745,7 +4107,10 @@
    816.6,
    false
   ],
-  "video_word": "十分"
+  "video_word": "十分",
+  "front": "video",
+  "video_front": "十分叩かれたんで。",
+  "video_en": "I've already been bashed enough."
  },
  {
   "target": "悪化",
@@ -3786,8 +4151,8 @@
   "t": 832,
   "video_line": "…くはずだったんですよね関係が悪化というか難しい関係になったんでだいぶ…",
   "video_clip": [
-   830.74,
-   835.51
+   832.23,
+   835.07
   ],
   "video_check": "whisper",
   "video_clip_yt": [
@@ -3795,7 +4160,10 @@
    837.04,
    false
   ],
-  "video_word": "悪化"
+  "video_word": "悪化",
+  "front": "video",
+  "video_front": "関係が悪化というか、難しい関係になったんで。",
+  "video_en": "Our relationship got worse, or rather, it got complicated."
  },
  {
   "target": "しかも",
@@ -3839,7 +4207,11 @@
    919.9
   ],
   "video_word": "しかも",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   914.73,
+   919.9
+  ]
  },
  {
   "target": "たまたま",
@@ -3876,13 +4248,17 @@
    "We just happened to meet at a store."
   ],
   "t": 917,
-  "video_line": "…んペアブックみたいなのしてえ、しかもたまたまパッと言ったら俺だ…",
+  "video_line": "…ペアブックみたいなのしてえ、しかもたまたまパッと言ったら俺…",
   "video_clip": [
-   915.14,
-   920.49
+   915.55,
+   919.9
   ],
   "video_word": "たまたま",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   915.14,
+   920.49
+  ]
  },
  {
   "target": "金持ち",
@@ -3972,11 +4348,18 @@
   "t": 722,
   "video_line": "…ないなっていう気はしますねじゃあこれからよろしく笑…",
   "video_clip": [
+   725.8,
+   727.12
+  ],
+  "video_word": "よろしく",
+  "video_check": "whisper",
+  "video_clip_yt": [
    724.19,
    728.14
   ],
-  "video_word": "よろしく",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "じゃあ、これからよろしく。",
+  "video_en": "Well then, here's to what comes next."
  },
  {
   "target": "ボタン",
@@ -4019,7 +4402,11 @@
    566.35
   ],
   "video_word": "ボタン",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   561.34,
+   566.35
+  ]
  },
  {
   "target": "グッド",
@@ -4057,13 +4444,17 @@
    "Hit like if you thought it was good."
   ],
   "t": 552,
-  "video_line": "…ま終わってるからってコメントが届いててそれにグッドボタン2000なんすよ笑い…",
+  "video_line": "…ま終わってるからってコメントが届いててそれにグッドボタン2000なんすよ笑…",
   "video_clip": [
    561.14,
-   566.16
+   565.37
   ],
   "video_word": "グッド",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   561.14,
+   566.16
+  ]
  },
  {
   "target": "ホスト",
@@ -4107,7 +4498,11 @@
    76.03
   ],
   "video_word": "ホスト",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   70.7,
+   76.03
+  ]
  },
  {
   "target": "プロ",
@@ -4150,7 +4545,11 @@
    706.98
   ],
   "video_word": "プロ",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   702.61,
+   706.98
+  ]
  },
  {
   "target": "バースデー",
@@ -4234,13 +4633,20 @@
    "All you do is complain.",
    "You're always whining."
   ],
-  "video_line": "…ありますずっと報告してばっかりなんですけどまぁこれが最後に…",
+  "video_line": "…ありますずっと報告してばっかりなんですけどまぁこれが最後…",
   "video_clip": [
+   4.11,
+   6.69
+  ],
+  "video_word": "ばっかり",
+  "video_check": "whisper",
+  "video_clip_yt": [
    3.22,
    8.32
   ],
-  "video_word": "ばっかり",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "ずっと報告してばっかりなんですけど。",
+  "video_en": "We've been doing nothing but announcements, but..."
  },
  {
   "target": "どうしようもない",
@@ -4280,13 +4686,17 @@
    "Nothing can be done at this point."
   ],
   "t": 346,
-  "video_line": "…てくれてるはずなのにその一番の味方がどうしようもなくこう何て言うんですかね言ってたもんな味…",
+  "video_line": "…くれてるはずなのにその一番の味方がどうしようもなくこう何て言うんですかね言ってたもんな味…",
   "video_clip": [
-   342.34,
+   342.42,
    347.87
   ],
   "video_word": "どうしようもなく",
-  "video_check": "whisper"
+  "video_check": "whisper",
+  "video_clip_yt": [
+   342.34,
+   347.87
+  ]
  },
  {
   "target": "言葉を選ばずに言うと",
@@ -4325,13 +4735,20 @@
    "Honestly, it was boring.",
    "Not to sugar-coat it, it wasn't fun."
   ],
-  "video_line": "…結論から言いますと離婚しました言葉を選ばずに言うと最初から最後まで僕がこ…",
+  "video_line": "…結論から言いますと離婚しました言葉を選ばずに言うと最初から最後まで僕が…",
   "video_clip": [
+   11.71,
+   15.61
+  ],
+  "video_word": "言葉を選ばずに言うと",
+  "video_check": "whisper",
+  "video_clip_yt": [
    9.52,
    16.36
   ],
-  "video_word": "言葉を選ばずに言うと",
-  "video_check": "whisper"
+  "front": "video",
+  "video_front": "言葉を選ばずに言うと、最初から最後まで…",
+  "video_en": "To put it bluntly, from start to finish..."
  },
  {
   "target": "ほんまそれな",
@@ -4382,6 +4799,9 @@
    601.45,
    true
   ],
-  "video_word": "ほんまそれな"
+  "video_word": "ほんまそれな",
+  "front": "video",
+  "video_front": "ほんまそれな。",
+  "video_en": "So true."
  }
 ]

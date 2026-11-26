@@ -10,7 +10,7 @@ import html
 FIELDS = ["Number", "Sentence", "SentenceFurigana", "Word", "Reading", "Pitch", "PitchPattern",
           "WordMeaning", "WordBreakdown", "WordEnglish", "SentenceMeaning", "SentenceBreakdown", "SentenceEnglish",
           "Note", "AudioFront", "Audio", "JP", "Source", "Kind", "SentencePlain",
-          "VideoAudio", "VideoLine"]  # optional: the creator saying the word, cut from the video
+          "VideoAudio", "VideoLine", "LineEnglish", "Example"]  # optional: the creator saying the word, cut from the video
 
 FONT = "@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500&display=swap');"
 
@@ -29,6 +29,8 @@ html, body, .card, .card.nightMode, .nightMode .card { margin:0; background:#0a0
 .vlabel { font-size:10px; letter-spacing:.12em; text-transform:uppercase; opacity:.6; }
 .vline { font-size:14px; line-height:1.6; margin-top:4px; opacity:.85; }
 .vline b { font-weight:700; opacity:1; }
+.lineen { font-size:14px; margin-top:6px; opacity:.75; text-align:center; max-width:92%; }
+.example { font-size:20px; text-align:center; margin:6px 0 4px; line-height:2.1; }
 .divider { width:240px; max-width:70%; position:relative; display:flex; justify-content:center; margin:26px 0 14px; }
 .divider::before { content:''; position:absolute; top:50%; left:0; right:0; height:1px; background:linear-gradient(90deg,transparent,#2a2a2a,transparent); }
 .diamond { position:relative; color:#c4a44a; font-size:7px; background:#0a0a0a; padding:0 14px; }
@@ -67,6 +69,8 @@ html, body, .card, .card.nightMode, .nightMode .card { margin:0; background:#f5f
 .vlabel { font-size:10px; letter-spacing:.12em; text-transform:uppercase; opacity:.6; }
 .vline { font-size:14px; line-height:1.6; margin-top:4px; opacity:.85; }
 .vline b { font-weight:700; opacity:1; }
+.lineen { font-size:14px; margin-top:6px; opacity:.75; text-align:center; max-width:92%; }
+.example { font-size:20px; text-align:center; margin:6px 0 4px; line-height:2.1; }
 .divider { display:flex; justify-content:center; margin:20px 0 10px; }
 .diamond { display:block; width:10px; height:10px; border-radius:9999px; background:#bc002d; font-size:0; }
 .section-label { font-size:10px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:#6b6970; margin:2px 0 12px; }
@@ -111,6 +115,7 @@ def templates(brand):
     afmt = ('<div class="screen"><div class="inner"><div class="brand">' + brand + '</div>'
             '<div class="back">{{SentenceFurigana}}</div>'
             '<div class="audio">{{Audio}}</div>'
+            '{{#LineEnglish}}<div class="lineen">{{LineEnglish}}</div>{{/LineEnglish}}'
             '{{#VideoAudio}}<div class="vclip"><div class="vlabel">From the video</div>'
             '<div class="vline">{{VideoLine}}</div><div class="audio">{{VideoAudio}}</div></div>{{/VideoAudio}}'
             '<div class="divider"><span class="diamond">&#9670;</span></div>'
@@ -119,7 +124,8 @@ def templates(brand):
             '{{#Pitch}}<div class="pitch-row">{{Pitch}}</div><div class="pattern">{{PitchPattern}}</div>{{/Pitch}}'
             + _section("Word") + '</div>'
             '<div class="divider"><span class="diamond">&#9670;</span></div>'
-            '<div class="section-label">Sentence breakdown</div>'
+            '{{#Example}}<div class="section-label">Example sentence</div><div class="example">{{Example}}</div>{{/Example}}'
+            '{{^Example}}<div class="section-label">Sentence breakdown</div>{{/Example}}'
             '<div class="block">' + _section("Sentence") + '</div>'
             '{{#Note}}<div class="note">{{Note}}</div>{{/Note}}'
             '<div class="num">#{{Number}}{{#Source}} · {{Source}}{{/Source}}</div></div></div>')
