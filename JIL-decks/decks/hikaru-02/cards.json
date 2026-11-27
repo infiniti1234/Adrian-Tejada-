@@ -1,0 +1,4570 @@
+[
+ {
+  "target": "投稿",
+  "kind": "word",
+  "sentence": "新しい動画を投稿した。",
+  "t": 359,
+  "video_line": "…って思ったんですね動画も不定期投稿にしますって言ってやっぱりそれで今…",
+  "video_word": "投稿",
+  "video_clip": [
+   417.75,
+   419.23
+  ],
+  "video_cut": [
+   "投稿頻度戻",
+   "戻します"
+  ],
+  "video_front": "投稿頻度戻します。",
+  "video_en": "I'm putting my upload frequency back.",
+  "front": "video",
+  "reading": "とうこう",
+  "meaning": "posting, uploading",
+  "translation": "I posted a new video.",
+  "note": "投稿頻度 = upload frequency.",
+  "wm": [
+   "posting, uploading (videos, posts)",
+   "投稿する = to upload. YouTubers talk about 投稿頻度 (how often they upload)."
+  ],
+  "wb": [
+   "投：throw",
+   "稿：draft, manuscript",
+   "Whole: sending in a piece."
+  ],
+  "we": [
+   "post",
+   "upload",
+   "submit"
+  ],
+  "sm": [
+   "They uploaded a new video.",
+   "A YouTuber talking about their channel."
+  ],
+  "sb": [
+   "新しい動画を：a new video",
+   "投稿した。：posted",
+   "Whole: I posted a new video."
+  ],
+  "se": [
+   "I posted a new video.",
+   "I uploaded a new video.",
+   "New video's up."
+  ]
+ },
+ {
+  "target": "過激",
+  "kind": "word",
+  "sentence": "あいつの発言、ちょっと過激すぎるわ。",
+  "t": 70,
+  "video_line": "…のかっていうと最近僕ね、過激なことを言うのもやめようかな…",
+  "video_word": "過激",
+  "video_clip": [
+   70.81,
+   75.05
+  ],
+  "video_cut": [
+   "最近僕ね",
+   "やめようかな"
+  ],
+  "video_front": "最近僕ね、過激なことを言うのもやめようかなって…",
+  "video_en": "Lately I've been thinking of stopping saying extreme stuff...",
+  "front": "video",
+  "reading": "かげき",
+  "meaning": "extreme, radical",
+  "translation": "That guy's comments are a bit too extreme.",
+  "note": "すぎる = too much. わ = casual ending.",
+  "wm": [
+   "extreme, radical, over the top",
+   "過激な発言 = extreme remarks. Hikaru's whole video is about this."
+  ],
+  "wb": [
+   "過：too much, past",
+   "激：violent, intense",
+   "Whole: too intense."
+  ],
+  "we": [
+   "extreme",
+   "radical",
+   "over the top"
+  ],
+  "sm": [
+   "Someone's remarks go too far.",
+   "Commenting on another YouTuber."
+  ],
+  "sb": [
+   "あいつの発言、：that guy's remarks",
+   "ちょっと過激すぎるわ。：are a bit too extreme",
+   "Whole: that guy's comments are a bit too extreme."
+  ],
+  "se": [
+   "That guy's comments are a bit too extreme.",
+   "What he says goes a bit too far.",
+   "His remarks are way over the top."
+  ]
+ },
+ {
+  "target": "がっかり",
+  "kind": "word",
+  "sentence": "結果を見て、がっかりした。",
+  "t": 150,
+  "video_line": "…の人がそれを見てこうがっかりとかするのってすごい悲しいこと…",
+  "video_word": "がっかり",
+  "video_clip": [
+   148.73,
+   153.15
+  ],
+  "video_cut": [
+   "それを見てこう",
+   "悲しいこと"
+  ],
+  "video_front": "それを見てこう、がっかりとかするのって、すごい悲しいことで。",
+  "video_en": "Them seeing that and feeling let down is really sad.",
+  "front": "video",
+  "reading": "",
+  "meaning": "disappointed, let down",
+  "translation": "I was let down when I saw the result.",
+  "note": "",
+  "wm": [
+   "disappointed, let down",
+   "がっかりする = to be disappointed. がっかりさせる = to let someone down."
+  ],
+  "wb": [
+   "がっかり：sound word for disappointment"
+  ],
+  "we": [
+   "disappointed",
+   "let down",
+   "bummed"
+  ],
+  "sm": [
+   "The result was worse than they hoped.",
+   "After a test or match."
+  ],
+  "sb": [
+   "結果を見て、：seeing the result",
+   "がっかりした。：was disappointed",
+   "Whole: I was let down when I saw the result."
+  ],
+  "se": [
+   "I was let down when I saw the result.",
+   "The result disappointed me.",
+   "I was bummed when I saw how it went."
+  ]
+ },
+ {
+  "target": "向き合う",
+  "kind": "word",
+  "sentence": "ちゃんと自分と向き合おう。",
+  "t": 356,
+  "video_forms": [
+   "向き合"
+  ],
+  "video_line": "…考えてなかったなって本当に向き合ってなかったなって思ったんですね動画…",
+  "video_word": "向き合",
+  "video_clip": [
+   356.47,
+   358.61
+  ],
+  "video_cut": [
+   "本当に向き合",
+   "なかったなって"
+  ],
+  "video_front": "本当に向き合ってなかったなって。",
+  "video_en": "I really hadn't been facing things properly.",
+  "front": "video",
+  "reading": "むきあう",
+  "meaning": "to face, to confront",
+  "translation": "Let's properly face ourselves.",
+  "note": "",
+  "wm": [
+   "to face, to deal with honestly",
+   "自分と向き合う = to take an honest look at yourself. Hikaru: ファンと向き合う."
+  ],
+  "wb": [
+   "向き：facing",
+   "合う：each other",
+   "Whole: to face each other."
+  ],
+  "we": [
+   "face",
+   "confront",
+   "deal with"
+  ],
+  "sm": [
+   "They want to look honestly at themselves.",
+   "Self-reflection."
+  ],
+  "sb": [
+   "ちゃんと：properly",
+   "自分と向き合おう。：let's face ourselves",
+   "Whole: let's properly face ourselves."
+  ],
+  "se": [
+   "Let's properly face ourselves.",
+   "Let's take an honest look at ourselves.",
+   "Time to face myself properly."
+  ]
+ },
+ {
+  "target": "アンチ",
+  "kind": "word",
+  "sentence": "アンチのコメントは気にしない。",
+  "t": 1024,
+  "video_line": "…のことが大好きですアンチもね嫌いじゃないでマジでネタに…",
+  "video_word": "アンチ",
+  "video_clip": [
+   1024.08,
+   1026.86
+  ],
+  "video_cut": [
+   "アンチもね",
+   "マジで"
+  ],
+  "video_front": "アンチもね、嫌いじゃないで、マジで。",
+  "video_en": "Honestly, I don't hate the haters either.",
+  "front": "video",
+  "reading": "",
+  "meaning": "hater, anti-fan",
+  "translation": "I don't care about haters' comments.",
+  "note": "",
+  "wm": [
+   "haters, people who post against someone online",
+   "From anti. Big in YouTuber talk."
+  ],
+  "wb": [
+   "アンチ：from English \"anti\""
+  ],
+  "we": [
+   "hater",
+   "anti-fan",
+   "troll"
+  ],
+  "sm": [
+   "They ignore negative comments.",
+   "A YouTuber on criticism."
+  ],
+  "sb": [
+   "アンチのコメントは：haters' comments",
+   "気にしない。：I don't mind",
+   "Whole: I don't care about haters' comments."
+  ],
+  "se": [
+   "I don't care about haters' comments.",
+   "Haters' comments don't bother me.",
+   "I ignore what the haters say."
+  ]
+ },
+ {
+  "target": "連日",
+  "kind": "word",
+  "sentence": "連日ニュースになってるな。",
+  "t": 81,
+  "video_line": "…それ何にかって言ったら、連日ね、こうヤフーニュースで取り上げられるようになって…",
+  "video_word": "連日",
+  "video_clip": [
+   79.44,
+   84.31
+  ],
+  "reading": "れんじつ",
+  "meaning": "day after day",
+  "translation": "It's been in the news day after day.",
+  "note": "",
+  "wm": [
+   "day after day, every day in a row",
+   "Used for news, heat waves, events."
+  ],
+  "wb": [
+   "連：in a row",
+   "日：day",
+   "Whole: days in a row."
+  ],
+  "we": [
+   "day after day",
+   "every day",
+   "daily"
+  ],
+  "sm": [
+   "Something keeps making the news.",
+   "Talking about a scandal."
+  ],
+  "sb": [
+   "連日：day after day",
+   "ニュースになってるな。：is in the news",
+   "Whole: it's been in the news day after day."
+  ],
+  "se": [
+   "It's been in the news day after day.",
+   "It's in the news every day.",
+   "It's been all over the news daily."
+  ]
+ },
+ {
+  "target": "取り上げる",
+  "kind": "word",
+  "sentence": "ニュースで取り上げられた。",
+  "t": 81,
+  "video_forms": [
+   "取り上げ"
+  ],
+  "video_line": "…日ね、こうヤフーニュースで取り上げられるようになってまあやっぱマイ…",
+  "video_word": "取り上げ",
+  "video_clip": [
+   81.19,
+   85.45
+  ],
+  "video_cut": [
+   "連日ね",
+   "なって"
+  ],
+  "video_front": "連日ね、こうヤフーニュースで取り上げられるようになって。",
+  "video_en": "Every day, Yahoo News started picking it up.",
+  "front": "video",
+  "reading": "とりあげる",
+  "meaning": "to cover, to pick up (a topic)",
+  "translation": "It got covered in the news.",
+  "note": "取り上げられた = was covered (passive).",
+  "wm": [
+   "to pick up, to take up a topic; to take away",
+   "ニュースで取り上げられる = to be covered by the news."
+  ],
+  "wb": [
+   "取り：taking",
+   "上げる：raise",
+   "Whole: to pick up."
+  ],
+  "we": [
+   "cover",
+   "pick up",
+   "feature"
+  ],
+  "sm": [
+   "The news reported on it.",
+   "Talking about media."
+  ],
+  "sb": [
+   "ニュースで：in the news",
+   "取り上げられた。：was covered",
+   "Whole: it got covered in the news."
+  ],
+  "se": [
+   "It got covered in the news.",
+   "The news picked it up.",
+   "It was featured on the news."
+  ]
+ },
+ {
+  "target": "事業",
+  "kind": "word",
+  "sentence": "新しい事業を始めた。",
+  "t": 654,
+  "video_line": "…あと最近ね本当にいろんな事業をしすぎて事業事業ばっかりになったりとか…",
+  "video_word": "事業",
+  "video_clip": [
+   654.78,
+   656.48
+  ],
+  "video_cut": [
+   "いろんな事業",
+   "しすぎて"
+  ],
+  "video_front": "いろんな事業をしすぎて…",
+  "video_en": "I've been doing too many businesses...",
+  "front": "video",
+  "reading": "じぎょう",
+  "meaning": "business, enterprise",
+  "translation": "I started a new business.",
+  "note": "",
+  "wm": [
+   "a business, an enterprise, a venture",
+   "Hikaru runs many 事業 outside YouTube."
+  ],
+  "wb": [
+   "事：thing, matter",
+   "業：business",
+   "Whole: business matters."
+  ],
+  "we": [
+   "business",
+   "venture",
+   "enterprise"
+  ],
+  "sm": [
+   "They launched a new business.",
+   "Talking about work."
+  ],
+  "sb": [
+   "新しい事業を：a new business",
+   "始めた。：started",
+   "Whole: I started a new business."
+  ],
+  "se": [
+   "I started a new business.",
+   "I launched a new venture.",
+   "I've started a new business."
+  ]
+ },
+ {
+  "target": "まとまる",
+  "kind": "word",
+  "sentence": "話がまだまとまってない。",
+  "t": 34,
+  "video_forms": [
+   "まとま"
+  ],
+  "video_line": "…ふうに思っててで、自分の言葉でまとまってないかもしれないんですけど今思った…",
+  "video_word": "まとま",
+  "video_clip": [
+   35.05,
+   37.99
+  ],
+  "video_cut": [
+   "自分の言葉でまとま",
+   "しれないんですけど"
+  ],
+  "video_front": "自分の言葉でまとまってないかもしれないんですけど。",
+  "video_en": "My words might not be very organised, but...",
+  "front": "video",
+  "reading": "",
+  "meaning": "to come together, to be organised",
+  "translation": "The plan isn't settled yet.",
+  "note": "",
+  "wm": [
+   "to come together, to be organised, to be settled",
+   "話がまとまる = to reach agreement. 言葉がまとまらない = can't put it into words."
+  ],
+  "wb": [
+   "まとまる：verb for come together (纏まる)"
+  ],
+  "we": [
+   "come together",
+   "be settled",
+   "be organised"
+  ],
+  "sm": [
+   "They haven't agreed or sorted it out yet.",
+   "A meeting or plan."
+  ],
+  "sb": [
+   "話が：the talk, the plan",
+   "まだまとまってない。：isn't settled yet",
+   "Whole: the plan isn't settled yet."
+  ],
+  "se": [
+   "The plan isn't settled yet.",
+   "We haven't sorted it out yet.",
+   "Nothing's been agreed yet."
+  ]
+ },
+ {
+  "target": "思い詰める",
+  "kind": "word",
+  "sentence": "そんなに思い詰めんなよ。",
+  "t": 44,
+  "video_forms": [
+   "思い詰め",
+   "思いつめ"
+  ],
+  "video_line": "…しいですちょっとさっきまでね、思い詰めてたというか悩んでたというか、…",
+  "video_word": "思い詰め",
+  "video_clip": [
+   44.73,
+   47.37
+  ],
+  "video_cut": [
+   "さっきまでね",
+   "というか"
+  ],
+  "video_front": "さっきまでね、思い詰めてたというか。",
+  "video_en": "Until just now, I'd been brooding over it.",
+  "front": "video",
+  "reading": "おもいつめる",
+  "meaning": "to brood, to agonise",
+  "translation": "Don't agonise over it so much.",
+  "note": "思い詰めんな = 思い詰めるな (casual).",
+  "wm": [
+   "to brood, to agonise, to think yourself into a corner",
+   "Hikaru 思い詰めてた for hours before filming."
+  ],
+  "wb": [
+   "思い：thoughts",
+   "詰める：to cram, to corner",
+   "Whole: to cram yourself with thoughts."
+  ],
+  "we": [
+   "brood",
+   "agonise",
+   "overthink"
+  ],
+  "sm": [
+   "They tell a friend not to stress so much.",
+   "Comforting someone."
+  ],
+  "sb": [
+   "そんなに：that much",
+   "思い詰めんなよ。：don't agonise",
+   "Whole: don't agonise over it so much."
+  ],
+  "se": [
+   "Don't agonise over it so much.",
+   "Don't overthink it so much.",
+   "Stop beating yourself up about it."
+  ]
+ },
+ {
+  "target": "マイナス",
+  "kind": "word",
+  "sentence": "それはマイナスのイメージやな。",
+  "t": 85,
+  "video_forms": [
+   "マイナス"
+  ],
+  "video_line": "…取り上げられるようになって、まあやっぱマイナスなように…",
+  "video_word": "マイナス",
+  "video_clip": [
+   83.62,
+   88.29
+  ],
+  "reading": "",
+  "meaning": "minus, negative",
+  "translation": "That's a negative image.",
+  "note": "",
+  "wm": [
+   "minus; negative, a downside",
+   "マイナスのイメージ = a bad image."
+  ],
+  "wb": [
+   "マイナス：from English \"minus\""
+  ],
+  "we": [
+   "negative",
+   "minus",
+   "downside"
+  ],
+  "sm": [
+   "Something makes people see you badly.",
+   "Talking about reputation."
+  ],
+  "sb": [
+   "それは：that",
+   "マイナスのイメージやな。：is a negative image (Kansai やな)",
+   "Whole: that's a negative image."
+  ],
+  "se": [
+   "That's a negative image.",
+   "That's a bad look.",
+   "That gives a negative impression."
+  ]
+ },
+ {
+  "target": "ノリ",
+  "kind": "word",
+  "sentence": "ノリで言っただけやん。",
+  "t": 132,
+  "video_forms": [
+   "乗り",
+   "ノリ"
+  ],
+  "video_line": "…YouTubeの中でノリでちょっと過激なこと言って、ジョークみたいな感じって…",
+  "video_word": "ノリ",
+  "video_clip": [
+   130.1,
+   135.33
+  ],
+  "reading": "",
+  "meaning": "vibe, going with the flow",
+  "translation": "I only said it on a whim.",
+  "note": "Hikaru: ノリで過激なこと言って.",
+  "wm": [
+   "vibe, momentum, going with the flow",
+   "ノリで = on a whim, in the moment. ノリがいい = fun, up for it."
+  ],
+  "wb": [
+   "ノリ：noun from 乗る (to ride along)"
+  ],
+  "we": [
+   "on a whim",
+   "vibe",
+   "in the moment"
+  ],
+  "sm": [
+   "They didn't really mean it.",
+   "Explaining a joke."
+  ],
+  "sb": [
+   "ノリで：on a whim",
+   "言っただけやん。：I only said it (Kansai やん)",
+   "Whole: I only said it on a whim."
+  ],
+  "se": [
+   "I only said it on a whim.",
+   "I just said it in the moment.",
+   "I didn't mean it, I was just going with it."
+  ]
+ },
+ {
+  "target": "ジョーク",
+  "kind": "word",
+  "sentence": "ジョークで言っただけや。",
+  "t": 134,
+  "video_forms": [
+   "ジョーク"
+  ],
+  "video_line": "…中で乗りでちょっと過激なこと言ってジョークみたいな感じって言っててもやっぱ文字にする…",
+  "video_word": "ジョーク",
+  "video_clip": [
+   132.23,
+   135.73
+  ],
+  "video_cut": [
+   "乗りでちょっと",
+   "言ってても"
+  ],
+  "video_front": "ノリでちょっと過激なこと言って、ジョークみたいな感じって言ってても…",
+  "video_en": "Even if I say something extreme on a whim and call it a joke...",
+  "front": "video",
+  "reading": "",
+  "meaning": "joke",
+  "translation": "I just said it as a joke.",
+  "note": "",
+  "wm": [
+   "a joke",
+   "Same as 冗談."
+  ],
+  "wb": [
+   "ジョーク：from English \"joke\""
+  ],
+  "we": [
+   "joke",
+   "kidding",
+   "a gag"
+  ],
+  "sm": [
+   "They didn't mean it seriously.",
+   "Explaining a comment."
+  ],
+  "sb": [
+   "ジョークで：as a joke",
+   "言っただけや。：only said it (Kansai や)",
+   "Whole: I just said it as a joke."
+  ],
+  "se": [
+   "I just said it as a joke.",
+   "I was only joking.",
+   "It was just a joke."
+  ]
+ },
+ {
+  "target": "切り捨てる",
+  "kind": "word",
+  "sentence": "古い考えは切り捨てよう。",
+  "t": 143,
+  "video_forms": [
+   "切り捨て"
+  ],
+  "video_line": "…フーニュースなんで信じるやつがバカだっていうふうにま、切り捨てることもできるんですけどでもやっぱり…",
+  "video_word": "切り捨て",
+  "video_clip": [
+   143.81,
+   145.53
+  ],
+  "video_cut": [
+   "切り捨てる",
+   "できるんですけど"
+  ],
+  "video_front": "切り捨てることもできるんですけど。",
+  "video_en": "I could just brush it off, but...",
+  "front": "video",
+  "reading": "きりすてる",
+  "meaning": "to cut off, to discard",
+  "translation": "Let's throw out the old ideas.",
+  "note": "",
+  "wm": [
+   "to cut off, to throw away, to dismiss",
+   "Also to brush people off: 切り捨てるタイプ."
+  ],
+  "wb": [
+   "切り：cutting",
+   "捨てる：throw away",
+   "Whole: to cut off and throw away."
+  ],
+  "we": [
+   "discard",
+   "cut off",
+   "brush off"
+  ],
+  "sm": [
+   "They want to drop outdated thinking.",
+   "Changing direction."
+  ],
+  "sb": [
+   "古い考えは：old ideas",
+   "切り捨てよう。：let's throw out",
+   "Whole: let's throw out the old ideas."
+  ],
+  "se": [
+   "Let's throw out the old ideas.",
+   "Let's ditch the old thinking.",
+   "Time to cut out the old ideas."
+  ]
+ },
+ {
+  "target": "ダメージ",
+  "kind": "word",
+  "sentence": "それはかなりのダメージやな。",
+  "t": 221,
+  "video_line": "…の力によってまあダメージを受けてたんだろうなっていうふうに思います…",
+  "video_word": "ダメージ",
+  "video_clip": [
+   221.37,
+   223.11
+  ],
+  "video_cut": [
+   "まあダメージ",
+   "だろうな"
+  ],
+  "video_front": "まあ、ダメージを受けてたんだろうな。",
+  "video_en": "I guess I was taking damage from it.",
+  "front": "video",
+  "reading": "",
+  "meaning": "damage",
+  "translation": "That's quite a lot of damage.",
+  "note": "",
+  "wm": [
+   "damage, harm",
+   "Also mental: ダメージを受ける = to take a hit."
+  ],
+  "wb": [
+   "ダメージ：from English \"damage\""
+  ],
+  "we": [
+   "damage",
+   "hit",
+   "harm"
+  ],
+  "sm": [
+   "Something hurt them badly.",
+   "Reacting to bad news."
+  ],
+  "sb": [
+   "それは：that",
+   "かなりのダメージやな。：is quite a lot of damage (Kansai やな)",
+   "Whole: that's quite a lot of damage."
+  ],
+  "se": [
+   "That's quite a lot of damage.",
+   "That's a big hit.",
+   "That really hurt."
+  ]
+ },
+ {
+  "target": "再生数",
+  "kind": "word",
+  "sentence": "最近、動画の再生数が落ちてる。",
+  "t": 325,
+  "video_forms": [
+   "所属",
+   "体勢性",
+   "再生数"
+  ],
+  "video_line": "…すると感じてると思うんですよ動画の所属が落ちたりとかミニオンいかなくなったりとかで…",
+  "video_word": "所属",
+  "video_clip": [
+   364.59,
+   367.27
+  ],
+  "video_cut": [
+   "そこでも所属",
+   "思いますし"
+  ],
+  "video_front": "そこでも再生数が落ちたのもあると思いますし。",
+  "video_en": "I think my views dropped because of that too.",
+  "front": "video",
+  "reading": "さいせいすう",
+  "meaning": "view count",
+  "translation": "My videos' view counts have been dropping lately.",
+  "note": "",
+  "wm": [
+   "view count, number of plays",
+   "How YouTubers measure success. 再生 = playback."
+  ],
+  "wb": [
+   "再：again",
+   "生：life, live",
+   "数：number",
+   "Whole: the number of plays."
+  ],
+  "we": [
+   "views",
+   "view count",
+   "plays"
+  ],
+  "sm": [
+   "Fewer people are watching their videos.",
+   "A YouTuber worried about numbers."
+  ],
+  "sb": [
+   "最近、：lately",
+   "動画の再生数が：my videos' view counts",
+   "落ちてる。：are dropping",
+   "Whole: my videos' view counts have been dropping lately."
+  ],
+  "se": [
+   "My videos' view counts have been dropping lately.",
+   "My views have been going down lately.",
+   "Fewer people are watching my videos recently."
+  ]
+ },
+ {
+  "target": "報道",
+  "kind": "word",
+  "sentence": "その報道は本当じゃない。",
+  "t": 341,
+  "video_line": "…あとはまあ、熱愛報道もまあ、ちょっとはもしかしたらそういうのも…",
+  "video_word": "報道",
+  "video_clip": [
+   340.4,
+   345.41
+  ],
+  "reading": "ほうどう",
+  "meaning": "news report, coverage",
+  "translation": "That report isn't true.",
+  "note": "",
+  "wm": [
+   "news report, coverage",
+   "Formal word for what the media reports. 熱愛報道 = dating rumour reports."
+  ],
+  "wb": [
+   "報：report",
+   "道：way, say",
+   "Whole: reporting."
+  ],
+  "we": [
+   "report",
+   "coverage",
+   "news"
+  ],
+  "sm": [
+   "What the media said is wrong.",
+   "Denying a story."
+  ],
+  "sb": [
+   "その報道は：that report",
+   "本当じゃない。：isn't true",
+   "Whole: that report isn't true."
+  ],
+  "se": [
+   "That report isn't true.",
+   "That news story is false.",
+   "What they reported isn't true."
+  ]
+ },
+ {
+  "target": "熱愛",
+  "kind": "word",
+  "sentence": "熱愛のニュースが出た。",
+  "t": 341,
+  "video_forms": [
+   "熱愛",
+   "熱材"
+  ],
+  "video_line": "…のダメージももちろん聞いてるでしょうしあとはまあ熱愛報道もまあちょっとはもしかしたらそういう…",
+  "video_word": "熱愛",
+  "video_clip": [
+   341.83,
+   343.65
+  ],
+  "video_cut": [
+   "熱愛報道",
+   "まあ"
+  ],
+  "video_front": "熱愛報道もまあ…",
+  "video_en": "And the dating reports, too...",
+  "front": "video",
+  "reading": "ねつあい",
+  "meaning": "passionate love, a romance",
+  "translation": "News of a romance came out.",
+  "note": "熱愛報道 = reports of a celebrity romance.",
+  "wm": [
+   "passionate love, a romance (in celebrity news)",
+   "熱愛報道 = tabloid reports that someone is dating."
+  ],
+  "wb": [
+   "熱：heat",
+   "愛：love",
+   "Whole: hot love."
+  ],
+  "we": [
+   "romance",
+   "love affair",
+   "dating rumour"
+  ],
+  "sm": [
+   "Gossip about a celebrity couple appeared.",
+   "Talking about tabloid news."
+  ],
+  "sb": [
+   "熱愛のニュースが：news of a romance",
+   "出た。：came out",
+   "Whole: news of a romance came out."
+  ],
+  "se": [
+   "News of a romance came out.",
+   "A dating story hit the news.",
+   "News broke about a romance."
+  ]
+ },
+ {
+  "target": "浮き足立つ",
+  "kind": "word",
+  "sentence": "最近ちょっと浮き足立ってたわ。",
+  "t": 347,
+  "video_forms": [
+   "浮き足"
+  ],
+  "video_line": "…もしれないし他にも僕で本当に浮き足立てたんだろうなと思うんですよ自分のこの今…",
+  "video_word": "浮き足",
+  "video_clip": [
+   347.05,
+   349.93
+  ],
+  "video_cut": [
+   "本当に浮き足",
+   "思うんですよ"
+  ],
+  "video_front": "本当に浮き足立ってたんだろうなと思うんですよ。",
+  "video_en": "I think I'd really lost my footing.",
+  "front": "video",
+  "reading": "うきあしだつ",
+  "meaning": "to lose your footing, to get carried away",
+  "translation": "I've been a bit carried away lately.",
+  "note": "",
+  "wm": [
+   "to be restless, to lose focus, to get carried away",
+   "Hikaru says he was 浮き足立ってた: not grounded."
+  ],
+  "wb": [
+   "浮き：floating",
+   "足：feet",
+   "立つ：stand",
+   "Whole: standing with floating feet."
+  ],
+  "we": [
+   "get carried away",
+   "lose focus",
+   "be unsettled"
+  ],
+  "sm": [
+   "They admit they weren't grounded.",
+   "Self-reflection."
+  ],
+  "sb": [
+   "最近ちょっと：lately a bit",
+   "浮き足立ってたわ。：was carried away",
+   "Whole: I've been a bit carried away lately."
+  ],
+  "se": [
+   "I've been a bit carried away lately.",
+   "I've lost my footing a bit lately.",
+   "I've been off balance recently."
+  ]
+ },
+ {
+  "target": "熱量",
+  "kind": "word",
+  "sentence": "この動画、熱量がすごいな。",
+  "t": 366,
+  "video_line": "…そこでも所属が落ちたのもあると思いますし熱量が減ったっていうふうに思われてるんだろうなって…",
+  "video_word": "熱量",
+  "video_clip": [
+   366.77,
+   369.43
+  ],
+  "video_cut": [
+   "熱量が減った",
+   "思われてる"
+  ],
+  "video_front": "熱量が減ったっていうふうに思われてる…",
+  "video_en": "People think my passion has dropped...",
+  "front": "video",
+  "reading": "ねつりょう",
+  "meaning": "passion, energy (put into something)",
+  "translation": "The energy in this video is amazing.",
+  "note": "",
+  "wm": [
+   "passion, energy, drive (also: heat in calories)",
+   "YouTubers use it for how much effort and passion shows."
+  ],
+  "wb": [
+   "熱：heat",
+   "量：amount",
+   "Whole: amount of heat."
+  ],
+  "we": [
+   "passion",
+   "energy",
+   "drive"
+  ],
+  "sm": [
+   "The video is full of passion.",
+   "Praising a video."
+  ],
+  "sb": [
+   "この動画、：this video",
+   "熱量がすごいな。：has amazing energy",
+   "Whole: the energy in this video is amazing."
+  ],
+  "se": [
+   "The energy in this video is amazing.",
+   "This video is so passionate.",
+   "You can feel the energy in this video."
+  ]
+ },
+ {
+  "target": "熱心",
+  "kind": "word",
+  "sentence": "彼はいつも熱心に応援してくれる。",
+  "t": 392,
+  "video_line": "…にファンの皆さん特にまあ僕のことを本当に熱心に応援してかつってた皆さんごめんなさい…",
+  "video_word": "熱心",
+  "video_clip": [
+   392.21,
+   393.63
+  ],
+  "video_cut": [
+   "本当に熱心に",
+   "応援して"
+  ],
+  "video_front": "本当に熱心に応援して…",
+  "video_en": "Who've supported me so passionately...",
+  "front": "video",
+  "reading": "ねっしん",
+  "meaning": "eager, devoted",
+  "translation": "He always supports me so eagerly.",
+  "note": "",
+  "wm": [
+   "eager, keen, enthusiastic",
+   "熱心に応援する = to cheer passionately."
+  ],
+  "wb": [
+   "熱：heat",
+   "心：heart",
+   "Whole: a hot heart."
+  ],
+  "we": [
+   "eager",
+   "keen",
+   "devoted"
+  ],
+  "sm": [
+   "Someone is a very keen supporter.",
+   "Thanking a fan."
+  ],
+  "sb": [
+   "彼はいつも：he always",
+   "熱心に：eagerly",
+   "応援してくれる。：supports me",
+   "Whole: he always supports me so eagerly."
+  ],
+  "se": [
+   "He always supports me so eagerly.",
+   "He's always so keen to support me.",
+   "He cheers me on passionately."
+  ]
+ },
+ {
+  "target": "悲しむ",
+  "kind": "word",
+  "sentence": "みんなを悲しませたくない。",
+  "t": 580,
+  "video_forms": [
+   "悲しま"
+  ],
+  "video_line": "…にここ最近ね調査の人を悲しましたりとかガッカリさせたり…",
+  "video_word": "悲しま",
+  "video_clip": [
+   579.87,
+   582.43
+  ],
+  "video_cut": [
+   "調査の人",
+   "たりとか"
+  ],
+  "video_front": "視聴者の人を悲しませたりとか…",
+  "video_en": "Making my viewers sad...",
+  "front": "video",
+  "reading": "かなしむ",
+  "meaning": "to be sad, to grieve",
+  "translation": "I don't want to make everyone sad.",
+  "note": "悲しませる = to make someone sad.",
+  "wm": [
+   "to be sad, to grieve",
+   "悲しませる = to make someone sad."
+  ],
+  "wb": [
+   "悲：sad",
+   "しむ：part of the word (okurigana)",
+   "Whole: to feel sad."
+  ],
+  "we": [
+   "be sad",
+   "grieve",
+   "upset"
+  ],
+  "sm": [
+   "They don't want to hurt their fans.",
+   "Thinking of others."
+  ],
+  "sb": [
+   "みんなを：everyone",
+   "悲しませたくない。：don't want to make sad",
+   "Whole: I don't want to make everyone sad."
+  ],
+  "se": [
+   "I don't want to make everyone sad.",
+   "I don't want to upset anyone.",
+   "I'd hate to make everyone sad."
+  ]
+ },
+ {
+  "target": "イラッと",
+  "kind": "word",
+  "sentence": "その言い方、イラッとするわ。",
+  "t": 634,
+  "video_forms": [
+   "イラッ"
+  ],
+  "video_line": "…ちてきた時にすぐ言ってくれる人にはイラッと来る時とかうざいなって思う時も…",
+  "video_word": "イラッ",
+  "video_clip": [
+   633.12,
+   636.0
+  ],
+  "video_cut": [
+   "すぐ言ってくれる",
+   "来る時とか"
+  ],
+  "video_front": "すぐ言ってくれる人には、イラッと来る時とか…",
+  "video_en": "Sometimes the people who point it out right away get on my nerves...",
+  "front": "video",
+  "reading": "",
+  "meaning": "irritated (in a flash)",
+  "translation": "That way of talking annoys me.",
+  "note": "",
+  "wm": [
+   "a flash of irritation",
+   "イラッとする = to feel a stab of annoyance. イライラ = ongoing irritation."
+  ],
+  "wb": [
+   "イラッと：sound word for sudden irritation"
+  ],
+  "we": [
+   "annoyed",
+   "irritated",
+   "ticked off"
+  ],
+  "sm": [
+   "Someone's tone gets on their nerves.",
+   "Reacting to a comment."
+  ],
+  "sb": [
+   "その言い方、：that way of saying it",
+   "イラッとするわ。：irritates me",
+   "Whole: that way of talking annoys me."
+  ],
+  "se": [
+   "That way of talking annoys me.",
+   "The way you said that ticks me off.",
+   "That tone gets on my nerves."
+  ]
+ },
+ {
+  "target": "うざい",
+  "kind": "word",
+  "sentence": "マジでうざい！",
+  "t": 635,
+  "video_forms": [
+   "うざい"
+  ],
+  "video_line": "…ぐ言ってくれる人にはイラッと来る時とかうざいなって思う時も正直あるんですけど…",
+  "video_word": "うざい",
+  "video_clip": [
+   635.5,
+   638.42
+  ],
+  "video_cut": [
+   "うざいなって",
+   "あるんですけど"
+  ],
+  "video_front": "うざいなって思う時も、正直あるんですけど。",
+  "video_en": "Honestly, sometimes I think they're annoying, but...",
+  "front": "video",
+  "reading": "",
+  "meaning": "annoying",
+  "translation": "Seriously annoying!",
+  "note": "",
+  "wm": [
+   "annoying, irritating (rude slang)",
+   "Strong and casual. Don't say it to people you need to be polite to."
+  ],
+  "wb": [
+   "うざい：slang adjective for annoying"
+  ],
+  "we": [
+   "annoying",
+   "irritating",
+   "a pain"
+  ],
+  "sm": [
+   "Something or someone is getting on their nerves.",
+   "Complaining to a friend."
+  ],
+  "sb": [
+   "マジで：seriously",
+   "うざい！：annoying",
+   "Whole: seriously annoying!"
+  ],
+  "se": [
+   "Seriously annoying!",
+   "So annoying!",
+   "Ugh, that's really irritating!"
+  ]
+ },
+ {
+  "target": "宣伝",
+  "kind": "word",
+  "sentence": "この動画は宣伝ばっかりやな。",
+  "t": 657,
+  "video_line": "…をしすぎて事業事業ばっかりになったりとか宣伝宣伝ばっかりになったりとかYouTube…",
+  "video_word": "宣伝",
+  "video_clip": [
+   655.98,
+   659.84
+  ],
+  "video_cut": [
+   "事業事業ばっかり",
+   "宣伝ばっかりになったりとか"
+  ],
+  "video_front": "事業事業ばっかりになったりとか、宣伝宣伝ばっかりになったりとか。",
+  "video_en": "It all became business, business, and ads, ads.",
+  "front": "video",
+  "reading": "せんでん",
+  "meaning": "advertising, promotion",
+  "translation": "This video is all ads.",
+  "note": "",
+  "wm": [
+   "advertising, promotion, plugging",
+   "宣伝する = to promote. Hikaru: 宣伝ばっかり."
+  ],
+  "wb": [
+   "宣：announce",
+   "伝：spread",
+   "Whole: announcing and spreading."
+  ],
+  "we": [
+   "advertising",
+   "promotion",
+   "plug"
+  ],
+  "sm": [
+   "The video is full of promotions.",
+   "Complaining about a video."
+  ],
+  "sb": [
+   "この動画は：this video",
+   "宣伝ばっかりやな。：is all ads (Kansai やな)",
+   "Whole: this video is all ads."
+  ],
+  "se": [
+   "This video is all ads.",
+   "This video's just one big ad.",
+   "It's nothing but promotion."
+  ]
+ },
+ {
+  "target": "恵まれる",
+  "kind": "word",
+  "sentence": "俺、本当に恵まれてるな。",
+  "t": 738,
+  "video_forms": [
+   "恵まれ"
+  ],
+  "video_line": "…になれてこんな恵まれた環境…",
+  "video_word": "恵まれ",
+  "video_clip": [
+   743.74,
+   745.12
+  ],
+  "video_cut": [
+   "かんだ恵まれ",
+   "ますよね"
+  ],
+  "video_front": "なんだかんだ恵まれてますよね。",
+  "video_en": "When it comes down to it, I'm really lucky.",
+  "front": "video",
+  "reading": "めぐまれる",
+  "meaning": "to be blessed, to be lucky",
+  "translation": "I'm really lucky.",
+  "note": "",
+  "wm": [
+   "to be blessed with, to be fortunate",
+   "恵まれた環境 = a fortunate situation."
+  ],
+  "wb": [
+   "恵：blessing",
+   "まれる：part of the word (okurigana)",
+   "Whole: to be blessed."
+  ],
+  "we": [
+   "be blessed",
+   "be lucky",
+   "be fortunate"
+  ],
+  "sm": [
+   "They feel grateful for what they have.",
+   "Feeling thankful."
+  ],
+  "sb": [
+   "俺、：I",
+   "本当に：really",
+   "恵まれてるな。：am blessed",
+   "Whole: I'm really lucky."
+  ],
+  "se": [
+   "I'm really lucky.",
+   "I'm truly blessed.",
+   "I've got it really good."
+  ]
+ },
+ {
+  "target": "キャラ",
+  "kind": "word",
+  "sentence": "それは俺のキャラじゃない。",
+  "t": 814,
+  "video_line": "…んまり嫌というか光るっていうキャラにも合わへんしでも…",
+  "video_word": "キャラ",
+  "video_clip": [
+   814.24,
+   816.18
+  ],
+  "video_cut": [
+   "光るっていうキャラ",
+   "合わへんし"
+  ],
+  "video_front": "ヒカルっていうキャラにも合わへんし。",
+  "video_en": "And it doesn't fit the Hikaru character either.",
+  "front": "video",
+  "reading": "",
+  "meaning": "character, persona",
+  "translation": "That's not my character.",
+  "note": "",
+  "wm": [
+   "a character; someone's persona or image",
+   "Short for キャラクター. Hikaru talks about his キャラ."
+  ],
+  "wb": [
+   "キャラ：short for English \"character\""
+  ],
+  "we": [
+   "character",
+   "persona",
+   "image"
+  ],
+  "sm": [
+   "It doesn't fit how they come across.",
+   "Refusing to do something."
+  ],
+  "sb": [
+   "それは：that",
+   "俺のキャラじゃない。：isn't my character",
+   "Whole: that's not my character."
+  ],
+  "se": [
+   "That's not my character.",
+   "That's not who I am.",
+   "That doesn't fit my persona."
+  ]
+ },
+ {
+  "target": "プライド",
+  "kind": "word",
+  "sentence": "プライドなんかいらない。",
+  "t": 832,
+  "video_line": "…はみんなのことを自分のプライドとか自分の弱さで…",
+  "video_word": "プライド",
+  "video_clip": [
+   832.62,
+   836.06
+  ],
+  "video_cut": [
+   "自分のプライド",
+   "弱さで"
+  ],
+  "video_front": "自分のプライドとか自分の弱さで…",
+  "video_en": "Because of my pride and my weakness...",
+  "front": "video",
+  "reading": "",
+  "meaning": "pride",
+  "translation": "I don't need pride.",
+  "note": "",
+  "wm": [
+   "pride",
+   "プライドが高い = proud, hard to humble."
+  ],
+  "wb": [
+   "プライド：from English \"pride\""
+  ],
+  "we": [
+   "pride",
+   "ego",
+   "self-respect"
+  ],
+  "sm": [
+   "They're ready to drop their ego.",
+   "Being humble."
+  ],
+  "sb": [
+   "プライドなんか：pride and the like",
+   "いらない。：don't need",
+   "Whole: I don't need pride."
+  ],
+  "se": [
+   "I don't need pride.",
+   "Pride? I don't need it.",
+   "I've got no use for pride."
+  ]
+ },
+ {
+  "target": "ボロクソ",
+  "kind": "word",
+  "sentence": "コメントでボロクソに言われた。",
+  "t": 973,
+  "video_forms": [
+   "ボロクツ",
+   "ボロクソ",
+   "ボログス"
+  ],
+  "video_line": "…もうボロクソ…ください。もう全然ダメなときは…",
+  "video_word": "ボロクソ",
+  "video_clip": [
+   972.19,
+   976.56
+  ],
+  "reading": "",
+  "meaning": "harshly, mercilessly (criticise)",
+  "translation": "I got torn apart in the comments.",
+  "note": "ボロクソに言う = to trash.",
+  "wm": [
+   "harshly, mercilessly (when criticising)",
+   "ボロクソに言われる = to be torn to shreds."
+  ],
+  "wb": [
+   "ボロ：rag, wreck",
+   "クソ：crap",
+   "Whole: like a wrecked piece of crap."
+  ],
+  "we": [
+   "trash",
+   "tear apart",
+   "rip to shreds"
+  ],
+  "sm": [
+   "People criticised them viciously online.",
+   "A YouTuber on the comment section."
+  ],
+  "sb": [
+   "コメントで：in the comments",
+   "ボロクソに言われた。：got torn apart",
+   "Whole: I got torn apart in the comments."
+  ],
+  "se": [
+   "I got torn apart in the comments.",
+   "The comments ripped me to shreds.",
+   "People trashed me in the comments."
+  ]
+ },
+ {
+  "target": "ネタ",
+  "kind": "word",
+  "sentence": "それ、動画のネタになるやん。",
+  "t": 1026,
+  "video_line": "…アンチもね嫌いじゃないで、マジで。ネタにするように…",
+  "video_word": "ネタ",
+  "video_clip": [
+   1024.47,
+   1029.32
+  ],
+  "reading": "",
+  "meaning": "material, a bit (for jokes or videos)",
+  "translation": "That'd make good material for a video.",
+  "note": "",
+  "wm": [
+   "material, a topic, a bit, a joke",
+   "ネタにする = to turn into a joke or content. ネタバレ = spoiler."
+  ],
+  "wb": [
+   "ネタ：slang, reversed from 種 (たね, seed)"
+  ],
+  "we": [
+   "material",
+   "content",
+   "a bit"
+  ],
+  "sm": [
+   "Something could become a video idea.",
+   "A YouTuber spotting content."
+  ],
+  "sb": [
+   "それ、：that",
+   "動画のネタになるやん。：would be video material (Kansai やん)",
+   "Whole: that'd make good material for a video."
+  ],
+  "se": [
+   "That'd make good material for a video.",
+   "That'd make a great video.",
+   "That's content right there."
+  ]
+ },
+ {
+  "target": "本音",
+  "kind": "word",
+  "sentence": "正直に本音を言うわ。",
+  "t": 16,
+  "video_line": "…今回の話ね、結構本音でちょっとぶっちゃけようかなと思ってます。",
+  "video_word": "本音",
+  "video_clip": [
+   16.78,
+   21.83
+  ],
+  "reading": "ほんね",
+  "meaning": "true feelings",
+  "translation": "I'll honestly say how I really feel.",
+  "note": "",
+  "wm": [
+   "your true feelings, what you really think",
+   "The opposite of 建前 (the polite face you show)."
+  ],
+  "wb": [
+   "本：true, real",
+   "音：sound",
+   "Whole: the real sound."
+  ],
+  "we": [
+   "true feelings",
+   "honest opinion",
+   "real thoughts"
+  ],
+  "sm": [
+   "They decide to speak frankly.",
+   "A serious talk."
+  ],
+  "sb": [
+   "正直に：honestly",
+   "本音を言うわ。：I'll say my true feelings",
+   "Whole: I'll honestly say how I really feel."
+  ],
+  "se": [
+   "I'll honestly say how I really feel.",
+   "I'll tell you what I really think.",
+   "Let me be honest about how I feel."
+  ]
+ },
+ {
+  "target": "ぶっちゃける",
+  "kind": "word",
+  "sentence": "ぶっちゃけ、もう疲れた。",
+  "t": 16,
+  "video_forms": [
+   "ぶっちゃけ"
+  ],
+  "video_line": "…今回の話ね、結構本音でちょっとぶっちゃけようかなと思ってますで、最近ね、体…",
+  "video_word": "ぶっちゃけ",
+  "video_clip": [
+   18.67,
+   21.73
+  ],
+  "video_cut": [
+   "結構本音で",
+   "思ってます"
+  ],
+  "video_front": "結構本音で、ちょっとぶっちゃけようかなと思ってます。",
+  "video_en": "I'm going to be pretty honest and lay it all out.",
+  "front": "video",
+  "reading": "",
+  "meaning": "to be blunt, to come clean",
+  "translation": "Honestly, I'm already tired.",
+  "note": "ぶっちゃけ = to be honest.",
+  "wm": [
+   "to come clean, to speak bluntly",
+   "ぶっちゃけ on its own = honestly, to be frank (casual)."
+  ],
+  "wb": [
+   "ぶっちゃける：slang verb for coming clean"
+  ],
+  "we": [
+   "be frank",
+   "come clean",
+   "honestly"
+  ],
+  "sm": [
+   "They admit they're worn out.",
+   "Being honest with a friend."
+  ],
+  "sb": [
+   "ぶっちゃけ、：honestly",
+   "もう疲れた。：I'm already tired",
+   "Whole: honestly, I'm already tired."
+  ],
+  "se": [
+   "Honestly, I'm already tired.",
+   "To be frank, I'm exhausted.",
+   "Honestly? I'm done."
+  ]
+ },
+ {
+  "target": "急遽",
+  "kind": "word",
+  "sentence": "急遽、予定が変わった。",
+  "t": 27,
+  "video_line": "…うに思ってますもう本当に急遽で撮ってるんで前さんとかにも言わずに…",
+  "video_word": "急遽",
+  "video_clip": [
+   27.67,
+   29.81
+  ],
+  "video_cut": [
+   "本当に急遽",
+   "撮ってるんで"
+  ],
+  "video_front": "もう本当に急遽で撮ってるんで。",
+  "video_en": "I'm filming this totally on the spur of the moment.",
+  "front": "video",
+  "reading": "きゅうきょ",
+  "meaning": "suddenly, at short notice",
+  "translation": "Plans changed at the last minute.",
+  "note": "",
+  "wm": [
+   "suddenly, at short notice, hastily",
+   "Common for sudden changes: 急遽決まった."
+  ],
+  "wb": [
+   "急：sudden, hurry",
+   "遽：sudden",
+   "Whole: in a hurry."
+  ],
+  "we": [
+   "at short notice",
+   "suddenly",
+   "last minute"
+  ],
+  "sm": [
+   "The plan changed without warning.",
+   "Telling someone about a change."
+  ],
+  "sb": [
+   "急遽、：suddenly",
+   "予定が変わった。：the plan changed",
+   "Whole: plans changed at the last minute."
+  ],
+  "se": [
+   "Plans changed at the last minute.",
+   "The plan suddenly changed.",
+   "There was a last-minute change of plan."
+  ]
+ },
+ {
+  "target": "下手くそ",
+  "kind": "word",
+  "sentence": "俺、絵が下手くそなんだよ。",
+  "t": 40,
+  "video_forms": [
+   "下手くそ"
+  ],
+  "video_line": "…思ってることを話そうと思うのでちょっと下手くそかもしれないんですけど聞いてもらえると嬉…",
+  "video_word": "下手くそ",
+  "video_clip": [
+   40.73,
+   42.65
+  ],
+  "video_cut": [
+   "ちょっと下手くそ",
+   "しれないんですけど"
+  ],
+  "video_front": "ちょっと下手くそかもしれないんですけど。",
+  "video_en": "I might explain it pretty badly, but...",
+  "front": "video",
+  "reading": "へたくそ",
+  "meaning": "terrible at, hopeless",
+  "translation": "I'm terrible at drawing.",
+  "note": "",
+  "wm": [
+   "really bad at, clumsy (rude and casual)",
+   "Stronger than 下手. Often used about yourself."
+  ],
+  "wb": [
+   "下手：unskilled",
+   "くそ：crap",
+   "Whole: crap at it."
+  ],
+  "we": [
+   "terrible",
+   "hopeless",
+   "awful"
+  ],
+  "sm": [
+   "They admit they can't draw.",
+   "Talking about skills."
+  ],
+  "sb": [
+   "俺、：I",
+   "絵が：drawing",
+   "下手くそなんだよ。：am terrible at",
+   "Whole: I'm terrible at drawing."
+  ],
+  "se": [
+   "I'm terrible at drawing.",
+   "I'm awful at drawing.",
+   "Drawing? I'm hopeless."
+  ]
+ },
+ {
+  "target": "考え込む",
+  "kind": "word",
+  "sentence": "一人でずっと考え込んでた。",
+  "t": 49,
+  "video_forms": [
+   "考え込"
+  ],
+  "video_line": "…んでたというか、迷ってたというかすごい考え込んでたんで結構ね、頭抱えなが…",
+  "video_word": "考え込",
+  "video_clip": [
+   49.45,
+   51.17
+  ],
+  "video_cut": [
+   "すごい考え込",
+   "たんで"
+  ],
+  "video_front": "すごい考え込んでたんで。",
+  "video_en": "I'd been thinking really hard about it.",
+  "front": "video",
+  "reading": "かんがえこむ",
+  "meaning": "to be lost in thought",
+  "translation": "I'd been thinking it over by myself for ages.",
+  "note": "",
+  "wm": [
+   "to think deeply, to brood",
+   "込む adds deeply, completely."
+  ],
+  "wb": [
+   "考え：thinking",
+   "込む：into, deeply",
+   "Whole: to think deeply."
+  ],
+  "we": [
+   "ponder",
+   "brood",
+   "think hard"
+  ],
+  "sm": [
+   "They spent a long time thinking alone.",
+   "Explaining their mood."
+  ],
+  "sb": [
+   "一人でずっと：alone the whole time",
+   "考え込んでた。：was lost in thought",
+   "Whole: I'd been thinking it over by myself for ages."
+  ],
+  "se": [
+   "I'd been thinking it over by myself for ages.",
+   "I was deep in thought on my own.",
+   "I'd been brooding alone for ages."
+  ]
+ },
+ {
+  "target": "自問自答",
+  "kind": "word",
+  "sentence": "毎日自問自答してる。",
+  "t": 228,
+  "video_forms": [
+   "自問自答",
+   "尋問自動"
+  ],
+  "video_line": "…やめんのかってまた自問自答したんですよその結果…",
+  "video_word": "自問自答",
+  "video_clip": [
+   228.83,
+   230.95
+  ],
+  "video_cut": [
+   "また自問自答",
+   "したんですよ"
+  ],
+  "video_front": "また自問自答したんですよ。",
+  "video_en": "I asked myself all over again.",
+  "front": "video",
+  "reading": "じもんじとう",
+  "meaning": "asking and answering yourself",
+  "translation": "I question myself every day.",
+  "note": "",
+  "wm": [
+   "asking yourself and answering, soul-searching",
+   "A four-character idiom (四字熟語)."
+  ],
+  "wb": [
+   "自：self",
+   "問：ask",
+   "答：answer",
+   "Whole: asking yourself and answering yourself."
+  ],
+  "we": [
+   "soul-searching",
+   "self-questioning",
+   "asking myself"
+  ],
+  "sm": [
+   "They keep thinking hard about themselves.",
+   "Self-reflection."
+  ],
+  "sb": [
+   "毎日：every day",
+   "自問自答してる。：am asking myself",
+   "Whole: I question myself every day."
+  ],
+  "se": [
+   "I question myself every day.",
+   "I do some soul-searching every day.",
+   "Every day I ask myself questions."
+  ]
+ },
+ {
+  "target": "ボサボサ",
+  "kind": "word",
+  "sentence": "今日は髪がボサボサや。",
+  "t": 56,
+  "video_line": "…やってたんで、ちょっと髪の毛のコボサボサですごいひどい状態なんですけど今思…",
+  "video_word": "ボサボサ",
+  "video_clip": [
+   56.61,
+   58.25
+  ],
+  "video_cut": [
+   "髪の毛の",
+   "ボサボサで"
+  ],
+  "video_front": "髪の毛ボサボサで…",
+  "video_en": "My hair's a mess...",
+  "front": "video",
+  "reading": "",
+  "meaning": "messy, unkempt (hair)",
+  "translation": "My hair's a mess today.",
+  "note": "",
+  "wm": [
+   "messy, scruffy (hair)",
+   "髪がボサボサ = bed hair."
+  ],
+  "wb": [
+   "ボサボサ：sound word for messy hair"
+  ],
+  "we": [
+   "messy",
+   "scruffy",
+   "bed hair"
+  ],
+  "sm": [
+   "Their hair isn't done.",
+   "A casual video."
+  ],
+  "sb": [
+   "今日は：today",
+   "髪がボサボサや。：hair is messy (Kansai や)",
+   "Whole: my hair's a mess today."
+  ],
+  "se": [
+   "My hair's a mess today.",
+   "My hair's all over the place today.",
+   "Bad hair day today."
+  ]
+ },
+ {
+  "target": "メリット",
+  "kind": "word",
+  "sentence": "それって何のメリットがあるの？",
+  "t": 100,
+  "video_line": "…し実際、本当にメリットってそんな多分ないと思うしこのまま言ってた…",
+  "video_word": "メリット",
+  "video_clip": [
+   102.27,
+   104.83
+  ],
+  "video_cut": [
+   "本当にメリット",
+   "ないと思うし"
+  ],
+  "video_front": "本当にメリットってそんな多分ないと思うし。",
+  "video_en": "And there's honestly not much upside to it.",
+  "front": "video",
+  "reading": "",
+  "meaning": "merit, advantage",
+  "translation": "What's the advantage of that?",
+  "note": "",
+  "wm": [
+   "advantage, benefit",
+   "The opposite is デメリット."
+  ],
+  "wb": [
+   "メリット：from English \"merit\""
+  ],
+  "we": [
+   "advantage",
+   "benefit",
+   "upside"
+  ],
+  "sm": [
+   "They doubt there's any benefit.",
+   "Questioning a plan."
+  ],
+  "sb": [
+   "それって：that",
+   "何のメリットがあるの？：what advantage is there?",
+   "Whole: what's the advantage of that?"
+  ],
+  "se": [
+   "What's the advantage of that?",
+   "What's the point of that?",
+   "What do you gain from that?"
+  ]
+ },
+ {
+  "target": "丸くなる",
+  "kind": "word",
+  "sentence": "最近、性格が丸くなったな。",
+  "t": 112,
+  "video_forms": [
+   "丸く"
+  ],
+  "video_line": "…もっと丸くなろうじゃないけど…",
+  "video_word": "丸く",
+  "video_clip": [
+   113.28,
+   116.29
+  ],
+  "reading": "まるくなる",
+  "meaning": "to mellow, to calm down",
+  "translation": "Lately my personality has mellowed.",
+  "note": "",
+  "wm": [
+   "to become round; to mellow, to get gentler",
+   "性格が丸くなる = to mellow with age."
+  ],
+  "wb": [
+   "丸く：round",
+   "なる：become",
+   "Whole: to become round."
+  ],
+  "we": [
+   "mellow",
+   "calm down",
+   "soften"
+  ],
+  "sm": [
+   "They've become less sharp-tongued.",
+   "Noticing a change."
+  ],
+  "sb": [
+   "最近、：lately",
+   "性格が：personality",
+   "丸くなったな。：has mellowed",
+   "Whole: lately my personality has mellowed."
+  ],
+  "se": [
+   "Lately my personality has mellowed.",
+   "I've mellowed out lately.",
+   "My personality's softened recently."
+  ]
+ },
+ {
+  "target": "トゲ",
+  "kind": "word",
+  "sentence": "その言い方、トゲがあるな。",
+  "t": 137,
+  "video_line": "…っぱ文字にするとすごいなんかトゲのあるような発言が多いなと思うし…",
+  "video_word": "トゲ",
+  "video_clip": [
+   137.47,
+   140.45
+  ],
+  "video_cut": [
+   "トゲのある",
+   "多いなと思うし"
+  ],
+  "video_front": "トゲのあるような発言が多いなと思うし。",
+  "video_en": "And a lot of what I say comes across as barbed.",
+  "front": "video",
+  "reading": "",
+  "meaning": "thorn; barbed (words)",
+  "translation": "That way of saying it is barbed.",
+  "note": "",
+  "wm": [
+   "a thorn; something sharp or barbed in words",
+   "トゲがある = sounds harsh, has a bite."
+  ],
+  "wb": [
+   "トゲ：word for thorn (棘)"
+  ],
+  "we": [
+   "barbed",
+   "a sharp edge",
+   "a thorn"
+  ],
+  "sm": [
+   "Their words sound harsh.",
+   "Noticing someone's tone."
+  ],
+  "sb": [
+   "その言い方、：that way of saying it",
+   "トゲがあるな。：has a barb",
+   "Whole: that way of saying it is barbed."
+  ],
+  "se": [
+   "That way of saying it is barbed.",
+   "That came out a bit harsh.",
+   "There's a bite to how you said that."
+  ]
+ },
+ {
+  "target": "純粋",
+  "kind": "word",
+  "sentence": "子供は純粋だね。",
+  "t": 145,
+  "video_forms": [
+   "純粋"
+  ],
+  "video_line": "…切り捨てることもできるんですけどでもやっぱり純粋に僕を応援してくれてる視聴者の人が…",
+  "video_word": "純粋",
+  "video_clip": [
+   145.91,
+   148.91
+  ],
+  "video_cut": [
+   "純粋に僕を",
+   "視聴者の人が"
+  ],
+  "video_front": "純粋に僕を応援してくれてる視聴者の人が…",
+  "video_en": "Viewers who genuinely support me...",
+  "front": "video",
+  "reading": "じゅんすい",
+  "meaning": "pure, innocent",
+  "translation": "Kids are so pure.",
+  "note": "",
+  "wm": [
+   "pure, genuine, innocent",
+   "純粋に = genuinely, simply."
+  ],
+  "wb": [
+   "純：pure",
+   "粋：pure, essence",
+   "Whole: pure essence."
+  ],
+  "we": [
+   "pure",
+   "genuine",
+   "innocent"
+  ],
+  "sm": [
+   "Children are honest and innocent.",
+   "Watching kids."
+  ],
+  "sb": [
+   "子供は：kids",
+   "純粋だね。：are pure",
+   "Whole: kids are so pure."
+  ],
+  "se": [
+   "Kids are so pure.",
+   "Children are so genuine.",
+   "Kids are innocent, huh."
+  ]
+ },
+ {
+  "target": "扱い",
+  "kind": "word",
+  "sentence": "俺の扱い、ひどくない？",
+  "t": 167,
+  "video_line": "…もう有名人みたいな扱いを…",
+  "video_word": "扱い",
+  "video_clip": [
+   165.58,
+   170.57
+  ],
+  "reading": "あつかい",
+  "meaning": "treatment, handling",
+  "translation": "Isn't the way I'm treated awful?",
+  "note": "",
+  "wm": [
+   "treatment, how someone or something is handled",
+   "From 扱う (to handle). 有名人扱い = treated like a celebrity."
+  ],
+  "wb": [
+   "扱：handle",
+   "い：part of the word (okurigana)",
+   "Whole: handling."
+  ],
+  "we": [
+   "treatment",
+   "handling",
+   "how I'm treated"
+  ],
+  "sm": [
+   "They feel they're being treated badly.",
+   "Complaining jokingly."
+  ],
+  "sb": [
+   "俺の扱い、：how I'm treated",
+   "ひどくない？：isn't it terrible?",
+   "Whole: isn't the way I'm treated awful?"
+  ],
+  "se": [
+   "Isn't the way I'm treated awful?",
+   "Aren't you treating me badly?",
+   "Why am I treated like this?"
+  ]
+ },
+ {
+  "target": "根本的",
+  "kind": "word",
+  "sentence": "根本的に考え方が違う。",
+  "t": 177,
+  "video_line": "…ュースになるっていうようなありがたいことでしてもらえるんですけどまあ、根本的にマイナスなことしか書かれない…",
+  "video_word": "根本的",
+  "video_clip": [
+   177.51,
+   180.47
+  ],
+  "video_cut": [
+   "根本的に",
+   "書かれない"
+  ],
+  "video_front": "根本的に、マイナスなことしか書かれない…",
+  "video_en": "Basically, only negative things get written...",
+  "front": "video",
+  "reading": "こんぽんてき",
+  "meaning": "fundamental",
+  "translation": "Our ways of thinking are fundamentally different.",
+  "note": "",
+  "wm": [
+   "fundamental, basic; 根本的に = fundamentally",
+   "Goes to the root of a problem."
+  ],
+  "wb": [
+   "根：root",
+   "本：origin",
+   "的：-al",
+   "Whole: at the root."
+  ],
+  "we": [
+   "fundamentally",
+   "basically",
+   "at root"
+  ],
+  "sm": [
+   "They disagree at a deep level.",
+   "An argument."
+  ],
+  "sb": [
+   "根本的に：fundamentally",
+   "考え方が違う。：way of thinking is different",
+   "Whole: our ways of thinking are fundamentally different."
+  ],
+  "se": [
+   "Our ways of thinking are fundamentally different.",
+   "We think in completely different ways.",
+   "We're different at the root."
+  ]
+ },
+ {
+  "target": "不適切",
+  "kind": "word",
+  "sentence": "それは不適切な発言だ。",
+  "t": 198,
+  "video_forms": [
+   "不適切"
+  ],
+  "video_line": "…ースになってみたらやっぱなんかそれも不適切な発言のようにも見えるし…",
+  "video_word": "不適切",
+  "video_clip": [
+   197.99,
+   200.89
+  ],
+  "video_cut": [
+   "不適切な発言",
+   "見えるし"
+  ],
+  "video_front": "不適切な発言のようにも見えるし。",
+  "video_en": "And it looks like an inappropriate remark.",
+  "front": "video",
+  "reading": "ふてきせつ",
+  "meaning": "inappropriate",
+  "translation": "That's an inappropriate remark.",
+  "note": "",
+  "wm": [
+   "inappropriate, unsuitable",
+   "不適切な発言 = an inappropriate remark (common in news)."
+  ],
+  "wb": [
+   "不：not",
+   "適：suitable",
+   "切：fitting",
+   "Whole: not fitting."
+  ],
+  "we": [
+   "inappropriate",
+   "unsuitable",
+   "out of line"
+  ],
+  "sm": [
+   "Someone said something they shouldn't have.",
+   "Reacting to a comment."
+  ],
+  "sb": [
+   "それは：that",
+   "不適切な発言だ。：is an inappropriate remark",
+   "Whole: that's an inappropriate remark."
+  ],
+  "se": [
+   "That's an inappropriate remark.",
+   "That's out of line.",
+   "That comment was inappropriate."
+  ]
+ },
+ {
+  "target": "些細",
+  "kind": "word",
+  "sentence": "些細なことで怒るなよ。",
+  "t": 252,
+  "video_line": "…絶対俺本当に些細な発言がニュースになっちゃって取…",
+  "video_word": "些細",
+  "video_clip": [
+   252.27,
+   255.81
+  ],
+  "video_cut": [
+   "俺本当に些細",
+   "なっちゃって"
+  ],
+  "video_front": "俺、本当に些細な発言がニュースになっちゃって。",
+  "video_en": "Even my tiniest remarks end up in the news.",
+  "front": "video",
+  "reading": "ささい",
+  "meaning": "trivial, minor",
+  "translation": "Don't get angry over little things.",
+  "note": "",
+  "wm": [
+   "trivial, minor, slight",
+   "些細なこと = a small thing."
+  ],
+  "wb": [
+   "些：little",
+   "細：thin, fine",
+   "Whole: little and fine."
+  ],
+  "we": [
+   "trivial",
+   "minor",
+   "petty"
+  ],
+  "sm": [
+   "They tell someone to stop overreacting.",
+   "Calming a friend."
+  ],
+  "sb": [
+   "些細なことで：over little things",
+   "怒るなよ。：don't get angry",
+   "Whole: don't get angry over little things."
+  ],
+  "se": [
+   "Don't get angry over little things.",
+   "Don't get mad over nothing.",
+   "Don't sweat the small stuff."
+  ]
+ },
+ {
+  "target": "実況",
+  "kind": "word",
+  "sentence": "ゲーム実況を見るのが好き。",
+  "t": 288,
+  "video_line": "…なんだかんだねゲーム実況の頃から一番…",
+  "video_word": "実況",
+  "video_clip": [
+   288.45,
+   292.95
+  ],
+  "video_cut": [
+   "ゲーム実況の頃から一番",
+   "言って"
+  ],
+  "video_front": "ゲーム実況の頃から、一番になりたいって言って…",
+  "video_en": "Ever since my let's-play days, I've said I want to be number one...",
+  "front": "video",
+  "reading": "じっきょう",
+  "meaning": "live commentary",
+  "translation": "I like watching game let's-plays.",
+  "note": "ゲーム実況 = let's play.",
+  "wm": [
+   "live commentary; ゲーム実況 = let's-play videos",
+   "Hikaru started as a ゲーム実況者."
+  ],
+  "wb": [
+   "実：real",
+   "況：situation",
+   "Whole: the real situation, reported live."
+  ],
+  "we": [
+   "commentary",
+   "let's play",
+   "live reporting"
+  ],
+  "sm": [
+   "They enjoy gaming commentary videos.",
+   "Talking about YouTube."
+  ],
+  "sb": [
+   "ゲーム実況を：game let's-plays",
+   "見るのが好き。：I like watching",
+   "Whole: I like watching game let's-plays."
+  ],
+  "se": [
+   "I like watching game let's-plays.",
+   "I love watching let's-plays.",
+   "Game commentary videos are my thing."
+  ]
+ },
+ {
+  "target": "一挙一動",
+  "kind": "word",
+  "sentence": "ファンは彼の一挙一動を見てる。",
+  "t": 306,
+  "video_forms": [
+   "一挙一動"
+  ],
+  "video_line": "…視聴者の人がなんていうかなヒカルの一挙一動を楽しんでほしいしファンの人…",
+  "video_word": "一挙一動",
+  "video_clip": [
+   305.93,
+   308.83
+  ],
+  "video_cut": [
+   "ヒカルの一挙一動",
+   "楽しんでほしいし"
+  ],
+  "video_front": "ヒカルの一挙一動を楽しんでほしいし。",
+  "video_en": "I want people to enjoy everything I do.",
+  "front": "video",
+  "reading": "いっきょいちどう",
+  "meaning": "every move",
+  "translation": "Fans watch his every move.",
+  "note": "",
+  "wm": [
+   "every single move, every action",
+   "A four-character idiom (四字熟語)."
+  ],
+  "wb": [
+   "一：one",
+   "挙：raising (a hand)",
+   "動：movement",
+   "Whole: every raise and every move."
+  ],
+  "we": [
+   "every move",
+   "every action",
+   "everything they do"
+  ],
+  "sm": [
+   "Fans pay attention to everything he does.",
+   "Talking about a celebrity."
+  ],
+  "sb": [
+   "ファンは：fans",
+   "彼の一挙一動を：his every move",
+   "見てる。：are watching",
+   "Whole: fans watch his every move."
+  ],
+  "se": [
+   "Fans watch his every move.",
+   "Fans follow everything he does.",
+   "His fans watch every little thing."
+  ]
+ },
+ {
+  "target": "共有",
+  "kind": "word",
+  "sentence": "写真をみんなと共有した。",
+  "t": 311,
+  "video_line": "…大きなことを成し遂げたときは、その喜びを共有したいし、まだまだ思いが止…",
+  "video_word": "共有",
+  "video_clip": [
+   309.64,
+   314.65
+  ],
+  "reading": "きょうゆう",
+  "meaning": "sharing",
+  "translation": "I shared the photos with everyone.",
+  "note": "",
+  "wm": [
+   "sharing, joint ownership",
+   "共有する = to share (files, feelings, info)."
+  ],
+  "wb": [
+   "共：together",
+   "有：have",
+   "Whole: having together."
+  ],
+  "we": [
+   "share",
+   "sharing",
+   "co-own"
+  ],
+  "sm": [
+   "They sent the photos to the group.",
+   "After a trip."
+  ],
+  "sb": [
+   "写真を：the photos",
+   "みんなと共有した。：shared with everyone",
+   "Whole: I shared the photos with everyone."
+  ],
+  "se": [
+   "I shared the photos with everyone.",
+   "I sent the pics to everyone.",
+   "I shared the photos with the group."
+  ]
+ },
+ {
+  "target": "喜び",
+  "kind": "word",
+  "sentence": "この喜びをみんなと共有したい。",
+  "t": 311,
+  "video_line": "…なんか大きなことをなしとおいたときはその喜びを共有したいしまだまだ思…",
+  "video_word": "喜び",
+  "video_clip": [
+   311.03,
+   312.91
+  ],
+  "video_cut": [
+   "その喜びを",
+   "したいし"
+  ],
+  "video_front": "その喜びを共有したいし。",
+  "video_en": "I want to share that joy.",
+  "front": "video",
+  "reading": "よろこび",
+  "meaning": "joy, delight",
+  "translation": "I want to share this joy with everyone.",
+  "note": "",
+  "wm": [
+   "joy, delight, happiness",
+   "From 喜ぶ (to be happy)."
+  ],
+  "wb": [
+   "喜：joy",
+   "び：part of the word (okurigana)",
+   "Whole: joy."
+  ],
+  "we": [
+   "joy",
+   "delight",
+   "happiness"
+  ],
+  "sm": [
+   "They want everyone to celebrate with them.",
+   "After a success."
+  ],
+  "sb": [
+   "この喜びを：this joy",
+   "みんなと共有したい。：want to share with everyone",
+   "Whole: I want to share this joy with everyone."
+  ],
+  "se": [
+   "I want to share this joy with everyone.",
+   "I want everyone to share in this joy.",
+   "I want to celebrate this with all of you."
+  ]
+ },
+ {
+  "target": "ダウン",
+  "kind": "word",
+  "sentence": "人気がちょっとダウンした。",
+  "t": 335,
+  "video_forms": [
+   "ダウン"
+  ],
+  "video_line": "…や封印を取り上げられてイメージが少しずつダウンしてるっていうことわりはもちろんねバーシーチャンネル…",
+  "video_word": "ダウン",
+  "video_clip": [
+   334.43,
+   336.91
+  ],
+  "video_cut": [
+   "イメージが少しずつ",
+   "っていうこと"
+  ],
+  "video_front": "イメージが少しずつダウンしてるっていうこと。",
+  "video_en": "My image is slowly going down.",
+  "front": "video",
+  "reading": "",
+  "meaning": "down, decline",
+  "translation": "My popularity has dropped a bit.",
+  "note": "",
+  "wm": [
+   "going down, a drop; feeling down",
+   "イメージダウン = damage to your image."
+  ],
+  "wb": [
+   "ダウン：from English \"down\""
+  ],
+  "we": [
+   "drop",
+   "go down",
+   "decline"
+  ],
+  "sm": [
+   "They're less popular than before.",
+   "A YouTuber noticing a slump."
+  ],
+  "sb": [
+   "人気が：popularity",
+   "ちょっとダウンした。：dropped a bit",
+   "Whole: my popularity has dropped a bit."
+  ],
+  "se": [
+   "My popularity has dropped a bit.",
+   "I'm a bit less popular now.",
+   "My popularity took a dip."
+  ]
+ },
+ {
+  "target": "不定期",
+  "kind": "word",
+  "sentence": "動画は不定期に出すよ。",
+  "t": 359,
+  "video_line": "…動画も不定期投稿にしますって言って、やっぱりそれで…",
+  "video_word": "不定期",
+  "video_clip": [
+   357.46,
+   362.23
+  ],
+  "reading": "ふていき",
+  "meaning": "irregular",
+  "translation": "I'll put out videos irregularly.",
+  "note": "",
+  "wm": [
+   "irregular, not on a fixed schedule",
+   "不定期投稿 = uploading irregularly."
+  ],
+  "wb": [
+   "不：not",
+   "定：fixed",
+   "期：period",
+   "Whole: not on a fixed period."
+  ],
+  "we": [
+   "irregular",
+   "occasional",
+   "no fixed schedule"
+  ],
+  "sm": [
+   "They won't upload on a set schedule.",
+   "A YouTuber explaining plans."
+  ],
+  "sb": [
+   "動画は：videos",
+   "不定期に出すよ。：will put out irregularly",
+   "Whole: I'll put out videos irregularly."
+  ],
+  "se": [
+   "I'll put out videos irregularly.",
+   "I'll upload whenever, not on a schedule.",
+   "Videos will come out irregularly."
+  ]
+ },
+ {
+  "target": "かまける",
+  "kind": "word",
+  "sentence": "忙しさにかまけて、何もしてない。",
+  "t": 399,
+  "video_forms": [
+   "かまけ"
+  ],
+  "video_line": "…自分のミュージックさで才能にかまけて自分の間違いを認めず…",
+  "video_word": "かまけ",
+  "video_clip": [
+   399.61,
+   402.87
+  ],
+  "video_cut": [
+   "才能にかまけて",
+   "認めず"
+  ],
+  "video_front": "才能にかまけて、自分の間違いを認めず…",
+  "video_en": "Leaning on my talent, not admitting my mistakes...",
+  "front": "video",
+  "reading": "",
+  "meaning": "to be too busy with, to neglect because of",
+  "translation": "Busy with this and that, I've done nothing.",
+  "note": "",
+  "wm": [
+   "to be wrapped up in (and neglect other things)",
+   "〜にかまけて = using ... as an excuse. Hikaru: 才能にかまけて (resting on his talent)."
+  ],
+  "wb": [
+   "かまける：verb for being wrapped up in"
+  ],
+  "we": [
+   "be wrapped up in",
+   "use as an excuse",
+   "neglect for"
+  ],
+  "sm": [
+   "Being busy became their excuse.",
+   "Admitting laziness."
+  ],
+  "sb": [
+   "忙しさにかまけて、：wrapped up in being busy",
+   "何もしてない。：haven't done anything",
+   "Whole: busy with this and that, I've done nothing."
+  ],
+  "se": [
+   "Busy with this and that, I've done nothing.",
+   "I've used being busy as an excuse to do nothing.",
+   "I've been so caught up I haven't done a thing."
+  ]
+ },
+ {
+  "target": "前言撤回",
+  "kind": "word",
+  "sentence": "ごめん、前言撤回するわ。",
+  "t": 414,
+  "video_forms": [
+   "前限撤回",
+   "前言撤回"
+  ],
+  "video_line": "…勝手に言わしてもらうんですけど前にね前限撤回しますっていう動画出してまたかよってなるんです…",
+  "video_word": "前限撤回",
+  "video_clip": [
+   414.71,
+   416.81
+  ],
+  "video_cut": [
+   "前限撤回",
+   "動画出して"
+  ],
+  "video_front": "前言撤回しますっていう動画出して…",
+  "video_en": "I put out a video taking back what I said...",
+  "front": "video",
+  "reading": "ぜんげんてっかい",
+  "meaning": "taking back what you said",
+  "translation": "Sorry, I take back what I said.",
+  "note": "",
+  "wm": [
+   "taking back what you said",
+   "A four-character idiom, often used jokingly."
+  ],
+  "wb": [
+   "前：before",
+   "言：words",
+   "撤：withdraw",
+   "回：turn back",
+   "Whole: withdrawing earlier words."
+  ],
+  "we": [
+   "take it back",
+   "retract",
+   "change my mind"
+  ],
+  "sm": [
+   "They change what they said earlier.",
+   "Admitting they were wrong."
+  ],
+  "sb": [
+   "ごめん、：sorry",
+   "前言撤回するわ。：I take back what I said",
+   "Whole: sorry, I take back what I said."
+  ],
+  "se": [
+   "Sorry, I take back what I said.",
+   "Sorry, scratch what I said.",
+   "I take that back."
+  ]
+ },
+ {
+  "target": "ストック",
+  "kind": "word",
+  "sentence": "動画のストックがたくさんある。",
+  "t": 419,
+  "video_line": "…稿頻度戻します今実際ね動画のストックめちゃくちゃあるんですよ投稿頻度減らしてからもう…",
+  "video_word": "ストック",
+  "video_clip": [
+   419.69,
+   421.71
+  ],
+  "video_cut": [
+   "動画のストック",
+   "あるんですよ"
+  ],
+  "video_front": "動画のストック、めちゃくちゃあるんですよ。",
+  "video_en": "I've got a huge backlog of videos.",
+  "front": "video",
+  "reading": "",
+  "meaning": "stock, backlog",
+  "translation": "I've got lots of videos in stock.",
+  "note": "",
+  "wm": [
+   "stock, a backlog (of videos, food)",
+   "動画のストック = videos filmed but not uploaded yet."
+  ],
+  "wb": [
+   "ストック：from English \"stock\""
+  ],
+  "we": [
+   "backlog",
+   "stock",
+   "reserve"
+  ],
+  "sm": [
+   "They have many unreleased videos.",
+   "A YouTuber talking about uploads."
+  ],
+  "sb": [
+   "動画のストックが：a stock of videos",
+   "たくさんある。：there's a lot",
+   "Whole: I've got lots of videos in stock."
+  ],
+  "se": [
+   "I've got lots of videos in stock.",
+   "I've got a big backlog of videos.",
+   "There are plenty of videos ready to go."
+  ]
+ },
+ {
+  "target": "有り余る",
+  "kind": "word",
+  "sentence": "時間が有り余ってる。",
+  "t": 422,
+  "video_forms": [
+   "余って"
+  ],
+  "video_line": "…投稿頻度減らしてから、もうあまりに余って、めっちゃ撮れるのに…",
+  "video_word": "余って",
+  "video_clip": [
+   420.6,
+   425.79
+  ],
+  "reading": "ありあまる",
+  "meaning": "to have more than enough",
+  "translation": "I've got more time than I know what to do with.",
+  "note": "",
+  "wm": [
+   "to be more than enough, to be in excess",
+   "有り余る才能 = abundant talent."
+  ],
+  "wb": [
+   "有り：being",
+   "余る：be left over",
+   "Whole: so much that it's left over."
+  ],
+  "we": [
+   "have plenty",
+   "be abundant",
+   "too much"
+  ],
+  "sm": [
+   "They have lots of free time.",
+   "Being bored."
+  ],
+  "sb": [
+   "時間が：time",
+   "有り余ってる。：is more than enough",
+   "Whole: I've got more time than I know what to do with."
+  ],
+  "se": [
+   "I've got more time than I know what to do with.",
+   "I've got way too much time.",
+   "I've got time to spare."
+  ]
+ },
+ {
+  "target": "リアルタイム",
+  "kind": "word",
+  "sentence": "リアルタイムで見てほしい。",
+  "t": 435,
+  "video_line": "…はほんとそれ良くないなと思ってもっとリアルタイムで見てほしいしもっと…",
+  "video_word": "リアルタイム",
+  "video_clip": [
+   435.35,
+   438.11
+  ],
+  "video_cut": [
+   "もっとリアルタイム",
+   "見てほしいし"
+  ],
+  "video_front": "もっとリアルタイムで見てほしいし。",
+  "video_en": "I want people to watch in real time more.",
+  "front": "video",
+  "reading": "",
+  "meaning": "real time",
+  "translation": "I want you to watch in real time.",
+  "note": "",
+  "wm": [
+   "real time, live",
+   "リアルタイムで見る = to watch as it comes out."
+  ],
+  "wb": [
+   "リアルタイム：from English \"real time\""
+  ],
+  "we": [
+   "real time",
+   "live",
+   "as it happens"
+  ],
+  "sm": [
+   "They want fans to watch videos as soon as they're out.",
+   "A YouTuber talking to fans."
+  ],
+  "sb": [
+   "リアルタイムで：in real time",
+   "見てほしい。：I want you to watch",
+   "Whole: I want you to watch in real time."
+  ],
+  "se": [
+   "I want you to watch in real time.",
+   "Watch it live!",
+   "I want people watching as it comes out."
+  ]
+ },
+ {
+  "target": "植え付ける",
+  "kind": "word",
+  "sentence": "悪いイメージを植え付けられた。",
+  "t": 503,
+  "video_forms": [
+   "植え付け"
+  ],
+  "video_line": "…悪い印象を植え付けられたとしてもそれをくっつ返すぐらい…",
+  "video_word": "植え付け",
+  "video_clip": [
+   501.59,
+   504.89
+  ],
+  "video_cut": [
+   "悪い印象を",
+   "としても"
+  ],
+  "video_front": "悪い印象を植え付けられたとしても。",
+  "video_en": "Even if people get a bad impression of me.",
+  "front": "video",
+  "reading": "うえつける",
+  "meaning": "to plant, to instil",
+  "translation": "A bad image got planted in people's minds.",
+  "note": "",
+  "wm": [
+   "to plant; to instil (an idea or image)",
+   "悪い印象を植え付ける = to give someone a bad impression."
+  ],
+  "wb": [
+   "植え：planting",
+   "付ける：attach",
+   "Whole: to plant firmly."
+  ],
+  "we": [
+   "instil",
+   "plant",
+   "implant"
+  ],
+  "sm": [
+   "People got a bad impression of them.",
+   "Talking about reputation."
+  ],
+  "sb": [
+   "悪いイメージを：a bad image",
+   "植え付けられた。：was planted",
+   "Whole: a bad image got planted in people's minds."
+  ],
+  "se": [
+   "A bad image got planted in people's minds.",
+   "People were given a bad image of me.",
+   "A bad impression got stuck in people's heads."
+  ]
+ },
+ {
+  "target": "ネガティブ",
+  "kind": "word",
+  "sentence": "そんなにネガティブになるなよ。",
+  "t": 511,
+  "video_line": "…まあでもやっぱりFニュース見たらねちょっと打つねネガティブな気持ちになっちゃうと思うんですけどでも僕のこと…",
+  "video_word": "ネガティブ",
+  "video_clip": [
+   511.61,
+   513.77
+  ],
+  "video_cut": [
+   "ネガティブな気持ち",
+   "思うんですけど"
+  ],
+  "video_front": "ネガティブな気持ちになっちゃうと思うんですけど。",
+  "video_en": "You might end up feeling negative, but...",
+  "front": "video",
+  "reading": "",
+  "meaning": "negative",
+  "translation": "Don't be so negative.",
+  "note": "",
+  "wm": [
+   "negative (thinking, mood)",
+   "The opposite is ポジティブ."
+  ],
+  "wb": [
+   "ネガティブ：from English \"negative\""
+  ],
+  "we": [
+   "negative",
+   "pessimistic",
+   "down"
+  ],
+  "sm": [
+   "They tell a friend to cheer up.",
+   "Encouraging someone."
+  ],
+  "sb": [
+   "そんなに：that much",
+   "ネガティブになるなよ。：don't become negative",
+   "Whole: don't be so negative."
+  ],
+  "se": [
+   "Don't be so negative.",
+   "Don't be so down on yourself.",
+   "Stop being so pessimistic."
+  ]
+ },
+ {
+  "target": "ポジティブ",
+  "kind": "word",
+  "sentence": "いつもポジティブでいたい。",
+  "t": 518,
+  "video_line": "…るぐらい強く強い言葉でポジティブな言葉で上書きしていきますだから…",
+  "video_word": "ポジティブ",
+  "video_clip": [
+   517.29,
+   520.01
+  ],
+  "video_cut": [
+   "強い言葉でポジ",
+   "ポジティブな言葉で"
+  ],
+  "video_front": "強い言葉で、ポジティブな言葉で…",
+  "video_en": "With strong words, positive words...",
+  "front": "video",
+  "reading": "",
+  "meaning": "positive",
+  "translation": "I want to always be positive.",
+  "note": "",
+  "wm": [
+   "positive (thinking, mood)",
+   "The opposite is ネガティブ."
+  ],
+  "wb": [
+   "ポジティブ：from English \"positive\""
+  ],
+  "we": [
+   "positive",
+   "optimistic",
+   "upbeat"
+  ],
+  "sm": [
+   "They want to keep a good attitude.",
+   "A personal goal."
+  ],
+  "sb": [
+   "いつも：always",
+   "ポジティブでいたい。：want to be positive",
+   "Whole: I want to always be positive."
+  ],
+  "se": [
+   "I want to always be positive.",
+   "I want to stay positive.",
+   "I want to keep an upbeat attitude."
+  ]
+ },
+ {
+  "target": "消し去る",
+  "kind": "word",
+  "sentence": "嫌な記憶を全部消し去りたい。",
+  "t": 515,
+  "video_forms": [
+   "消し去"
+  ],
+  "video_line": "…のことをそれをすべて消し去るぐらい強く強い言葉で…",
+  "video_word": "消し去",
+  "video_clip": [
+   515.41,
+   517.01
+  ],
+  "video_cut": [
+   "すべて消し去る",
+   "ぐらい"
+  ],
+  "video_front": "すべて消し去るぐらい…",
+  "video_en": "Enough to wipe it all away...",
+  "front": "video",
+  "reading": "けしさる",
+  "meaning": "to erase completely",
+  "translation": "I want to wipe out all my bad memories.",
+  "note": "",
+  "wm": [
+   "to erase completely, to wipe out",
+   "Stronger than 消す."
+  ],
+  "wb": [
+   "消し：erasing",
+   "去る：go away",
+   "Whole: to erase so it's gone."
+  ],
+  "we": [
+   "wipe out",
+   "erase",
+   "get rid of"
+  ],
+  "sm": [
+   "They want to forget unpleasant things.",
+   "Feeling down."
+  ],
+  "sb": [
+   "嫌な記憶を：bad memories",
+   "全部消し去りたい。：want to wipe out all",
+   "Whole: I want to wipe out all my bad memories."
+  ],
+  "se": [
+   "I want to wipe out all my bad memories.",
+   "I wish I could erase every bad memory.",
+   "I want to get rid of all my bad memories."
+  ]
+ },
+ {
+  "target": "上書き",
+  "kind": "word",
+  "sentence": "悪いイメージを上書きしたい。",
+  "t": 519,
+  "video_line": "…い言葉でポジティブな言葉で上書きしていきますだから俺は変わんないところもあるんです…",
+  "video_word": "上書き",
+  "video_clip": [
+   518.33,
+   520.83
+  ],
+  "video_cut": [
+   "ポジティブな言葉で上書き",
+   "いきます"
+  ],
+  "video_front": "ポジティブな言葉で上書きしていきます。",
+  "video_en": "I'll overwrite it with positive words.",
+  "front": "video",
+  "reading": "うわがき",
+  "meaning": "overwriting",
+  "translation": "I want to overwrite my bad image.",
+  "note": "",
+  "wm": [
+   "overwriting (a file); replacing with something new",
+   "上書きする = to overwrite. Hikaru: ポジティブな言葉で上書き."
+  ],
+  "wb": [
+   "上：on top",
+   "書き：writing",
+   "Whole: writing on top."
+  ],
+  "we": [
+   "overwrite",
+   "replace",
+   "write over"
+  ],
+  "sm": [
+   "They want to replace a bad impression with a good one.",
+   "Changing reputation."
+  ],
+  "sb": [
+   "悪いイメージを：a bad image",
+   "上書きしたい。：want to overwrite",
+   "Whole: I want to overwrite my bad image."
+  ],
+  "se": [
+   "I want to overwrite my bad image.",
+   "I want to replace my bad image.",
+   "I want to write over my bad reputation."
+  ]
+ },
+ {
+  "target": "あがく",
+  "kind": "word",
+  "sentence": "最後まであがいてやる。",
+  "t": 549,
+  "video_forms": [
+   "あがき",
+   "揚き"
+  ],
+  "video_line": "…うわけするより今落ちたと認めてあがきたいなって思ってます見る人…",
+  "video_word": "あがき",
+  "video_clip": [
+   548.19,
+   551.93
+  ],
+  "video_cut": [
+   "今落ちたと認めて",
+   "思ってます"
+  ],
+  "video_front": "今落ちたと認めて、あがきたいなって思ってます。",
+  "video_en": "I want to admit I've slipped and fight back.",
+  "front": "video",
+  "reading": "",
+  "meaning": "to struggle, to fight on",
+  "translation": "I'll keep fighting till the end.",
+  "note": "",
+  "wm": [
+   "to struggle, to flounder, to fight against it",
+   "Not giving up even when it looks bad. Written 足掻く."
+  ],
+  "wb": [
+   "あがく：verb for struggling (足掻く)"
+  ],
+  "we": [
+   "struggle",
+   "fight on",
+   "not give up"
+  ],
+  "sm": [
+   "They won't give up.",
+   "Determination."
+  ],
+  "sb": [
+   "最後まで：to the end",
+   "あがいてやる。：I'll struggle",
+   "Whole: I'll keep fighting till the end."
+  ],
+  "se": [
+   "I'll keep fighting till the end.",
+   "I'll fight to the very end.",
+   "I won't go down without a fight."
+  ]
+ },
+ {
+  "target": "オワコン",
+  "kind": "word",
+  "sentence": "あのゲームはもうオワコンや。",
+  "t": 556,
+  "video_forms": [
+   "おわこん",
+   "オワコン"
+  ],
+  "video_line": "…YouTuberヒカルはミディオン切ったらおわこんなんですよ…",
+  "video_word": "おわこん",
+  "video_clip": [
+   556.01,
+   558.49
+  ],
+  "video_cut": [
+   "ミディオン切ったら",
+   "なんですよ"
+  ],
+  "video_front": "ミリオン切ったらオワコンなんですよ。",
+  "video_en": "If I drop below a million, I'm finished.",
+  "front": "video",
+  "reading": "",
+  "meaning": "washed up, dead content",
+  "translation": "That game's already dead.",
+  "note": "",
+  "wm": [
+   "finished, washed up (slang)",
+   "Short for 終わったコンテンツ (finished content). Hikaru calls himself オワコン if he drops."
+  ],
+  "wb": [
+   "オワ：終わった (finished)",
+   "コン：コンテンツ (content)",
+   "Whole: finished content."
+  ],
+  "we": [
+   "washed up",
+   "dead",
+   "over"
+  ],
+  "sm": [
+   "The game isn't popular any more.",
+   "Talking about trends."
+  ],
+  "sb": [
+   "あのゲームは：that game",
+   "もうオワコンや。：is already dead (Kansai や)",
+   "Whole: that game's already dead."
+  ],
+  "se": [
+   "That game's already dead.",
+   "Nobody plays that game any more.",
+   "That game's washed up."
+  ]
+ },
+ {
+  "target": "乗せる",
+  "kind": "word",
+  "sentence": "気持ちを言葉に乗せて伝えた。",
+  "t": 610,
+  "video_forms": [
+   "乗せ"
+  ],
+  "video_line": "…気持ちをこう言葉に乗せてYouTubeを使って…",
+  "video_word": "乗せ",
+  "video_clip": [
+   609.42,
+   612.32
+  ],
+  "video_cut": [
+   "気持ちをこう",
+   "乗せて"
+  ],
+  "video_front": "気持ちをこう言葉に乗せて…",
+  "video_en": "Putting my feelings into words...",
+  "front": "video",
+  "reading": "のせる",
+  "meaning": "to put on, to carry",
+  "translation": "I put my feelings into words.",
+  "note": "",
+  "wm": [
+   "to put on, to load; to put feelings into (words, music)",
+   "言葉に乗せる = to put into words."
+  ],
+  "wb": [
+   "乗：ride, load",
+   "せる：part of the word (okurigana)",
+   "Whole: to load on."
+  ],
+  "we": [
+   "put into",
+   "carry",
+   "load"
+  ],
+  "sm": [
+   "They expressed their feelings in words.",
+   "Talking about a message."
+  ],
+  "sb": [
+   "気持ちを：my feelings",
+   "言葉に乗せて：putting into words",
+   "伝えた。：conveyed",
+   "Whole: I put my feelings into words."
+  ],
+  "se": [
+   "I put my feelings into words.",
+   "I put my feelings into words.",
+   "I expressed how I felt."
+  ]
+ },
+ {
+  "target": "逆転",
+  "kind": "word",
+  "sentence": "最後に逆転した！",
+  "t": 626,
+  "video_line": "…思ってますこれがあるからまた逆転できるって思うん…",
+  "video_word": "逆転",
+  "video_clip": [
+   625.72,
+   630.9
+  ],
+  "video_cut": [
+   "これがあるから",
+   "思うんで"
+  ],
+  "video_front": "これがあるから、また逆転できるって思うんで。",
+  "video_en": "Because I have this, I think I can turn it around again.",
+  "front": "video",
+  "reading": "ぎゃくてん",
+  "meaning": "turnaround, comeback",
+  "translation": "We turned it around at the end!",
+  "note": "",
+  "wm": [
+   "reversal, turnaround, comeback",
+   "逆転する = to turn things around. 逆転勝ち = a come-from-behind win."
+  ],
+  "wb": [
+   "逆：reverse",
+   "転：turn",
+   "Whole: turning in reverse."
+  ],
+  "we": [
+   "comeback",
+   "turnaround",
+   "reversal"
+  ],
+  "sm": [
+   "They came back to win.",
+   "After a game."
+  ],
+  "sb": [
+   "最後に：at the end",
+   "逆転した！：turned it around",
+   "Whole: we turned it around at the end!"
+  ],
+  "se": [
+   "We turned it around at the end!",
+   "We came back at the end!",
+   "Last-minute comeback!"
+  ]
+ },
+ {
+  "target": "憧れる",
+  "kind": "word",
+  "sentence": "子供の頃、彼に憧れてた。",
+  "t": 700,
+  "video_forms": [
+   "憧れ"
+  ],
+  "video_line": "…時には人に尊敬されて若い人に憧れられてそんな自分でいれるのは…",
+  "video_word": "憧れ",
+  "video_clip": [
+   700.62,
+   702.8
+  ],
+  "video_cut": [
+   "若い人に憧れ",
+   "られて"
+  ],
+  "video_front": "若い人に憧れられて…",
+  "video_en": "Young people look up to me...",
+  "front": "video",
+  "reading": "あこがれる",
+  "meaning": "to admire, to look up to",
+  "translation": "As a kid, I looked up to him.",
+  "note": "",
+  "wm": [
+   "to admire, to long to be like",
+   "憧れの人 = someone you look up to."
+  ],
+  "wb": [
+   "憧：longing",
+   "れる：part of the word (okurigana)",
+   "Whole: to long for."
+  ],
+  "we": [
+   "look up to",
+   "admire",
+   "idolise"
+  ],
+  "sm": [
+   "They wanted to be like him as a child.",
+   "Talking about a role model."
+  ],
+  "sb": [
+   "子供の頃、：as a kid",
+   "彼に憧れてた。：looked up to him",
+   "Whole: as a kid, I looked up to him."
+  ],
+  "se": [
+   "As a kid, I looked up to him.",
+   "I idolised him as a kid.",
+   "He was my hero growing up."
+  ]
+ },
+ {
+  "target": "若干",
+  "kind": "word",
+  "sentence": "若干遅れるかも。",
+  "t": 709,
+  "video_line": "…炎上もしたし今も若干炎上もしてるし多分これから…",
+  "video_word": "若干",
+  "video_clip": [
+   709.58,
+   711.82
+  ],
+  "video_cut": [
+   "今も若干炎上",
+   "してるし"
+  ],
+  "video_front": "今も若干炎上もしてるし。",
+  "video_en": "And I'm still kind of getting flamed now.",
+  "front": "video",
+  "reading": "じゃっかん",
+  "meaning": "slightly, a little",
+  "translation": "I might be a little late.",
+  "note": "",
+  "wm": [
+   "slightly, somewhat, a little",
+   "A bit more formal than ちょっと, but common in speech too."
+  ],
+  "wb": [
+   "若：young, slight",
+   "干：dry, little",
+   "Whole: a little."
+  ],
+  "we": [
+   "slightly",
+   "a little",
+   "somewhat"
+  ],
+  "sm": [
+   "They'll be a few minutes late.",
+   "Messaging a friend."
+  ],
+  "sb": [
+   "若干：slightly",
+   "遅れるかも。：might be late",
+   "Whole: I might be a little late."
+  ],
+  "se": [
+   "I might be a little late.",
+   "I might be slightly late.",
+   "Running a bit behind, maybe."
+  ]
+ },
+ {
+  "target": "形成",
+  "kind": "word",
+  "sentence": "性格は子供の頃に形成される。",
+  "t": 732,
+  "video_line": "…成長の場であり僕の幸せを形成する場所だと思ってます…",
+  "video_word": "形成",
+  "video_clip": [
+   732.16,
+   736.24
+  ],
+  "video_cut": [
+   "僕の幸せを形成",
+   "思ってます"
+  ],
+  "video_front": "僕の幸せを形成する場所だと思ってます。",
+  "video_en": "I see it as the place that makes my happiness.",
+  "front": "video",
+  "reading": "けいせい",
+  "meaning": "formation, shaping",
+  "translation": "Personality is shaped in childhood.",
+  "note": "形成される = to be formed.",
+  "wm": [
+   "formation, shaping, building",
+   "形成する = to form, to shape."
+  ],
+  "wb": [
+   "形：shape",
+   "成：make",
+   "Whole: making a shape."
+  ],
+  "we": [
+   "form",
+   "shape",
+   "build"
+  ],
+  "sm": [
+   "Who you become is shaped when young.",
+   "A general idea."
+  ],
+  "sb": [
+   "性格は：personality",
+   "子供の頃に：in childhood",
+   "形成される。：is formed",
+   "Whole: personality is shaped in childhood."
+  ],
+  "se": [
+   "Personality is shaped in childhood.",
+   "Your character forms when you're young.",
+   "Childhood shapes personality."
+  ]
+ },
+ {
+  "target": "環境",
+  "kind": "word",
+  "sentence": "いい環境で働きたい。",
+  "t": 738,
+  "video_line": "…こんな恵まれた環境なんか他にないなって思うんで…",
+  "video_word": "環境",
+  "video_clip": [
+   738.8,
+   741.76
+  ],
+  "video_cut": [
+   "こんな恵まれた環境",
+   "環境"
+  ],
+  "video_front": "こんな恵まれた環境。",
+  "video_en": "Such a fortunate environment.",
+  "front": "video",
+  "reading": "かんきょう",
+  "meaning": "environment, surroundings",
+  "translation": "I want to work in a good environment.",
+  "note": "",
+  "wm": [
+   "environment, surroundings, conditions",
+   "恵まれた環境 = fortunate circumstances."
+  ],
+  "wb": [
+   "環：ring, surround",
+   "境：boundary, area",
+   "Whole: the surrounding area."
+  ],
+  "we": [
+   "environment",
+   "surroundings",
+   "setting"
+  ],
+  "sm": [
+   "They want a nice workplace.",
+   "Job hunting."
+  ],
+  "sb": [
+   "いい環境で：in a good environment",
+   "働きたい。：want to work",
+   "Whole: I want to work in a good environment."
+  ],
+  "se": [
+   "I want to work in a good environment.",
+   "I want a good place to work.",
+   "I'd like to work somewhere nice."
+  ]
+ },
+ {
+  "target": "語りかける",
+  "kind": "word",
+  "sentence": "彼はファンに語りかけた。",
+  "t": 744,
+  "video_forms": [
+   "語りかけ"
+  ],
+  "video_line": "…かんだ恵まれてますよねだってみんなにこうやって語りかけれるってすごくないですかこれ何人ぐらいか見…",
+  "video_word": "語りかけ",
+  "video_clip": [
+   745.16,
+   747.66
+  ],
+  "video_cut": [
+   "みんなにこうやって語り",
+   "すごくないですか"
+  ],
+  "video_front": "みんなにこうやって語りかけれるって、すごくないですか？",
+  "video_en": "Isn't it amazing that I can talk to everyone like this?",
+  "front": "video",
+  "reading": "かたりかける",
+  "meaning": "to talk to, to address",
+  "translation": "He spoke directly to his fans.",
+  "note": "",
+  "wm": [
+   "to talk to, to speak directly to",
+   "A warmer, more personal speak to."
+  ],
+  "wb": [
+   "語り：talking",
+   "かける：to direct to",
+   "Whole: to direct talk at."
+  ],
+  "we": [
+   "talk to",
+   "address",
+   "speak to"
+  ],
+  "sm": [
+   "He addressed his fans personally.",
+   "A YouTuber's message."
+  ],
+  "sb": [
+   "彼は：he",
+   "ファンに語りかけた。：spoke to his fans",
+   "Whole: he spoke directly to his fans."
+  ],
+  "se": [
+   "He spoke directly to his fans.",
+   "He addressed his fans.",
+   "He talked straight to his fans."
+  ]
+ },
+ {
+  "target": "暇つぶし",
+  "kind": "word",
+  "sentence": "暇つぶしに動画を見てる。",
+  "t": 766,
+  "video_forms": [
+   "ひまつぶし",
+   "暇つぶし"
+  ],
+  "video_line": "…なんとなく楽しんでもらわれとかなんとなくひまつぶしになったりとか本当に1%でもいい…",
+  "video_word": "ひまつぶし",
+  "video_clip": [
+   766.74,
+   768.56
+  ],
+  "video_cut": [
+   "なんとなくひまつぶし",
+   "なったりとか"
+  ],
+  "video_front": "なんとなく暇つぶしになったりとか。",
+  "video_en": "Or just being something to kill time with.",
+  "front": "video",
+  "reading": "ひまつぶし",
+  "meaning": "killing time",
+  "translation": "I'm watching videos to kill time.",
+  "note": "",
+  "wm": [
+   "killing time, a time-killer",
+   "暇 = free time. つぶす = to crush."
+  ],
+  "wb": [
+   "暇：free time",
+   "つぶし：crushing",
+   "Whole: crushing free time."
+  ],
+  "we": [
+   "kill time",
+   "pastime",
+   "something to do"
+  ],
+  "sm": [
+   "They're watching videos because they're bored.",
+   "Passing time."
+  ],
+  "sb": [
+   "暇つぶしに：to kill time",
+   "動画を見てる。：am watching videos",
+   "Whole: I'm watching videos to kill time."
+  ],
+  "se": [
+   "I'm watching videos to kill time.",
+   "I'm just watching videos to pass the time.",
+   "Videos to kill time."
+  ]
+ },
+ {
+  "target": "ちやほや",
+  "kind": "word",
+  "sentence": "ちやほやされるのは好きや。",
+  "t": 819,
+  "video_forms": [
+   "チアファ",
+   "ちやほや",
+   "チヤホヤ"
+  ],
+  "video_line": "…っていうのもあって実際俺はチアファされのも好きやし特に追加するとか…",
+  "video_word": "チアファ",
+  "video_clip": [
+   820.16,
+   822.04
+  ],
+  "video_cut": [
+   "チアファされ",
+   "好きやし"
+  ],
+  "video_front": "ちやほやされるのも好きやし。",
+  "video_en": "And I like being fussed over, too.",
+  "front": "video",
+  "reading": "",
+  "meaning": "fussing over, pampering",
+  "translation": "I like being fussed over.",
+  "note": "",
+  "wm": [
+   "fussing over, making a fuss of, pampering",
+   "ちやほやされる = to be fussed over."
+  ],
+  "wb": [
+   "ちやほや：sound word for fussing over"
+  ],
+  "we": [
+   "be fussed over",
+   "be pampered",
+   "be spoiled"
+  ],
+  "sm": [
+   "They enjoy the attention.",
+   "Admitting something honestly."
+  ],
+  "sb": [
+   "ちやほやされるのは：being fussed over",
+   "好きや。：I like (Kansai や)",
+   "Whole: I like being fussed over."
+  ],
+  "se": [
+   "I like being fussed over.",
+   "I love the attention.",
+   "I like being pampered."
+  ]
+ },
+ {
+  "target": "濃い",
+  "kind": "word",
+  "sentence": "味が濃いな。",
+  "t": 858,
+  "video_line": "…ってますまあ本当はねもっと濃いファンだけがいる場所で言えば良かったのかもしれないですけど…",
+  "video_word": "濃い",
+  "video_clip": [
+   858.64,
+   861.06
+  ],
+  "video_cut": [
+   "もっと濃いファン",
+   "いる場所で"
+  ],
+  "video_front": "もっと濃いファンだけがいる場所で…",
+  "video_en": "Somewhere with only my most hardcore fans...",
+  "front": "video",
+  "reading": "こい",
+  "meaning": "strong, thick; hardcore",
+  "translation": "This tastes strong.",
+  "note": "濃いファン = hardcore fans.",
+  "wm": [
+   "thick, strong, dark (taste, colour); intense",
+   "Hikaru: 濃いファン = hardcore, devoted fans."
+  ],
+  "wb": [
+   "濃：thick, dense",
+   "い：adjective ending",
+   "Whole: dense, strong."
+  ],
+  "we": [
+   "strong",
+   "thick",
+   "rich"
+  ],
+  "sm": [
+   "The flavour is intense.",
+   "Tasting food."
+  ],
+  "sb": [
+   "味が：the taste",
+   "濃いな。：is strong",
+   "Whole: this tastes strong."
+  ],
+  "se": [
+   "This tastes strong.",
+   "The flavour's really strong.",
+   "This is rich."
+  ]
+ },
+ {
+  "target": "言動",
+  "kind": "word",
+  "sentence": "自分の言動に気をつけて。",
+  "t": 879,
+  "video_line": "…違ってたなって思います自分の言動行動…",
+  "video_word": "言動",
+  "video_clip": [
+   879.1,
+   882.1
+  ],
+  "video_cut": [
+   "自分の言動",
+   "行動"
+  ],
+  "video_front": "自分の言動、行動。",
+  "video_en": "What I've said and done.",
+  "front": "video",
+  "reading": "げんどう",
+  "meaning": "words and actions",
+  "translation": "Watch what you say and do.",
+  "note": "",
+  "wm": [
+   "what you say and do, behaviour",
+   "Formal-ish. Often in apologies."
+  ],
+  "wb": [
+   "言：words",
+   "動：actions",
+   "Whole: words and actions."
+  ],
+  "we": [
+   "behaviour",
+   "words and actions",
+   "conduct"
+  ],
+  "sm": [
+   "They warn someone about their behaviour.",
+   "Giving advice."
+  ],
+  "sb": [
+   "自分の言動に：your words and actions",
+   "気をつけて。：be careful",
+   "Whole: watch what you say and do."
+  ],
+  "se": [
+   "Watch what you say and do.",
+   "Be careful how you act.",
+   "Mind your words and actions."
+  ]
+ },
+ {
+  "target": "改善",
+  "kind": "word",
+  "sentence": "悪いところは改善していく。",
+  "t": 896,
+  "video_line": "…今自分の中で気づいたことは改善していけるように頑張ります…",
+  "video_word": "改善",
+  "video_clip": [
+   896.32,
+   899.1
+  ],
+  "video_cut": [
+   "改善して",
+   "頑張ります"
+  ],
+  "video_front": "改善していけるように頑張ります。",
+  "video_en": "I'll work on improving it.",
+  "front": "video",
+  "reading": "かいぜん",
+  "meaning": "improvement",
+  "translation": "I'll improve my bad points.",
+  "note": "",
+  "wm": [
+   "improvement",
+   "改善する = to improve, to fix."
+  ],
+  "wb": [
+   "改：reform",
+   "善：good",
+   "Whole: reforming for the better."
+  ],
+  "we": [
+   "improve",
+   "fix",
+   "make better"
+  ],
+  "sm": [
+   "They promise to work on their faults.",
+   "After criticism."
+  ],
+  "sb": [
+   "悪いところは：bad points",
+   "改善していく。：will improve",
+   "Whole: I'll improve my bad points."
+  ],
+  "se": [
+   "I'll improve my bad points.",
+   "I'll fix my flaws.",
+   "I'll work on what's wrong."
+  ]
+ },
+ {
+  "target": "みっともない",
+  "kind": "word",
+  "sentence": "そんなことしたらみっともないよ。",
+  "video_forms": [
+   "ミットもない",
+   "みっともない"
+  ],
+  "video_cut": [
+   "ミットもない",
+   "するんですけど"
+  ],
+  "video_front": "みっともない気もするんですけど。",
+  "video_en": "It might look pathetic, but...",
+  "video_line": "…立ってある程度の立場になってミットもない気もするんですけど俺全くまだ…",
+  "video_word": "ミットもない",
+  "video_clip": [
+   929.02,
+   931.08
+  ],
+  "front": "video",
+  "reading": "",
+  "meaning": "shameful, unsightly",
+  "translation": "Doing that would be embarrassing.",
+  "note": "",
+  "wm": [
+   "embarrassing, shameful, unsightly",
+   "Looks bad to others."
+  ],
+  "wb": [
+   "みっともない：adjective for shameful"
+  ],
+  "we": [
+   "embarrassing",
+   "shameful",
+   "unseemly"
+  ],
+  "sm": [
+   "Something would make them look bad.",
+   "Warning a friend."
+  ],
+  "sb": [
+   "そんなことしたら：if you do that",
+   "みっともないよ。：it's embarrassing",
+   "Whole: doing that would be embarrassing."
+  ],
+  "se": [
+   "Doing that would be embarrassing.",
+   "That'd look terrible.",
+   "Don't, it'll be embarrassing."
+  ]
+ },
+ {
+  "target": "再出発",
+  "kind": "word",
+  "sentence": "ゼロから再出発します。",
+  "t": 1003,
+  "video_line": "…く受け止めて4月から再出発しますもう本当に…",
+  "video_word": "再出発",
+  "video_clip": [
+   1003.56,
+   1006.78
+  ],
+  "video_cut": [
+   "4月から再出発",
+   "します"
+  ],
+  "video_front": "4月から再出発します。",
+  "video_en": "I'm making a fresh start from April.",
+  "front": "video",
+  "reading": "さいしゅっぱつ",
+  "meaning": "a fresh start",
+  "translation": "I'm starting again from zero.",
+  "note": "",
+  "wm": [
+   "a fresh start, starting over",
+   "再出発する = to make a fresh start."
+  ],
+  "wb": [
+   "再：again",
+   "出：go out",
+   "発：depart",
+   "Whole: departing again."
+  ],
+  "we": [
+   "fresh start",
+   "start over",
+   "restart"
+  ],
+  "sm": [
+   "They're beginning again.",
+   "An announcement."
+  ],
+  "sb": [
+   "ゼロから：from zero",
+   "再出発します。：will make a fresh start",
+   "Whole: I'm starting again from zero."
+  ],
+  "se": [
+   "I'm starting again from zero.",
+   "I'm starting over from scratch.",
+   "A fresh start, from zero."
+  ]
+ },
+ {
+  "target": "吐き出す",
+  "kind": "word",
+  "sentence": "全部吐き出したらすっきりした。",
+  "t": 1084,
+  "video_forms": [
+   "吐き出"
+  ],
+  "video_line": "…中に思ってたこと全部吐き出すかなって思うんでこの動画はこれで…",
+  "video_word": "吐き出",
+  "video_clip": [
+   1084.36,
+   1086.62
+  ],
+  "video_cut": [
+   "全部吐き出",
+   "思うんで"
+  ],
+  "video_front": "全部吐き出せたかなって思うんで。",
+  "video_en": "I think I've got it all off my chest.",
+  "front": "video",
+  "reading": "はきだす",
+  "meaning": "to spit out; to get off your chest",
+  "translation": "After letting it all out, I felt better.",
+  "note": "",
+  "wm": [
+   "to spit out; to vent, to get off your chest",
+   "気持ちを吐き出す = to vent your feelings."
+  ],
+  "wb": [
+   "吐き：spitting",
+   "出す：put out",
+   "Whole: to spit out."
+  ],
+  "we": [
+   "let it out",
+   "vent",
+   "get off your chest"
+  ],
+  "sm": [
+   "Saying everything made them feel lighter.",
+   "After a talk."
+  ],
+  "sb": [
+   "全部吐き出したら：when I let it all out",
+   "すっきりした。：felt refreshed",
+   "Whole: after letting it all out, I felt better."
+  ],
+  "se": [
+   "After letting it all out, I felt better.",
+   "Getting it off my chest helped.",
+   "I feel better after venting."
+  ]
+ },
+ {
+  "target": "吹っ切れる",
+  "kind": "word",
+  "sentence": "やっと吹っ切れた。",
+  "t": 1092,
+  "video_forms": [
+   "吹っ切れ"
+  ],
+  "video_line": "…最高になんかすごい吹っ切れたマジでよかったこの動画撮…",
+  "video_word": "吹っ切れ",
+  "video_clip": [
+   1093.56,
+   1096.22
+  ],
+  "video_cut": [
+   "なんかすごい吹",
+   "吹っ切れた"
+  ],
+  "video_front": "なんかすごい吹っ切れた。",
+  "video_en": "I feel like a weight's been lifted.",
+  "front": "video",
+  "reading": "ふっきれる",
+  "meaning": "to get over it, to be free of it",
+  "translation": "I've finally got over it.",
+  "note": "",
+  "wm": [
+   "to get over something, to feel free of it",
+   "The relief after you stop worrying."
+  ],
+  "wb": [
+   "吹っ：blowing",
+   "切れる：to snap off",
+   "Whole: to blow it away."
+  ],
+  "we": [
+   "get over it",
+   "let go",
+   "move on"
+  ],
+  "sm": [
+   "They've stopped worrying.",
+   "Feeling relieved."
+  ],
+  "sb": [
+   "やっと：finally",
+   "吹っ切れた。：got over it",
+   "Whole: I've finally got over it."
+  ],
+  "se": [
+   "I've finally got over it.",
+   "I've finally let it go.",
+   "I'm finally over it."
+  ]
+ },
+ {
+  "target": "ミリオン",
+  "kind": "word",
+  "sentence": "この動画、ミリオンいったで！",
+  "t": 326,
+  "video_forms": [
+   "ミディオン",
+   "ミニオン",
+   "ミリオン"
+  ],
+  "video_line": "…てると思うんですよ動画の所属が落ちたりとかミニオンいかなくなったりとかで僕…",
+  "video_word": "ミニオン",
+  "video_clip": [
+   325.07,
+   328.05
+  ],
+  "video_cut": [
+   "動画の所属",
+   "なったりとか"
+  ],
+  "video_front": "動画の再生数が落ちたりとか、ミリオンいかなくなったりとか。",
+  "video_en": "My views dropping, videos not hitting a million...",
+  "front": "video",
+  "reading": "",
+  "meaning": "a million (views)",
+  "translation": "This video hit a million!",
+  "note": "いったで = いったよ (Kansai).",
+  "wm": [
+   "a million, especially a million views",
+   "ミリオンいく = to hit a million."
+  ],
+  "wb": [
+   "ミリオン：from English \"million\""
+  ],
+  "we": [
+   "a million",
+   "a million views",
+   "seven figures"
+  ],
+  "sm": [
+   "A video reached a million views.",
+   "Celebrating."
+  ],
+  "sb": [
+   "この動画、：this video",
+   "ミリオンいったで！：hit a million (Kansai で)",
+   "Whole: this video hit a million!"
+  ],
+  "se": [
+   "This video hit a million!",
+   "This video got a million views!",
+   "We hit a million!"
+  ]
+ },
+ {
+  "target": "ガチ勢",
+  "kind": "word",
+  "sentence": "彼はこのゲームのガチ勢だ。",
+  "t": 790,
+  "video_forms": [
+   "ガチ税",
+   "ガチ勢"
+  ],
+  "video_line": "…のかわかんなくて僕のことを本気で応援してくれてたガチ税の人に対してね一部は応援する…",
+  "video_word": "ガチ税",
+  "video_clip": [
+   784.98,
+   788.26
+  ],
+  "video_cut": [
+   "僕のことを本気で",
+   "に対してね"
+  ],
+  "video_front": "僕のことを本気で応援してくれてたガチ勢の人に対してね。",
+  "video_en": "Towards the hardcore fans who seriously supported me.",
+  "front": "video",
+  "reading": "ガチぜい",
+  "meaning": "hardcore fans, serious players",
+  "translation": "He's a hardcore player of this game.",
+  "note": "",
+  "wm": [
+   "hardcore fans or players (slang)",
+   "ガチ = serious. 勢 = group. Hikaru: ガチ勢の人 = his devoted fans."
+  ],
+  "wb": [
+   "ガチ：serious (slang)",
+   "勢：force, group",
+   "Whole: the serious crowd."
+  ],
+  "we": [
+   "hardcore",
+   "die-hard",
+   "serious players"
+  ],
+  "sm": [
+   "He takes the game very seriously.",
+   "Talking about gaming."
+  ],
+  "sb": [
+   "彼は：he",
+   "このゲームのガチ勢だ。：is a hardcore player of this game",
+   "Whole: he's a hardcore player of this game."
+  ],
+  "se": [
+   "He's a hardcore player of this game.",
+   "He's a die-hard player of this game.",
+   "He's serious about this game."
+  ]
+ },
+ {
+  "target": "チャンネル登録",
+  "kind": "word",
+  "sentence": "チャンネル登録してくれてありがとう！",
+  "t": 475,
+  "video_line": "…と出会ってこんなたくさんの人がチャンネル登録してくれて普段からYouTubeを見てくれてるという…",
+  "video_word": "チャンネル登録",
+  "video_clip": [
+   474.03,
+   476.67
+  ],
+  "video_cut": [
+   "こんなたくさんの人が",
+   "くれて"
+  ],
+  "video_front": "こんなたくさんの人がチャンネル登録してくれて…",
+  "video_en": "So many people have subscribed...",
+  "front": "video",
+  "reading": "チャンネルとうろく",
+  "meaning": "subscribing to a channel",
+  "translation": "Thanks for subscribing!",
+  "note": "",
+  "wm": [
+   "subscribing to a YouTube channel",
+   "YouTubers end with チャンネル登録よろしくお願いします."
+  ],
+  "wb": [
+   "チャンネル：channel",
+   "登：register",
+   "録：record",
+   "Whole: registering for a channel."
+  ],
+  "we": [
+   "subscribe",
+   "subscription",
+   "sub"
+  ],
+  "sm": [
+   "A YouTuber thanks viewers.",
+   "The end of a video."
+  ],
+  "sb": [
+   "チャンネル登録して：subscribing",
+   "くれてありがとう！：thanks for doing for me",
+   "Whole: thanks for subscribing!"
+  ],
+  "se": [
+   "Thanks for subscribing!",
+   "Thank you for subscribing!",
+   "Thanks for the sub!"
+  ]
+ },
+ {
+  "target": "夢中",
+  "kind": "word",
+  "sentence": "今、このゲームに夢中なんだ。",
+  "t": 736,
+  "video_line": "…ってますこんな夢中になれてこんな…",
+  "video_word": "夢中",
+  "video_clip": [
+   736.3,
+   737.76
+  ],
+  "video_cut": [
+   "こんな夢中",
+   "なれて"
+  ],
+  "video_front": "こんな夢中になれて…",
+  "video_en": "Being able to get this absorbed...",
+  "front": "video",
+  "reading": "むちゅう",
+  "meaning": "absorbed, hooked",
+  "translation": "I'm hooked on this game right now.",
+  "note": "",
+  "wm": [
+   "absorbed, crazy about, hooked",
+   "〜に夢中 = hooked on."
+  ],
+  "wb": [
+   "夢：dream",
+   "中：inside",
+   "Whole: inside a dream."
+  ],
+  "we": [
+   "hooked",
+   "absorbed",
+   "obsessed"
+  ],
+  "sm": [
+   "They can't stop playing.",
+   "Talking about a game."
+  ],
+  "sb": [
+   "今、：right now",
+   "このゲームに夢中なんだ。：I'm hooked on this game",
+   "Whole: I'm hooked on this game right now."
+  ],
+  "se": [
+   "I'm hooked on this game right now.",
+   "I'm obsessed with this game right now.",
+   "This game has me hooked."
+  ]
+ },
+ {
+  "target": "ワクワク",
+  "kind": "word",
+  "sentence": "明日が楽しみで、ワクワクするわ。",
+  "t": 1090,
+  "video_line": "…ジで明日から楽しみやなうんワクワクするわほんまに最高…",
+  "video_word": "ワクワク",
+  "video_clip": [
+   1090.54,
+   1092.7
+  ],
+  "video_cut": [
+   "ワクワクするわ",
+   "ほんまに"
+  ],
+  "video_front": "ワクワクするわ、ほんまに。",
+  "video_en": "I'm genuinely excited.",
+  "front": "video",
+  "reading": "",
+  "meaning": "excited",
+  "translation": "I'm looking forward to tomorrow; I'm so excited.",
+  "note": "",
+  "wm": [
+   "excited (looking forward)",
+   "ワクワクする = to be excited."
+  ],
+  "wb": [
+   "ワクワク：sound word for excitement"
+  ],
+  "we": [
+   "excited",
+   "thrilled",
+   "can't wait"
+  ],
+  "sm": [
+   "They can't wait for tomorrow.",
+   "Before a big day."
+  ],
+  "sb": [
+   "明日が楽しみで、：looking forward to tomorrow",
+   "ワクワクするわ。：I'm excited",
+   "Whole: I'm looking forward to tomorrow; I'm so excited."
+  ],
+  "se": [
+   "I'm looking forward to tomorrow; I'm so excited.",
+   "Can't wait for tomorrow!",
+   "I'm so excited for tomorrow."
+  ]
+ },
+ {
+  "target": "なんだかんだ",
+  "kind": "chunk",
+  "sentence": "なんだかんだ、楽しかったな。",
+  "t": 290,
+  "video_line": "…くらいだってなんだかんだねゲーム実況の頃から…",
+  "video_word": "なんだかんだ",
+  "video_clip": [
+   287.53,
+   290.05
+  ],
+  "video_cut": [
+   "なんだかんだね",
+   "頃から"
+  ],
+  "video_front": "なんだかんだね、ゲーム実況の頃から…",
+  "video_en": "All things considered, ever since my let's-play days...",
+  "front": "video",
+  "reading": "",
+  "meaning": "all things considered, one way or another",
+  "translation": "All things considered, it was fun.",
+  "note": "",
+  "wm": [
+   "one way or another, all things considered, after all",
+   "Very common in casual speech. Hikaru uses it twice in this video."
+  ],
+  "wb": [
+   "なんだ：what",
+   "かんだ：and this and that",
+   "Whole: what with this and that."
+  ],
+  "we": [
+   "after all",
+   "all things considered",
+   "one way or another"
+  ],
+  "sm": [
+   "Despite everything, they enjoyed it.",
+   "Looking back."
+  ],
+  "sb": [
+   "なんだかんだ、：all things considered",
+   "楽しかったな。：it was fun",
+   "Whole: all things considered, it was fun."
+  ],
+  "se": [
+   "All things considered, it was fun.",
+   "When all's said and done, it was fun.",
+   "In the end, I had a good time."
+  ]
+ },
+ {
+  "target": "からと言って",
+  "kind": "chunk",
+  "sentence": "有名だからと言って、偉いわけじゃない。",
+  "t": 890,
+  "video_line": "…間違えてるからこれから間違えるからと言って治さないってこともおかしいことだと思うんで…",
+  "video_word": "からと言って",
+  "video_clip": [
+   890.38,
+   894.66
+  ],
+  "video_cut": [
+   "これから間違える",
+   "思うんで"
+  ],
+  "video_front": "これから間違えるからと言って、治さないってこともおかしいことだと思うんで。",
+  "video_en": "Just because I'll make mistakes doesn't mean I shouldn't fix them.",
+  "front": "video",
+  "reading": "",
+  "meaning": "just because",
+  "translation": "Just because you're famous doesn't mean you're important.",
+  "note": "",
+  "wm": [
+   "just because, even if",
+   "〜からと言って、〜わけじゃない = just because X doesn't mean Y."
+  ],
+  "wb": [
+   "から：because",
+   "と言って：saying that",
+   "Whole: even saying it's because."
+  ],
+  "we": [
+   "just because",
+   "even if",
+   "that doesn't mean"
+  ],
+  "sm": [
+   "Fame doesn't make someone better.",
+   "Giving an opinion."
+  ],
+  "sb": [
+   "有名だからと言って、：just because you're famous",
+   "偉いわけじゃない。：doesn't mean you're important",
+   "Whole: just because you're famous doesn't mean you're important."
+  ],
+  "se": [
+   "Just because you're famous doesn't mean you're important.",
+   "Being famous doesn't make you important.",
+   "Fame doesn't make you better than anyone."
+  ]
+ },
+ {
+  "target": "じゃないけど",
+  "kind": "chunk",
+  "sentence": "文句じゃないけど、ちょっと遅いわ。",
+  "t": 112,
+  "video_line": "…もっと丸くなろうじゃないけど言…",
+  "video_word": "じゃないけど",
+  "video_clip": [
+   113.33,
+   116.29
+  ],
+  "video_cut": [
+   "もっと丸く",
+   "じゃないけど"
+  ],
+  "video_front": "もっと丸くなろうじゃないけど…",
+  "video_en": "Not that I'd become softer, exactly...",
+  "front": "video",
+  "reading": "",
+  "meaning": "not that..., but",
+  "translation": "Not to complain, but you're a bit late.",
+  "note": "",
+  "wm": [
+   "not that..., I'm not saying..., but",
+   "Softens what comes next. Hikaru: 丸くなろうじゃないけど."
+  ],
+  "wb": [
+   "じゃない：isn't",
+   "けど：but",
+   "Whole: it isn't, but."
+  ],
+  "we": [
+   "not that",
+   "not to",
+   "I'm not saying"
+  ],
+  "sm": [
+   "They point something out gently.",
+   "Teasing a friend."
+  ],
+  "sb": [
+   "文句じゃないけど、：not to complain, but",
+   "ちょっと遅いわ。：you're a bit late",
+   "Whole: not to complain, but you're a bit late."
+  ],
+  "se": [
+   "Not to complain, but you're a bit late.",
+   "I'm not complaining, but you're kinda late.",
+   "Not to nag, but you're late."
+  ]
+ },
+ {
+  "target": "ある程度",
+  "kind": "chunk",
+  "sentence": "ある程度は分かるよ。",
+  "t": 294,
+  "video_line": "…きてま、ある程度まで来たとは思ってるんですけど…",
+  "video_word": "ある程度",
+  "video_clip": [
+   294.91,
+   297.69
+  ],
+  "video_cut": [
+   "ある程度まで",
+   "思ってるんですけど"
+  ],
+  "video_front": "ある程度まで来たとは思ってるんですけど。",
+  "video_en": "I think I've come a certain way, but...",
+  "front": "video",
+  "reading": "あるていど",
+  "meaning": "to some extent",
+  "translation": "I understand it to some extent.",
+  "note": "",
+  "wm": [
+   "to some extent, to a certain degree",
+   "Very common hedge."
+  ],
+  "wb": [
+   "ある：a certain",
+   "程度：degree",
+   "Whole: a certain degree."
+  ],
+  "we": [
+   "to some extent",
+   "somewhat",
+   "up to a point"
+  ],
+  "sm": [
+   "They get it partly.",
+   "Answering a question."
+  ],
+  "sb": [
+   "ある程度は：to some extent",
+   "分かるよ。：I understand",
+   "Whole: I understand it to some extent."
+  ],
+  "se": [
+   "I understand it to some extent.",
+   "I get it, up to a point.",
+   "I kind of understand."
+  ]
+ },
+ {
+  "target": "肩身が狭い",
+  "kind": "chunk",
+  "sentence": "みんなの前で肩身が狭い思いをした。",
+  "t": 100,
+  "video_forms": [
+   "肩見",
+   "肩身"
+  ],
+  "video_line": "…と世間のイメージが悪くなったらファン自体が肩見せない思いするし実際、…",
+  "video_word": "肩見",
+  "video_clip": [
+   98.93,
+   101.31
+  ],
+  "video_cut": [
+   "ファン自体が",
+   "思いするし"
+  ],
+  "video_front": "ファン自体が肩身の狭い思いするし。",
+  "video_en": "And my fans themselves feel embarrassed.",
+  "front": "video",
+  "reading": "かたみがせまい",
+  "meaning": "to feel small, embarrassed",
+  "translation": "I felt embarrassed in front of everyone.",
+  "note": "",
+  "wm": [
+   "to feel ashamed, to feel small (in front of others)",
+   "肩身の狭い思いをする = to feel embarrassed. Hikaru: his fans feel this when he's in the news."
+  ],
+  "wb": [
+   "肩身：shoulders and body, standing",
+   "が：subject marker",
+   "狭い：narrow",
+   "Whole: your standing feels narrow."
+  ],
+  "we": [
+   "feel small",
+   "feel embarrassed",
+   "feel ashamed"
+  ],
+  "sm": [
+   "They felt uncomfortable and ashamed.",
+   "After an awkward situation."
+  ],
+  "sb": [
+   "みんなの前で：in front of everyone",
+   "肩身が狭い思いをした。：felt embarrassed",
+   "Whole: I felt embarrassed in front of everyone."
+  ],
+  "se": [
+   "I felt embarrassed in front of everyone.",
+   "I felt so small in front of everyone.",
+   "I was embarrassed in front of the group."
+  ]
+ }
+]
