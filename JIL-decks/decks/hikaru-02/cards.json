@@ -205,55 +205,6 @@
   ]
  },
  {
-  "target": "アンチ",
-  "kind": "word",
-  "sentence": "アンチのコメントは気にしない。",
-  "t": 1024,
-  "video_line": "…のことが大好きですアンチもね嫌いじゃないでマジでネタに…",
-  "video_word": "アンチ",
-  "video_clip": [
-   1024.08,
-   1026.86
-  ],
-  "video_cut": [
-   "アンチもね",
-   "マジで"
-  ],
-  "video_front": "アンチもね、嫌いじゃないで、マジで。",
-  "video_en": "Honestly, I don't hate the haters either.",
-  "front": "video",
-  "reading": "",
-  "meaning": "hater, anti-fan",
-  "translation": "I don't care about haters' comments.",
-  "note": "",
-  "wm": [
-   "haters, people who post against someone online",
-   "From anti. Big in YouTuber talk."
-  ],
-  "wb": [
-   "アンチ：from English \"anti\""
-  ],
-  "we": [
-   "hater",
-   "anti-fan",
-   "troll"
-  ],
-  "sm": [
-   "They ignore negative comments.",
-   "A YouTuber on criticism."
-  ],
-  "sb": [
-   "アンチのコメントは：haters' comments",
-   "気にしない。：I don't mind",
-   "Whole: I don't care about haters' comments."
-  ],
-  "se": [
-   "I don't care about haters' comments.",
-   "Haters' comments don't bother me.",
-   "I ignore what the haters say."
-  ]
- },
- {
   "target": "連日",
   "kind": "word",
   "sentence": "連日ニュースになってるな。",
@@ -510,51 +461,6 @@
   ]
  },
  {
-  "target": "マイナス",
-  "kind": "word",
-  "sentence": "それはマイナスのイメージやな。",
-  "t": 85,
-  "video_forms": [
-   "マイナス"
-  ],
-  "video_line": "…取り上げられるようになって、まあやっぱマイナスなように…",
-  "video_word": "マイナス",
-  "video_clip": [
-   83.62,
-   88.29
-  ],
-  "reading": "",
-  "meaning": "minus, negative",
-  "translation": "That's a negative image.",
-  "note": "",
-  "wm": [
-   "minus; negative, a downside",
-   "マイナスのイメージ = a bad image."
-  ],
-  "wb": [
-   "マイナス：from English \"minus\""
-  ],
-  "we": [
-   "negative",
-   "minus",
-   "downside"
-  ],
-  "sm": [
-   "Something makes people see you badly.",
-   "Talking about reputation."
-  ],
-  "sb": [
-   "それは：that",
-   "マイナスのイメージやな。：is a negative image (Kansai やな)",
-   "Whole: that's a negative image."
-  ],
-  "se": [
-   "That's a negative image.",
-   "That's a bad look.",
-   "That gives a negative impression."
-  ]
- },
- {
   "target": "ノリ",
   "kind": "word",
   "sentence": "ノリで言っただけやん。",
@@ -598,58 +504,6 @@
    "I only said it on a whim.",
    "I just said it in the moment.",
    "I didn't mean it, I was just going with it."
-  ]
- },
- {
-  "target": "ジョーク",
-  "kind": "word",
-  "sentence": "ジョークで言っただけや。",
-  "t": 134,
-  "video_forms": [
-   "ジョーク"
-  ],
-  "video_line": "…中で乗りでちょっと過激なこと言ってジョークみたいな感じって言っててもやっぱ文字にする…",
-  "video_word": "ジョーク",
-  "video_clip": [
-   132.23,
-   135.73
-  ],
-  "video_cut": [
-   "乗りでちょっと",
-   "言ってても"
-  ],
-  "video_front": "ノリでちょっと過激なこと言って、ジョークみたいな感じって言ってても…",
-  "video_en": "Even if I say something extreme on a whim and call it a joke...",
-  "front": "video",
-  "reading": "",
-  "meaning": "joke",
-  "translation": "I just said it as a joke.",
-  "note": "",
-  "wm": [
-   "a joke",
-   "Same as 冗談."
-  ],
-  "wb": [
-   "ジョーク：from English \"joke\""
-  ],
-  "we": [
-   "joke",
-   "kidding",
-   "a gag"
-  ],
-  "sm": [
-   "They didn't mean it seriously.",
-   "Explaining a comment."
-  ],
-  "sb": [
-   "ジョークで：as a joke",
-   "言っただけや。：only said it (Kansai や)",
-   "Whole: I just said it as a joke."
-  ],
-  "se": [
-   "I just said it as a joke.",
-   "I was only joking.",
-   "It was just a joke."
   ]
  },
  {
@@ -704,55 +558,6 @@
    "Let's throw out the old ideas.",
    "Let's ditch the old thinking.",
    "Time to cut out the old ideas."
-  ]
- },
- {
-  "target": "ダメージ",
-  "kind": "word",
-  "sentence": "それはかなりのダメージやな。",
-  "t": 221,
-  "video_line": "…の力によってまあダメージを受けてたんだろうなっていうふうに思います…",
-  "video_word": "ダメージ",
-  "video_clip": [
-   221.37,
-   223.11
-  ],
-  "video_cut": [
-   "まあダメージ",
-   "だろうな"
-  ],
-  "video_front": "まあ、ダメージを受けてたんだろうな。",
-  "video_en": "I guess I was taking damage from it.",
-  "front": "video",
-  "reading": "",
-  "meaning": "damage",
-  "translation": "That's quite a lot of damage.",
-  "note": "",
-  "wm": [
-   "damage, harm",
-   "Also mental: ダメージを受ける = to take a hit."
-  ],
-  "wb": [
-   "ダメージ：from English \"damage\""
-  ],
-  "we": [
-   "damage",
-   "hit",
-   "harm"
-  ],
-  "sm": [
-   "Something hurt them badly.",
-   "Reacting to bad news."
-  ],
-  "sb": [
-   "それは：that",
-   "かなりのダメージやな。：is quite a lot of damage (Kansai やな)",
-   "Whole: that's quite a lot of damage."
-  ],
-  "se": [
-   "That's quite a lot of damage.",
-   "That's a big hit.",
-   "That really hurt."
   ]
  },
  {
@@ -1335,104 +1140,6 @@
   ]
  },
  {
-  "target": "キャラ",
-  "kind": "word",
-  "sentence": "それは俺のキャラじゃない。",
-  "t": 814,
-  "video_line": "…んまり嫌というか光るっていうキャラにも合わへんしでも…",
-  "video_word": "キャラ",
-  "video_clip": [
-   814.24,
-   816.18
-  ],
-  "video_cut": [
-   "光るっていうキャラ",
-   "合わへんし"
-  ],
-  "video_front": "ヒカルっていうキャラにも合わへんし。",
-  "video_en": "And it doesn't fit the Hikaru character either.",
-  "front": "video",
-  "reading": "",
-  "meaning": "character, persona",
-  "translation": "That's not my character.",
-  "note": "",
-  "wm": [
-   "a character; someone's persona or image",
-   "Short for キャラクター. Hikaru talks about his キャラ."
-  ],
-  "wb": [
-   "キャラ：short for English \"character\""
-  ],
-  "we": [
-   "character",
-   "persona",
-   "image"
-  ],
-  "sm": [
-   "It doesn't fit how they come across.",
-   "Refusing to do something."
-  ],
-  "sb": [
-   "それは：that",
-   "俺のキャラじゃない。：isn't my character",
-   "Whole: that's not my character."
-  ],
-  "se": [
-   "That's not my character.",
-   "That's not who I am.",
-   "That doesn't fit my persona."
-  ]
- },
- {
-  "target": "プライド",
-  "kind": "word",
-  "sentence": "プライドなんかいらない。",
-  "t": 832,
-  "video_line": "…はみんなのことを自分のプライドとか自分の弱さで…",
-  "video_word": "プライド",
-  "video_clip": [
-   832.62,
-   836.06
-  ],
-  "video_cut": [
-   "自分のプライド",
-   "弱さで"
-  ],
-  "video_front": "自分のプライドとか自分の弱さで…",
-  "video_en": "Because of my pride and my weakness...",
-  "front": "video",
-  "reading": "",
-  "meaning": "pride",
-  "translation": "I don't need pride.",
-  "note": "",
-  "wm": [
-   "pride",
-   "プライドが高い = proud, hard to humble."
-  ],
-  "wb": [
-   "プライド：from English \"pride\""
-  ],
-  "we": [
-   "pride",
-   "ego",
-   "self-respect"
-  ],
-  "sm": [
-   "They're ready to drop their ego.",
-   "Being humble."
-  ],
-  "sb": [
-   "プライドなんか：pride and the like",
-   "いらない。：don't need",
-   "Whole: I don't need pride."
-  ],
-  "se": [
-   "I don't need pride.",
-   "Pride? I don't need it.",
-   "I've got no use for pride."
-  ]
- },
- {
   "target": "ボロクソ",
   "kind": "word",
   "sentence": "コメントでボロクソに言われた。",
@@ -1882,55 +1589,6 @@
    "My hair's a mess today.",
    "My hair's all over the place today.",
    "Bad hair day today."
-  ]
- },
- {
-  "target": "メリット",
-  "kind": "word",
-  "sentence": "それって何のメリットがあるの？",
-  "t": 100,
-  "video_line": "…し実際、本当にメリットってそんな多分ないと思うしこのまま言ってた…",
-  "video_word": "メリット",
-  "video_clip": [
-   102.27,
-   104.83
-  ],
-  "video_cut": [
-   "本当にメリット",
-   "ないと思うし"
-  ],
-  "video_front": "本当にメリットってそんな多分ないと思うし。",
-  "video_en": "And there's honestly not much upside to it.",
-  "front": "video",
-  "reading": "",
-  "meaning": "merit, advantage",
-  "translation": "What's the advantage of that?",
-  "note": "",
-  "wm": [
-   "advantage, benefit",
-   "The opposite is デメリット."
-  ],
-  "wb": [
-   "メリット：from English \"merit\""
-  ],
-  "we": [
-   "advantage",
-   "benefit",
-   "upside"
-  ],
-  "sm": [
-   "They doubt there's any benefit.",
-   "Questioning a plan."
-  ],
-  "sb": [
-   "それって：that",
-   "何のメリットがあるの？：what advantage is there?",
-   "Whole: what's the advantage of that?"
-  ],
-  "se": [
-   "What's the advantage of that?",
-   "What's the point of that?",
-   "What do you gain from that?"
   ]
  },
  {
@@ -2489,58 +2147,6 @@
   ]
  },
  {
-  "target": "ダウン",
-  "kind": "word",
-  "sentence": "人気がちょっとダウンした。",
-  "t": 335,
-  "video_forms": [
-   "ダウン"
-  ],
-  "video_line": "…や封印を取り上げられてイメージが少しずつダウンしてるっていうことわりはもちろんねバーシーチャンネル…",
-  "video_word": "ダウン",
-  "video_clip": [
-   334.43,
-   336.91
-  ],
-  "video_cut": [
-   "イメージが少しずつ",
-   "っていうこと"
-  ],
-  "video_front": "イメージが少しずつダウンしてるっていうこと。",
-  "video_en": "My image is slowly going down.",
-  "front": "video",
-  "reading": "",
-  "meaning": "down, decline",
-  "translation": "My popularity has dropped a bit.",
-  "note": "",
-  "wm": [
-   "going down, a drop; feeling down",
-   "イメージダウン = damage to your image."
-  ],
-  "wb": [
-   "ダウン：from English \"down\""
-  ],
-  "we": [
-   "drop",
-   "go down",
-   "decline"
-  ],
-  "sm": [
-   "They're less popular than before.",
-   "A YouTuber noticing a slump."
-  ],
-  "sb": [
-   "人気が：popularity",
-   "ちょっとダウンした。：dropped a bit",
-   "Whole: my popularity has dropped a bit."
-  ],
-  "se": [
-   "My popularity has dropped a bit.",
-   "I'm a bit less popular now.",
-   "My popularity took a dip."
-  ]
- },
- {
   "target": "不定期",
   "kind": "word",
   "sentence": "動画は不定期に出すよ。",
@@ -2695,55 +2301,6 @@
   ]
  },
  {
-  "target": "ストック",
-  "kind": "word",
-  "sentence": "動画のストックがたくさんある。",
-  "t": 419,
-  "video_line": "…稿頻度戻します今実際ね動画のストックめちゃくちゃあるんですよ投稿頻度減らしてからもう…",
-  "video_word": "ストック",
-  "video_clip": [
-   419.69,
-   421.71
-  ],
-  "video_cut": [
-   "動画のストック",
-   "あるんですよ"
-  ],
-  "video_front": "動画のストック、めちゃくちゃあるんですよ。",
-  "video_en": "I've got a huge backlog of videos.",
-  "front": "video",
-  "reading": "",
-  "meaning": "stock, backlog",
-  "translation": "I've got lots of videos in stock.",
-  "note": "",
-  "wm": [
-   "stock, a backlog (of videos, food)",
-   "動画のストック = videos filmed but not uploaded yet."
-  ],
-  "wb": [
-   "ストック：from English \"stock\""
-  ],
-  "we": [
-   "backlog",
-   "stock",
-   "reserve"
-  ],
-  "sm": [
-   "They have many unreleased videos.",
-   "A YouTuber talking about uploads."
-  ],
-  "sb": [
-   "動画のストックが：a stock of videos",
-   "たくさんある。：there's a lot",
-   "Whole: I've got lots of videos in stock."
-  ],
-  "se": [
-   "I've got lots of videos in stock.",
-   "I've got a big backlog of videos.",
-   "There are plenty of videos ready to go."
-  ]
- },
- {
   "target": "有り余る",
   "kind": "word",
   "sentence": "時間が有り余ってる。",
@@ -2788,55 +2345,6 @@
    "I've got more time than I know what to do with.",
    "I've got way too much time.",
    "I've got time to spare."
-  ]
- },
- {
-  "target": "リアルタイム",
-  "kind": "word",
-  "sentence": "リアルタイムで見てほしい。",
-  "t": 435,
-  "video_line": "…はほんとそれ良くないなと思ってもっとリアルタイムで見てほしいしもっと…",
-  "video_word": "リアルタイム",
-  "video_clip": [
-   435.35,
-   438.11
-  ],
-  "video_cut": [
-   "もっとリアルタイム",
-   "見てほしいし"
-  ],
-  "video_front": "もっとリアルタイムで見てほしいし。",
-  "video_en": "I want people to watch in real time more.",
-  "front": "video",
-  "reading": "",
-  "meaning": "real time",
-  "translation": "I want you to watch in real time.",
-  "note": "",
-  "wm": [
-   "real time, live",
-   "リアルタイムで見る = to watch as it comes out."
-  ],
-  "wb": [
-   "リアルタイム：from English \"real time\""
-  ],
-  "we": [
-   "real time",
-   "live",
-   "as it happens"
-  ],
-  "sm": [
-   "They want fans to watch videos as soon as they're out.",
-   "A YouTuber talking to fans."
-  ],
-  "sb": [
-   "リアルタイムで：in real time",
-   "見てほしい。：I want you to watch",
-   "Whole: I want you to watch in real time."
-  ],
-  "se": [
-   "I want you to watch in real time.",
-   "Watch it live!",
-   "I want people watching as it comes out."
   ]
  },
  {
@@ -2891,104 +2399,6 @@
    "A bad image got planted in people's minds.",
    "People were given a bad image of me.",
    "A bad impression got stuck in people's heads."
-  ]
- },
- {
-  "target": "ネガティブ",
-  "kind": "word",
-  "sentence": "そんなにネガティブになるなよ。",
-  "t": 511,
-  "video_line": "…まあでもやっぱりFニュース見たらねちょっと打つねネガティブな気持ちになっちゃうと思うんですけどでも僕のこと…",
-  "video_word": "ネガティブ",
-  "video_clip": [
-   511.61,
-   513.77
-  ],
-  "video_cut": [
-   "ネガティブな気持ち",
-   "思うんですけど"
-  ],
-  "video_front": "ネガティブな気持ちになっちゃうと思うんですけど。",
-  "video_en": "You might end up feeling negative, but...",
-  "front": "video",
-  "reading": "",
-  "meaning": "negative",
-  "translation": "Don't be so negative.",
-  "note": "",
-  "wm": [
-   "negative (thinking, mood)",
-   "The opposite is ポジティブ."
-  ],
-  "wb": [
-   "ネガティブ：from English \"negative\""
-  ],
-  "we": [
-   "negative",
-   "pessimistic",
-   "down"
-  ],
-  "sm": [
-   "They tell a friend to cheer up.",
-   "Encouraging someone."
-  ],
-  "sb": [
-   "そんなに：that much",
-   "ネガティブになるなよ。：don't become negative",
-   "Whole: don't be so negative."
-  ],
-  "se": [
-   "Don't be so negative.",
-   "Don't be so down on yourself.",
-   "Stop being so pessimistic."
-  ]
- },
- {
-  "target": "ポジティブ",
-  "kind": "word",
-  "sentence": "いつもポジティブでいたい。",
-  "t": 518,
-  "video_line": "…るぐらい強く強い言葉でポジティブな言葉で上書きしていきますだから…",
-  "video_word": "ポジティブ",
-  "video_clip": [
-   517.29,
-   520.01
-  ],
-  "video_cut": [
-   "強い言葉でポジ",
-   "ポジティブな言葉で"
-  ],
-  "video_front": "強い言葉で、ポジティブな言葉で…",
-  "video_en": "With strong words, positive words...",
-  "front": "video",
-  "reading": "",
-  "meaning": "positive",
-  "translation": "I want to always be positive.",
-  "note": "",
-  "wm": [
-   "positive (thinking, mood)",
-   "The opposite is ネガティブ."
-  ],
-  "wb": [
-   "ポジティブ：from English \"positive\""
-  ],
-  "we": [
-   "positive",
-   "optimistic",
-   "upbeat"
-  ],
-  "sm": [
-   "They want to keep a good attitude.",
-   "A personal goal."
-  ],
-  "sb": [
-   "いつも：always",
-   "ポジティブでいたい。：want to be positive",
-   "Whole: I want to always be positive."
-  ],
-  "se": [
-   "I want to always be positive.",
-   "I want to stay positive.",
-   "I want to keep an upbeat attitude."
   ]
  },
  {
@@ -4044,60 +3454,6 @@
    "I've finally got over it.",
    "I've finally let it go.",
    "I'm finally over it."
-  ]
- },
- {
-  "target": "ミリオン",
-  "kind": "word",
-  "sentence": "この動画、ミリオンいったで！",
-  "t": 326,
-  "video_forms": [
-   "ミディオン",
-   "ミニオン",
-   "ミリオン"
-  ],
-  "video_line": "…てると思うんですよ動画の所属が落ちたりとかミニオンいかなくなったりとかで僕…",
-  "video_word": "ミニオン",
-  "video_clip": [
-   325.07,
-   328.05
-  ],
-  "video_cut": [
-   "動画の所属",
-   "なったりとか"
-  ],
-  "video_front": "動画の再生数が落ちたりとか、ミリオンいかなくなったりとか。",
-  "video_en": "My views dropping, videos not hitting a million...",
-  "front": "video",
-  "reading": "",
-  "meaning": "a million (views)",
-  "translation": "This video hit a million!",
-  "note": "いったで = いったよ (Kansai).",
-  "wm": [
-   "a million, especially a million views",
-   "ミリオンいく = to hit a million."
-  ],
-  "wb": [
-   "ミリオン：from English \"million\""
-  ],
-  "we": [
-   "a million",
-   "a million views",
-   "seven figures"
-  ],
-  "sm": [
-   "A video reached a million views.",
-   "Celebrating."
-  ],
-  "sb": [
-   "この動画、：this video",
-   "ミリオンいったで！：hit a million (Kansai で)",
-   "Whole: this video hit a million!"
-  ],
-  "se": [
-   "This video hit a million!",
-   "This video got a million views!",
-   "We hit a million!"
   ]
  },
  {

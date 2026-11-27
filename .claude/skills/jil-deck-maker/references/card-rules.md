@@ -14,6 +14,7 @@ Read `unknown.json` together with the transcript lines.
   - **Endings and in-between sounds** (やん, へん, とる, や for だ) get no card: like particles, they come from listening. A Kansai set phrase the creator keeps using (なんでやねん) can be a chunk card.
   - The learner's language parent decides their accent, so these are worth knowing if their creator uses them.
   - The tokeniser often misreads Kansai forms (おもろい as 面白い, あかん as two pieces). `"dialect": true` stops the checker treating those cards as already known.
+- **English loanwords:** when `english_loanwords` is `"skip"`, `extract.py` already leaves out katakana words that are just English (ニュース, ダメージ, ポジティブ). Don't add them back. Japanese words written in katakana (ノリ, ネタ, オワコン, ワクワク) and compounds with a Japanese part (チャンネル登録) still get cards.
 - **Rare or specialist words still get a card.** The method is to learn every word in the video. Put them later in the order, after the common ones.
 - **Add the chunks** the video uses (see `chunks.md`): どっちかというと, って感じ, しかない, という訳で, って事は. Give each its own card with `"kind": "chunk"`.
   - **Idioms count as chunks** (念のため, 手を抜く, ハードルを上げる), even when they carry a new word.

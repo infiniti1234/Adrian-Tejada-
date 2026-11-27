@@ -23,6 +23,7 @@ This is step 2 of Harry's one-video method: **learn every word in the video befo
    - `audio`: `"back"` (default), `"front"` or `"off"`.
    - `voice_id` / `tts_model`: for audio.
    - `video_front`: `"off"` (default) or `"mix"`. With `"mix"`, every deck uses the creator's own audio, and their real line is the card's front wherever it follows the one-new-word rule (step 6b).
+   - `english_loanwords`: `"card"` (default) or `"skip"`. With `"skip"`, katakana words that are just English (UniDic lemma like `ニュース-news`) never get a card and never count as unknown in a sentence or a creator line. Katakana words that are Japanese (ノリ, ネタ, ワクワク, オワコン) still get cards.
    - `whisper_model`: the Whisper model for the video timings (`"small"` by default).
    - `hikaru500`: `true` (default) seeds the known-words list with every Hikaru 500 word. Set `false` for a learner who never did the Hikaru 500, so those words only count if their own Anki has them.
 

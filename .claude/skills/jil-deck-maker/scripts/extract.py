@@ -24,7 +24,7 @@ def main():
                 names[t.surface] += 1; continue
             total += 1
             lem = f.lemma or t.surface
-            if lem in kl or lem in ignore:
+            if lem in kl or lem in ignore or (jp.skip_loanwords() and jp.is_english_loanword(lem)):
                 known_hits += 1; continue
             if lem in ignore: continue
             w = words.setdefault(lem, {"lemma": lem, "form": f.orthBase or t.surface, "reading": jp.hira(f.kanaBase or ""),

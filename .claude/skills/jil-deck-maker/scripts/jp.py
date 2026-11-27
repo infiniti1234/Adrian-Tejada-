@@ -14,7 +14,7 @@ tagger = fugashi.Tagger()
 # so updating the skill never touches it. Override with the JIL_DECKS_DIR environment variable.
 DATA = os.environ.get("JIL_DECKS_DIR") or os.path.join(os.path.expanduser("~"), "JIL-decks")
 os.makedirs(DATA, exist_ok=True)
-DEFAULT_CONFIG = {"master_deck": "Japanese", "card_theme": "dark", "definitions": "english", "audio": "back", "voice_id": "Mv8AjrYZCBkdsmDHNwcB", "tts_model": "eleven_v3", "hikaru500": True, "video_front": "off", "whisper_model": "small"}
+DEFAULT_CONFIG = {"master_deck": "Japanese", "card_theme": "dark", "definitions": "english", "audio": "back", "voice_id": "Mv8AjrYZCBkdsmDHNwcB", "tts_model": "eleven_v3", "hikaru500": True, "video_front": "off", "whisper_model": "small", "english_loanwords": "card"}
 
 
 def config():
@@ -46,6 +46,21 @@ def is_free(t):
     return f.pos1 in FREE_POS or lem in FREE_LEMMA or f.pos2 == "数詞" or t.surface.isdigit() or not re.search(r"[぀-ヿ㐀-鿿]", t.surface)
 
 
+_CFG = None
+
+
+def skip_loanwords():
+    """True when config "english_loanwords" is "skip": katakana words that are just English (UniDic lemma like ニュース-news)
+    never get a card and never count as unknown."""
+    global _CFG
+    if _CFG is None: _CFG = config()
+    return _CFG.get("english_loanwords", "card") == "skip"
+
+
+def is_english_loanword(lemma):
+    return bool(re.match(r"^[ァ-ヶー・]+-[A-Za-z]", lemma or ""))
+
+
 def vocab_tokens(text):
     """Tokens that count as vocabulary: [(surface, lemma, dictionary form, reading, pos)]"""
     out = []
@@ -54,6 +69,8 @@ def vocab_tokens(text):
             continue
         f = t.feature
         if f.pos1 not in CONTENT_POS or f.pos2 == "固有名詞":  # names and titles never count as words to learn
+            continue
+        if skip_loanwords() and is_english_loanword(f.lemma):  # the learner knows English loanwords already
             continue
         out.append((t.surface, f.lemma or t.surface, f.orthBase or t.surface, hira(f.kanaBase or f.kana or t.surface), f.pos1, f.pos2))
     return out
